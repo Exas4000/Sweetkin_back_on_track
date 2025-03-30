@@ -11,7 +11,7 @@
         },
         "rarity": "starter",
         "class": "@ClassSweetkin",
-        "card_art_reference": "@CardArt",
+        "card_art_reference": "@CardArt_XIX",
         "targets_room": true,
         "targetless": false,
         "pools": [
@@ -20,14 +20,14 @@
         "cost": 1,
         "effects": [
           {
-            "id": "@RaiseHp"
+            "id": "@RaiseHp_hospy"
           }
         ]
       }
     ],
     "effects": [
       {
-        "id": "RaiseHp",
+        "id": "RaiseHp_hospy",
         "name": "CardEffectBuffMaxHealth",
         "param_int": 8,
         "target_mode": "drop_target_character",
@@ -37,17 +37,17 @@
     ],
     "sprites": [
         {
-            "id": "CardArt",
+            "id": "CardArt_XIX",
             "path": "textures/CardAssets/Card_XIX.png"
         }
     ],
     "game_objects": [
         {
-            "id": "CardArt",
+            "id": "CardArt_XIX",
             "type": "card_art",
             "extensions": {
                 "card_art": {
-                    "sprite": "@CardArt"
+                    "sprite": "@CardArt_XIX"
                 }
             }
         }
