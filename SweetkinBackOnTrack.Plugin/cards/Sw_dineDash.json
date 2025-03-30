@@ -11,7 +11,7 @@
       },
       "rarity": "starter",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt",
+      "card_art_reference": "@CardArt_IX",
       "targets_room": true,
       "targetless": false,
       "pools": [
@@ -20,19 +20,19 @@
       "cost": 2,
       "traits": [
         {
-          "id": "@Magnet"
+          "id": "@Magnet_dine"
         }
       ],
       "effects": [
         {
-          "id": "@Dealdamage"
+          "id": "@Dealdamage_dine"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "Dealdamage",
+      "id": "Dealdamage_dine",
       "name": "CardEffectBump",
       "param_int": 45,
       "target_mode": "drop_target_character",
@@ -42,23 +42,23 @@
   ],
   "traits": [
     {
-      "id": "Magnet",
+      "id": "Magnet_dine",
       "name": "CardTraitMagneticState"
     }
   ],
   "sprites": [
     {
-      "id": "CardArt",
+      "id": "CardArt_IX",
       "path": "textures/CardAssets/Card_IX.png"
     }
   ],
   "game_objects": [
     {
-      "id": "CardArt",
+      "id": "CardArt_IX",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@CardArt"
+          "sprite": "@CardArt_IX"
         }
       }
     }

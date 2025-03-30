@@ -11,7 +11,7 @@
       },
       "rarity": "common",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt",
+      "card_art_reference": "@CardArt_III",
       "targets_room": true,
       "targetless": false,
       "pools": [
@@ -20,19 +20,19 @@
       "cost": 1,
       "traits": [
         {
-          "id": "@Piercing"
+          "id": "@Piercing_punish"
         }
       ],
       "effects": [
         {
-          "id": "@Dealdamage"
+          "id": "@Dealdamage_punish"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "Dealdamage",
+      "id": "Dealdamage_punish",
       "name": "CardEffectBump",
       "param_int": 30,
       "target_mode": "drop_target_character",
@@ -42,23 +42,23 @@
   ],
   "traits": [
     {
-      "id": "Piercing",
+      "id": "Piercing_punish",
       "name": "CardTraitIgnoreArmor"
     }
   ],
   "sprites": [
     {
-      "id": "CardArt",
+      "id": "CardArt_III",
       "path": "textures/CardAssets/Card_III.png"
     }
   ],
   "game_objects": [
     {
-      "id": "CardArt",
+      "id": "CardArt_III",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@CardArt"
+          "sprite": "@CardArt_III"
         }
       }
     }

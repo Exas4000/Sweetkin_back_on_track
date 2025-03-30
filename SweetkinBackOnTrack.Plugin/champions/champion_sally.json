@@ -11,7 +11,7 @@
         "group": "CardData_Sally",
         "english": " "
       },
-      "card_art_reference": "@cardArt",
+      "card_art_reference": "@cardArt_sally",
       "cost": 0,
       "type": "monster",
       "cost_type": "default",
@@ -379,8 +379,8 @@
   ],
   "sprites": [
     {
-      "id": "cardArt",
-      "path": "textures/CardAssets/Card_XIX.png"
+      "id": "cardArt_sally",
+      "path": "textures/CardAssets/Card_Unit_17.png"
     },
     {
       "id": "AlbertStewardRoomArt",
@@ -389,11 +389,11 @@
   ],
   "game_objects": [
     {
-      "id": "cardArt",
+      "id": "cardArt_sally",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@cardArt"
+          "sprite": "@cardArt_sally"
         }
       }
     }

@@ -11,7 +11,7 @@
       },
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt",
+      "card_art_reference": "@CardArt_VIII",
       "targets_room": true,
       "targetless": false,
       "pools": [
@@ -20,17 +20,17 @@
       "cost": 2,
       "effects": [
         {
-          "id": "@Heal"
+          "id": "@Heal_care"
         },
         { 
-          "id": "@RaiseHp"
+          "id": "@RaiseHp_care"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "Heal",
+      "id": "Heal_care",
         "name": "CardEffectHeal",
         "param_int": 10,
         "target_mode": "drop_target_character",
@@ -38,7 +38,7 @@
         "target_subtype": "SubtypesData_None"
     },
     {
-      "id": "RaiseHp",
+      "id": "RaiseHp_care",
         "name": "CardEffectBuffMaxHealth",
         "param_int": 10,
         "target_mode": "last_targeted_characters",
@@ -48,17 +48,17 @@
   ],
   "sprites": [
     {
-      "id": "CardArt",
+      "id": "CardArt_VIII",
       "path": "textures/CardAssets/Card_VIII.png"
     }
   ],
   "game_objects": [
     {
-      "id": "CardArt",
+      "id": "CardArt_VIII",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@CardArt"
+          "sprite": "@CardArt_VIII"
         }
       }
     }
