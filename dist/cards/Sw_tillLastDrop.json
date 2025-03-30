@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "cards": [
+    {
+      "id": "Sw_tilldrop",
+      "names": {
+        "english": "Fight Till The Last One Drops"
+      },
+      "descriptions": {
+        "english": "Apply [fragile] to all non-boss enemies"
+      },
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "card_art_reference": "@CardArt",
+      "targets_room": true,
+      "targetless": true,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 3,
+      "traits": [
+        {
+          "id": "@Consume"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@ApplyStatus"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ApplyStatus",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "target_subtype": "SubtypesData_None",
+      "param_status_effects": [
+                {
+                    "status": "fragile",
+                    "count": 1
+                }
+            ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "Consume",
+      "name": "CardTraitExhaustState"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt",
+      "path": "textures/CardAssets/Card_IV.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt"
+        }
+      }
+    }
+  ]
+}

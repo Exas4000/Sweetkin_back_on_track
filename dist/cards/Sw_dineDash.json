@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "cards": [
+    {
+      "id": "Sw_DineDash",
+      "names": {
+        "english": "Dine and dash"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to an enemy."
+      },
+      "rarity": "starter",
+      "class": "@ClassSweetkin",
+      "card_art_reference": "@CardArt",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 2,
+      "traits": [
+        {
+          "id": "@Magnet"
+        }
+      ],
+      "effects": [
+        {
+          "id": "@Dealdamage"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Dealdamage",
+      "name": "CardEffectBump",
+      "param_int": 45,
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_None"
+    }
+  ],
+  "traits": [
+    {
+      "id": "Magnet",
+      "name": "CardTraitMagneticState"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt",
+      "path": "textures/CardAssets/Card_IX.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt"
+        }
+      }
+    }
+  ]
+}
