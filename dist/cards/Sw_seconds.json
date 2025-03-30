@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "cards": [
+    {
+      "id": "Sw_Seconds",
+      "names": {
+        "english": "Seconds"
+      },
+      "descriptions": {
+        "english": "Apply [Sap] [effect0.status0.power] to all enemies. Apply +[effect1.power][health] to all allies"
+      },
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art_reference": "@CardArt",
+      "targets_room": true,
+      "targetless": true,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 2,
+      "effects": [
+        {
+          "id": "@ApplyStatus"
+        },
+        { 
+          "id": "@RaiseHp"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ApplyStatus",
+      "name": "CardEffectBump",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "target_subtype": "SubtypesData_None",
+      "param_status_effects": [
+                {
+                    "status": "Sap",
+                    "count": 2
+                }
+            ]
+    },
+    {
+      "id": "RaiseHp",
+        "name": "CardEffectBuffMaxHealth",
+        "param_int": 10,
+        "target_mode": "room",
+        "target_team": "monsters",
+        "target_subtype": "SubtypesData_None"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt",
+      "path": "textures/CardAssets/Card_VII.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt"
+        }
+      }
+    }
+  ]
+}
