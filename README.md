@@ -1,2 +1,3 @@
-# Sweetkin_back_on_track
-Sweetkin mod remake for monster train 2
+# Sweetkin, back on tracks
+
+The sweetkins are back on track, this time in haven! Mod remake
