@@ -31,13 +31,13 @@
   "effects": [
     {
       "id": "ApplyStatus_seconds",
-      "name": "CardEffectBump",
+      "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
       "target_subtype": "SubtypesData_None",
       "param_status_effects": [
                 {
-                    "status": "Sap",
+                    "status": "debuff",
                     "count": 2
                 }
             ]

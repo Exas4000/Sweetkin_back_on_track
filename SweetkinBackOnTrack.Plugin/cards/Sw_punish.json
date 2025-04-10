@@ -33,7 +33,7 @@
   "effects": [
     {
       "id": "Dealdamage_punish",
-      "name": "CardEffectBump",
+      "name": "CardEffectDamage",
       "param_int": 30,
       "target_mode": "drop_target_character",
       "target_team": "both",

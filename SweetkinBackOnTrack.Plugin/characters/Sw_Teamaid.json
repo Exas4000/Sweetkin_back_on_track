@@ -1,0 +1,109 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+        "id": "Sw_Teamaid",
+        "names": {
+          "english": "Tea maid"
+        },
+        "card_art_reference": "@CardArt_unit_9",
+        "cost": 1,
+        "type": "monster",
+        "cost_type": "default",
+        "rarity": "uncommon",
+        "class": "@ClassSweetkin",
+        "unlock_level": 0,
+        "targets_room": true,
+        "effects": [
+          {
+            "id": "@SpawnTeamaid"
+          }
+        ],
+        "lore_tooltips": [
+          {
+            "english": "'Are you alright? Let me make sure you can last the whole battle!'- Sweetkin Maid nursing a dreg"
+          }
+        ],
+        "pools": [
+          "UnitsAllBanner"
+        ]
+      },
+      {
+        "id": "AbilityMaid",
+        "descriptions": {
+            "english": "Heal [effect1.power] hp and cure all status from allies on the floor"
+        },
+        "ability": true,
+        "cooldown": 3,
+        "initial_cooldown": 0,
+        "targetless": true,
+        "targets_room": false,
+        "type": "spell",
+        "effects": [
+        {
+            "id": "@TeamaidCure"
+        },
+        {
+            "id": "@TeamaidHeal"
+         }
+    ]
+    }
+  ],
+  "characters": [
+    {
+        "id": "Teamaid",
+        "size": 2,
+        "attack_damage": 10,
+        "health": 30,
+        "names": {
+          "english": "Tea maid"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "subtypes": [
+          "SubtypesData_None"
+        ],
+        "ability": "@AbilityMaid"
+      }
+  ],
+  "effects": [
+    {
+      "id": "SpawnTeamaid",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character_data": "@Teamaid"
+    },
+    {
+        "id": "TeamaidCure",
+        "name": "CardEffectRemoveAllStatusEffects",
+        "target_mode": "room",
+        "target_team": "monsters"
+    },
+    {
+        "id": "TeamaidHeal",
+        "name": "CardEffectHeal",
+        "target_mode": "room",
+        "target_team": "monsters",
+        "param_int": 50
+    }
+  ],
+  "sprites": [
+    {
+        "id": "CardArt_unit_9",
+        "path": "textures/CardAssets/Unit_9.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_unit_9",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_unit_9"
+        }
+      }
+    }
+  ]
+}

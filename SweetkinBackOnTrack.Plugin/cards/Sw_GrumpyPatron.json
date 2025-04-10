@@ -2,69 +2,68 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
   "cards": [
     {
-      "id": "Sw_tilldrop",
+      "id": "Sw_GrumpyPatron",
       "names": {
-        "english": "Fight Till The Last One Drops"
+        "english": "Begrudging Patron"
       },
       "descriptions": {
-        "english": "Apply [fragile] to all non-boss enemies"
+        "english": "Apply [effect0.status0.power] Sap"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_IV",
+      "card_art_reference": "@CardArt_XIII",
       "targets_room": true,
-      "targetless": true,
+      "targetless": false,
       "pools": [
         "MegaPool"
       ],
-      "cost": 3,
-      "traits": [
-        {
-          "id": "@Consume_lastDrop"
+      "cost": 2,
+      "effects": [
+        { 
+          "id": "@ApplyStatus_Grumpy"
         }
       ],
-      "effects": [
+      "traits": [
         {
-          "id": "@ApplyStatus_lastDrop"
+          "id": "@Consume_Grumpy"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "ApplyStatus_lastDrop",
+      "id": "ApplyStatus_Grumpy",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
-      "target_team": "heroes",
-      "target_ignore_bosses": true,
+      "target_mode": "drop_target_character",
+      "target_team": "both",
       "target_subtype": "SubtypesData_None",
       "param_status_effects": [
                 {
-                    "status": "fragile",
-                    "count": 1
+                    "status": "debuff",
+                    "count": 6
                 }
             ]
     }
   ],
   "traits": [
     {
-      "id": "Consume_lastDrop",
+      "id": "Consume_Grumpy",
       "name": "CardTraitExhaustState"
     }
   ],
   "sprites": [
     {
-      "id": "CardArt_IV",
-      "path": "textures/CardAssets/Card_IV.png"
+      "id": "CardArt_XIII",
+      "path": "textures/CardAssets/Card_XIII.png"
     }
   ],
   "game_objects": [
     {
-      "id": "CardArt_IV",
+      "id": "CardArt_XIII",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@CardArt_IV"
+          "sprite": "@CardArt_XIII"
         }
       }
     }

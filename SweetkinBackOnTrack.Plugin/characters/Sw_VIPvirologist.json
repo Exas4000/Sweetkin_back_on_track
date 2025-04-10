@@ -1,0 +1,112 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+        "id": "Sw_VIPvirologist",
+        "names": {
+          "english": "Virodaemonologist"
+        },
+        "card_art_reference": "@CardArt_unit_24",
+        "cost": 1,
+        "type": "monster",
+        "cost_type": "default",
+        "rarity": "rare",
+        "class": "@ClassSweetkin",
+        "unlock_level": 3,
+        "targets_room": true,
+        "effects": [
+          {
+            "id": "@SpawnVIPvirologist"
+          }
+        ],
+        "lore_tooltips": [
+          {
+            "english": "New places to go to. New diseases to catalog and experiment with."
+          }
+        ],
+        "pools": [
+          "UnitsAllBanner"
+        ]
+      }
+  ],
+  "upgrades": [
+    {
+        "id": "VIPViroBuff",
+        "bonus_damage": 5,
+        "status_effect_upgrades": [
+            {
+                "status": "armor",
+                "count": 4
+            }
+        ]
+    }
+  ],
+  "characters": [
+    {
+        "id": "VIPvirologist",
+        "size": 2,
+        "attack_damage": 5,
+        "health": 15,
+        "names": {
+          "english": "Virodaemonologist"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "subtypes": [
+          "SubtypesData_None"
+        ],
+        "triggers": [
+          {
+            "id": "@ViroRally"
+          }
+        ]
+      }
+  ],
+  "character_triggers": [
+    {
+      "id": "ViroRally",
+      "trigger": "card_monster_played",
+      "descriptions": {
+        "english": "Gain 5[attack] and Apply 4 Armor"
+      },
+      "effects": [
+        {
+            "id": "@ApplyVIPViroBuff"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnVIPvirologist",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character_data": "@VIPvirologist"
+    },
+    {
+      "id": "ApplyVIPViroBuff",
+      "name": "CardEffectRecursion",
+      "target_mode": "self",
+      "param_upgrade": "@VIPViroBuff"
+    }
+  ],
+  "sprites": [
+    {
+        "id": "CardArt_unit_24",
+        "path": "textures/CardAssets/Unit_24.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_unit_24",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_unit_24"
+        }
+      }
+    }
+  ]
+}

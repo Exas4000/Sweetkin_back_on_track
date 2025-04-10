@@ -50,8 +50,9 @@
           "card_data": "@SallyParadox",
           "starter_card": "@Sw_Hospitality",
           "upgrade_tree": [
-            [ "@AlbertStewardBuff1", "@AlbertStewardBuff2", "@AlbertStewardBuff3" ],
-            [ "@AlbertEmberBuff1", "@AlbertEmberBuff2", "@AlbertEmberBuff3" ]
+            [ "@upg_security1", "@upg_security2", "@upg_security3" ],
+            [ "@upg_paradox1", "@upg_paradox2", "@upg_paradox3" ],
+            [ "@upg_catering1","@upg_catering2","@upg_catering3" ]
           ],
           "icon": "@icon_sally",
           "locked_icon": "@icon_locked",
@@ -106,24 +107,32 @@
   "card_pools": [
     {
       "id": "SweetkinBannerCardPool",
-      "cards": [ "@SpawnBiggerSteward" ]
+      "cards": [ "@Sw_SourGuard", "@Sw_Sherbetrus", "@Sw_Pyretatoe" ]
     },
-	{
-      "id": "VIPool",
-      "cards": [ "@SpawnBiggerSteward" ]
+    {
+      "id": "EssenceCardPool",
+      "cards": [ "@Sw_SourGuard", "@Sw_Sherbetrus", "@Sw_Pyretatoe" ]
+    },
+    {
+      "id": "VIPCardPool",
+      "cards": [ "@Sw_SourGuard", "@Sw_Sherbetrus", "@Sw_Pyretatoe" ]
     }
   ],
   "rewards": [
     {
       "id": "SweetkinBannerReward",
-      "type": "cardpool",
-      "extensions": [
-        {
-          "cardpool": {
-            "cardpool": "@SweetkinBannerCardPool"
-          }
-        }
-      ]
+      "type": "draft",
+        "costs": [100],
+        "extensions": [{
+            "draft": {
+                "draft_pool": "@SweetkinBannerCardPool",
+                "class_type": "main|subclass|nonclass",
+                "draft_options_count": 2,
+                "rarity_floor": "uncommon",
+                "ignore_relic_rarity_override": true,
+                "is_service_merchant_reward": true
+            }
+        }]
     }
   ],
   "game_objects": [
