@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
     "cards": [
       {
         "id": "Sw_Hospitality",
@@ -9,14 +9,11 @@
         "descriptions": {
           "english": "Apply +[effect0.power][health]"
         },
-        "rarity": "starter",
+        "rarity": "common",
         "class": "@ClassSweetkin",
         "card_art_reference": "@CardArt_XIX",
         "targets_room": true,
         "targetless": false,
-        "pools": [
-          "MegaPool"
-        ],
         "cost": 1,
         "effects": [
           {

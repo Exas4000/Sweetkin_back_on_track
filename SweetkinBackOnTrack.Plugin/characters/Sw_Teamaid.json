@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
         "id": "Sw_Teamaid",
@@ -30,9 +30,13 @@
       },
       {
         "id": "AbilityMaid",
+        "names": {
+          "english": "First Aid"
+        },
         "descriptions": {
             "english": "Heal [effect1.power] hp and cure all status from allies on the floor"
         },
+        "card_art_reference": "@CardArt_unit_9",
         "ability": true,
         "cooldown": 3,
         "initial_cooldown": 0,
@@ -41,11 +45,11 @@
         "type": "spell",
         "effects": [
         {
-            "id": "@TeamaidCure"
+          "id": "@TeamaidCure"
         },
         {
-            "id": "@TeamaidHeal"
-         }
+          "id": "@TeamaidHeal"
+        }
     ]
     }
   ],
@@ -60,9 +64,10 @@
         },
         "can_attack": true,
         "can_be_healed": true,
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "character_art": "@TeamaidArt",
         "subtypes": [
-          "SubtypesData_None"
+          "SubtypesData_None",
+          "Subtype_BannerUnit"
         ],
         "ability": "@AbilityMaid"
       }
@@ -78,6 +83,7 @@
     {
         "id": "TeamaidCure",
         "name": "CardEffectRemoveAllStatusEffects",
+        "param_int": 1,
         "target_mode": "room",
         "target_team": "monsters"
     },
@@ -93,6 +99,10 @@
     {
         "id": "CardArt_unit_9",
         "path": "textures/CardAssets/Unit_9.png"
+    },
+    {
+      "id": "TeamaidArt",
+      "path": "textures/UnitAssets/sweetkin_large_tea.png"
     }
   ],
   "game_objects": [
@@ -104,6 +114,27 @@
           "sprite": "@CardArt_unit_9"
         }
       }
-    }
+    },
+    {
+      "id": "TeamaidArt",
+      "type": "character_art",
+      "extensions": {
+          "character_art": {
+              "sprite": "@TeamaidArt",
+              "transform": {
+                  "position": {
+                      "x": 0,
+                      "y": 1.3,
+                      "z": 0
+                  },
+                  "scale": {
+                      "x": 1.5,
+                      "y": 1.5,
+                      "z": 1.5
+                  }
+              }
+          }
+      }
+  }
   ]
 }

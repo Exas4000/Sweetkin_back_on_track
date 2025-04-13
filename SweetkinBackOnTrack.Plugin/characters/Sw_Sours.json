@@ -37,7 +37,7 @@
         "cost": 1,
         "type": "monster",
         "cost_type": "default",
-        "rarity": "common",
+        "rarity": "uncommon",
         "class": "@ClassSweetkin",
         "unlock_level": 0,
         "targets_room": true,
@@ -67,7 +67,7 @@
       },
       "can_attack": true,
       "can_be_healed": true,
-      "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+      "character_art": "@SmallSourArt",
       "subtypes": [
         "SubtypesData_Snack"
       ],
@@ -93,9 +93,10 @@
         },
         "can_attack": true,
         "can_be_healed": true,
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "character_art": "@TallSourArt",
         "subtypes": [
-          "SubtypesData_Snack"
+          "SubtypesData_Snack",
+          "Subtype_BannerUnit"
         ],
         "starting_status_effects": [
           {
@@ -161,6 +162,14 @@
     {
         "id": "CardArt_unit_4",
         "path": "textures/CardAssets/Unit_4.png"
+    },
+    {
+      "id": "SmallSourArt",
+      "path": "textures/UnitAssets/sweetkin_green.png"
+    },
+    {
+      "id": "TallSourArt",
+      "path": "textures/UnitAssets/sweetkin_tall_green.png"
     }
   ],
   "game_objects": [
@@ -181,6 +190,48 @@
             "sprite": "@CardArt_unit_4"
           }
         }
+      },
+      {
+        "id": "SmallSourArt",
+        "type": "character_art",
+        "extensions": {
+            "character_art": {
+                "sprite": "@SmallSourArt",
+                "transform": {
+                    "position": {
+                        "x": 0,
+                        "y": 1.3,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1.5,
+                        "y": 1.5,
+                        "z": 1.5
+                    }
+                }
+            }
+        }
+    },
+    {
+      "id": "TallSourArt",
+      "type": "character_art",
+      "extensions": {
+          "character_art": {
+              "sprite": "@TallSourArt",
+              "transform": {
+                  "position": {
+                      "x": 0,
+                      "y": 1.3,
+                      "z": 0
+                  },
+                  "scale": {
+                      "x": 1.5,
+                      "y": 1.5,
+                      "z": 1.5
+                  }
+              }
+          }
       }
+  }
   ]
 }

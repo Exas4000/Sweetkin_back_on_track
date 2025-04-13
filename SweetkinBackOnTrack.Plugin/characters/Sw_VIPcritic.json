@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
         "id": "Sw_VIPcritic",
@@ -40,7 +40,7 @@
         },
         "can_attack": true,
         "can_be_healed": true,
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "character_art": "@VIPcriticArt",
         "subtypes": [
           "SubtypesData_None"
         ],
@@ -91,6 +91,10 @@
     {
         "id": "CardArt_unit_18",
         "path": "textures/CardAssets/Unit_18.png"
+    },
+    {
+      "id": "VIPcriticArt",
+      "path": "textures/UnitAssets/Critic.png"
     }
   ],
   "game_objects": [
@@ -102,6 +106,27 @@
           "sprite": "@CardArt_unit_18"
         }
       }
-    }
+    },
+    {
+      "id": "VIPcriticArt",
+      "type": "character_art",
+      "extensions": {
+          "character_art": {
+              "sprite": "@VIPcriticArt",
+              "transform": {
+                  "position": {
+                      "x": 0,
+                      "y": 1.3,
+                      "z": 0
+                  },
+                  "scale": {
+                      "x": 1.5,
+                      "y": 1.5,
+                      "z": 1.5
+                  }
+              }
+          }
+      }
+  }
   ]
 }

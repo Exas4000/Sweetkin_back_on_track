@@ -40,9 +40,10 @@
         },
         "can_attack": true,
         "can_be_healed": true,
-        "character_art": "4a67bba634a51d54f80fcde4a955dcbc",
+        "character_art": "@SherbetArt",
         "subtypes": [
-          "SubtypesData_Snack"
+          "SubtypesData_Snack",
+          "Subtype_BannerUnit"
         ],
         "starting_status_effects": [
           {
@@ -97,6 +98,10 @@
     {
         "id": "CardArt_unit_16",
         "path": "textures/CardAssets/Unit_16.png"
+    },
+    {
+      "id": "SherbetArt",
+      "path": "textures/UnitAssets/cerberus.png"
     }
   ],
   "game_objects": [
@@ -108,6 +113,27 @@
           "sprite": "@CardArt_unit_16"
         }
       }
-    }
+    },
+    {
+      "id": "SherbetArt",
+      "type": "character_art",
+      "extensions": {
+          "character_art": {
+              "sprite": "@SherbetArt",
+              "transform": {
+                  "position": {
+                      "x": 0,
+                      "y": 1.3,
+                      "z": 0
+                  },
+                  "scale": {
+                      "x": 1.5,
+                      "y": 1.5,
+                      "z": 1.5
+                  }
+              }
+          }
+      }
+  }
   ]
 }

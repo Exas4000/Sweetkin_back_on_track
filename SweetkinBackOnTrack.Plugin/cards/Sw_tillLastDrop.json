@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
       "id": "Sw_tilldrop",
@@ -49,7 +49,8 @@
   "traits": [
     {
       "id": "Consume_lastDrop",
-      "name": "CardTraitExhaustState"
+      "name": "CardTraitExhaustState",
+      "trait_is_removable":true
     }
   ],
   "sprites": [

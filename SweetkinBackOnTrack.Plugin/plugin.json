@@ -52,7 +52,8 @@
           "upgrade_tree": [
             [ "@upg_security1", "@upg_security2", "@upg_security3" ],
             [ "@upg_paradox1", "@upg_paradox2", "@upg_paradox3" ],
-            [ "@upg_catering1","@upg_catering2","@upg_catering3" ]
+            [ "@upg_catering1","@upg_catering2","@upg_catering3" ],
+            [ "@upg_hostess1","@upg_hostess2","@upg_hostess3" ]
           ],
           "icon": "@icon_sally",
           "locked_icon": "@icon_locked",
@@ -61,6 +62,14 @@
         }
       ],
       "sfx_cue": "",
+      "starter_relics":[
+        {
+          "id":"@Sw_dispenser"
+        },
+        {
+          "id":"@Sw_GoldKernel"
+        }
+      ],
       "is_crew": false,
       "unlock_data": {
         "descriptions": {
@@ -107,7 +116,7 @@
   "card_pools": [
     {
       "id": "SweetkinBannerCardPool",
-      "cards": [ "@Sw_SourGuard", "@Sw_Sherbetrus", "@Sw_Pyretatoe" ]
+      "cards": [ "@Sw_SourGuard", "@Sw_Sherbetrus", "@Sw_Pyretatoe", "@Sw_Lime", "@Sw_Mint", "@Sw_Teamaid", "@Sw_SpiceCook" ]
     },
     {
       "id": "EssenceCardPool",
@@ -115,7 +124,7 @@
     },
     {
       "id": "VIPCardPool",
-      "cards": [ "@Sw_SourGuard", "@Sw_Sherbetrus", "@Sw_Pyretatoe" ]
+      "cards": [ "@Sw_VIPcookie", "@Sw_VIPcritic", "@Sw_VIPimp","@Sw_VIPlatebloomer","@Sw_VIPnugget","@Sw_VIProsette", "@Sw_VIPsocialite", "@Sw_VIPvirologist", "@Sw_VipTemaki" ]
     }
   ],
   "rewards": [

@@ -1,0 +1,58 @@
+{ 
+    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+    "relic_effects": [{
+        "id": "SWSapUpgrade",
+        "name": "RelicEffectModifyStatusMagnitude",
+        "target_mode": "front_in_room",
+        "card_type": "monster",
+        "param_int": 1,
+        "param_status_effects": [{
+            "status": "debuff",
+            "count": 0
+        }]
+    }],
+    "relics": [{
+        "id": "Sw_Photo",
+        "type": "collectable",
+        "names": {
+            "english": "Old Drawing"
+        },
+        "descriptions": {
+            "english": "Sap removes +1[attack] per stack."
+        },
+        "relic_activated": {
+            "english": "Should this be visible?"
+        },
+        "lore_tooltips": [{
+            "english": "A dusty framed drawing. Nine creature are drawn with no features akin to HellBorn or Angels."
+        }],
+        "disallow_in_deployment": false,
+        "lore_style": "herzal",
+        "relic_effects": [{
+            "id": "@SWSapUpgrade"
+        }],
+        "icon": "@PhotoIcon",
+        "icon_small": "@PhotoIcon",
+        "extensions": [{
+            "collectable": {
+                "class": "ClassSweetkin",
+                "pool": "megapool",
+                "rarity": "uncommon",
+                "unlock_level": 0,
+                "from_story_event": false,
+                "is_boss_given": false,
+                "is_dragons_hoard": false,
+                "ignore_for_no_relic_achievement": false,
+                "required_dlc": "none",
+                "deprioritize_in_ftue_drafts": true,
+                "force_update_count_label": false
+            }
+        }]
+    }],
+    "sprites": [
+      {
+        "id": "PhotoIcon",
+        "path": "textures/Relic/Frame.png"
+      }
+    ]
+}

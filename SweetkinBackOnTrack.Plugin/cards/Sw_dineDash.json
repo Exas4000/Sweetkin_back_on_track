@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
       "id": "Sw_DineDash",
@@ -9,7 +9,7 @@
       "descriptions": {
         "english": "Deal [effect0.power] damage to an enemy."
       },
-      "rarity": "starter",
+      "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_IX",
       "targets_room": true,
