@@ -458,7 +458,7 @@
       "target_mode": "room",
       "param_int": 3,
       "param_int_2": 1,
-      "card_pool": "@VIPCardPool"
+      "param_card_pool": "@VIPCardPool"
     },
     {
       "id": "SW_Add_VIP2",
@@ -466,7 +466,7 @@
       "target_mode": "room",
       "param_int": 3,
       "param_int_2": 2,
-      "card_pool": "@VIPCardPool"
+      "param_card_pool": "@VIPCardPool"
     },
 	  {
       "id": "SallyApplySap",
