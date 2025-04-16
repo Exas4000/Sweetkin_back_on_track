@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "cards": [
+    {
+        "id": "Sw_Gravitorium",
+        "names": {
+          "english": "Gravitorium"
+        },
+        "card_art_reference": "@CardArt_room_1",
+        "cost": 4,
+        "type": "room",
+        "cost_type": "default",
+        "rarity": "uncommon",
+        "class": "@ClassSweetkin",
+        "unlock_level": 0,
+        "targets_room": true,
+        "effects": [
+          {
+            "id": "@GravitoriumeRoomSize"
+          }
+        ],
+        "lore_tooltips": [
+          {
+            "english": "The Sweetkins proud themselves on a large, zero gravity room able to emulate space within their home dimension. This version is smaller, fit for the train."
+          }
+        ],
+        "pools": [
+          "MegaPool",
+          "RoomAndEquipmentMerchant_RoomPool",
+          "RoomAndEquipmentMerchant_EquipmentPool"
+        ]
+      }
+  ],
+  "room_modifier_upgrades": [
+    {
+        "id": "GravUpgrade",
+            "titles": {
+                "english": "Gravitorium"
+            },
+            "descriptions": {
+                "english": "Add 15 pip to the room"
+            },
+            
+            "icon": "@CardArt_room_1"
+    }
+  ],
+  "effects": [
+    {
+      "id": "GravitoriumeRoomSize",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+        "param_upgrade": "@GravUpgrade",
+        "param_bool": false,
+        "param_bool_2": false,
+        "target_team": "monsters"
+    }
+  ],
+  "sprites": [
+    {
+        "id": "CardArt_room_1",
+        "path": "textures/CardAssets/MT_Gravitorium.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_room_1",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_room_1"
+        }
+      }
+    }
+  ]
+}

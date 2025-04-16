@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "cards": [
+    {
+      "id": "Sw_Sparelimb",
+      "names": {
+        "english": "Spare limb"
+      },
+      "descriptions": {
+        "english": " "
+      },
+      "type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art_reference": "@CardArt_XIV",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 1,
+      "effects": [
+        { 
+          "id": "@Snakrificed"
+        },
+        { 
+          "id": "@ApplyStatus_Snakrificed"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+        "id": "Snakrificed",
+        "name": "CardEffectKill",
+        "target_mode": "drop_target_character",
+        "target_team": "heroes",
+        "target_subtype": "SubtypesData_None",
+        "target_ignore_bosses": true
+    },
+    {
+      "id": "ApplyStatus_Snakrificed",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_None",
+      "param_status_effects": [
+                {
+                    "status": "armor",
+                    "count": 30
+                }
+            ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_XIV",
+      "path": "textures/CardAssets/Card_XIV.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_XIV",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_XIV"
+        }
+      }
+    }
+  ]
+}
