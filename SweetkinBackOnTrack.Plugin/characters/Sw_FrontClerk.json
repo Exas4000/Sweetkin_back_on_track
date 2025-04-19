@@ -67,6 +67,23 @@
           "SubtypesData_BannerUnit"
         ],
         "ability": "@AbilityFrontClerk"
+        
+      },
+      {
+        "id": "templateVIP",
+        "size": 2,
+        "attack_damage": 1,
+        "health": 1,
+        "names": {
+          "english": "Random VIP"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "@FrontClerkArt",
+        "subtypes": [
+          "SubtypesData_None"
+        ]
+        
       }
   ],
   "effects": [
@@ -80,9 +97,9 @@
     {
         "id": "ClerkCheckIn",
         "name": "CardEffectSpawnMonster",
-        "param_int": 1,
         "target_mode": "room",
         "target_team": "monsters",
+        "param_character_data": "@templateVIP",
        "param_character_data_pool": [
         "@VIPimp",
         "@VIPlatebloomer",
