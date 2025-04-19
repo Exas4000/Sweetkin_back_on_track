@@ -32,9 +32,9 @@
   "characters": [
     {
         "id": "VIPcritic",
-        "size": 4,
-        "attack_damage": 0,
-        "health": 200,
+        "size": 2,
+        "attack_damage": 30,
+        "health": 15,
         "names": {
           "english": "Critic's effigy"
         },

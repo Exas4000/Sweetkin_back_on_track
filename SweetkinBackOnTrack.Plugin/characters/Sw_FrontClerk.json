@@ -1,22 +1,22 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-        "id": "Sw_Teamaid",
+        "id": "Sw_FrontClerk",
         "names": {
-          "english": "Tea maid"
+          "english": "Front clerk"
         },
-        "card_art_reference": "@CardArt_unit_9",
+        "card_art_reference": "@CardArt_unit_25",
         "cost": 1,
         "type": "monster",
         "cost_type": "default",
         "rarity": "uncommon",
         "class": "@ClassSweetkin",
-        "unlock_level": 0,
+        "unlock_level": 1,
         "targets_room": true,
         "effects": [
           {
-            "id": "@SpawnTeamaid"
+            "id": "@SpawnFrontClerk"
           }
         ],
         "lore_tooltips": [
@@ -29,98 +29,99 @@
         ]
       },
       {
-        "id": "AbilityMaid",
+        "id": "AbilityFrontClerk",
         "names": {
-          "english": "First Aid"
+          "english": "Check in"
         },
         "descriptions": {
-            "english": "Heal [effect1.power] hp and cure all status from allies on the floor"
+            "english": "Summon a random VIP Unit. Delay 1"
         },
-        "card_art_reference": "@CardArt_unit_9",
+        "card_art_reference": "@CardArt_unit_25",
         "ability": true,
-        "cooldown": 3,
-        "initial_cooldown": 0,
+        "cooldown": 2,
+        "initial_cooldown": 1,
         "targetless": true,
         "targets_room": false,
         "type": "spell",
         "effects": [
         {
-          "id": "@TeamaidCure"
-        },
-        {
-          "id": "@TeamaidHeal"
+          "id": "@ClerkCheckIn"
         }
     ]
     }
   ],
   "characters": [
     {
-        "id": "Teamaid",
+        "id": "FrontClerk",
         "size": 2,
-        "attack_damage": 10,
-        "health": 30,
+        "attack_damage": 0,
+        "health": 10,
         "names": {
-          "english": "Tea maid"
+          "english": "Front clerk"
         },
         "can_attack": true,
         "can_be_healed": true,
-        "character_art": "@TeamaidArt",
+        "character_art": "@FrontClerkArt",
         "subtypes": [
           "SubtypesData_None",
           "SubtypesData_BannerUnit"
         ],
-        "ability": "@AbilityMaid"
+        "ability": "@AbilityFrontClerk"
       }
   ],
   "effects": [
     {
-      "id": "SpawnTeamaid",
+      "id": "SpawnFrontClerk",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Teamaid"
+      "param_character_data": "@FrontClerk"
     },
     {
-        "id": "TeamaidCure",
-        "name": "CardEffectRemoveAllStatusEffects",
+        "id": "ClerkCheckIn",
+        "name": "CardEffectSpawnMonster",
         "param_int": 1,
         "target_mode": "room",
-        "target_team": "monsters"
-    },
-    {
-        "id": "TeamaidHeal",
-        "name": "CardEffectHeal",
-        "target_mode": "room",
         "target_team": "monsters",
-        "param_int": 50
+       "param_character_data_pool": [
+        "@VIPimp",
+        "@VIPlatebloomer",
+        "@VIPsocialite",
+        "@VIPcookie",
+        "@VIPcritic",
+        "@VIPnugget",
+        "@VIPvirologist",
+        "@Rosette",
+        "@Vip_temaki"
+        ]
     }
   ],
   "sprites": [
     {
-        "id": "CardArt_unit_9",
+        "id": "CardArt_unit_25",
         "path": "textures/CardAssets/Unit_9.png"
     },
     {
-      "id": "TeamaidArt",
+      "id": "FrontClerkArt",
       "path": "textures/UnitAssets/sweetkin_large_tea.png"
     }
   ],
   "game_objects": [
     {
-      "id": "CardArt_unit_9",
+      "id": "CardArt_unit_25",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@CardArt_unit_9"
+          "sprite": "@CardArt_unit_25"
         }
       }
     },
     {
-      "id": "TeamaidArt",
+      "id": "FrontClerkArt",
       "type": "character_art",
       "extensions": {
           "character_art": {
-              "sprite": "@TeamaidArt",
+              "sprite": "@FrontClerkArt",
               "transform": {
                   "position": {
                       "x": 0,

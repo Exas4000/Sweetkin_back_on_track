@@ -43,7 +43,7 @@
         "character_art": "@PotatoArt",
         "subtypes": [
           "SubtypesData_Snack",
-          "Subtype_BannerUnit"
+          "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [
           {

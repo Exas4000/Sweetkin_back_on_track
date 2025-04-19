@@ -79,7 +79,7 @@
       "target_mode": "room",
       "param_int": 3,
       "param_int_2": 1,
-      "card_pool": "@EssenceCardPool"
+      "param_card_pool": "@EssenceCardPool"
     }
   ],
   "sprites": [

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/characters.json",
   "cards": [
     {
         "id": "Sw_VIPlatebloomer",
@@ -42,7 +42,7 @@
         "can_be_healed": true,
         "character_art": "@VIPlateBloomArt",
         "subtypes": [
-          "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da"
+          "SubtypesData_Animus_c0f95969-ae86-4477-9458-57bb235d965b"
         ],
         "triggers": [
           {
@@ -66,7 +66,7 @@
       "id": "LateBloomRejuvinate",
       "trigger": "on_heal",
       "descriptions": {
-        "english": "gain 4 [attack]"
+        "english": "gain 4 [attack] and [health]"
       },
       "effects": [
         {
@@ -78,7 +78,7 @@
         "id": "LateBloomGorge",
         "trigger": "on_feed",
         "descriptions": {
-          "english": "gain 4 [attack]"
+          "english": "gain 4 [attack] and [health]"
         },
         "effects": [
           {

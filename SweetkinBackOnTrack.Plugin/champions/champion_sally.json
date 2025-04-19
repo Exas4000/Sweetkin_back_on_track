@@ -100,7 +100,7 @@
       "bonus_hp": 20,
       "trigger_upgrades": [
         {
-          "id": "@Hostess1"
+          "id": "@Hostess2"
         }
       ]
     },
@@ -118,7 +118,7 @@
       "bonus_hp": 50,
       "trigger_upgrades": [
         {
-          "id": "@Hostess2"
+          "id": "@Hostess3"
         }
       ]
     },
@@ -336,6 +336,18 @@
       ]
     },
     {
+      "id": "Hostess3",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Add three random VIPs to your hand"
+      },
+      "effects": [
+        {
+          "id": "@SW_Add_VIP3"
+        }
+      ]
+    },
+    {
       "id": "Security1",
       "trigger": "on_eaten",
       "descriptions": {
@@ -466,6 +478,14 @@
       "target_mode": "room",
       "param_int": 3,
       "param_int_2": 2,
+      "param_card_pool": "@VIPCardPool"
+    },
+    {
+      "id": "SW_Add_VIP3",
+      "name": "CardEffectAddBattleCard",
+      "target_mode": "room",
+      "param_int": 3,
+      "param_int_2": 3,
       "param_card_pool": "@VIPCardPool"
     },
 	  {

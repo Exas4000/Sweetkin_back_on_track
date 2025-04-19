@@ -43,7 +43,7 @@
         "character_art": "@SpicecookArt",
         "subtypes": [
           "SubtypesData_None",
-          "Subtype_BannerUnit"
+          "SubtypesData_BannerUnit"
         ],
         "triggers": [
           {

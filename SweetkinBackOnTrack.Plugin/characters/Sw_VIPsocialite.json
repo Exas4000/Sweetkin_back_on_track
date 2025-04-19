@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
         "id": "Sw_VIPsocialite",
@@ -32,6 +32,9 @@
   "upgrades": [
     {
         "id": "VIPReformUpgrade",
+        "cost_reduction": 99,
+        "bonus_damage": 5,
+        "bonus_hp": 5,
         "status_effect_upgrades": [
             {
                 "status": "ephemeral",
@@ -53,7 +56,7 @@
         "can_be_healed": true,
         "character_art": "@VIPsocialiteArt",
         "subtypes": [
-          "SubtypesData_None"
+          "SubtypesData_Waxer_3446e5ee-216e-4cc2-b027-d77dee269c15"
         ],
         "triggers": [
           {
@@ -80,7 +83,7 @@
     },
     {
         "id": "SocialiteEntry",
-        "trigger": "on_spawn_not_from_card",
+        "trigger": "on_spawn",
         "descriptions": {
           "english": "Reform a random unit."
         },
@@ -102,9 +105,10 @@
     {
       "id": "SocialiteReform",
       "name": "CardEffectRecursion",
-      "target_mode": "room",
+      "target_mode": "exhaust",
       "target_card_type": "monster",
       "param_int": 1,
+      "param_int_2": 1,
       "param_upgrade": "@VIPReformUpgrade"
     }
   ],

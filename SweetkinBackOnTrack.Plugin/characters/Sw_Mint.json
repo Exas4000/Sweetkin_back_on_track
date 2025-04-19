@@ -43,7 +43,7 @@
         "character_art": "@MintArt",
         "subtypes": [
           "SubtypesData_None",
-          "Subtype_BannerUnit"
+          "SubtypesData_BannerUnit"
         ],
         "triggers": [
           {

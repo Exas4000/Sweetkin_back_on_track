@@ -96,7 +96,7 @@
         "character_art": "@TallSourArt",
         "subtypes": [
           "SubtypesData_Snack",
-          "Subtype_BannerUnit"
+          "SubtypesData_BannerUnit"
         ],
         "starting_status_effects": [
           {
