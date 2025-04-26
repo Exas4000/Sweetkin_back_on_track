@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Apply [effect0.status0.power] armor [effect1.status0.power] Rage and Quick to an ally"
       },
+      "lore_tooltips": [
+        {
+          "english":"A wide array of meals seems always at the ready. Exotic food seems the like the norm until they figure out every clan's preference."
+        }
+      ],
       "rarity": "rare",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_XI",

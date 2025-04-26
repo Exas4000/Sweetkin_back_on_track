@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Deal [effect0.power] damage to an enemy."
       },
+      "lore_tooltips": [
+        {
+          "english":"The Sweetkins are not against guerilla warfare as they use every floor to the best of their abilities."
+        }
+      ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_IX",

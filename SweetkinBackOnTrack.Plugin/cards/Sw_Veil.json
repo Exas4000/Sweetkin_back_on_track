@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Discard 2 cards, then draw 2"
       },
+      "lore_tooltips": [
+        {
+          "english":"'This world's timeline is stuck in a loop. We can help some loops to achieve peace at the very least.'-Rosette"
+        }
+      ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_XVII",

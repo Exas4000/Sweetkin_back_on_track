@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Apply [Sap] [effect0.status0.power] to all enemies. Apply +[effect1.power][health] to all allies"
       },
+      "lore_tooltips": [
+        {
+          "english":"'Come in! There is enough for everybody!' -Rosette during one of the many Winged invasion"
+        }
+      ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_VII",

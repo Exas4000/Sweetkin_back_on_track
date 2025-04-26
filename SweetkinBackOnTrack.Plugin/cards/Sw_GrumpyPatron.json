@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Apply [effect0.status0.power] Sap"
       },
+      "lore_tooltips": [
+        {
+          "english":"'Sometimes you just have to convince them that they are not at the right spot. We never know who will decide to become a faithful patron.'-Rosette"
+        }
+      ],
       "rarity": "common",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_XIII",

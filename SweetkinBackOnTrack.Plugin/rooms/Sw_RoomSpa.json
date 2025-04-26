@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+        "id": "Sw_Spa",
+        "names": {
+          "english": "Cocoa Spa"
+        },
+        "descriptions": {
+          "english": "At the end of the turn, give 3 regen to all units in the room."
+        },
+        "lore_tooltips": [
+          {
+            "english": "A delightfully relaxing time awaits the Sweetkin's patrons. A quick dip in a pool with restaurative properties brings vigor to weary warriors."
+          }
+        ],
+        "card_art_reference": "@CardArt_room_4",
+        "cost": 1,
+        "type": "room",
+        "cost_type": "default",
+        "rarity": "rare",
+        "class": "@ClassSweetkin",
+        "unlock_level": 0,
+        "targets_room": true,
+        "effects": [
+          {
+            "id": "@SpaEffect"
+          }
+        ],
+        "pools": [
+          "MegaPool",
+          "RoomAndEquipmentMerchant_RoomPool"
+        ]
+      }
+  ],
+  "upgrades": [
+    {
+        "id": "SpaRoomEffect",
+          "titles": {
+                "english": "Cocoa Spa"
+            },
+            "descriptions": {
+                "english": "At the end of the turn, give 3 regen to all units in the room."
+            },
+            "allow_secondary_tooltip_placement": true,
+            "hide_icon_on_card": true,
+            "icon": "@CardArt_room_4",
+            "room_modifier_upgrades": [
+              {
+                "id": "@SpaModif"
+              }
+            ]
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "SpaModif",
+      "name": "RoomStateAddEffectPostCombatModifier",
+      "descriptions": {
+        "english": "At the end of the turn, give 3 regen to all units in the room."
+      },
+      "effects": [
+        {
+            "id": "@ApplyStatus_SpaRegen"
+        }
+      ],
+      "names": {
+        "english": "Cocoa Spa"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpaEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+      "param_upgrade": "@SpaRoomEffect",
+      "param_bool": false,
+      "param_bool_2": false,
+      "target_team": "monsters"
+    },
+    {
+        "id": "ApplyStatus_SpaRegen",
+        "name": "CardEffectAddStatusEffect",
+        "target_mode": "room",
+        "target_team": "both",
+        "target_subtype": "SubtypesData_None",
+        "param_status_effects": [
+            {
+                "status": "regen",
+                "count": 3
+            }
+        ]
+    }
+  ],
+  "sprites": [
+    {
+        "id": "CardArt_room_4",
+        "path": "textures/CardAssets/Mt_cocoaspa.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_room_4",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_room_4"
+        }
+      }
+    }
+  ]
+}

@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "Sw_Sparelimb",
+      "id": "Sw_MaidSuit",
       "names": {
-        "english": "Spare limb"
+        "english": "Maid uniform"
       },
       "descriptions": {
         "english": " "
       },
       "lore_tooltips": [
         {
-            "english": "'Don't mind the crab roaming the halls with an arm. Their name is handzy' -Lime"
+            "english": "Made to keep moisture in. Perfect for an emergency bandage."
         }
       ],
       "type": "equipment",
-      "rarity": "common",
+      "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_spareLimb",
+      "card_art_reference": "@CardArt_MaidSuit",
       "targets_room": true,
       "targetless": false,
       "pools": [
@@ -25,53 +25,48 @@
         "RoomAndEquipmentMerchant_EquipmentPool"
       ],
       "cost": 1,
-      "traits": [
-        {
-          "id": "@frostLeftover"
-        }
-      ],
       "effects": [
         { 
-          "id": "@Equip_SpareLimb"
+          "id": "@Equip_MaidSuit"
         }
       ]
     }
   ],
   "upgrades": [
     {
-      "id": "upg_sparelimb",
+      "id": "upg_maidSuit",
       "bonus_hp": 10,
       "status_effect_upgrades": [
         {
-          "status": "eatmany",
-          "count": 2
+          "status": "regen",
+          "count": 10
         }
       ]
     }
   ],
   "effects": [
     {
-        "id": "Equip_SpareLimb",
+        "id": "Equip_MaidSuit",
         "name": "CardEffectAttachEquipment",
         "target_mode": "drop_target_character",
         "target_team": "monsters",
         "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_sparelimb"
+        "param_upgrade": "@upg_maidSuit"
     }
   ],
   "sprites": [
     {
-      "id": "CardArt_spareLimb",
+      "id": "CardArt_MaidSuit",
       "path": "textures/CardAssets/Card_XVI.png"
     }
   ],
   "game_objects": [
     {
-      "id": "CardArt_spareLimb",
+      "id": "CardArt_MaidSuit",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@CardArt_spareLimb"
+          "sprite": "@CardArt_MaidSuit"
         }
       }
     }

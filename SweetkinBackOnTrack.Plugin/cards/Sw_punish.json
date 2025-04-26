@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "[Piercing] Deal [effect0.power] damage."
       },
+      "lore_tooltips": [
+        {
+          "english":"The Sweetkin's boss seems to always keep his cool but this creature from out-of-hell certainly does not hold back when provoked."
+        }
+      ],
       "rarity": "common",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_III",

@@ -107,6 +107,9 @@
       "name": "CardEffectRecursion",
       "target_mode": "exhaust",
       "target_card_type": "monster",
+      "target_selection_mode": "random_to_hand_with_upgrades",
+      "should_test": true,
+      "fail_to_cast_on_failure": true,
       "param_int": 1,
       "param_int_2": 1,
       "param_upgrade": "@VIPReformUpgrade"

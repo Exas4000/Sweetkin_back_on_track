@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Deal [effect0.power] damage to the front enemy and push them to the back. Deal [effect1.power] damage to all enemies"
       },
+      "lore_tooltips": [
+        {
+          "english":"'Rowdy clients takes the door. That's the rule...'-Rosette"
+        }
+      ],
       "rarity": "rare",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_X",

@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Heal [effect0.power] and Apply [effect1.status0.power] Buffet to an ally"
       },
+      "lore_tooltips": [
+        {
+          "english":"'It's important to differentiate between cold rooms with leftovers and replacement limbs. This saves time and keeps circulation flowing during rushes.'-Rosette"
+        }
+      ],
       "rarity": "common",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_XII",

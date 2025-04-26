@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "[descend] a unit to the bottom floor"
       },
+      "lore_tooltips": [
+        {
+          "english":"'And how do you think we came to your world?'-Rosette"
+        }
+      ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_II",

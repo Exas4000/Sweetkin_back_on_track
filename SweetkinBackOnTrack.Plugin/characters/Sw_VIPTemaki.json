@@ -69,7 +69,7 @@
       "id": "eatTemaki",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 11[attack] and 11[health]"
+        "english": "Eater gains 11[attack] and 11[health] and retreat them"
       },
       "effects": [
         {

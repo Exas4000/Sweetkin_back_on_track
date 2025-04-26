@@ -7,8 +7,13 @@
         "english": "Diner Spectacle"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [lifesteal] [effect1.status0.power] [buff] and [effect2.status0.power] [armor] to all friendly units"
+        "english": "Apply [effect0.status0.power] [lifesteal] [effect2.status0.power] Rage and [effect1.status0.power] [armor] to all friendly units"
       },
+      "lore_tooltips": [
+        {
+          "english":"The various clans aboard the Boneshaker got the chance to watch the various talent shows hosted by the Sweetkin. The process leads to some gruesome events that lead to entertaining shows for the passengers."
+        }
+      ],
       "rarity": "rare",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_XV",

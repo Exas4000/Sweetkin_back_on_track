@@ -9,6 +9,11 @@
         "descriptions": {
           "english": "Apply +[effect0.power][health]"
         },
+        "lore_tooltips": [
+        {
+          "english":"'Welcome dear friends! We are the Sweetkin. I have been informed that you might need some help. Am I wrong?'-Rosette"
+        }
+      ],
         "rarity": "common",
         "class": "@ClassSweetkin",
         "card_art_reference": "@CardArt_XIX",

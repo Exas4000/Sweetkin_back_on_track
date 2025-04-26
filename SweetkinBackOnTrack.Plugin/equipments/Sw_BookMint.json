@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_BookMint",
+      "names": {
+        "english": "Book of Mint"
+      },
+      "descriptions": {
+        "english": " "
+      },
+      "lore_tooltips": [
+        {
+            "english": "A Book stained with minty blood. The catalyst for the curse bestoyed upon Sally within the Library of Ruin."
+        }
+      ],
+      "type": "equipment",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "card_art_reference": "@CardArt_BookMint",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 2,
+      "effects": [
+        { 
+          "id": "@Equip_mint"
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_mint",
+      "bonus_hp": 50,
+      "trigger_upgrades": [
+        {
+            "id": "@trigger_mint"
+        }
+      ],
+      "status_effect_upgrades": [
+        {
+          "status": "scorch",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+        "id": "trigger_mint",
+      "trigger": "on_hit",
+      "descriptions": {
+        "english": "apply [effect0.status0.power] frostbite"
+      },
+      "effects": [
+        {
+          "id": "@Revenge_Mint"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+        "id": "Equip_mint",
+        "name": "CardEffectAttachEquipment",
+        "target_mode": "drop_target_character",
+        "target_team": "monsters",
+        "target_subtype": "SubtypesData_None",
+        "param_upgrade": "@upg_mint"
+    },
+    {
+        "id": "Revenge_Mint",
+        "name": "CardEffectAddStatusEffect",
+        "target_mode": "room",
+        "target_team": "heroes",
+        "target_subtype": "SubtypesData_None",
+        "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 5
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_BookMint",
+      "path": "textures/CardAssets/Card_XVI.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_BookMint",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_BookMint"
+        }
+      }
+    }
+  ]
+}

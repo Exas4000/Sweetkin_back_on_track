@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Apply [fragile] to all non-boss enemies"
       },
+      "lore_tooltips": [
+        {
+          "english":"'Power fantasy is a dangerous thing. You would be surprised at how much wisdom is required just to not harm oneself when using a brand new power.'-Rosette"
+        }
+      ],
       "rarity": "rare",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_IV",

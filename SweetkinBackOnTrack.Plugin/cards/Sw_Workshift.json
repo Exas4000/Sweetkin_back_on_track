@@ -7,8 +7,13 @@
         "english": "Workshift"
       },
       "descriptions": {
-        "english": "Heal an ally by [effect0.power] and [Retreat]"
+        "english": "Heal an ally by [effect0.power] and Retreat"
       },
+      "lore_tooltips": [
+        {
+          "english":"The Sweetkin have an uncanny sense of duty and will be more than willing to help their coworkers regardless of rank or situation. This comes particularly handy in lowering the amount of casualties during the journey to Hell's core."
+        }
+      ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_XVIII",

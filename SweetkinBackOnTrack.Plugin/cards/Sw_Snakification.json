@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Kill a non-boss enemy unit and give all the other [effect1.status0.power] armor"
       },
+      "lore_tooltips": [
+        {
+          "english":"'A cruel parasitory concept learned from another world by Father. He wasn't sure if I should even able to do as such. It seems like i have a certain 'Floofty' to thank that for.'-Rosette"
+        }
+      ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_XIV",

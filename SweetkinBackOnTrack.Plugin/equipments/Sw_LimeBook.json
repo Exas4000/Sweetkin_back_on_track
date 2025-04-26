@@ -2,76 +2,72 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-      "id": "Sw_Sparelimb",
+      "id": "Sw_limeBook",
       "names": {
-        "english": "Spare limb"
+        "english": "Sourling recipe book"
       },
       "descriptions": {
         "english": " "
       },
       "lore_tooltips": [
         {
-            "english": "'Don't mind the crab roaming the halls with an arm. Their name is handzy' -Lime"
+            "english": "A Book containing the essence of various Sour Sweetkins. Lime Was the first to enter the Library of the Pale Librarian at Rosette's request."
         }
       ],
       "type": "equipment",
-      "rarity": "common",
+      "rarity": "rare",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_spareLimb",
+      "card_art_reference": "@CardArt_LimeBook",
       "targets_room": true,
       "targetless": false,
       "pools": [
         "MegaPool",
         "RoomAndEquipmentMerchant_EquipmentPool"
       ],
-      "cost": 1,
-      "traits": [
-        {
-          "id": "@frostLeftover"
-        }
-      ],
+      "cost": 0,
       "effects": [
         { 
-          "id": "@Equip_SpareLimb"
+          "id": "@Equip_Lime"
         }
       ]
     }
   ],
   "upgrades": [
     {
-      "id": "upg_sparelimb",
-      "bonus_hp": 10,
+      "id": "upg_Lime",
+      "bonus_hp": 30,
+      "bonus_damage": 15,
       "status_effect_upgrades": [
         {
           "status": "eatmany",
-          "count": 2
+          "count": 3
         }
       ]
     }
   ],
   "effects": [
     {
-        "id": "Equip_SpareLimb",
+        "id": "Equip_Lime",
         "name": "CardEffectAttachEquipment",
         "target_mode": "drop_target_character",
         "target_team": "monsters",
         "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_sparelimb"
+        "param_upgrade": "@upg_Lime"
     }
   ],
   "sprites": [
     {
-      "id": "CardArt_spareLimb",
+      "id": "CardArt_LimeBook",
       "path": "textures/CardAssets/Card_XVI.png"
     }
   ],
   "game_objects": [
     {
-      "id": "CardArt_spareLimb",
+      "id": "CardArt_LimeBook",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@CardArt_spareLimb"
+          "sprite": "@CardArt_LimeBook"
         }
       }
     }
