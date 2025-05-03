@@ -6,7 +6,7 @@
         "target_mode": "front_in_room",
         "card_type": "monster",
         "param_int": 1,
-        "param_int_2": 23
+        "param_trigger": "on_eaten"
     }],
     "relics": [{
         "id": "Sw_Mucus",

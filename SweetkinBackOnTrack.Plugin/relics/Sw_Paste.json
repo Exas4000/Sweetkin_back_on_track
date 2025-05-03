@@ -5,6 +5,7 @@
         "name": "RelicEffectModifyCardHealth",
         "target_mode": "front_in_room",
         "card_type": "monster",
+        "character_subtype": "SubtypesData_Snack",
         "param_int": 30
         
     },
