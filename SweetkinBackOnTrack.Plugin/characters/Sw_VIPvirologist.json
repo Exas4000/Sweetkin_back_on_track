@@ -23,9 +23,6 @@
           {
             "english": "New places to go to. New diseases to catalog and experiment with."
           }
-        ],
-        "pools": [
-          "UnitsAllBanner"
         ]
       }
   ],
@@ -51,6 +48,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@VIPviroArt",
+        "chatter": "@CTR_viro",
         "subtypes": [
           "SubtypesData_None"
         ],
@@ -147,5 +145,36 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_viro",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"Time to do some field work!"
+        },
+        {
+          "english":"A set of live infected!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"The Dominion pathogen seems to create chimeric infections."
+        },
+        {
+          "english":"The Savagery strain is to be kept away from instinctual individuals as it incubate faster."
+        },
+        {
+          "english":"Such a chaotic genome! Entropy specimens will be difficult."
+        },
+        {
+          "english":"Savagery specimens show similar infection rates as the Hellhorned."
+        },
+        {
+          "english":"With so many eyes, perhaps an ocular infection."
+        }
+      ]
+    }
   ]
 }

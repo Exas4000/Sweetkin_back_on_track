@@ -41,6 +41,7 @@
 
       },
       "character_art": "@SallyParadoxArt",
+      "chatter":"@CTR_sally",
       "size": 3,
       "health": 50,
       "can_be_healed": true,
@@ -605,5 +606,39 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_sally",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"Welcome to our train!"
+        },
+        {
+          "english":"I am Sally, your hostess for today."
+        },
+        {
+          "english":"I shall make Rosette proud!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"The way to a Pony's heart is throught their stomach!"
+        },
+        {
+          "english":"*Echoes of the past cannot remain for long*"
+        },
+        {
+          "english":"I shall make Rosette proud!"
+        },
+        {
+          "english":"Did the train always have these Rooms?"
+        },
+        {
+          "english":"Hello! *Time loop* Hello!"
+        }
+      ]
+    }
   ]
 }

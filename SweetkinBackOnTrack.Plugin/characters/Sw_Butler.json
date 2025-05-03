@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
         "id": "Sw_Butler",
@@ -41,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@ButtlerArt",
+        "chatter": "@CTR_butler",
         "subtypes": [
           "SubtypesData_Snack"
         ],
@@ -134,5 +135,36 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_butler",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"We live to serve our guest."
+        },
+        {
+          "english":"We live to protect our kind."
+        },
+        {
+          "english":"We live to assist those in need."
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"In service of Lady Mint's Ice cream Parlor."
+        },
+        {
+          "english":"This Floor is off Limit dear guest."
+        },
+        {
+          "english":"May I offer you all some Gelato?"
+        },
+        {
+          "english":"Don't eat too quick or you risk a brain freeze."
+        }
+      ]
+    }
   ]
 }

@@ -23,9 +23,6 @@
           {
             "english": "A seed of a converted soul, a stowaway in the care of the Sweetkins. It will grow into a fine hollow."
           }
-        ],
-        "pools": [
-          "UnitsAllBanner"
         ]
       }
   ],
@@ -41,6 +38,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@VIPlateBloomArt",
+        "chatter": "@CTR_Viplatebloom",
         "subtypes": [
           "SubtypesData_Animus_c0f95969-ae86-4477-9458-57bb235d965b"
         ],
@@ -143,5 +141,27 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_Viplatebloom",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"...?"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"..."
+        },
+        {
+          "english":"*Vines grab nearby snacks*"
+        },
+        {
+          "english":"*Something stirs within the metal shell*"
+        }
+      ]
+    }
   ]
 }

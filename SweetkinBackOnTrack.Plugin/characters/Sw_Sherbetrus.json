@@ -41,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@SherbetArt",
+        "chatter":"@CTR_sherberus",
         "subtypes": [
           "SubtypesData_Snack",
           "SubtypesData_BannerUnit"
@@ -135,5 +136,27 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_sherberus",
+      "gender": "neutral",
+      "added_expressions":[
+        {
+          "english":"Awoooooooooooooo!"
+        },
+        {
+          "english":"BARK! BARK!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Awoooooooooooooo!"
+        },
+        {
+          "english":"BARK! BARK!"
+        }
+      ]
+    }
   ]
 }

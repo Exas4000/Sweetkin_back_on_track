@@ -23,9 +23,6 @@
           {
             "english": "Mint took care of whomever she could that came from hell. She earned herself a partner, to whom she gave a name and safety from the divinity's scheme."
           }
-        ],
-        "pools": [
-          "UnitsAllBanner"
         ]
       }
   ],
@@ -41,6 +38,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@VIPcookieArt",
+        "chatter":"@CTR_vipCookie",
         "subtypes": [
           "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da"
         ],
@@ -142,5 +140,33 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_vipCookie",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"It feels odd to be back on a train after so long."
+        },
+        {
+          "english":"I'l try to help."
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Time barely passed for them, and yet they go into the fray with little downtime."
+        },
+        {
+          "english":"Has anyone seen Mint?"
+        },
+        {
+          "english":"I don't want Mint to be hurt again."
+        },
+        {
+          "english":"The air feels different, a different magic is at play."
+        }
+      ]
+    }
   ]
 }

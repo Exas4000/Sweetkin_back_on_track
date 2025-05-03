@@ -41,6 +41,7 @@
       "can_attack": true,
       "can_be_healed": true,
       "character_art": "@NoodleArt",
+      "chatter":"@CTR_morsels",
       "subtypes": [
         "SubtypesData_Snack"
       ],

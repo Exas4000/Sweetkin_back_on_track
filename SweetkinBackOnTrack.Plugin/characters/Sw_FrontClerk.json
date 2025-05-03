@@ -21,7 +21,7 @@
         ],
         "lore_tooltips": [
           {
-            "english": "'Are you alright? Let me make sure you can last the whole battle!'- Sweetkin Maid nursing a dreg"
+            "english": "Sweetkins working in the lobby are fluent in dozen of languages. They send various patrons on their journey within the sweetkin's spa."
           }
         ],
         "pools": [
@@ -62,6 +62,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@FrontClerkArt",
+        "chatter": "@CTR_frontClerk",
         "subtypes": [
           "SubtypesData_None",
           "SubtypesData_BannerUnit"
@@ -116,11 +117,11 @@
   "sprites": [
     {
         "id": "CardArt_unit_25",
-        "path": "textures/CardAssets/Unit_9.png"
+        "path": "textures/CardAssets/Unit_25.png"
     },
     {
       "id": "FrontClerkArt",
-      "path": "textures/UnitAssets/sweetkin_large_tea.png"
+      "path": "textures/UnitAssets/DeskClerk.png"
     }
   ],
   "game_objects": [
@@ -154,5 +155,30 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_frontClerk",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"Now open to customers!"
+        },
+        {
+          "english":"Welcome on Haven's tour!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"On the right you can see..."
+        },
+        {
+          "english":"Don't mind the titan induced corruption, we are helping fix that."
+        },
+        {
+          "english":"Are you here for the Dinner Spectacle?"
+        }
+      ]
+    }
   ]
 }

@@ -41,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@MintArt",
+        "chatter":"@CTR_mint",
         "subtypes": [
           "SubtypesData_None",
           "SubtypesData_BannerUnit"
@@ -129,5 +130,33 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_mint",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"Welcome to my Parlor."
+        },
+        {
+          "english":"This world's inhabitants are under my protection."
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"We don't cater to customers who play rough."
+        },
+        {
+          "english":"I'm doing this for your future, Cookie."
+        },
+        {
+          "english":"I must remain vigilant. I cannot repeat the Library incident."
+        },
+        {
+          "english":"Come and stay a while."
+        }
+      ]
+    }
   ]
 }

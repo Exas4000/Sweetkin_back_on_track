@@ -41,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@SpicecookArt",
+        "chatter":"@CTR_cook",
         "subtypes": [
           "SubtypesData_None",
           "SubtypesData_BannerUnit"
@@ -122,5 +123,33 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_cook",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"My apologies for having you on the chopping block."
+        },
+        {
+          "english":"And That is why I am called the best!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"No worries, I can cook a replacement."
+        },
+        {
+          "english":"I cultivated in the LIBRARY OF RUIN! I don't think you guys match me!"
+        },
+        {
+          "english":"You are made of meat, yet meat ends up on your plate."
+        },
+        {
+          "english":"In a world where food is both flesh and meals, were do we cross the line?"
+        }
+      ]
+    }
   ]
 }

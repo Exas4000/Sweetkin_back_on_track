@@ -23,9 +23,6 @@
           {
             "english": "Progenitor of the sweetkin and director of a dimensional spa. They are taking a more passive role this time."
           }
-        ],
-        "pools": [
-          "UnitsAllBanner"
         ]
       }
   ],
@@ -41,6 +38,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@RosetteArt",
+        "chatter":"@CTR_rosette",
         "subtypes": [
           "SubtypesData_None"
         ],
@@ -129,5 +127,36 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_rosette",
+      "gender": "neutral",
+      "added_expressions":[
+        {
+          "english":"Rosette, Aspect of Desire at your service."
+        },
+        {
+          "english":"Who will be next to play with me?"
+        },
+        {
+          "english":"Finally, a vacation on Cloud 9."
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Rowdy clients takes the door, that's the rule!"
+        },
+        {
+          "english":"It's always nice to see something you made become more grandiose over time."
+        },
+        {
+          "english":"Sally really outdid herself time and time again."
+        },
+        {
+          "english":"Dear guest, I hope my Sweetkins have entertained you as much as they did for me."
+        }
+      ]
+    }
   ]
 }

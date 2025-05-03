@@ -25,8 +25,7 @@
           }
         ],
         "pools": [
-          "MegaPool",
-          "UnitsAllBanner"
+          "MegaPool"
         ]
       }
   ],
@@ -42,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@VIPimpArt",
+        "chatter":"@CTR_VipImp",
         "subtypes": [
           "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
         ],
@@ -123,5 +123,30 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_VipImp",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"Money talks."
+        },
+        {
+          "english":"Is it a Diner Spectacle?"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Here's a tip."
+        },
+        {
+          "english":"I paid good money to visit Haven."
+        },
+        {
+          "english":"I only expect the best from the staff."
+        }
+      ]
+    }
   ]
 }

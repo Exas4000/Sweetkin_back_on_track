@@ -41,6 +41,7 @@
       "can_attack": true,
       "can_be_healed": true,
       "character_art": "@SweetlingArt",
+      "chatter":"@CTR_sweetling",
       "subtypes": [
         "SubtypesData_Snack"
       ],
@@ -133,5 +134,24 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_sweetling",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"How may we serve you dear guest?"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"I'l do better next time..."
+        },
+        {
+          "english":"May I offer you all some Gelato?"
+        }
+      ]
+    }
   ]
 }

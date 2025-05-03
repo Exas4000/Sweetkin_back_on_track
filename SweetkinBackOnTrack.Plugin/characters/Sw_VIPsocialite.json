@@ -23,9 +23,6 @@
           {
             "english": "The most luxurious and dangerous ride in all of limbo! Something she will be able to gossip about to all her wicker friends."
           }
-        ],
-        "pools": [
-          "UnitsAllBanner"
         ]
       }
   ],
@@ -55,6 +52,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@VIPsocialiteArt",
+        "chatter": "@CTR_vipSocialite",
         "subtypes": [
           "SubtypesData_Waxer_3446e5ee-216e-4cc2-b027-d77dee269c15"
         ],
@@ -156,5 +154,84 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_vipSocialite",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"Have you heard?"
+        },
+        {
+          "english":"I got gossips for you!"
+        },
+        {
+          "english":"Wanna hear some trivia?"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"The Sweetkin were featured in a fan game for their third appearance."
+        },
+        {
+          "english":"Exas is the creator of the Sweetkin clan mod!"
+        },
+        {
+          "english":"Exas would like to make a mechanical or digital clan in the future."
+        },
+        {
+          "english":"Exas would like to make a clan around Dominion and the original sin."
+        },
+        {
+          "english":"Most Sweetkins have been created at the time of the first visit to this world."
+        },
+        {
+          "english":"The Sweetkins had 4 official adventures."
+        },
+        {
+          "english":"Exas is really proud of EPP: Last Ember."
+        },
+        {
+          "english":"Mint canonically died in the Library."
+        },
+        {
+          "english":"Sally got cursed with EGO by Red."
+        },
+        {
+          "english":"Sally's distortion is called Lone Sprout."
+        },
+        {
+          "english":"Sally's EGO is called Forest of Evergreen."
+        },
+        {
+          "english":"Mint is married to the formerly nameless Siren, Cookie."
+        },
+        {
+          "english":"Mint's design is inspired by Breath of the Wild's great fairies."
+        },
+        {
+          "english":"The Sweetkins went to the Library of Ruina because of the vertical difficulty curve."
+        },
+        {
+          "english":"Rosette and their siblings are named after Colors."
+        },
+        {
+          "english":"The Sweetkin were daydreamed because of Idle Apocalypse."
+        },
+        {
+          "english":"Vanilla is the firstborn of all Sweetkins."
+        },
+        {
+          "english":"The Sweetkin's firstborn is too tall for the train."
+        },
+        {
+          "english":"Swettling and Sally were first designed for Legend of Keepers, but never were modded in."
+        },
+        {
+          "english":"Sally was originally Rosette's concubine, but instead became a fierce protector."
+        }
+      ]
+    }
   ]
 }

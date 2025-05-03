@@ -23,9 +23,6 @@
           {
             "english": "An animated effigy to another creator. One who sought balance and brought it to the sweetkins as well."
           }
-        ],
-        "pools": [
-          "UnitsAllBanner"
         ]
       }
   ],
@@ -41,6 +38,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@VIPcriticArt",
+        "chatter":"@CTR_critic",
         "subtypes": [
           "SubtypesData_None"
         ],
@@ -128,5 +126,30 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_critic",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"Sweetkin, this for me to do the critic's bidding."
+        },
+        {
+          "english":"Prepare to be judged and balanced!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"What is it about not being allowed to talk about balance?"
+        },
+        {
+          "english":"Made by Rosette, to serve in the critic's image..."
+        },
+        {
+          "english":"May we be balanced by the Rising Dusk."
+        }
+      ]
+    }
   ]
 }

@@ -84,7 +84,7 @@
   "sprites": [
     {
       "id": "CardArt_Dovelivery",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/Card_I.png"
     }
   ],
   "game_objects": [

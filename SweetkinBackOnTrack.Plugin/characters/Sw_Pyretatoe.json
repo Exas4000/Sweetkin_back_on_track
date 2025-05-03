@@ -41,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@PotatoArt",
+        "chatter":"@CTR_potato",
         "subtypes": [
           "SubtypesData_Snack",
           "SubtypesData_BannerUnit"
@@ -135,5 +136,24 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_potato",
+      "gender": "neutral",
+      "added_expressions":[
+        {
+          "english":"RAAAAaaaaAAAG!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"RAAAAaaaaAAAG!"
+        },
+        {
+          "english":"*Hot sauce turns to steam*"
+        }
+      ]
+    }
   ]
 }

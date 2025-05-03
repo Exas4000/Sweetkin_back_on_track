@@ -46,6 +46,21 @@
       ],
       "champions": [
         {
+          "id": "EvergreenSweetkinChampion",
+          "card_data": "@Evergreen",
+          "starter_card": "@Sw_Hospitality",
+          "upgrade_tree": [
+            ["@upg_Trauma1","@upg_Trauma3","@upg_Evergreen"],
+            ["@upg_FireFighter1","@upg_FireFighter2","@upg_FireFighter3"],
+            ["@upg_Trauma2", "@upg_Trauma4","@upg_royalty"],
+            ["@upg_hostess1","@upg_hostess2","@upg_hostess3"]
+          ],
+          "icon": "@icon_sally",
+          "locked_icon": "@icon_locked",
+          "portrait": "@icon_sally",
+          "selected_cue": ""
+        },
+        {
           "id": "SallySweetkinChampion",
           "card_data": "@SallyParadox",
           "starter_card": "@Sw_Hospitality",
@@ -63,9 +78,6 @@
       ],
       "sfx_cue": "",
       "starter_relics":[
-        {
-          "id":"@Sw_dispenser"
-        },
         {
           "id":"@Sw_GoldKernel"
         }
@@ -120,11 +132,23 @@
     },
     {
       "id": "EssenceCardPool",
-      "cards": [ "@Sw_SourGuard", "@Sw_Sherbetrus", "@Sw_Pyretatoe" ]
+      "cards": [ "@Sw_Cookbook", "@Sw_BookMint", "@Sw_limeBook", "@Sw_ButlerSuit"]
     },
     {
       "id": "VIPCardPool",
       "cards": [ "@Sw_VIPcookie", "@Sw_VIPcritic", "@Sw_VIPimp","@Sw_VIPlatebloomer","@Sw_VIPnugget","@Sw_VIProsette", "@Sw_VIPsocialite", "@Sw_VIPvirologist", "@Sw_VipTemaki" ]
+    },
+    {
+      "id": "SummerBlight",
+      "cards": [
+        "@Sw_SummerWildfire"
+      ]
+    },
+    {
+      "id": "WinterBlight",
+      "cards": [
+        "@Sw_WinterSnowstorms"
+      ]
     }
   ],
   "rewards": [

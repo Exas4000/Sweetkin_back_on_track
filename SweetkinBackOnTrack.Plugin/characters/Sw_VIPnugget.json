@@ -23,9 +23,6 @@
           {
             "english": "'Bookburners? ON THE TRAIN? SAVE THE BOOK, DON'T LET THEM GET AWAY!' -Sweet Cherry Sally"
           }
-        ],
-        "pools": [
-          "UnitsAllBanner"
         ]
       }
   ],
@@ -41,6 +38,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@VIPnuggetArt",
+        "chatter":"@CTR_VipNugget",
         "subtypes": [
           "SubtypesData_None"
         ],
@@ -123,5 +121,42 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_VipNugget",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"I thought I barely managed to survive, but I ended up in another crisis…"
+        },
+        {
+          "english":"Can't make any mistakes. If I'm not careful, I might die here."
+        },
+        {
+          "english":"…I'm gonna throw books at you if you scare me… So please don't come at me…"
+        },
+        {
+          "english":"Think I will just let you take the book here as you want?"
+        },
+        {
+          "english":"This atmosphere is pretty decent, isn't it? There are no intimidating warning noises."
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"I wonder what this guy's book says… Aren't you curious?"
+        },
+        {
+          "english":"Let's retrieve the books and go back now! I wanna get done with sorting 'em and take my fill of rest."
+        },
+        {
+          "english":"Why don't we sit around and read some books together when we get back, friends?"
+        },
+        {
+          "english":"We should…sort the books first, but… Aren't you guys curious about what these books say…?"
+        }
+      ]
+    }
   ]
 }

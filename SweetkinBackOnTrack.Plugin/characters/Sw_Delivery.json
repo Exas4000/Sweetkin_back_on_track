@@ -41,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@DeliveryArt",
+        "chatter":"@CTR_delivery",
         "subtypes": [
           "SubtypesData_None"
         ],
@@ -123,5 +124,21 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_delivery",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"Dovelievery at your service!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"*Dove cooing*"
+        }
+      ]
+    }
   ]
 }

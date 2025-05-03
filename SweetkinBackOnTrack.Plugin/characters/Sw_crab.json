@@ -41,6 +41,7 @@
       "can_attack": true,
       "can_be_healed": true,
       "character_art": "@CrabArt",
+      "chatter" : "@CTR_morsels",
       "subtypes": [
         "SubtypesData_Snack"
       ],
@@ -134,5 +135,27 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_morsels",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"*Flop*"
+        },
+        {
+          "english":"*squish*"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"*Does puppy eyes*"
+        },
+        {
+          "english":"*Runs around*"
+        }
+      ]
+    }
   ]
 }

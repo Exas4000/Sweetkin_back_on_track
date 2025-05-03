@@ -65,6 +65,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@TeamaidArt",
+        "chatter": "@CTR_maid",
         "subtypes": [
           "SubtypesData_None",
           "SubtypesData_BannerUnit"
@@ -136,5 +137,30 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_maid",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"A Tummyache? On it!"
+        },
+        {
+          "english":"Medical support on the scene!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Tea? Bandages?"
+        },
+        {
+          "english":"I am sure this will work? I GOT NO IDEA."
+        },
+        {
+          "english":"Don't mind my quirks, I am still getting adjustments by The Colors."
+        }
+      ]
+    }
   ]
 }

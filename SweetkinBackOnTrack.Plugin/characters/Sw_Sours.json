@@ -68,6 +68,7 @@
       "can_attack": true,
       "can_be_healed": true,
       "character_art": "@SmallSourArt",
+      "chatter":"@CTR_sour",
       "subtypes": [
         "SubtypesData_Snack"
       ],
@@ -94,6 +95,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@TallSourArt",
+        "chatter":"@CTR_sour",
         "subtypes": [
           "SubtypesData_Snack",
           "SubtypesData_BannerUnit"
@@ -233,5 +235,30 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_sour",
+      "gender": "male",
+      "added_expressions":[
+        {
+          "english":"Securing the floor."
+        },
+        {
+          "english":"Bracing for hostile patrons."
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Requesting Recycler support."
+        },
+        {
+          "english":"Troublemakers have entered the train."
+        },
+        {
+          "english":"Duties upheld, as usual."
+        }
+      ]
+    }
   ]
 }

@@ -89,7 +89,7 @@
   "sprites": [
     {
       "id": "CardArt_BookMint",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_2.png"
     }
   ],
   "game_objects": [

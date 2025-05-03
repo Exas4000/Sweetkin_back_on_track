@@ -23,9 +23,6 @@
         {
           "english": "Requesting to be turned into exquisite cuisine is not the worst thing a Beyonder could ask as a way to relax."
         }
-      ],
-      "pools": [
-        "UnitsAllBanner"
       ]
     }
   ],
@@ -41,6 +38,7 @@
       "can_attack": true,
       "can_be_healed": true,
       "character_art": "@VIPtemakiArt",
+      "chatter":"@CTR_temaki",
       "subtypes": [
         "SubtypesData_Snack"
       ],
@@ -145,5 +143,24 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_temaki",
+      "gender": "neutral",
+      "added_expressions":[
+        {
+          "english":"Look! I'm a three-eyed sushi!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Will you be my new host?"
+        },
+        {
+          "english":"Terrifyingly delicious!"
+        }
+      ]
+    }
   ]
 }

@@ -62,7 +62,7 @@
   "sprites": [
     {
       "id": "CardArt_spareLimb",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_1.png"
     }
   ],
   "game_objects": [

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
         "id": "Sw_Lime",
@@ -41,6 +41,7 @@
         "can_attack": true,
         "can_be_healed": true,
         "character_art": "@LimeArt",
+        "chatter":"@CTR_lime",
         "subtypes": [
           "SubtypesData_None",
           "SubtypesData_BannerUnit"
@@ -133,5 +134,33 @@
           }
       }
   }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_lime",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"Cleanup as arrived. Keep the permanent casualties low!"
+        },
+        {
+          "english":"On it! Recycling in progress!"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"Time to clean em out."
+        },
+        {
+          "english":"Ally down, moving in to supress."
+        },
+        {
+          "english":"Easier than the Library."
+        },
+        {
+          "english":"Sally's orders: detain Librarians on sight."
+        }
+      ]
+    }
   ]
 }
