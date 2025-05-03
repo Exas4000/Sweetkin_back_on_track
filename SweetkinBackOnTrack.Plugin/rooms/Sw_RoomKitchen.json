@@ -55,7 +55,7 @@
   "room_modifiers": [
     {
       "id": "KitchenModif",
-      "name": "RoomStateAddEffectPostCombatModifier",
+      "name": "RoomStateAddEffectPostCombatModifierKitchen",
       "descriptions": {
         "english": "Summon a a crab cake or a Danger noodle at the end of the turn."
       },
@@ -63,11 +63,16 @@
         {
             "id": "@CookKitchenMorsel"
         }
-      ],
-      "names": {
-        "english": "Kitchen"
-      }
+      ]
     }
+  ],
+  "localization_terms": [
+      {
+        "key": "RoomStateAddEffectPostCombatModifierKitchen",
+        "texts": {
+          "english": "Kitchen"
+        }
+      }
   ],
   "effects": [
     {

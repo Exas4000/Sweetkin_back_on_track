@@ -55,7 +55,7 @@
   "room_modifiers": [
     {
       "id": "LobbyModif",
-      "name": "RoomStateAddEffectPostCombatModifier",
+      "name": "RoomStateAddEffectPostCombatModifierLobby",
       "descriptions": {
         "english": "Summon a Random VIP at the end of the turn."
       },
@@ -63,11 +63,16 @@
         {
             "id": "@ClerkCheckIn"
         }
-      ],
-      "names": {
-        "english": "Lobby"
-      }
+      ]
     }
+  ],
+  "localization_terms": [
+      {
+        "key": "RoomStateAddEffectPostCombatModifierLobby",
+        "texts": {
+          "english": "Lobby"
+        }
+      }
   ],
   "effects": [
     {

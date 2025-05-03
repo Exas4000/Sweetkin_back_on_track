@@ -18,7 +18,7 @@
         "cost": 1,
         "type": "room",
         "cost_type": "default",
-        "rarity": "rare",
+        "rarity": "common",
         "class": "@ClassSweetkin",
         "unlock_level": 0,
         "targets_room": true,
@@ -55,7 +55,7 @@
   "room_modifiers": [
     {
       "id": "SpaModif",
-      "name": "RoomStateAddEffectPostCombatModifier",
+      "name": "RoomStateAddEffectPostCombatModifierSpa",
       "descriptions": {
         "english": "At the end of the turn, give 3 regen to all units in the room."
       },
@@ -63,11 +63,16 @@
         {
             "id": "@ApplyStatus_SpaRegen"
         }
-      ],
-      "names": {
-        "english": "Cocoa Spa"
-      }
+      ]
     }
+  ],
+  "localization_terms": [
+      {
+        "key": "RoomStateAddEffectPostCombatModifierSpa",
+        "texts": {
+          "english": "Cocoa Spa"
+        }
+      }
   ],
   "effects": [
     {

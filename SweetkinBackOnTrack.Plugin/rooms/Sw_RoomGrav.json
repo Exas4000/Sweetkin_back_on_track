@@ -58,30 +58,20 @@
   "room_modifiers": [
     {
       "id": "gravModif",
-      "name": "RoomStateCapacityModifier",
+      "name": "RoomStateCapacityModifierGrav",
       "param_int" : 15,
       "descriptions": {
         "english": "Add 15 [capacity] to the room"
-      },
-      "names": {
-        "english": "Gravitorium"
       }
-    },
-    {
-      "id": "SwBlankRoomEffect",
-      "name": "RoomStateCapacityModifierRoomStateAddEffectPostCombatModifier",
-      "descriptions": {
-        "english": "Add 15 [capacity] to the room"
-      },
-      "names": {
-        "english": "Gravitorium"
-      },
-      "effects": [
-        {
-          "id": "@SwBlankEffect"
-        }
-      ]
     }
+  ],
+  "localization_terms": [
+      {
+        "key": "RoomStateCapacityModifierGrav",
+        "texts": {
+          "english": "Gravitorium"
+        }
+      }
   ],
   "effects": [
     {
