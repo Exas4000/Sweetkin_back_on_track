@@ -9,6 +9,11 @@
       "descriptions": {
         "english": "Heal [effect0.power] and Apply +[effect1.power][health] to an ally"
       },
+      "lore_tooltips": [
+        {
+          "english":"'Any respected establishment need a proper set of medical specialist. There are no ways to know when an emergency will arise.'-Rosette"
+        }
+      ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_VIII",

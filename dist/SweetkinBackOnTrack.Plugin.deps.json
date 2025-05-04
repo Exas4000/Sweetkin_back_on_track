@@ -11,7 +11,7 @@
         "dependencies": {
           "BepInEx.Analyzers": "1.0.8",
           "BepInEx.PluginInfoProps": "2.1.0",
-          "TrainworksReloaded.Base": "0.1.0-preview.26"
+          "TrainworksReloaded.Base": "0.2.8"
         },
         "runtime": {
           "SweetkinBackOnTrack.Plugin.dll": {}
@@ -207,7 +207,7 @@
           }
         }
       },
-      "MonsterTrain2.Api/0.1.17467824": {
+      "MonsterTrain2.Api/0.2.17505011": {
         "runtime": {
           "lib/netstandard2.1/Assembly-CSharp-firstpass.dll": {
             "assemblyVersion": "0.0.0.0",
@@ -225,9 +225,21 @@
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           },
+          "lib/netstandard2.1/Unity.TextMeshPro.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
           "lib/netstandard2.1/UnityEngine.UI.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
           }
         }
       },
@@ -581,31 +593,32 @@
           }
         }
       },
-      "TrainworksReloaded.Base/0.1.0-preview.26": {
+      "TrainworksReloaded.Base/0.2.8": {
         "dependencies": {
           "BepInEx.Core": "5.4.21",
-          "MonsterTrain2.Api": "0.1.17467824",
-          "TrainworksReloaded.Core": "0.1.0-preview.26",
+          "MonsterTrain2.Api": "0.2.17505011",
+          "TrainworksReloaded.Core": "0.2.8",
           "UnityEngine.Modules": "2022.3.54"
         },
         "runtime": {
           "lib/netstandard2.1/TrainworksReloaded.Base.dll": {
-            "assemblyVersion": "0.1.0.0",
-            "fileVersion": "0.1.0.0"
+            "assemblyVersion": "0.2.8.0",
+            "fileVersion": "0.2.8.0"
           }
         }
       },
-      "TrainworksReloaded.Core/0.1.0-preview.26": {
+      "TrainworksReloaded.Core/0.2.8": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "9.0.2",
           "Microsoft.Extensions.Configuration.FileExtensions": "9.0.2",
           "Microsoft.Extensions.Configuration.Json": "9.0.2",
+          "Newtonsoft.Json": "13.0.3",
           "SimpleInjector": "5.5.0"
         },
         "runtime": {
           "lib/netstandard2.1/TrainworksReloaded.Core.dll": {
-            "assemblyVersion": "0.1.0.0",
-            "fileVersion": "0.1.0.0"
+            "assemblyVersion": "0.2.8.0",
+            "fileVersion": "0.2.8.0"
           }
         }
       },
@@ -751,12 +764,19 @@
       "path": "monomod.utils/21.12.13.1",
       "hashPath": "monomod.utils.21.12.13.1.nupkg.sha512"
     },
-    "MonsterTrain2.Api/0.1.17467824": {
+    "MonsterTrain2.Api/0.2.17505011": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rqBSniuCocvAQ6pvfPwiOG8bLnLvR/ONHobfiDM0jVOs4zMv0QHt7RcwDXcyuSLGFgKeMdDSMCFSie0pGHp9Ow==",
-      "path": "monstertrain2.api/0.1.17467824",
-      "hashPath": "monstertrain2.api.0.1.17467824.nupkg.sha512"
+      "sha512": "sha512-n67dDemwDNYwACR7Q+61xg0eV3r+Zd2LNrxKGK8wtECIcHz/9cGz4tNWTtdfOAuyTUwjqdewHjc3tKLfwltCCA==",
+      "path": "monstertrain2.api/0.2.17505011",
+      "hashPath": "monstertrain2.api.0.2.17505011.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
     "SimpleInjector/5.5.0": {
       "type": "package",
@@ -1010,19 +1030,19 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
-    "TrainworksReloaded.Base/0.1.0-preview.26": {
+    "TrainworksReloaded.Base/0.2.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cAQcOHaFBTwjxo1kmHzrDIFqHMtcSP2XCUYPtPDljUXLZD7uC9xnR0wDFUdDH3mWUY46QI2CHwdvt7uvohegxA==",
-      "path": "trainworksreloaded.base/0.1.0-preview.26",
-      "hashPath": "trainworksreloaded.base.0.1.0-preview.26.nupkg.sha512"
+      "sha512": "sha512-4HfZvt7tFlOLR9CjzF8JG0mejoLLTNhSkLNFl82NOUrqpUIy/wnHu20Gzmc0Gr5n+or3Zp1FNBDylI98OuwSYA==",
+      "path": "trainworksreloaded.base/0.2.8",
+      "hashPath": "trainworksreloaded.base.0.2.8.nupkg.sha512"
     },
-    "TrainworksReloaded.Core/0.1.0-preview.26": {
+    "TrainworksReloaded.Core/0.2.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jRGDyXlUtSuzRdzXYOjKuht5EM40sdMF7ICyE9mvvsPR9uLscsw2kIYRZY3lc6GNA2akX7XRq1M2/MtYLu+5RQ==",
-      "path": "trainworksreloaded.core/0.1.0-preview.26",
-      "hashPath": "trainworksreloaded.core.0.1.0-preview.26.nupkg.sha512"
+      "sha512": "sha512-dKssh4QA3XRZcTduBJlOiWb4faZxE+oxQajrikw/Rz0m47HkMbCOzh5FCrDQfZLGiTAVeiznFshSr4D1uoKWCA==",
+      "path": "trainworksreloaded.core/0.2.8",
+      "hashPath": "trainworksreloaded.core.0.2.8.nupkg.sha512"
     },
     "UnityEngine.Modules/2022.3.54": {
       "type": "package",

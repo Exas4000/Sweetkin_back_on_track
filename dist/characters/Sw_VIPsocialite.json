@@ -1,0 +1,237 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+        "id": "Sw_VIPsocialite",
+        "names": {
+          "english": "Wicker Socialite"
+        },
+        "card_art_reference": "@CardArt_unit_23",
+        "cost": 1,
+        "type": "monster",
+        "cost_type": "default",
+        "rarity": "rare",
+        "class": "@ClassSweetkin",
+        "unlock_level": 0,
+        "targets_room": true,
+        "effects": [
+          {
+            "id": "@SpawnVIPsocialite"
+          }
+        ],
+        "lore_tooltips": [
+          {
+            "english": "The most luxurious and dangerous ride in all of limbo! Something she will be able to gossip about to all her wicker friends."
+          }
+        ]
+      }
+  ],
+  "upgrades": [
+    {
+        "id": "VIPReformUpgrade",
+        "cost_reduction": 99,
+        "bonus_damage": 5,
+        "bonus_hp": 5,
+        "status_effect_upgrades": [
+            {
+                "status": "ephemeral",
+                "count": 1
+            }
+        ]
+    }
+  ],
+  "characters": [
+    {
+        "id": "VIPsocialite",
+        "size": 2,
+        "attack_damage": 30,
+        "health": 10,
+        "names": {
+          "english": "Wicker Socialite"
+        },
+        "can_attack": true,
+        "can_be_healed": true,
+        "character_art": "@VIPsocialiteArt",
+        "chatter": "@CTR_vipSocialite",
+        "subtypes": [
+          "SubtypesData_Waxer_3446e5ee-216e-4cc2-b027-d77dee269c15"
+        ],
+        "triggers": [
+          {
+            "id": "@SocialiteEntry"
+          },
+          {
+            "id": "@SocialiteExit"
+          }
+        ]
+      }
+  ],
+  "character_triggers": [
+    {
+      "id": "SocialiteExit",
+      "trigger": "on_death",
+      "descriptions": {
+        "english": "Reform a random unit."
+      },
+      "effects": [
+        {
+            "id": "@SocialiteReform"
+        }
+      ]
+    },
+    {
+        "id": "SocialiteEntry",
+        "trigger": "on_spawn",
+        "descriptions": {
+          "english": "Reform a random unit."
+        },
+        "effects": [
+          {
+              "id": "@SocialiteReform"
+          }
+        ]
+      }
+  ],
+  "effects": [
+    {
+      "id": "SpawnVIPsocialite",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character_data": "@VIPsocialite"
+    },
+    {
+      "id": "SocialiteReform",
+      "name": "CardEffectRecursion",
+      "target_mode": "exhaust",
+      "target_card_type": "monster",
+      "target_selection_mode": "random_to_hand_with_upgrades",
+      "should_test": true,
+      "fail_to_cast_on_failure": true,
+      "param_int": 1,
+      "param_int_2": 1,
+      "param_upgrade": "@VIPReformUpgrade"
+    }
+  ],
+  "sprites": [
+    {
+        "id": "CardArt_unit_23",
+        "path": "textures/CardAssets/Unit_23.png"
+    },
+    {
+      "id": "VIPsocialiteArt",
+      "path": "textures/UnitAssets/MT_Socialite.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_unit_23",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_unit_23"
+        }
+      }
+    },
+    {
+      "id": "VIPsocialiteArt",
+      "type": "character_art",
+      "extensions": {
+          "character_art": {
+              "sprite": "@VIPsocialiteArt",
+              "transform": {
+                  "position": {
+                      "x": 0,
+                      "y": 1.3,
+                      "z": 0
+                  },
+                  "scale": {
+                      "x": 1.5,
+                      "y": 1.5,
+                      "z": 1.5
+                  }
+              }
+          }
+      }
+  }
+  ],
+  "chatter": [
+    {
+      "id":"CTR_vipSocialite",
+      "gender": "female",
+      "added_expressions":[
+        {
+          "english":"Have you heard?"
+        },
+        {
+          "english":"I got gossips for you!"
+        },
+        {
+          "english":"Wanna hear some trivia?"
+        }
+      ],
+      "idle_expressions":[
+        {
+          "english":"The Sweetkin were featured in a fan game for their third appearance."
+        },
+        {
+          "english":"Exas is the creator of the Sweetkin clan mod!"
+        },
+        {
+          "english":"Exas would like to make a mechanical or digital clan in the future."
+        },
+        {
+          "english":"Exas would like to make a clan around Dominion and the original sin."
+        },
+        {
+          "english":"Most Sweetkins have been created at the time of the first visit to this world."
+        },
+        {
+          "english":"The Sweetkins had 4 official adventures."
+        },
+        {
+          "english":"Exas is really proud of EPP: Last Ember."
+        },
+        {
+          "english":"Mint canonically died in the Library."
+        },
+        {
+          "english":"Sally got cursed with EGO by Red."
+        },
+        {
+          "english":"Sally's distortion is called Lone Sprout."
+        },
+        {
+          "english":"Sally's EGO is called Forest of Evergreen."
+        },
+        {
+          "english":"Mint is married to the formerly nameless Siren, Cookie."
+        },
+        {
+          "english":"Mint's design is inspired by Breath of the Wild's great fairies."
+        },
+        {
+          "english":"The Sweetkins went to the Library of Ruina because of the vertical difficulty curve."
+        },
+        {
+          "english":"Rosette and their siblings are named after Colors."
+        },
+        {
+          "english":"The Sweetkin were daydreamed because of Idle Apocalypse."
+        },
+        {
+          "english":"Vanilla is the firstborn of all Sweetkins."
+        },
+        {
+          "english":"The Sweetkin's firstborn is too tall for the train."
+        },
+        {
+          "english":"Swettling and Sally were first designed for Legend of Keepers, but never were modded in."
+        },
+        {
+          "english":"Sally was originally Rosette's concubine, but instead became a fierce protector."
+        }
+      ]
+    }
+  ]
+}

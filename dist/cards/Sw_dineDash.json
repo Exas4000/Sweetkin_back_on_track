@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
       "id": "Sw_DineDash",
@@ -9,7 +9,12 @@
       "descriptions": {
         "english": "Deal [effect0.power] damage to an enemy."
       },
-      "rarity": "starter",
+      "lore_tooltips": [
+        {
+          "english":"The Sweetkins are not against guerilla warfare as they use every floor to the best of their abilities."
+        }
+      ],
+      "rarity": "uncommon",
       "class": "@ClassSweetkin",
       "card_art_reference": "@CardArt_IX",
       "targets_room": true,
@@ -33,7 +38,7 @@
   "effects": [
     {
       "id": "Dealdamage_dine",
-      "name": "CardEffectBump",
+      "name": "CardEffectDamage",
       "param_int": 45,
       "target_mode": "drop_target_character",
       "target_team": "both",
