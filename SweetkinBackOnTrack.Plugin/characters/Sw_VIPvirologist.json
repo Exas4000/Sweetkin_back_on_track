@@ -4,7 +4,8 @@
     {
         "id": "Sw_VIPvirologist",
         "names": {
-          "english": "Virodaemonologist"
+          "english": "Virodaemonologist",
+          "chinese": "病魔学家"
         },
         "card_art_reference": "@CardArt_unit_24",
         "cost": 1,
@@ -43,7 +44,8 @@
         "attack_damage": 5,
         "health": 15,
         "names": {
-          "english": "Virodaemonologist"
+          "english": "Virodaemonologist",
+          "chinese": "病魔学家"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -64,7 +66,8 @@
       "id": "ViroRally",
       "trigger": "card_monster_played",
       "descriptions": {
-        "english": "Gain 10[attack] and Apply 4 Armor"
+        "english": "Gain 10[attack] and Apply 4 Armor",
+        "chinese": "获得 +10[attack] 和<b>护甲</b> 4。"
       },
       "effects": [
         {

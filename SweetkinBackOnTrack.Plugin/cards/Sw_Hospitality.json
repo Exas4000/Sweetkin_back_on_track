@@ -4,10 +4,12 @@
       {
         "id": "Sw_Hospitality",
         "names": {
-          "english": "Hospitality"
+          "english": "Hospitality",
+          "chinese": "热情好客"
         },
         "descriptions": {
-          "english": "Apply +[effect0.power][health]"
+          "english": "Apply +[effect0.power][health]",
+          "chinese": "获得 +[effect0.power][health]。"
         },
         "lore_tooltips": [
         {

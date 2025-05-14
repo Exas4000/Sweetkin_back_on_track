@@ -4,10 +4,12 @@
     {
         "id": "Sw_Spa",
         "names": {
-          "english": "Cocoa Spa"
+          "english": "Cocoa Spa",
+          "chinese": "可可水疗中心"
         },
         "descriptions": {
-          "english": "At the end of the turn, give 3 regen to all units in the room."
+          "english": "At the end of the turn, give 3 regen to all units in the room.",
+          "chinese": "回合结束时，所有友方单位获得<b>再生</b> 3。"
         },
         "lore_tooltips": [
           {
@@ -37,10 +39,12 @@
     {
         "id": "SpaRoomEffect",
           "titles": {
-                "english": "Cocoa Spa"
+                "english": "Cocoa Spa",
+                "chinese": "可可水疗中心"
             },
             "descriptions": {
-                "english": "At the end of the turn, give 3 regen to all units in the room."
+                "english": "At the end of the turn, give 3 regen to all units in the room.",
+                "chinese": "回合结束时，所有友方单位获得<b>再生</b> 3。"
             },
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
@@ -57,7 +61,8 @@
       "id": "SpaModif",
       "name": "RoomStateAddEffectPostCombatModifierSpa",
       "descriptions": {
-        "english": "At the end of the turn, give 3 regen to all units in the room."
+        "english": "At the end of the turn, give 3 regen to all units in the room.",
+        "chinese": "回合结束时，所有友方单位获得<b>再生</b> 3。"
       },
       "effects": [
         {
@@ -70,7 +75,8 @@
       {
         "key": "RoomStateAddEffectPostCombatModifierSpa",
         "texts": {
-          "english": "Cocoa Spa"
+          "english": "Cocoa Spa",
+          "chinese": "可可水疗中心"
         }
       }
   ],

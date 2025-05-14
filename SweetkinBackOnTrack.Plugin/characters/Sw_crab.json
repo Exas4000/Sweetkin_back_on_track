@@ -4,7 +4,8 @@
     {
       "id": "Sw_Crab",
       "names": {
-        "english": "Crab cake"
+        "english": "Crab cake",
+        "chinese": "蟹肉饼"
       },
       "card_art_reference": "@CardArt_unit_15",
       "cost": 1,
@@ -36,7 +37,8 @@
       "attack_damage": 2,
       "health": 1,
       "names": {
-        "english": "Crab cake"
+        "english": "Crab cake",
+        "chinese": "蟹肉饼"
       },
       "can_attack": true,
       "can_be_healed": true,
@@ -63,7 +65,8 @@
       "id": "Eat_crab",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains [effect0.status0.power] Armor"
+        "english": "Eater gains [effect0.status0.power] Armor",
+        "chinese": "吞食者获得[armor] [effect0.status0.power]。"
       },
       "effects": [
         {

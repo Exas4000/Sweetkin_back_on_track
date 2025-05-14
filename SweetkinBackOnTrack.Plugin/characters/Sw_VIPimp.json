@@ -4,7 +4,8 @@
     {
         "id": "Sw_VIPimp",
         "names": {
-          "english": "V.I.Imp"
+          "english": "V.I.Imp",
+          "chinese": "贵宾小鬼"
         },
         "card_art_reference": "@CardArt_unit_6",
         "cost": 1,
@@ -36,7 +37,8 @@
         "attack_damage": 1,
         "health": 1,
         "names": {
-          "english": "V.I.Imp"
+          "english": "V.I.Imp",
+          "chinese": "贵宾小鬼"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -57,7 +59,8 @@
       "id": "VIP_GOLD",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Gain [effect0.power] gold"
+        "english": "Gain [effect0.power] gold",
+        "chinese": "获得 [effect0.power][coin]。"
       },
       "effects": [
         {

@@ -4,7 +4,8 @@
     {
       "id": "Sw_Cookbook",
       "names": {
-        "english": "Sweetkin Staff List"
+        "english": "Sweetkin Staff List",
+        "chinese": "甜裔员工名单"
       },
       "descriptions": {
         "english": " "
@@ -48,7 +49,8 @@
         "id": "trigger_Cook",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] rage"
+        "english": "Gain [effect0.status0.power] rage",
+        "chinese": "获得<b>狂怒</b> [effect0.status0.power]。"
       },
       "effects": [
         {

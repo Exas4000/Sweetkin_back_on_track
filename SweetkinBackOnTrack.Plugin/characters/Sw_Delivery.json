@@ -4,7 +4,8 @@
     {
         "id": "Sw_Delivery",
         "names": {
-          "english": "Delivery boy"
+          "english": "Delivery boy",
+          "chinese": "送货小哥"
         },
         "card_art_reference": "@CardArt_unit_3",
         "cost": 0,
@@ -36,7 +37,8 @@
         "attack_damage": 1,
         "health": 1,
         "names": {
-          "english": "Delivery boy"
+          "english": "Delivery boy",
+          "chinese": "送货小哥"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -57,7 +59,8 @@
       "id": "Delivery_Draw",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Draw an equipment card"
+        "english": "Draw an equipment card",
+        "chinese": "从你的卡组中抽一张装备卡。"
       },
       "effects": [
         {

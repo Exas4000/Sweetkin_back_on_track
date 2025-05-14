@@ -4,10 +4,12 @@
     {
       "id": "Sw_GrumpyPatron",
       "names": {
-        "english": "Begrudging Patron"
+        "english": "Begrudging Patron",
+        "chinese": "羡慕的顾客"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] Sap"
+        "english": "Apply [effect0.status0.power] Sap",
+        "chinese": "施加<b>弱化</b> [effect0.status0.power]。"
       },
       "lore_tooltips": [
         {

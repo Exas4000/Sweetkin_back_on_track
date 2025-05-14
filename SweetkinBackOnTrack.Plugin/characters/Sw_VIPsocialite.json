@@ -4,7 +4,8 @@
     {
         "id": "Sw_VIPsocialite",
         "names": {
-          "english": "Wicker Socialite"
+          "english": "Wicker Socialite",
+          "chinese": "柳条名媛"
         },
         "card_art_reference": "@CardArt_unit_23",
         "cost": 1,
@@ -47,7 +48,8 @@
         "attack_damage": 30,
         "health": 10,
         "names": {
-          "english": "Wicker Socialite"
+          "english": "Wicker Socialite",
+          "chinese": "柳条名媛"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -71,7 +73,8 @@
       "id": "SocialiteExit",
       "trigger": "on_death",
       "descriptions": {
-        "english": "Reform a random unit."
+        "english": "Reform a random unit.",
+        "chinese": "随机<b>改造</b> 1 个单位。"
       },
       "effects": [
         {
@@ -83,7 +86,8 @@
         "id": "SocialiteEntry",
         "trigger": "on_spawn",
         "descriptions": {
-          "english": "Reform a random unit."
+          "english": "Reform a random unit.",
+          "chinese": "随机<b>改造</b> 1 个单位。"
         },
         "effects": [
           {

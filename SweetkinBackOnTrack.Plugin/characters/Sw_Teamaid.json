@@ -4,7 +4,8 @@
     {
         "id": "Sw_Teamaid",
         "names": {
-          "english": "Tea maid"
+          "english": "Tea maid",
+          "chinese": "茶女仆"
         },
         "card_art_reference": "@CardArt_unit_9",
         "cost": 1,
@@ -31,10 +32,12 @@
       {
         "id": "AbilityMaid",
         "names": {
-          "english": "First Aid"
+          "english": "First Aid",
+          "chinese": "急救"
         },
         "descriptions": {
-            "english": "Heal [effect1.power] hp and cure all status from allies on the floor"
+            "english": "Heal [effect1.power] hp and cure all status from allies on the floor",
+            "chinese": "移除友方单位身上的<b>减益</b>效果，并恢复 [effect0.power] 点生命值。"
         },
         "card_art_reference": "@CardArt_unit_9",
         "ability": true,
@@ -60,7 +63,8 @@
         "attack_damage": 10,
         "health": 30,
         "names": {
-          "english": "Tea maid"
+          "english": "Tea maid",
+          "chinese": "茶女仆"
         },
         "can_attack": true,
         "can_be_healed": true,

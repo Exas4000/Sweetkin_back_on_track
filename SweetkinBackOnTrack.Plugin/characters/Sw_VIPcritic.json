@@ -4,7 +4,8 @@
     {
         "id": "Sw_VIPcritic",
         "names": {
-          "english": "Critic's effigy"
+          "english": "Critic's effigy",
+          "chinese": "批评家的肖像"
         },
         "card_art_reference": "@CardArt_unit_18",
         "cost": 2,
@@ -33,7 +34,8 @@
         "attack_damage": 30,
         "health": 15,
         "names": {
-          "english": "Critic's effigy"
+          "english": "Critic's effigy",
+          "chinese": "批评家的肖像"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -54,7 +56,8 @@
       "id": "CriticApplyBuffet",
       "trigger": "on_team_turn_begin",
       "descriptions": {
-        "english": "Apply Buffet [effect0.status0.power] to all allies on the floor"
+        "english": "Apply Buffet [effect0.status0.power] to all allies on the floor",
+        "chinese": "所有友方单位获得<b>自助餐</b> [effect0.status0.power]。"
       },
       "effects": [
         {

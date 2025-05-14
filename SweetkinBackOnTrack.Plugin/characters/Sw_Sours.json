@@ -4,7 +4,8 @@
     {
       "id": "Sw_Sourling",
       "names": {
-        "english": "Sourling"
+        "english": "Sourling",
+        "chinese": "酸溜溜"
       },
       "card_art_reference": "@CardArt_unit_2",
       "cost": 1,
@@ -31,7 +32,8 @@
     {
         "id": "Sw_SourGuard",
         "names": {
-          "english": "Sour Guard"
+          "english": "Sour Guard",
+          "chinese": "酸卫士"
         },
         "card_art_reference": "@CardArt_unit_4",
         "cost": 1,
@@ -63,7 +65,8 @@
       "attack_damage": 2,
       "health": 20,
       "names": {
-        "english": "Sourling"
+        "english": "Sourling",
+        "chinese": "酸溜溜"
       },
       "can_attack": true,
       "can_be_healed": true,
@@ -90,7 +93,8 @@
         "attack_damage": 8,
         "health": 36,
         "names": {
-          "english": "SourGuard"
+          "english": "SourGuard",
+          "chinese": "酸卫士"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -118,7 +122,8 @@
       "id": "Eat_Sour",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply [sap] [effect0.status0.power] to all enemies."
+        "english": "Apply [sap] [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
       },
       "effects": [
         {

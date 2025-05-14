@@ -4,7 +4,8 @@
     {
         "id": "Sw_Pyretatoe",
         "names": {
-          "english": "Pyretatoe"
+          "english": "Pyretatoe",
+          "chinese": "薪火土豆"
         },
         "card_art_reference": "@CardArt_unit_12",
         "cost": 2,
@@ -36,7 +37,8 @@
         "attack_damage": 15,
         "health": 45,
         "names": {
-          "english": "Pyretatoe"
+          "english": "Pyretatoe",
+          "chinese": "薪火土豆"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -64,7 +66,8 @@
       "id": "Eat_Potato",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply Pyregel [effect0.status0.power] to all enemies."
+        "english": "Apply Pyregel [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加<b>薪火熔胶</b> [effect0.status0.power]。"
       },
       "effects": [
         {

@@ -4,7 +4,8 @@
     {
       "id": "Sw_BookMint",
       "names": {
-        "english": "Book of Mint"
+        "english": "Book of Mint",
+        "chinese": "薄荷之书"
       },
       "descriptions": {
         "english": " "
@@ -54,7 +55,8 @@
         "id": "trigger_mint",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "apply [effect0.status0.power] frostbite"
+        "english": "apply [effect0.status0.power] frostbite",
+        "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
       },
       "effects": [
         {

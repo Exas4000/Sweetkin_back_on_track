@@ -4,10 +4,12 @@
     {
       "id": "Sw_Expulsion",
       "names": {
-        "english": "Back of the line!"
+        "english": "Back of the line!",
+        "chinese": "退到线后！"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to the front enemy and push them to the back. Deal [effect1.power] damage to all enemies"
+        "english": "Deal [effect0.power] damage to the front enemy and push them to the back. Deal [effect1.power] damage to all enemies",
+        "chinese": "对前排敌方单位造成 [effect0.power] 点伤害，并将其推到后排。并对所有敌方单位造成 [effect1.power] 点伤害。"
       },
       "lore_tooltips": [
         {

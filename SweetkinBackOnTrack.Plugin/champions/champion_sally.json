@@ -5,7 +5,8 @@
       "id": "SallyParadox",
       "names": {
         "group": "CardData_Sally",
-        "english": "Sweet Cherry Sally"
+        "english": "Sweet Cherry Sally",
+        "chinese": "“甜蜜樱桃”莎莉"
       },
       "descriptions": {
         "group": "CardData_Sally",
@@ -37,7 +38,8 @@
       "id": "SallyParadox",
       "names": {
         "group": "CharacterData_Sally",
-        "english": "Sweet Cherry Sally"
+        "english": "Sweet Cherry Sally",
+        "chinese": "“甜蜜樱桃”莎莉"
 
       },
       "character_art": "@SallyParadoxArt",
@@ -72,7 +74,8 @@
     {
       "id": "upg_hostess1",
       "titles": {
-        "english": "Hostess I"
+        "english": "Hostess I",
+        "chinese": "女主人"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -90,7 +93,8 @@
     {
       "id": "upg_hostess2",
       "titles": {
-        "english": "Hostess II"
+        "english": "Hostess II",
+        "chinese": "女主人 II"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -108,7 +112,8 @@
     {
       "id": "upg_hostess3",
       "titles": {
-        "english": "Hostess III"
+        "english": "Hostess III",
+        "chinese": "女主人 III"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -126,7 +131,8 @@
     {
       "id": "upg_security1",
       "titles": {
-        "english": "Security I"
+        "english": "Security I",
+        "chinese": "安保"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -144,7 +150,8 @@
     {
       "id": "upg_security2",
       "titles": {
-        "english": "Security II"
+        "english": "Security II",
+        "chinese": "安保 II"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -162,7 +169,8 @@
     {
       "id": "upg_security3",
       "titles": {
-        "english": "Security III"
+        "english": "Security III",
+        "chinese": "安保 III"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -180,7 +188,8 @@
     {
       "id": "upg_paradox1",
       "titles": {
-        "english": "Paradox I"
+        "english": "Paradox I",
+        "chinese": "悖论"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -197,7 +206,8 @@
     {
       "id": "upg_paradox2",
       "titles": {
-        "english": "Paradox II"
+        "english": "Paradox II",
+        "chinese": "悖论 II"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -214,7 +224,8 @@
     {
       "id": "upg_paradox3",
       "titles": {
-        "english": "Paradox III"
+        "english": "Paradox III",
+        "chinese": "悖论 III"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -231,7 +242,8 @@
     {
       "id": "upg_catering1",
       "titles": {
-        "english": "Catering I"
+        "english": "Catering I",
+        "chinese": "餐饮服务"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -248,7 +260,8 @@
     {
       "id": "upg_catering2",
       "titles": {
-        "english": "Catering II"
+        "english": "Catering II",
+        "chinese": "餐饮服务 II"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -265,7 +278,8 @@
     {
       "id": "upg_catering3",
       "titles": {
-        "english": "Catering III"
+        "english": "Catering III",
+        "chinese": "餐饮服务 III"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -316,7 +330,8 @@
       "id": "Hostess1",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Add a random VIP to your hand"
+        "english": "Add a random VIP to your hand",
+        "chinese": "随机将 1 个 VIP 单位加入你的手牌。"
       },
       "effects": [
         {
@@ -328,7 +343,8 @@
       "id": "Hostess2",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Add two random VIPs to your hand"
+        "english": "Add two random VIPs to your hand",
+        "chinese": "随机将 2 个 VIP 单位加入你的手牌。"
       },
       "effects": [
         {
@@ -340,7 +356,8 @@
       "id": "Hostess3",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Add three random VIPs to your hand"
+        "english": "Add three random VIPs to your hand",
+        "chinese": "随机将 3 个 VIP 单位加入你的手牌。"
       },
       "effects": [
         {
@@ -352,7 +369,8 @@
       "id": "Security1",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply [sap] 2 to all enemies."
+        "english": "Apply [sap] 2 to all enemies.",
+        "chinese": "对所有敌方单位施加<b>弱化</b> 2。"
       },
       "effects": [
         {
@@ -364,7 +382,8 @@
       "id": "Security2",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply [sap] 3 to all enemies."
+        "english": "Apply [sap] 3 to all enemies.",
+        "chinese": "对所有敌方单位施加<b>弱化</b> 3。"
       },
       "effects": [
         {
@@ -376,7 +395,8 @@
       "id": "Security3",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply [sap] 4 to all enemies."
+        "english": "Apply [sap] 4 to all enemies.",
+        "chinese": "对所有敌方单位施加<b>弱化</b> 4。"
       },
       "effects": [
         {
@@ -388,7 +408,8 @@
       "id": "Paradox1",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Sally gains 10[attack] and 15[health]"
+        "english": "Sally gains 10[attack] and 15[health]",
+        "chinese": "莎莉获得 +10[attack]，+15[health]。"
       },
       "effects": [
         {
@@ -400,7 +421,8 @@
       "id": "Paradox2",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Sally gains 15[attack] and 30[health]"
+        "english": "Sally gains 15[attack] and 30[health]",
+        "chinese": "莎莉获得 +15[attack]，+30[health]。"
       },
       "effects": [
         {
@@ -412,7 +434,8 @@
       "id": "Paradox3",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Sally gains 20[attack] and 45[health]"
+        "english": "Sally gains 20[attack] and 45[health]",
+        "chinese": "莎莉获得 +20[attack]，+45[health]。"
       },
       "effects": [
         {
@@ -424,7 +447,8 @@
       "id": "Catering1",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 15[attack] and 10[health]"
+        "english": "Eater gains 15[attack] and 10[health]",
+        "chinese": "吞食者获得 +15[attack]，+10[health]。"
       },
       "effects": [
         {
@@ -436,7 +460,8 @@
       "id": "Catering2",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 30[attack] and 15[health]"
+        "english": "Eater gains 30[attack] and 15[health]",
+        "chinese": "吞食者获得 +30[attack]，+15[health]。"
       },
       "effects": [
         {
@@ -448,7 +473,8 @@
       "id": "Catering3",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 45[attack] and 20[health]"
+        "english": "Eater gains 45[attack] and 20[health]",
+        "chinese": "吞食者获得 +45[attack]，+20[health]。"
       },
       "effects": [
         {

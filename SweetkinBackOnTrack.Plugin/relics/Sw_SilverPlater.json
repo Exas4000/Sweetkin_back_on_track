@@ -15,10 +15,12 @@
         "id": "Sw_SilverPlater",
         "type": "collectable",
         "names": {
-            "english": "Silver Plate"
+            "english": "Silver Plate",
+            "chinese": "银色盘子"
         },
         "descriptions": {
-            "english": "Apply Buffet 2 to morsels"
+            "english": "Apply Buffet 2 to morsels",
+            "chinese": "影裔单位获得<b>自助餐</b> 2。"
         },
         "relic_activated": {
             "english": "+2 Buffet!"

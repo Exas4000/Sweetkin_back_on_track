@@ -4,10 +4,12 @@
     {
       "id": "Sw_Leftovers",
       "names": {
-        "english": "Leftovers"
+        "english": "Leftovers",
+        "chinese": "残羹剩饭"
       },
       "descriptions": {
-        "english": "Heal [effect0.power] and Apply [effect1.status0.power] Buffet to an ally"
+        "english": "Heal [effect0.power] and Apply [effect1.status0.power] Buffet to an ally",
+        "chinese": "使一个友方单位恢复 [effect0.power] 点生命值，并获得[Buffet] [effect1.status0.power]。"
       },
       "lore_tooltips": [
         {

@@ -4,10 +4,12 @@
     {
       "id": "Sw_Snakification",
       "names": {
-        "english": "Snakification"
+        "english": "Snakification",
+        "chinese": "少食多餐"
       },
       "descriptions": {
-        "english": "Kill a non-boss enemy unit and give all the other [effect1.status0.power] armor"
+        "english": "Kill a non-boss enemy unit and give all the other [effect1.status0.power] armor",
+        "chinese": "消灭一个敌方非首领单位，并对其他敌方单位施加[armor] [effect1.status0.power]。"
       },
       "lore_tooltips": [
         {

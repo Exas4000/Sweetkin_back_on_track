@@ -4,7 +4,8 @@
     {
       "id": "Sw_VipTemaki",
       "names": {
-        "english": "Beyonder's Temaki"
+        "english": "Beyonder's Temaki",
+        "chinese": "超越寿司"
       },
       "card_art_reference": "@CardArt_unit_19",
       "cost": 1,
@@ -33,7 +34,8 @@
       "attack_damage": 4,
       "health": 4,
       "names": {
-        "english": "Beyonder's Temaki"
+        "english": "Beyonder's Temaki",
+        "chinese": "超越寿司"
       },
       "can_attack": true,
       "can_be_healed": true,
@@ -67,7 +69,8 @@
       "id": "eatTemaki",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 11[attack] and 11[health] and retreat them"
+        "english": "Eater gains 11[attack] and 11[health] and retreat them",
+        "chinese": "吞食者获得 +11[attack]，+11[health]，并[retreat]。"
       },
       "effects": [
         {

@@ -4,7 +4,8 @@
     {
       "id": "Sw_Sweetling",
       "names": {
-        "english": "Sweetling"
+        "english": "Sweetling",
+        "chinese": "甜蜜蜜"
       },
       "card_art_reference": "@CardArt_unit_1",
       "cost": 1,
@@ -36,7 +37,8 @@
       "attack_damage": 2,
       "health": 20,
       "names": {
-        "english": "Sweetling"
+        "english": "Sweetling",
+        "chinese": "甜蜜蜜"
       },
       "can_attack": true,
       "can_be_healed": true,
@@ -69,7 +71,8 @@
       "id": "Eat_sweetling",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 10[health]"
+        "english": "Eater gains 10[health]",
+        "chinese": "吞食者获得 +10[health]。"
       },
       "effects": [
         {

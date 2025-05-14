@@ -4,7 +4,8 @@
     {
         "id": "Sw_VIPnugget",
         "names": {
-          "english": "Librarian nugget"
+          "english": "Librarian nugget",
+          "chinese": "图书馆司书"
         },
         "card_art_reference": "@CardArt_unit_22",
         "cost": 1,
@@ -33,7 +34,8 @@
         "attack_damage": 6,
         "health": 30,
         "names": {
-          "english": "Librarian nugget"
+          "english": "Librarian nugget",
+          "chinese": "图书馆司书"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -54,7 +56,8 @@
       "id": "NuggetDeath",
       "trigger": "on_death",
       "descriptions": {
-        "english": "Add a Sweetkin book to your hand"
+        "english": "Add a Sweetkin book to your hand",
+        "chinese": "将 1 本甜裔的书卷加入你的手牌。"
       },
       "effects": [
         {

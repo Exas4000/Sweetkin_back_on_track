@@ -4,10 +4,12 @@
     {
       "id": "Sw_Care",
       "names": {
-        "english": "Empowering care"
+        "english": "Empowering care",
+        "chinese": "授权照料"
       },
       "descriptions": {
-        "english": "Heal [effect0.power] and Apply +[effect1.power][health] to an ally"
+        "english": "Heal [effect0.power] and Apply +[effect1.power][health] to an ally",
+        "chinese": "使一个友方单位恢复 [effect0.power] 点生命值，并获得 +[effect1.power][health]。"
       },
       "lore_tooltips": [
         {

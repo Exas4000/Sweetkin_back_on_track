@@ -4,10 +4,12 @@
     {
       "id": "Sw_DineDash",
       "names": {
-        "english": "Dine and dash"
+        "english": "Dine and dash",
+        "chinese": "霸王餐"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to an enemy."
+        "english": "Deal [effect0.power] damage to an enemy.",
+        "chinese": "造成 [effect0.power] 点伤害。"
       },
       "lore_tooltips": [
         {

@@ -12,10 +12,12 @@
         "id": "Sw_dispenser",
         "type": "collectable",
         "names": {
-            "english": "Railyard's Dispenser"
+            "english": "Railyard's Dispenser",
+            "chinese": "铁道分配器"
         },
         "descriptions": {
-            "english": "Morsels cost -3 [ember]"
+            "english": "Morsels cost -3 [ember]",
+            "chinese": "影裔单位费用 -3[ember]。"
         },
         "relic_activated": {
             "english": "Cost reduced"

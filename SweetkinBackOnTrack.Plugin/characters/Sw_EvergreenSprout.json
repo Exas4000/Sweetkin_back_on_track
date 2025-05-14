@@ -4,7 +4,8 @@
     {
         "id": "Sw_EvergreenSprout",
         "names": {
-          "english": "Lone Sprout"
+          "english": "Lone Sprout",
+          "chinese": "孤单芽"
         },
         "card_art_reference": "@CardArt_unit_23",
         "cost": 4,
@@ -34,7 +35,8 @@
         "attack_damage": 0,
         "health": 100,
         "names": {
-          "english": "Lone Sprout"
+          "english": "Lone Sprout",
+          "chinese": "孤单芽"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -69,7 +71,8 @@
         "id": "EvergreenSpring",
         "trigger": "end_turn_pre_hand_discard",
         "descriptions": {
-          "english": "Kill the unit with the lowest HP on the train"
+          "english": "Kill the unit with the lowest HP on the train",
+          "chinese": "消灭火车上生命值最少的单位。"
         },
         "effects": [
           {
@@ -81,7 +84,8 @@
         "id": "EvergreenSummer",
         "trigger": "on_kill",
         "descriptions": {
-          "english": "Add Summer's wildfires to your deck"
+          "english": "Add Summer's wildfires to your deck",
+          "chinese": "添加 1 张<b>夏日野火</b>到你的手牌。"
         },
         "effects": [
           {
@@ -93,7 +97,8 @@
         "id": "EvergreenFall",
         "trigger": "on_hit",
         "descriptions": {
-          "english": "Deal 1 damage to all enemies"
+          "english": "Deal 1 damage to all enemies",
+          "chinese": "对所有敌方单位造成 1 点伤害。"
         },
         "effects": [
           {
@@ -105,7 +110,8 @@
       "id": "EvergreenWinter",
       "trigger": "on_death",
       "descriptions": {
-        "english": "Add a Winter's snowstorms to your deck"
+        "english": "Add a Winter's snowstorms to your deck",
+        "chinese": "添加 1 张<b>冬日暴雪</b>到你的手牌。"
       },
       "effects": [
         {

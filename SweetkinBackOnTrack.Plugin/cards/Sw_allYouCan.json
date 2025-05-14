@@ -4,10 +4,12 @@
     {
       "id": "Sw_AllyouCanEat",
       "names": {
-        "english": "All you can eat"
+        "english": "All you can eat",
+        "chinese": "饕餮盛宴"
       },
       "descriptions": {
-        "english": "Apply [Buffet] [effect0.status0.power]"
+        "english": "Apply [Buffet] [effect0.status0.power]",
+        "chinese": "获得[Buffet] [effect0.status0.power]。"
       },
       "lore_tooltips": [
         {

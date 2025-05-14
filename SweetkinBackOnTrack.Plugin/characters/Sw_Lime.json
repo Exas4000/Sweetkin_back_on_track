@@ -4,7 +4,8 @@
     {
         "id": "Sw_Lime",
         "names": {
-          "english": "Lime"
+          "english": "Lime",
+          "chinese": "青柠"
         },
         "card_art_reference": "@CardArt_unit_10",
         "cost": 2,
@@ -36,7 +37,8 @@
         "attack_damage": 15,
         "health": 30,
         "names": {
-          "english": "Lime"
+          "english": "Lime",
+          "chinese": "青柠"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -58,7 +60,8 @@
       "id": "HarvestLime",
       "trigger": "on_any_monster_death_on_floor",
       "descriptions": {
-        "english": "Summon a Sour guard and Retreat the front friendly unit."
+        "english": "Summon a Sour guard and Retreat the front friendly unit.",
+        "chinese": "召唤 1 个<b>酸卫士</b>。使前排友方单位[retreat]。"
       },
       "effects": [
         {

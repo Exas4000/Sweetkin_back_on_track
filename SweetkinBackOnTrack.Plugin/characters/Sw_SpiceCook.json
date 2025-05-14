@@ -4,7 +4,8 @@
     {
         "id": "Sw_SpiceCook",
         "names": {
-          "english": "Spice cook"
+          "english": "Spice cook",
+          "chinese": "香料之厨"
         },
         "card_art_reference": "@CardArt_unit_7",
         "cost": 2,
@@ -36,7 +37,8 @@
         "attack_damage": 30,
         "health": 10,
         "names": {
-          "english": "Spice Cook"
+          "english": "Spice Cook",
+          "chinese": "香料之厨"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -58,7 +60,8 @@
       "id": "SpiceSlay",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Summon a Danger noodle"
+        "english": "Summon a Danger noodle",
+        "chinese": "召唤 1 个<b>蛇秘的面条</b>。"
       },
       "effects": [
         {
