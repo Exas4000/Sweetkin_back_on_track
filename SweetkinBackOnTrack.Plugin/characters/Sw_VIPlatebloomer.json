@@ -4,7 +4,8 @@
     {
         "id": "Sw_VIPlatebloomer",
         "names": {
-          "english": "Late bloomer"
+          "english": "Late bloomer",
+          "chinese": "待萌发的种子"
         },
         "card_art_reference": "@CardArt_unit_21",
         "cost": 2,
@@ -33,7 +34,8 @@
         "attack_damage": 15,
         "health": 60,
         "names": {
-          "english": "Late bloomer"
+          "english": "Late bloomer",
+          "chinese": "待萌发的种子"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -64,7 +66,8 @@
       "id": "LateBloomRejuvinate",
       "trigger": "on_heal",
       "descriptions": {
-        "english": "gain 4 [attack] and [health]"
+        "english": "gain 4 [attack] and [health]",
+        "chinese": "获得 +4[attack]，+4[health]。"
       },
       "effects": [
         {
@@ -76,7 +79,8 @@
         "id": "LateBloomGorge",
         "trigger": "on_feed",
         "descriptions": {
-          "english": "gain 4 [attack] and [health]"
+          "english": "gain 4 [attack] and [health]",
+          "chinese": "获得 +4[attack]，+4[health]。"
         },
         "effects": [
           {

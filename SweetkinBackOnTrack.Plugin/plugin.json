@@ -3,13 +3,16 @@
     {
       "id": "ClassSweetkin",
       "titles": {
-        "english": "The Sweetkins"
+        "english": "The Sweetkins",
+        "chinese": "甜裔"
       },
       "descriptions": {
-        "english": "An hospitable force from another world. They are unknowingly taking part in something greater than they should be. The Sweetkin are often more than what people can chew."
+        "english": "An hospitable force from another world. They are unknowingly taking part in something greater than they should be. The Sweetkin are often more than what people can chew.",
+        "chinese": "他们是从另一个世界来的友好的力量，在不知不觉中参与了比他们应做的更伟大的事情。他们通常可以比人咀嚼更多东西。"
       },
       "subclass_descriptions": {
-        "english": "Ally yourself with the outerwordly and enticingly sugary SweetKin"
+        "english": "Ally yourself with the outerwordly and enticingly sugary SweetKin",
+        "chinese": "与外表诱人的甜甜的甜裔结盟。"
       },
       "icons": {
         "small": "@ClanLogo_32",
@@ -101,10 +104,12 @@
       "minimap_icon": "@ClanLogo_32",
       "prefab": "@SweetkinMapIcon",
       "titles": {
-        "english": "Sweetkin Banner"
+        "english": "Sweetkin Banner",
+        "chinese": "甜裔战旗"
       },
       "descriptions": {
-        "english": "Hire a Sweetkin Unit"
+        "english": "Hire a Sweetkin Unit",
+        "chinese": "获得一个甜裔单位。"
       },
       "map_pools": [
         "RandomChosenMainClassUnit",

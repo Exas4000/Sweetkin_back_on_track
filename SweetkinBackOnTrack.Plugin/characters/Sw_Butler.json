@@ -4,7 +4,8 @@
     {
         "id": "Sw_Butler",
         "names": {
-          "english": "Ice Cream Butler"
+          "english": "Ice Cream Butler",
+          "chinese": "冰激凌管家"
         },
         "card_art_reference": "@CardArt_unit_8",
         "cost": 1,
@@ -36,7 +37,8 @@
         "attack_damage": 5,
         "health": 30,
         "names": {
-          "english": "Ice cream butler"
+          "english": "Ice cream butler",
+          "chinese": "冰激凌管家"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -63,7 +65,8 @@
       "id": "Eat_iceButler",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply Frost [effect0.status0.power] to all enemies on the floor."
+        "english": "Apply Frost [effect0.status0.power] to all enemies on the floor.",
+        "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
       },
       "effects": [
         {

@@ -22,10 +22,12 @@
         "id": "Sw_Paste",
         "type": "collectable",
         "names": {
-            "english": "Master's paste"
+            "english": "Master's paste",
+            "chinese": "大师的膏药"
         },
         "descriptions": {
-            "english": "Morsels have + 30[health]"
+            "english": "Morsels have + 30[health]",
+            "chinese": "影裔单位获得 +30[health]。"
         },
         "relic_activated": {
             "english": "Extra health!"

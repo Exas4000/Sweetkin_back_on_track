@@ -4,7 +4,8 @@
     {
         "id": "Sw_VIProsette",
         "names": {
-          "english": "Rosette"
+          "english": "Rosette",
+          "chinese": "玫瑰花结"
         },
         "card_art_reference": "@CardArt_unit_11",
         "cost": 0,
@@ -33,7 +34,8 @@
         "attack_damage": 0,
         "health": 10,
         "names": {
-          "english": "Rosette"
+          "english": "Rosette",
+          "chinese": "玫瑰花结"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -61,7 +63,8 @@
       "id": "rosetteNurture",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Apply 6[attack] and 12[health] to friendly units on the floor"
+        "english": "Apply 6[attack] and 12[health] to friendly units on the floor",
+        "chinese": "友方单位获得 +6[attack]，+12[health]。"
       },
       "effects": [
         {

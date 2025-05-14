@@ -11,10 +11,12 @@
         "id": "Sw_Pamphlet",
         "type": "collectable",
         "names": {
-            "english": "Mysterious Pamphlet"
+            "english": "Mysterious Pamphlet",
+            "chinese": "神秘的小册子"
         },
         "descriptions": {
-            "english": "100% discount on shop rerolls. Does not include 'Covenant taxes'"
+            "english": "100% discount on shop rerolls. Does not include 'Covenant taxes'",
+            "chinese": "商店刷新有 100% 的折扣，不包括契约的“税”。"
         },
         "relic_activated": {
             "english": "why would you see this?"

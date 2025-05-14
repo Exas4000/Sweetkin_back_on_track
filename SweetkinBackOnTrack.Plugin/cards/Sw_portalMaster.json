@@ -4,10 +4,12 @@
     {
       "id": "Sw_PortalMaster",
       "names": {
-        "english": "Portal Master"
+        "english": "Portal Master",
+        "chinese": "传送门大师"
       },
       "descriptions": {
-        "english": "[descend] a unit to the bottom floor"
+        "english": "[descend] a unit to the bottom floor",
+        "chinese": "使一个单位[descend]到最底层。"
       },
       "lore_tooltips": [
         {

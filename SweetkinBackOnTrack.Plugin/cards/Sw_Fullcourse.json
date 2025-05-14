@@ -4,10 +4,12 @@
     {
       "id": "Sw_Fullcourse",
       "names": {
-        "english": "Full course"
+        "english": "Full course",
+        "chinese": "全餐"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] armor [effect1.status0.power] Rage and Quick to an ally"
+        "english": "Apply [effect0.status0.power] armor [effect1.status0.power] Rage and Quick to an ally",
+        "chinese": "使一个友方单位获得[armor] [effect0.status0.power]，<b>狂怒</b> [effect1.status0.power] 和<b>迅捷</b>。"
       },
       "lore_tooltips": [
         {

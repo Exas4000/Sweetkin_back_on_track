@@ -4,10 +4,12 @@
     {
         "id": "Sw_Kitchen",
         "names": {
-          "english": "Kitchen"
+          "english": "Kitchen",
+          "chinese": "厨房"
         },
         "descriptions": {
-          "english": "Summon a a crab cake or a Danger noodle at the end of the turn."
+          "english": "Summon a a crab cake or a Danger noodle at the end of the turn.",
+          "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
         },
         "lore_tooltips": [
           {
@@ -37,10 +39,12 @@
     {
         "id": "KitchenRoomUpg",
           "titles": {
-                "english": "Kitchen"
+                "english": "Kitchen",
+                "chinese": "厨房"
             },
             "descriptions": {
-                "english": "Summon a a crab cake or a Danger noodle at the end of the turn."
+                "english": "Summon a a crab cake or a Danger noodle at the end of the turn.",
+                "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
             },
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
@@ -57,7 +61,8 @@
       "id": "KitchenModif",
       "name": "RoomStateAddEffectPostCombatModifierKitchen",
       "descriptions": {
-        "english": "Summon a a crab cake or a Danger noodle at the end of the turn."
+        "english": "Summon a a crab cake or a Danger noodle at the end of the turn.",
+        "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
       },
       "effects": [
         {
@@ -70,7 +75,8 @@
       {
         "key": "RoomStateAddEffectPostCombatModifierKitchen",
         "texts": {
-          "english": "Kitchen"
+          "english": "Kitchen",
+          "chinese": "厨房"
         }
       }
   ],

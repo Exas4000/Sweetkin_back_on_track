@@ -5,7 +5,8 @@
       "id": "Evergreen",
       "names": {
         "group": "CardData_Evergreen",
-        "english": "Timeskip Sally"
+        "english": "Timeskip Sally",
+        "chinese": "“时空跳跃”莎莉"
       },
       "descriptions": {
         "group": "CardData_Evergreen",
@@ -37,7 +38,8 @@
       "id": "Evergreen",
       "names": {
         "group": "CharacterData_evergreen",
-        "english": "Timeskip Sally"
+        "english": "Timeskip Sally",
+        "chinese": "“时空跳跃”莎莉"
 
       },
       "character_art": "@EvergreenArt",
@@ -78,7 +80,8 @@
     {
       "id": "upg_Trauma1",
       "titles": {
-        "english": "Trauma : Lone Sprout I"
+        "english": "Trauma : Lone Sprout I",
+        "chinese": "创伤: 孤单芽"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -100,7 +103,8 @@
     {
       "id": "upg_Trauma3",
       "titles": {
-        "english": "Trauma : Lone Sprout II"
+        "english": "Trauma : Lone Sprout II",
+        "chinese": "创伤: 孤单芽 II"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -122,7 +126,8 @@
     {
       "id": "upg_Trauma2",
       "titles": {
-        "english": "Trauma : Red Queen I"
+        "english": "Trauma : Red Queen I",
+        "chinese": "创伤: 红皇后"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -138,7 +143,8 @@
     {
       "id": "upg_Trauma4",
       "titles": {
-        "english": "Trauma : Red Queen II"
+        "english": "Trauma : Red Queen II",
+        "chinese": "创伤: 红皇后 II"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -157,7 +163,8 @@
     {
       "id": "upg_Evergreen",
       "titles": {
-        "english": "Forest of Evergreen"
+        "english": "Forest of Evergreen",
+        "chinese": "常绿森林"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -176,7 +183,8 @@
     {
       "id": "upg_royalty",
       "titles": {
-        "english": "The Buffet"
+        "english": "The Buffet",
+        "chinese": "皇家大餐"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -202,7 +210,8 @@
     {
       "id": "upg_FireFighter1",
       "titles": {
-        "english": "Fire Fighter I"
+        "english": "Fire Fighter I",
+        "chinese": "消防员"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -226,7 +235,8 @@
     {
       "id": "upg_FireFighter2",
       "titles": {
-        "english": "Fire Fighter II"
+        "english": "Fire Fighter II",
+        "chinese": "消防员 II"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -250,7 +260,8 @@
     {
       "id": "upg_FireFighter3",
       "titles": {
-        "english": "Fire Fighter III"
+        "english": "Fire Fighter III",
+        "chinese": "消防员 III"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
@@ -299,7 +310,8 @@
       "id": "TraumaSprout",
       "trigger": "on_any_monster_death_on_floor",
       "descriptions": {
-        "english": "Lose 5[attack] and [health] permanently"
+        "english": "Lose 5[attack] and [health] permanently",
+        "chinese": "永久获得 -5[attack]，-5[health]。"
       },
       "effects": [
         {
@@ -311,7 +323,8 @@
       "id": "TraumaQueen",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain 5[attack] permanently"
+        "english": "Gain 5[attack] permanently",
+        "chinese": "永久获得 +5[attack]。"
       },
       "effects": [
         {
@@ -323,7 +336,8 @@
       "id": "EvergreenEnchantTrigger",
       "trigger": "after_spawn_enchant",
       "descriptions": {
-        "english": "Apply Titanskin 2"
+        "english": "Apply Titanskin 2",
+        "chinese": "获得<b>泰坦皮肤</b> 2。"
       },
       "effects": [
         {
@@ -335,7 +349,8 @@
       "id": "DescendRaidBoss",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Descend"
+        "english": "Descend",
+        "chinese": "<b>下降</b>"
       },
       "effects": [
         {
@@ -347,7 +362,8 @@
       "id": "AscendRaidBoss",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "Ascend to top floor"
+        "english": "Ascend to top floor",
+        "chinese": "<b>上升</b>到薪火室下方楼层"
       },
       "effects": [
         {

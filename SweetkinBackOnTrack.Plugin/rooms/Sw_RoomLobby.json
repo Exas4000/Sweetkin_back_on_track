@@ -4,10 +4,12 @@
     {
         "id": "Sw_Lobby",
         "names": {
-          "english": "Lobby"
+          "english": "Lobby",
+          "chinese": "前厅"
         },
         "descriptions": {
-          "english": "Summon a Random VIP at the end of the turn."
+          "english": "Summon a Random VIP at the end of the turn.",
+          "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
         },
         "lore_tooltips": [
           {
@@ -37,10 +39,12 @@
     {
         "id": "LobbyRoomUpg",
           "titles": {
-                "english": "Lobby"
+                "english": "Lobby",
+                "chinese": "前厅"
             },
             "descriptions": {
-                "english": "Summon a Random VIP at the end of the turn."
+                "english": "Summon a Random VIP at the end of the turn.",
+                "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
             },
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
@@ -57,7 +61,8 @@
       "id": "LobbyModif",
       "name": "RoomStateAddEffectPostCombatModifierLobby",
       "descriptions": {
-        "english": "Summon a Random VIP at the end of the turn."
+        "english": "Summon a Random VIP at the end of the turn.",
+        "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
       },
       "effects": [
         {
@@ -70,7 +75,8 @@
       {
         "key": "RoomStateAddEffectPostCombatModifierLobby",
         "texts": {
-          "english": "Lobby"
+          "english": "Lobby",
+          "chinese": "前厅"
         }
       }
   ],

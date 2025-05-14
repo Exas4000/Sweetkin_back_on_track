@@ -4,7 +4,8 @@
     {
         "id": "Sw_FrontClerk",
         "names": {
-          "english": "Front clerk"
+          "english": "Front clerk",
+          "chinese": "前台"
         },
         "card_art_reference": "@CardArt_unit_25",
         "cost": 1,
@@ -31,10 +32,12 @@
       {
         "id": "AbilityFrontClerk",
         "names": {
-          "english": "Check in"
+          "english": "Check in",
+          "chinese": "登记"
         },
         "descriptions": {
-            "english": "Summon a random VIP Unit. Delay 1"
+            "english": "Summon a random VIP Unit. Delay 1",
+            "chinese": "随机召唤 1 个 VIP 单位。"
         },
         "card_art_reference": "@CardArt_unit_25",
         "ability": true,
@@ -57,7 +60,8 @@
         "attack_damage": 0,
         "health": 10,
         "names": {
-          "english": "Front clerk"
+          "english": "Front clerk",
+          "chinese": "前台"
         },
         "can_attack": true,
         "can_be_healed": true,

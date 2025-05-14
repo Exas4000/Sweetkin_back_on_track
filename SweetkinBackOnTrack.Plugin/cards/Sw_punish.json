@@ -4,10 +4,12 @@
     {
       "id": "Sw_Punish",
       "names": {
-        "english": "Punish"
+        "english": "Punish",
+        "chinese": "惩罚"
       },
       "descriptions": {
-        "english": "[Piercing] Deal [effect0.power] damage."
+        "english": "[Piercing] Deal [effect0.power] damage.",
+        "chinese": "[Piercing]造成 [effect0.power] 点伤害。"
       },
       "lore_tooltips": [
         {

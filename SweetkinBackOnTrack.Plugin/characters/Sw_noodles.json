@@ -4,7 +4,8 @@
     {
       "id": "Sw_Noodles",
       "names": {
-        "english": "Danger noodles"
+        "english": "Danger noodles",
+        "chinese": "蛇秘的面条"
       },
       "card_art_reference": "@CardArt_unit_13",
       "cost": 2,
@@ -36,7 +37,8 @@
       "attack_damage": 0,
       "health": 1,
       "names": {
-        "english": "Danger noodles"
+        "english": "Danger noodles",
+        "chinese": "蛇秘的面条"
       },
       "can_attack": true,
       "can_be_healed": true,
@@ -63,7 +65,8 @@
       "id": "Eat_noodles",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains [effect0.status0.power] Rage"
+        "english": "Eater gains [effect0.status0.power] Rage",
+        "chinese": "吞食者获得<b>狂怒</b> [effect0.status0.power]。"
       },
       "effects": [
         {

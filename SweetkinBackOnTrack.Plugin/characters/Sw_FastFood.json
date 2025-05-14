@@ -4,7 +4,8 @@
     {
       "id": "Sw_FastFood",
       "names": {
-        "english": "FastFood"
+        "english": "FastFood",
+        "chinese": "快餐"
       },
       "card_art_reference": "@CardArt_unit_5",
       "cost": 2,
@@ -36,7 +37,8 @@
       "attack_damage": 0,
       "health": 1,
       "names": {
-        "english": "FastFood"
+        "english": "FastFood",
+        "chinese": "快餐"
       },
       "can_attack": true,
       "can_be_healed": true,
@@ -63,7 +65,8 @@
       "id": "Eat_fastfood",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains Quick and [effect1.status0.power] Multistrike"
+        "english": "Eater gains Quick and [effect1.status0.power] Multistrike",
+        "chinese": "吞食者获得<b>多重攻击</b> [effect1.status0.power] 和<b>迅捷</b>。"
       },
       "effects": [
         {

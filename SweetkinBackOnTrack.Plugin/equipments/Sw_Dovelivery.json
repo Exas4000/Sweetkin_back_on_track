@@ -4,7 +4,8 @@
     {
       "id": "Sw_Dovelivery",
       "names": {
-        "english": "White chocolate dove"
+        "english": "White chocolate dove",
+        "chinese": "白巧鸽子"
       },
       "descriptions": {
         "english": " "
@@ -55,7 +56,8 @@
         "id": "trigger_dove",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "+1 draw next turn"
+        "english": "+1 draw next turn",
+        "chinese": "下个回合抽 +1 张牌。"
       },
       "effects": [
         {

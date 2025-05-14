@@ -4,7 +4,8 @@
     {
       "id": "Sw_CrabBib",
       "names": {
-        "english": "I <3 MORSELS"
+        "english": "I <3 MORSELS",
+        "chinese": "影裔之爱"
       },
       "descriptions": {
         "english": " "
@@ -47,7 +48,8 @@
         "id": "trigger_CrabBib",
       "trigger": "on_feed",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] Armor"
+        "english": "Gain [effect0.status0.power] Armor",
+        "chinese": "获得[armor] [effect0.status0.power]。"
       },
       "effects": [
         {

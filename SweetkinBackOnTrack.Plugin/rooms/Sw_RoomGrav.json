@@ -4,10 +4,12 @@
     {
         "id": "Sw_Gravitorium",
         "names": {
-          "english": "Gravitorium"
+          "english": "Gravitorium",
+          "chinese": "零重力房间"
         },
         "descriptions": {
-          "english": "Add 15 [capacity] to the room"
+          "english": "Add 15 [capacity] to the room",
+          "chinese": "+15[capacity]。"
         },
         "lore_tooltips": [
           {
@@ -37,10 +39,12 @@
     {
         "id": "GravUpgrade",
           "titles": {
-                "english": "Gravitorium"
+                "english": "Gravitorium",
+                "chinese": "零重力房间"
             },
             "descriptions": {
-                "english": "Add 15 [capacity] to the room"
+                "english": "Add 15 [capacity] to the room",
+                "chinese": "+15[capacity]。"
             },
             "allow_secondary_tooltip_placement": true,
             "hide_icon_on_card": true,
@@ -61,7 +65,8 @@
       "name": "RoomStateCapacityModifierGrav",
       "param_int" : 15,
       "descriptions": {
-        "english": "Add 15 [capacity] to the room"
+        "english": "Add 15 [capacity] to the room",
+        "chinese": "+15[capacity]。"
       }
     }
   ],
@@ -69,7 +74,8 @@
       {
         "key": "RoomStateCapacityModifierGrav",
         "texts": {
-          "english": "Gravitorium"
+          "english": "Gravitorium",
+          "chinese": "零重力房间"
         }
       }
   ],

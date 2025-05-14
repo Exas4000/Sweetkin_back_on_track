@@ -4,10 +4,12 @@
     {
       "id": "Sw_LilSpoon",
       "names": {
-        "english": "Little spoon"
+        "english": "Little spoon",
+        "chinese": "小勺子"
       },
       "descriptions": {
-        "english": " -1 [capacity]"
+        "english": " -1 [capacity]",
+        "chinese": "-1[capacity]。"
       },
       "lore_tooltips": [
         {

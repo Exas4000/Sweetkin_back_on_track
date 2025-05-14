@@ -4,7 +4,8 @@
     {
         "id": "Sw_Mint",
         "names": {
-          "english": "Mint"
+          "english": "Mint",
+          "chinese": "薄荷"
         },
         "card_art_reference": "@CardArt_unit_14",
         "cost": 2,
@@ -36,7 +37,8 @@
         "attack_damage": 0,
         "health": 200,
         "names": {
-          "english": "Mint"
+          "english": "Mint",
+          "chinese": "薄荷"
         },
         "can_attack": true,
         "can_be_healed": true,
@@ -58,7 +60,8 @@
       "id": "RevengeMint",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "Apply Frost [effect0.status0.power] to all enemies on the floor"
+        "english": "Apply Frost [effect0.status0.power] to all enemies on the floor",
+        "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
       },
       "effects": [
         {
