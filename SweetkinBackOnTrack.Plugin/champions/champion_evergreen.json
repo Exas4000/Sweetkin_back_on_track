@@ -132,7 +132,7 @@
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
       "descriptions": {
-        "english": "Gain 3[attack] permanently"
+        "english": "Gain [effect0.upgrade.bonusdamage][attack] permanently"
       },
       "trigger_upgrades": [
         {
@@ -149,14 +149,14 @@
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": false,
       "descriptions": {
-        "english": "Gain 3[attack] permanently"
+        "english": "Gain [effect0.upgrade.bonusdamage][attack] permanently"
       },
       "trigger_upgrades": [
         {
           "id": "@TraumaQueen"
         },
         {
-          "id": "@EatenRetaliate"
+          "id": "@EverGreenSelfDefense"
         }
       ]
     },
@@ -284,7 +284,7 @@
     },
     {
       "id": "TraumaQueenBuff",
-      "bonus_damage": 5
+      "bonus_damage": 3
     },
     {
       "id": "LoneDeBuff",
@@ -323,8 +323,8 @@
       "id": "TraumaQueen",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain 5[attack] permanently",
-        "chinese": "永久获得 +5[attack]。"
+        "english": "Gain 3[attack] permanently",
+        "chinese": "永久获得 +3[attack]。"
       },
       "effects": [
         {
@@ -360,7 +360,7 @@
     },
     {
       "id": "AscendRaidBoss",
-      "trigger": "post_combat",
+      "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
         "english": "Ascend to top floor",
         "chinese": "<b>上升</b>到薪火室下方楼层"
@@ -408,7 +408,7 @@
       "target_mode": "self",
       "target_team": "monsters",
       "param_upgrade": "@TraumaQueenBuff",
-      "param_int_2": 2
+      "param_int_3": 2
     },
     {
       "id": "GriefLoneSprout",
@@ -416,7 +416,7 @@
       "target_mode": "self",
       "target_team": "monsters",
       "param_upgrade": "@LoneDeBuff",
-      "param_int_2": 2
+      "param_int_3": 2
     },
     {
       "id": "EatenRetaliate",
