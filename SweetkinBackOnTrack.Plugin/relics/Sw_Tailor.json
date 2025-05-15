@@ -15,10 +15,12 @@
         "id": "Sw_Tailor",
         "type": "collectable",
         "names": {
-            "english": "Tailoring Services"
+            "english": "Tailoring Services",
+            "chinese": "裁缝服务"
         },
         "descriptions": {
-            "english": "Vip have +10[attack], +20[health] and +1[capacity] "
+            "english": "Vip have +10[attack], +20[health] and +1[capacity] ",
+            "chinese": "VIP 单位获得 +10[attack]，+20[health]，+1[capacity]。"
         },
         "relic_activated": {
             "english": "+10[attack]/+20[health]/+1[capacity]"

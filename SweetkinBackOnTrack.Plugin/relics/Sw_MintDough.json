@@ -12,10 +12,12 @@
         "id": "Sw_MintDough",
         "type": "collectable",
         "names": {
-            "english": "Sweetkin Nuptial Vows"
+            "english": "Sweetkin Nuptial Vows",
+            "chinese": "甜裔婚礼誓言"
         },
         "descriptions": {
-            "english": "When you play a Minty unit, draw a card."
+            "english": "When you play a Minty unit, draw a card.",
+            "chinese": "当你召唤薄荷味单位时，抽 1 张牌。"
         },
         "relic_activated": {
             "english": "Card Draw!"
