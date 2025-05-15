@@ -4,15 +4,15 @@
     {
       "id": "Sw_WinterSnowstorms",
       "names": {
-        "english": "Winter snowstorms",
+        "english": "Winter Snowstorms",
         "chinese": "冬日暴雪"
       },
       "descriptions": {
-        "english": "Reserve: Apply 3 frostbite to the weakest character in all rooms"
+        "english": " "
       },
       "lore_tooltips": [
         {
-          "english":"The frostbite and numbness is the reminder of your failures"
+          "english":"The frostbite and numbness is the reminder of your failures..."
         }
       ],
       "rarity": "uncommon",
@@ -21,7 +21,12 @@
       "targets_room": true,
       "targetless": true,
       "type": "blight",
-      "cost": 2,
+      "cost": 1,
+      "effects": [
+        { 
+          "id": "@WinterReserve"
+        }
+      ],
       "triggers": [
         { 
           "id": "@WinterReserve"
@@ -34,36 +39,36 @@
         
         "id": "WinterReserve",
         "trigger": "on_unplayed_positive",
-        "descriptions": {
-            "english": "Apply 3 frostbite to the weakest character in all rooms",
-            "chinese": "对火车上生命值最少的敌方单位施加<b>霜冻</b> 3。"
-        },
         "effects": [
-            {
-                "id": "@WinterFrostbite"
-            }
-        ]
+          {
+              "id": "@WinterFrostbite"
+          }
+        ],
+        "descriptions": {
+            "english": "Apply [frostbite] [effect0.status0.power] to the weakest character in the train."
+        }
           
     }
   ],
   "effects": [
     {
-        "id": "WinterFrostbite",
-          "name": "CardEffectAddStatusEffect",
-          "target_mode": "weakest_all_rooms",
-          "target_team": "both",
-          "param_status_effects": [
-            {
-                "id":"poison",
-                "count": 3
-            }
-          ]
-      }
+      "id": "WinterFrostbite",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "weakest_all_rooms",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_None",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 3
+        }
+      ]
+    }
   ],
   "sprites": [
     {
       "id": "CardArt_sw2",
-      "path": "textures/CardAssets/Card_XVII.png"
+      "path": "textures/CardAssets/SproutWinter.png"
     }
   ],
   "game_objects": [
