@@ -1,42 +1,44 @@
 { 
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "SWBonusEaten",
-        "name": "RelicEffectModifyTriggerCount",
+    "relic_effects": [
+        {
+        "id": "TailorBuffVIP",
+        "name": "RelicEffectAddTempUpgrade",
+        "character_subtype": "@Sub_Sour",
         "target_mode": "front_in_room",
         "card_type": "monster",
-        "param_int": 1,
-        "param_trigger": "on_eaten"
-    }],
+        "param_upgrade": "@TailorRelic_Upg",
+        "param_trigger": "on_spawn"
+        }
+    ],
     "relics": [{
-        "id": "Sw_Mucus",
+        "id": "Sw_Tailor",
         "type": "collectable",
         "names": {
-            "english": "Preserved Mucus",
-            "chinese": "密封黏液"
+            "english": "Tailoring Services"
         },
         "descriptions": {
-            "english": "1 extra eaten trigger.",
-            "chinese": "<b>被吞食</b>能力可以额外触发一次。"
+            "english": "Vip have +10[attack], +20[health] and +1[capacity] "
         },
         "relic_activated": {
-            "english": "Extra trigger!"
+            "english": "+10[attack]/+20[health]/+1[capacity]"
         },
         "lore_tooltips": [{
-            "english": "A Jar of Mucus produced by Rosette. It contains enzymes that replicates various flavours and medecines mixed with it. An ingredient of the Sweetkins."
+            "english": "Big or Small, no guest shall be left with an unfit attire during their trip throught Haven."
         }],
         "disallow_in_deployment": false,
         "lore_style": "herzal",
         "relic_effects": [{
-            "id": "@SWBonusEaten"
-        }],
-        "icon": "@MucusIcon",
-        "icon_small": "@MucusIcon",
+            "id": "@TailorBuffVIP"
+            }
+        ],
+        "icon": "@TailorIcon",
+        "icon_small": "@TailorIcon",
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
                 "pool": ["megapool"],
-                "rarity": "rare",
+                "rarity": "uncommon",
                 "unlock_level": 0,
                 "from_story_event": false,
                 "is_boss_given": false,
@@ -50,8 +52,16 @@
     }],
     "sprites": [
       {
-        "id": "MucusIcon",
-        "path": "textures/Relic/Jam.png"
+        "id": "TailorIcon",
+        "path": "textures/Relic/Mt_tailor.png"
       }
+    ],
+    "upgrades": [
+        {
+            "id": "TailorRelic_Upg",
+            "bonus_damage": 10,
+            "bonus_hp": 20,
+            "bonus_size": 1
+        }
     ]
 }

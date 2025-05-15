@@ -1,49 +1,49 @@
 { 
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "SWBonusHpCardMorsel",
-        "name": "RelicEffectModifyCardHealth",
+    "relic_effects": [
+        {
+        "id": "FlavourRaiseAtkSour",
+        "name": "RelicEffectModifyCardAttack",
+        "character_subtype": "@Sub_Sour",
         "target_mode": "front_in_room",
         "card_type": "monster",
-        "character_subtype": "SubtypesData_Snack",
-        "param_int": 30
-        
-    },
-    {
-        "id": "SWBonusHpMorsel",
-        "name": "RelicEffectModifyCharacterMaxHealth",
+        "param_int": 10
+        },
+        {
+        "id": "FlavourAjustCardValue",
+        "name": "RelicEffectModifyCharacterAttackDamage",
+        "character_subtype": "@Sub_Sour",
         "target_mode": "front_in_room",
         "card_type": "monster",
-        "character_subtype": "SubtypesData_Snack",
-        "param_int": 30
-        
-    }
+        "param_int": 10
+        }
     ],
     "relics": [{
-        "id": "Sw_Paste",
+        "id": "Sw_Flavour",
         "type": "collectable",
         "names": {
-            "english": "Master's Paste",
-            "chinese": "大师的膏药"
+            "english": "Limenade Flavour Packet"
         },
         "descriptions": {
-            "english": "Morsels have + 30[health]",
-            "chinese": "影裔单位获得 +30[health]。"
+            "english": "Sour have +10 [attack]"
         },
         "relic_activated": {
-            "english": "Extra health!"
+            "english": " "
         },
         "lore_tooltips": [{
-            "english": "Mucus Refined into a protective paste. It stays fresh even after being left outside or near the boilers."
+            "english": "The Secondary ingredient in the creation of Sourling and the like. Adding too much of it can lead to brutal consequences."
         }],
         "disallow_in_deployment": false,
         "lore_style": "herzal",
-        "relic_effects": [
-        {
-            "id": "@SWBonusHpCardMorsel"
-        }],
-        "icon": "@PasteIcon",
-        "icon_small": "@PasteIcon",
+        "relic_effects": [{
+            "id": "@FlavourRaiseAtkSour"
+            },
+            {
+            "id": "@FlavourAjustCardValue"
+            }
+        ],
+        "icon": "@FlavorIcon",
+        "icon_small": "@FlavorIcon",
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
@@ -62,8 +62,8 @@
     }],
     "sprites": [
       {
-        "id": "PasteIcon",
-        "path": "textures/Relic/Frosting.png"
+        "id": "FlavorIcon",
+        "path": "textures/Relic/flavourPack.png"
       }
     ]
 }

@@ -34,8 +34,8 @@
         "icon_small": "@DispenserIcon",
         "extensions": [{
             "collectable": {
-                "class": "ClassSweetkin",
-                "pool": "megapool",
+                "class": "@ClassSweetkin",
+                "pool": ["megapool"],
                 "rarity": "common",
                 "unlock_level": 0,
                 "from_story_event": false,

@@ -1,54 +1,40 @@
 { 
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relic_effects": [{
-        "id": "SWBonusHpCardMorsel",
-        "name": "RelicEffectModifyCardHealth",
+        "id": "PlayMintDraw",
+        "name": "RelicEffectCardDrawOnCardPlay",
+        "character_subtype": "@Sub_Minty",
         "target_mode": "front_in_room",
         "card_type": "monster",
-        "character_subtype": "SubtypesData_Snack",
-        "param_int": 30
-        
-    },
-    {
-        "id": "SWBonusHpMorsel",
-        "name": "RelicEffectModifyCharacterMaxHealth",
-        "target_mode": "front_in_room",
-        "card_type": "monster",
-        "character_subtype": "SubtypesData_Snack",
-        "param_int": 30
-        
-    }
-    ],
+        "param_int": 1
+    }],
     "relics": [{
-        "id": "Sw_Paste",
+        "id": "Sw_MintDough",
         "type": "collectable",
         "names": {
-            "english": "Master's Paste",
-            "chinese": "大师的膏药"
+            "english": "Sweetkin Nuptial Vows"
         },
         "descriptions": {
-            "english": "Morsels have + 30[health]",
-            "chinese": "影裔单位获得 +30[health]。"
+            "english": "When you play a Minty unit, draw a card."
         },
         "relic_activated": {
-            "english": "Extra health!"
+            "english": "Card Draw!"
         },
         "lore_tooltips": [{
-            "english": "Mucus Refined into a protective paste. It stays fresh even after being left outside or near the boilers."
+            "english": "When came time for the first Sweetkin marriage, Mint established a new tradition. As to declare one's love with a recipe of their own."
         }],
         "disallow_in_deployment": false,
         "lore_style": "herzal",
-        "relic_effects": [
-        {
-            "id": "@SWBonusHpCardMorsel"
+        "relic_effects": [{
+            "id": "@PlayMintDraw"
         }],
-        "icon": "@PasteIcon",
-        "icon_small": "@PasteIcon",
+        "icon": "@DoughIcon",
+        "icon_small": "@DoughIcon",
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
                 "pool": ["megapool"],
-                "rarity": "common",
+                "rarity": "uncommon",
                 "unlock_level": 0,
                 "from_story_event": false,
                 "is_boss_given": false,
@@ -62,8 +48,8 @@
     }],
     "sprites": [
       {
-        "id": "PasteIcon",
-        "path": "textures/Relic/Frosting.png"
+        "id": "DoughIcon",
+        "path": "textures/Relic/mintCookies.png"
       }
     ]
 }

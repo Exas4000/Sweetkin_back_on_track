@@ -2,17 +2,16 @@
     "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
     "relic_effects": [{
         "id": "GainGoldOnEaten",
-        "name": "RelicEffectGoldOnTrigger",
-        "target_mode": "room",
-        "card_type": "monster",
-        "param_int": 5,
-        "param_trigger": "on_eaten"
+      "name": "RelicEffectGoldOnTrigger",
+      "source_team": "monsters",
+      "param_int": 5,
+      "param_trigger": "on_eaten"
     }],
     "relics": [{
         "id": "Sw_GoldKernel",
         "type": "collectable",
         "names": {
-            "english": "Golden kernels",
+            "english": "Golden Kernels",
             "chinese": "金色玉米粒"
         },
         "descriptions": {
@@ -34,8 +33,8 @@
         "icon_small": "@KernelIcon",
         "extensions": [{
             "collectable": {
-                "class": "ClassSweetkin",
-                "pool": "megapool",
+                "class": "@ClassSweetkin",
+                "pool": ["megapool"],
                 "rarity": "uncommon",
                 "unlock_level": 0,
                 "from_story_event": false,
