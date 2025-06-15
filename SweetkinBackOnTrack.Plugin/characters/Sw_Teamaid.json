@@ -4,7 +4,7 @@
     {
         "id": "Sw_Teamaid",
         "names": {
-          "english": "Tea maid",
+          "english": "Tea Maid",
           "chinese": "茶女仆"
         },
         "card_art_reference": "@CardArt_unit_9",
@@ -36,8 +36,7 @@
           "chinese": "急救"
         },
         "descriptions": {
-            "english": "Heal [effect1.power] hp and cure all status from allies on the floor",
-            "chinese": "移除友方单位身上的<b>减益</b>效果，并恢复 [effect0.power] 点生命值。"
+            "english": "Restore [effect1.power] health to and remove all <b>Debuff</b> effects from friendly units."
         },
         "card_art_reference": "@CardArt_unit_9",
         "ability": true,
@@ -63,7 +62,7 @@
         "attack_damage": 10,
         "health": 30,
         "names": {
-          "english": "Tea maid",
+          "english": "Tea Maid",
           "chinese": "茶女仆"
         },
         "can_attack": true,
@@ -71,7 +70,8 @@
         "character_art": "@TeamaidArt",
         "chatter": "@CTR_maid",
         "subtypes": [
-          "SubtypesData_None",
+          "@Sub_Sweet",
+          "@Sub_Staff",
           "SubtypesData_BannerUnit"
         ],
         "ability": "@AbilityMaid"

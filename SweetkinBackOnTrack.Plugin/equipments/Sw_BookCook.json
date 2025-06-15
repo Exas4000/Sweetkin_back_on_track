@@ -85,7 +85,7 @@
   "sprites": [
     {
       "id": "CardArt_BookCook",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_3.png"
     }
   ],
   "game_objects": [

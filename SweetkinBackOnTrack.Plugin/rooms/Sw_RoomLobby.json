@@ -39,8 +39,7 @@
     {
         "id": "LobbyRoomUpg",
           "titles": {
-                "english": "Lobby",
-                "chinese": "前厅"
+                "english": "Lobby"
             },
             "descriptions": {
                 "english": "Summon a Random VIP at the end of the turn.",
@@ -59,7 +58,7 @@
   "room_modifiers": [
     {
       "id": "LobbyModif",
-      "name": "RoomStateAddEffectPostCombatModifierLobby",
+      "name": "RoomStateAddEffectPostCombatLobby",
       "descriptions": {
         "english": "Summon a Random VIP at the end of the turn.",
         "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
@@ -73,10 +72,9 @@
   ],
   "localization_terms": [
       {
-        "key": "RoomStateAddEffectPostCombatModifierLobby",
+        "key": "RoomStateAddEffectPostCombatLobby",
         "texts": {
-          "english": "Lobby",
-          "chinese": "前厅"
+          "english": "Lobby"
         }
       }
   ],

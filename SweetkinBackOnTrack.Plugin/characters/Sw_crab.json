@@ -4,7 +4,7 @@
     {
       "id": "Sw_Crab",
       "names": {
-        "english": "Crab cake",
+        "english": "Crab Cake",
         "chinese": "蟹肉饼"
       },
       "card_art_reference": "@CardArt_unit_15",
@@ -37,7 +37,7 @@
       "attack_damage": 2,
       "health": 1,
       "names": {
-        "english": "Crab cake",
+        "english": "Crab Cake",
         "chinese": "蟹肉饼"
       },
       "can_attack": true,
@@ -45,6 +45,7 @@
       "character_art": "@CrabArt",
       "chatter" : "@CTR_morsels",
       "subtypes": [
+        "@Sub_Minty",
         "SubtypesData_Snack"
       ],
       "starting_status_effects": [

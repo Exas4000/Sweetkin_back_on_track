@@ -49,7 +49,7 @@
         "id": "trigger_butler",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "apply [effect0.status0.power] frostbite",
+        "english": "apply <b>frostbite</b> [effect0.status0.power] to enemy units.",
         "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
       },
       "effects": [
@@ -85,7 +85,7 @@
   "sprites": [
     {
       "id": "CardArt_ButlerSuit",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_9.png"
     }
   ],
   "game_objects": [

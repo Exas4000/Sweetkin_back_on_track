@@ -4,7 +4,7 @@
     {
         "id": "Sw_Restaurant",
         "names": {
-          "english": "Restaurant cart",
+          "english": "Restaurant Cart",
           "chinese": "餐厅手推车"
         },
         "descriptions": {
@@ -56,8 +56,7 @@
     {
         "id": "RestaurantEffect",
           "titles": {
-                "english": "Restaurant cart",
-                "chinese": "餐厅手推车"
+                "english": "Restaurant cart"
             },
             "descriptions": {
                 "english": "Units have 'Gorge: gain 2[attack] and 4[health]",
@@ -99,7 +98,7 @@
   "sprites": [
     {
         "id": "CardArt_room_3",
-        "path": "textures/CardAssets/MT_Lobby.png"
+        "path": "textures/CardAssets/Mt_restaurant.png"
     }
   ],
   "game_objects": [

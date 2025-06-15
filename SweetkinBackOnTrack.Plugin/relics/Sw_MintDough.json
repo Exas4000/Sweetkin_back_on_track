@@ -12,12 +12,10 @@
         "id": "Sw_MintDough",
         "type": "collectable",
         "names": {
-            "english": "Sweetkin Nuptial Vows",
-            "chinese": "甜裔婚礼誓言"
+            "english": "Sweetkin Nuptial Vows"
         },
         "descriptions": {
-            "english": "When you play a Minty unit, draw a card.",
-            "chinese": "当你召唤薄荷味单位时，抽 1 张牌。"
+            "english": "When you play a Minty unit, draw a card."
         },
         "relic_activated": {
             "english": "Card Draw!"
@@ -35,7 +33,7 @@
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
-                "pool": ["megapool"],
+                "pools": ["megapool"],
                 "rarity": "uncommon",
                 "unlock_level": 0,
                 "from_story_event": false,

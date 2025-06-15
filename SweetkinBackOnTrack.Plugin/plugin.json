@@ -49,14 +49,30 @@
       ],
       "champions": [
         {
-          "id": "EvergreenSweetkinChampion",
-          "card_data": "@Evergreen",
+          "id": "SallySweetkinChampion",
+          "card_data": "@SallyParadox",
           "starter_card": "@Sw_Hospitality",
           "upgrade_tree": [
-            ["@upg_Trauma1","@upg_Trauma3","@upg_Evergreen"],
-            ["@upg_FireFighter1","@upg_FireFighter2","@upg_FireFighter3"],
-            ["@upg_Trauma2", "@upg_Trauma4","@upg_royalty"],
-            ["@upg_hostess1","@upg_hostess2","@upg_hostess3"]
+            [
+              "@upg_security1",
+              "@upg_security2",
+              "@upg_security3"
+            ],
+            [
+              "@upg_paradox1",
+              "@upg_paradox2",
+              "@upg_paradox3"
+            ],
+            [
+              "@upg_catering1",
+              "@upg_catering2",
+              "@upg_catering3"
+            ],
+            [
+              "@upg_hostess1",
+              "@upg_hostess2",
+              "@upg_hostess3"
+            ]
           ],
           "icon": "@icon_sally",
           "locked_icon": "@icon_locked",
@@ -64,14 +80,30 @@
           "selected_cue": ""
         },
         {
-          "id": "SallySweetkinChampion",
-          "card_data": "@SallyParadox",
-          "starter_card": "@Sw_Hospitality",
+          "id": "EvergreenSweetkinChampion",
+          "card_data": "@Evergreen",
+          "starter_card": "@Sw_WinterSnowstorms",
           "upgrade_tree": [
-            [ "@upg_security1", "@upg_security2", "@upg_security3" ],
-            [ "@upg_paradox1", "@upg_paradox2", "@upg_paradox3" ],
-            [ "@upg_catering1","@upg_catering2","@upg_catering3" ],
-            [ "@upg_hostess1","@upg_hostess2","@upg_hostess3" ]
+            [
+              "@upg_Trauma1",
+              "@upg_Trauma3",
+              "@upg_Evergreen"
+            ],
+            [
+              "@upg_FireFighter1",
+              "@upg_FireFighter2",
+              "@upg_FireFighter3"
+            ],
+            [
+              "@upg_Trauma2",
+              "@upg_Trauma4",
+              "@upg_royalty"
+            ],
+            [
+              "@upg_hostess1",
+              "@upg_hostess2",
+              "@upg_hostess3"
+            ]
           ],
           "icon": "@icon_sally",
           "locked_icon": "@icon_locked",
@@ -80,11 +112,6 @@
         }
       ],
       "sfx_cue": "",
-      "starter_relics":[
-        {
-          "id":"@Sw_GoldKernel"
-        }
-      ],
       "is_crew": false,
       "unlock_data": {
         "descriptions": {
@@ -170,7 +197,46 @@
                 "ignore_relic_rarity_override": true,
                 "is_service_merchant_reward": true
             }
-        }]
+        }
+      ]
+    }
+  ],
+  "subtypes": [
+    {
+      "id": "Sub_Sour",
+      "names": {
+        "english": "Sour"
+      }
+    },
+    {
+      "id": "Sub_Spicy",
+      "names": {
+        "english": "Spicy"
+      }
+    },
+    {
+      "id": "Sub_Minty",
+      "names": {
+        "english": "Minty"
+      }
+    },
+    {
+      "id": "Sub_Sweet",
+      "names": {
+        "english": "Sweet"
+      }
+    },
+    {
+      "id": "Sub_Vip",
+      "names": {
+        "english": "Vip"
+      }
+    },
+    {
+      "id": "Sub_Staff",
+      "names": {
+        "english": "Staff"
+      }
     }
   ],
   "game_objects": [

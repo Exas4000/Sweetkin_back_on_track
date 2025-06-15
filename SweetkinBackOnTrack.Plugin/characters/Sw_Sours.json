@@ -73,6 +73,7 @@
       "character_art": "@SmallSourArt",
       "chatter":"@CTR_sour",
       "subtypes": [
+        "@Sub_Sour",
         "SubtypesData_Snack"
       ],
       "starting_status_effects": [
@@ -93,7 +94,7 @@
         "attack_damage": 8,
         "health": 36,
         "names": {
-          "english": "SourGuard",
+          "english": "Sour Guard",
           "chinese": "酸卫士"
         },
         "can_attack": true,
@@ -101,6 +102,7 @@
         "character_art": "@TallSourArt",
         "chatter":"@CTR_sour",
         "subtypes": [
+          "@Sub_Sour",
           "SubtypesData_Snack",
           "SubtypesData_BannerUnit"
         ],

@@ -42,7 +42,8 @@
         "character_art": "@RosetteArt",
         "chatter":"@CTR_rosette",
         "subtypes": [
-          "SubtypesData_None"
+          "@Sub_Staff",
+          "@Sub_Vip"
         ],
         "triggers": [
           {

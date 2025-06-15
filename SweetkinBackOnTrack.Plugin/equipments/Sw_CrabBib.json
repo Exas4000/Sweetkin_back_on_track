@@ -84,7 +84,7 @@
   "sprites": [
     {
       "id": "CardArt_CrabBib",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_4.png"
     }
   ],
   "game_objects": [

@@ -8,7 +8,7 @@
         "chinese": "晚宴秀"
       },
       "descriptions": {
-        "english": "Apply [effect0.status0.power] [lifesteal] [effect2.status0.power] Rage and [effect1.status0.power] [armor] to all friendly units",
+        "english": "Apply [effect0.status0.power] [lifesteal], [effect2.status0.power] Rage and [effect1.status0.power] [armor] to all friendly units",
         "chinese": "所有友方单位获得[lifesteal] [effect0.status0.power]，<b>狂怒</b> [effect2.status0.power] 和[armor] [effect1.status0.power]。"
       },
       "lore_tooltips": [

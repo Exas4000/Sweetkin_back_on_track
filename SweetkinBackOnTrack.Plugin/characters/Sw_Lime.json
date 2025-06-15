@@ -45,7 +45,8 @@
         "character_art": "@LimeArt",
         "chatter":"@CTR_lime",
         "subtypes": [
-          "SubtypesData_None",
+          "@Sub_Sour",
+          "@Sub_Staff",
           "SubtypesData_BannerUnit"
         ],
         "triggers": [

@@ -4,7 +4,7 @@
     {
       "id": "Sw_CombatKnife",
       "names": {
-        "english": "Combat knife",
+        "english": "Combat Knife",
         "chinese": "战斗小刀"
       },
       "descriptions": {
@@ -58,7 +58,7 @@
   "sprites": [
     {
       "id": "CardArt_CombatKnife",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_8.png"
     }
   ],
   "game_objects": [

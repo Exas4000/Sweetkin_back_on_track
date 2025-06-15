@@ -4,7 +4,7 @@
     {
       "id": "Sw_TuningFork",
       "names": {
-        "english": "Tuning fork",
+        "english": "Tuning Fork",
         "chinese": "音叉"
       },
       "descriptions": {
@@ -35,12 +35,11 @@
     {
         "id": "AbilityTuningFork",
         "names": {
-          "english": "Tuned out",
-          "chinese": "失谐"
+          "english": "Tuned out"
         },
         "descriptions": {
-          "english": "Deal [effect1.power] damage to the target.",
-          "chinese": "造成 [effect1.power] 点伤害。"
+          "english": "Deal 50 damage.",
+          "chinese": "造成 50 点伤害。"
         },
         "card_art_reference": "@CardArt_TuningFork",
         "ability": true,

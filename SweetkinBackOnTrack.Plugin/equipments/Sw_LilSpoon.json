@@ -4,12 +4,11 @@
     {
       "id": "Sw_LilSpoon",
       "names": {
-        "english": "Little spoon",
+        "english": "Little Spoon",
         "chinese": "小勺子"
       },
       "descriptions": {
-        "english": " -1 [capacity]",
-        "chinese": "-1[capacity]。"
+        "english": " -1 [capacity]"
       },
       "lore_tooltips": [
         {
@@ -53,7 +52,7 @@
   "sprites": [
     {
       "id": "CardArt_LilSpoon",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_6.png"
     }
   ],
   "game_objects": [

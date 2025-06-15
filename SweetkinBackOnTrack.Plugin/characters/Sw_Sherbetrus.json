@@ -45,6 +45,7 @@
         "character_art": "@SherbetArt",
         "chatter":"@CTR_sherberus",
         "subtypes": [
+          "@Sub_Minty",
           "SubtypesData_Snack",
           "SubtypesData_BannerUnit"
         ],

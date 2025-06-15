@@ -22,12 +22,10 @@
         "id": "Sw_Flavour",
         "type": "collectable",
         "names": {
-            "english": "Limenade Flavour Packet",
-            "chinese": "青柠水调味包"
+            "english": "Limenade Flavour Packet"
         },
         "descriptions": {
-            "english": "Sour have +10 [attack]",
-            "chinese": "酸味单位获得 +10[attack]。"
+            "english": "Sour get +10 [attack]"
         },
         "relic_activated": {
             "english": " "
@@ -49,7 +47,7 @@
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
-                "pool": ["megapool"],
+                "pools": ["megapool"],
                 "rarity": "common",
                 "unlock_level": 0,
                 "from_story_event": false,

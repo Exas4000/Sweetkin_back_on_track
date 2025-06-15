@@ -4,7 +4,7 @@
     {
         "id": "Sw_VIPlatebloomer",
         "names": {
-          "english": "Late bloomer",
+          "english": "Late Bloomer",
           "chinese": "待萌发的种子"
         },
         "card_art_reference": "@CardArt_unit_21",
@@ -34,7 +34,7 @@
         "attack_damage": 15,
         "health": 60,
         "names": {
-          "english": "Late bloomer",
+          "english": "Late Bloomer",
           "chinese": "待萌发的种子"
         },
         "can_attack": true,
@@ -42,7 +42,8 @@
         "character_art": "@VIPlateBloomArt",
         "chatter": "@CTR_Viplatebloom",
         "subtypes": [
-          "SubtypesData_Animus_c0f95969-ae86-4477-9458-57bb235d965b"
+          "SubtypesData_Animus_c0f95969-ae86-4477-9458-57bb235d965b",
+          "@Sub_Vip"
         ],
         "triggers": [
           {

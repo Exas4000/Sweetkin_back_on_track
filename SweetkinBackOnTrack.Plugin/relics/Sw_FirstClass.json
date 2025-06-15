@@ -13,12 +13,10 @@
         "id": "Sw_FirstClass",
         "type": "collectable",
         "names": {
-            "english": "First Class Ticket",
-            "chinese": "一等票"
+            "english": "First Class Ticket"
         },
         "descriptions": {
-            "english": "Add a Random VIP to your hand at the start of the battle.",
-            "chinese": "在 [deployphase] 时，随机将 1 个 VIP 单位加入你的手牌。"
+            "english": "Add a Random VIP to your hand at the start of the battle."
         },
         "relic_activated": {
             "english": " "
@@ -36,7 +34,7 @@
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
-                "pool": ["megapool"],
+                "pools": ["megapool"],
                 "rarity": "uncommon",
                 "unlock_level": 0,
                 "from_story_event": false,
@@ -52,7 +50,7 @@
     "sprites": [
       {
         "id": "TicketIcon",
-        "path": "textures/Relic/SilverPlate.png"
+        "path": "textures/Relic/Mt_firstClass.png"
       }
     ]
 }

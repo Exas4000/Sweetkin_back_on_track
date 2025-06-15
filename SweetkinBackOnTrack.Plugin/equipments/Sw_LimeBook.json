@@ -4,7 +4,7 @@
     {
       "id": "Sw_limeBook",
       "names": {
-        "english": "Sourling recipe book",
+        "english": "Sourling Recipe Book",
         "chinese": "酸之食谱"
       },
       "descriptions": {
@@ -59,7 +59,7 @@
   "sprites": [
     {
       "id": "CardArt_LimeBook",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_7.png"
     }
   ],
   "game_objects": [

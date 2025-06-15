@@ -37,7 +37,7 @@
         "attack_damage": 5,
         "health": 30,
         "names": {
-          "english": "Ice cream butler",
+          "english": "Ice Cream Butler",
           "chinese": "冰激凌管家"
         },
         "can_attack": true,
@@ -45,7 +45,9 @@
         "character_art": "@ButtlerArt",
         "chatter": "@CTR_butler",
         "subtypes": [
+          "@Sub_Minty",
           "SubtypesData_Snack"
+          
         ],
         "starting_status_effects": [
           {
@@ -65,7 +67,7 @@
       "id": "Eat_iceButler",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply Frost [effect0.status0.power] to all enemies on the floor.",
+        "english": "Apply <b>Frostbite</b> [effect0.status0.power] to enemy units.",
         "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
       },
       "effects": [

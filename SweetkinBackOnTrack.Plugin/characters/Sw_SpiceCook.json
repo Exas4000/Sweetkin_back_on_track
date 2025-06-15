@@ -4,7 +4,7 @@
     {
         "id": "Sw_SpiceCook",
         "names": {
-          "english": "Spice cook",
+          "english": "Spice Cook",
           "chinese": "香料之厨"
         },
         "card_art_reference": "@CardArt_unit_7",
@@ -45,7 +45,8 @@
         "character_art": "@SpicecookArt",
         "chatter":"@CTR_cook",
         "subtypes": [
-          "SubtypesData_None",
+          "@Sub_Spicy",
+          "@Sub_Staff",
           "SubtypesData_BannerUnit"
         ],
         "triggers": [

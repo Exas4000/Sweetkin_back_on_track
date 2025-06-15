@@ -8,7 +8,7 @@
         "chinese": "轮班工作"
       },
       "descriptions": {
-        "english": "Heal an ally by [effect0.power] and Retreat",
+        "english": "Restore [effect0.power] health and Retreat",
         "chinese": "使一个友方单位恢复 [effect0.power] 点生命值，并[retreat]。"
       },
       "lore_tooltips": [

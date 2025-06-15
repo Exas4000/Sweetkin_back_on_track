@@ -8,7 +8,7 @@
         "chinese": "殊死搏斗"
       },
       "descriptions": {
-        "english": "Apply [fragile] to all non-boss enemies",
+        "english": "Apply <b>Fragile</b> to all non-boss enemies",
         "chinese": "对所有敌方非首领单位施加[fragile]。"
       },
       "lore_tooltips": [

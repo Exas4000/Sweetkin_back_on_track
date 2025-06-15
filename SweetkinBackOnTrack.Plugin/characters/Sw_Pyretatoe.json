@@ -45,6 +45,7 @@
         "character_art": "@PotatoArt",
         "chatter":"@CTR_potato",
         "subtypes": [
+          "@Sub_Spicy",
           "SubtypesData_Snack",
           "SubtypesData_BannerUnit"
         ],

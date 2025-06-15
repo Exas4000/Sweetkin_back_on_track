@@ -45,7 +45,8 @@
         "character_art": "@VIPimpArt",
         "chatter":"@CTR_VipImp",
         "subtypes": [
-          "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+          "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
+          "@Sub_Vip"
         ],
         "triggers": [
           {
@@ -59,7 +60,7 @@
       "id": "VIP_GOLD",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Gain [effect0.power] gold",
+        "english": "Gain [effect0.power] [gold].",
         "chinese": "获得 [effect0.power][coin]。"
       },
       "effects": [

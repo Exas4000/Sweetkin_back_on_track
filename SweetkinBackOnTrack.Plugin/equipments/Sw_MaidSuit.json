@@ -4,7 +4,7 @@
     {
       "id": "Sw_MaidSuit",
       "names": {
-        "english": "Maid uniform",
+        "english": "Maid Uniform",
         "chinese": "女仆制服"
       },
       "descriptions": {
@@ -58,7 +58,7 @@
   "sprites": [
     {
       "id": "CardArt_MaidSuit",
-      "path": "textures/CardAssets/Card_XVI.png"
+      "path": "textures/CardAssets/MT_equip_5.png"
     }
   ],
   "game_objects": [

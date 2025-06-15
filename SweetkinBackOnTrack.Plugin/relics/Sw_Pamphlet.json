@@ -34,7 +34,7 @@
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
-                "pool": ["megapool"],
+                "pools": ["megapool"],
                 "rarity": "common",
                 "unlock_level": 0,
                 "from_story_event": false,

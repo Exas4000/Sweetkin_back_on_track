@@ -4,7 +4,7 @@
     {
         "id": "Sw_VIPcritic",
         "names": {
-          "english": "Critic's effigy",
+          "english": "Critic's Effigy",
           "chinese": "批评家的肖像"
         },
         "card_art_reference": "@CardArt_unit_18",
@@ -34,7 +34,7 @@
         "attack_damage": 30,
         "health": 15,
         "names": {
-          "english": "Critic's effigy",
+          "english": "Critic's Effigy",
           "chinese": "批评家的肖像"
         },
         "can_attack": true,
@@ -42,7 +42,8 @@
         "character_art": "@VIPcriticArt",
         "chatter":"@CTR_critic",
         "subtypes": [
-          "SubtypesData_None"
+          "@Sub_Spicy",
+          "@Sub_Vip"
         ],
         "triggers": [
           {

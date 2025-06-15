@@ -4,7 +4,7 @@
     {
         "id": "Sw_VIPnugget",
         "names": {
-          "english": "Librarian nugget",
+          "english": "Librarian Nugget",
           "chinese": "图书馆司书"
         },
         "card_art_reference": "@CardArt_unit_22",
@@ -34,7 +34,7 @@
         "attack_damage": 6,
         "health": 30,
         "names": {
-          "english": "Librarian nugget",
+          "english": "Librarian Nugget",
           "chinese": "图书馆司书"
         },
         "can_attack": true,
@@ -42,7 +42,8 @@
         "character_art": "@VIPnuggetArt",
         "chatter":"@CTR_VipNugget",
         "subtypes": [
-          "SubtypesData_None"
+          "@Sub_Staff",
+          "@Sub_Vip"
         ],
         "triggers": [
           {

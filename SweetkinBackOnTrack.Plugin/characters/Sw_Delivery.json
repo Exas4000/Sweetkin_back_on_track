@@ -4,7 +4,7 @@
     {
         "id": "Sw_Delivery",
         "names": {
-          "english": "Delivery boy",
+          "english": "Delivery Boy",
           "chinese": "送货小哥"
         },
         "card_art_reference": "@CardArt_unit_3",
@@ -37,7 +37,7 @@
         "attack_damage": 1,
         "health": 1,
         "names": {
-          "english": "Delivery boy",
+          "english": "Delivery Boy",
           "chinese": "送货小哥"
         },
         "can_attack": true,
@@ -45,7 +45,8 @@
         "character_art": "@DeliveryArt",
         "chatter":"@CTR_delivery",
         "subtypes": [
-          "SubtypesData_None"
+          "@Sub_Spicy",
+          "@Sub_Staff"
         ],
         "triggers": [
           {

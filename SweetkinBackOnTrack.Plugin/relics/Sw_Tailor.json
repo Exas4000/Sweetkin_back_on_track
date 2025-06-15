@@ -15,12 +15,10 @@
         "id": "Sw_Tailor",
         "type": "collectable",
         "names": {
-            "english": "Tailoring Services",
-            "chinese": "裁缝服务"
+            "english": "Tailoring Services"
         },
         "descriptions": {
-            "english": "Vip have +10[attack], +20[health] and +1[capacity] ",
-            "chinese": "VIP 单位获得 +10[attack]，+20[health]，+1[capacity]。"
+            "english": "Vip get +10[attack], +20[health] and +1[capacity] "
         },
         "relic_activated": {
             "english": "+10[attack]/+20[health]/+1[capacity]"
@@ -39,7 +37,7 @@
         "extensions": [{
             "collectable": {
                 "class": "@ClassSweetkin",
-                "pool": ["megapool"],
+                "pools": ["megapool"],
                 "rarity": "uncommon",
                 "unlock_level": 0,
                 "from_story_event": false,

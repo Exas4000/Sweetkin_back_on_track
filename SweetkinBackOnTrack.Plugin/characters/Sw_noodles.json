@@ -4,7 +4,7 @@
     {
       "id": "Sw_Noodles",
       "names": {
-        "english": "Danger noodles",
+        "english": "Danger Noodles",
         "chinese": "蛇秘的面条"
       },
       "card_art_reference": "@CardArt_unit_13",
@@ -37,7 +37,7 @@
       "attack_damage": 0,
       "health": 1,
       "names": {
-        "english": "Danger noodles",
+        "english": "Danger Noodles",
         "chinese": "蛇秘的面条"
       },
       "can_attack": true,
@@ -45,6 +45,7 @@
       "character_art": "@NoodleArt",
       "chatter":"@CTR_morsels",
       "subtypes": [
+        "@Sub_Spicy",
         "SubtypesData_Snack"
       ],
       "starting_status_effects": [

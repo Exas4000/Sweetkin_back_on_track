@@ -45,6 +45,7 @@
       "character_art": "@SweetlingArt",
       "chatter":"@CTR_sweetling",
       "subtypes": [
+        "@Sub_Sweet",
         "SubtypesData_Snack"
       ],
       "starting_status_effects": [

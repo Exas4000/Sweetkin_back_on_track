@@ -4,12 +4,10 @@
     {
       "id": "Sw_SummerWildfire",
       "names": {
-        "english": "Summer's wildfires",
-        "chinese": "夏日野火"
+        "english": "Summer's wildfires"
       },
       "descriptions": {
-        "english": "Apply 3 pyregel to the strongest character in all rooms, then draw 2 cards",
-        "chinese": "对火车上生命值最多的敌方单位施加<b>薪火熔胶</b> 3。抽 2 张牌。"
+        "english": "Apply 3 pyregel to the strongest character in all rooms, then draw 2 cards"
       },
       "lore_tooltips": [
         {

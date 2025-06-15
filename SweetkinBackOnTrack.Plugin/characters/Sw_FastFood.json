@@ -45,6 +45,7 @@
       "character_art": "@FastfoodArt",
       "chatter":"@CTR_morsels",
       "subtypes": [
+        "@Sub_Spicy",
         "SubtypesData_Snack"
       ],
       "starting_status_effects": [

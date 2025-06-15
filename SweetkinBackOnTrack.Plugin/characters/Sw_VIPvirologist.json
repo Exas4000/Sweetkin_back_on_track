@@ -52,7 +52,7 @@
         "character_art": "@VIPviroArt",
         "chatter": "@CTR_viro",
         "subtypes": [
-          "SubtypesData_None"
+          "@Sub_Vip"
         ],
         "triggers": [
           {

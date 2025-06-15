@@ -42,7 +42,8 @@
       "character_art": "@VIPtemakiArt",
       "chatter":"@CTR_temaki",
       "subtypes": [
-        "SubtypesData_Snack"
+        "SubtypesData_Snack",
+        "@Sub_Vip"
       ],
       "starting_status_effects": [
         {
@@ -69,7 +70,7 @@
       "id": "eatTemaki",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 11[attack] and 11[health] and retreat them",
+        "english": "Eater gains 11[attack] and 11[health] and <b>Retreat</b> them",
         "chinese": "吞食者获得 +11[attack]，+11[health]，并[retreat]。"
       },
       "effects": [

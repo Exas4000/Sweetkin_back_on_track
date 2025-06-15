@@ -56,7 +56,8 @@
         "character_art": "@VIPsocialiteArt",
         "chatter": "@CTR_vipSocialite",
         "subtypes": [
-          "SubtypesData_Waxer_3446e5ee-216e-4cc2-b027-d77dee269c15"
+          "SubtypesData_Waxer_3446e5ee-216e-4cc2-b027-d77dee269c15",
+          "@Sub_Vip"
         ],
         "triggers": [
           {
@@ -87,7 +88,7 @@
         "trigger": "on_spawn",
         "descriptions": {
           "english": "Reform a random unit.",
-          "chinese": "随机<b>改造</b> 1 个单位。"
+        "chinese": "随机<b>改造</b> 1 个单位。"
         },
         "effects": [
           {
@@ -109,7 +110,7 @@
       "name": "CardEffectRecursion",
       "target_mode": "exhaust",
       "target_card_type": "monster",
-      "target_selection_mode": "random_to_hand_with_upgrades",
+      "target_card_selection_mode": "random_to_hand_with_upgrades",
       "should_test": true,
       "fail_to_cast_on_failure": true,
       "param_int": 1,

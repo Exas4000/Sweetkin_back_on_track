@@ -39,8 +39,7 @@
     {
         "id": "KitchenRoomUpg",
           "titles": {
-                "english": "Kitchen",
-                "chinese": "厨房"
+                "english": "Kitchen"
             },
             "descriptions": {
                 "english": "Summon a a crab cake or a Danger noodle at the end of the turn.",
@@ -59,7 +58,7 @@
   "room_modifiers": [
     {
       "id": "KitchenModif",
-      "name": "RoomStateAddEffectPostCombatModifierKitchen",
+      "name": "RoomStateAddEffectPostCombatKitchen",
       "descriptions": {
         "english": "Summon a a crab cake or a Danger noodle at the end of the turn.",
         "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
@@ -73,10 +72,9 @@
   ],
   "localization_terms": [
       {
-        "key": "RoomStateAddEffectPostCombatModifierKitchen",
+        "key": "RoomStateAddEffectPostCombatKitchen",
         "texts": {
-          "english": "Kitchen",
-          "chinese": "厨房"
+          "english": "Kitchen"
         }
       }
   ],
@@ -94,7 +92,7 @@
     {
         "id": "CookKitchenMorsel",
         "name": "CardEffectSpawnMonster",
-        "target_mode": "room",
+        "target_mode": "back_in_room",
         "target_team": "monsters",
         "param_character_data": "@crabcake",
        "param_character_data_pool": [
@@ -106,7 +104,7 @@
   "sprites": [
     {
         "id": "CardArt_room_5",
-        "path": "textures/CardAssets/MT_Lobby.png"
+        "path": "textures/CardAssets/Mt_Kitchen.png"
     }
   ],
   "game_objects": [

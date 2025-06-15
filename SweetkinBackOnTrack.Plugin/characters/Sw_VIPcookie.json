@@ -42,7 +42,8 @@
         "character_art": "@VIPcookieArt",
         "chatter":"@CTR_vipCookie",
         "subtypes": [
-          "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da"
+          "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da",
+          "@Sub_Vip"
         ],
         "triggers": [
           {
@@ -79,7 +80,7 @@
         "trigger": "on_feed",
         "descriptions": {
           "english": "gain 4 [attack]",
-          "chinese": "获得 +4[attack]。"
+        "chinese": "获得 +4[attack]。"
         },
         "effects": [
           {
