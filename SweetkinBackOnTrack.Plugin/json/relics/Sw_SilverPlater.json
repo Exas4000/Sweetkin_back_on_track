@@ -5,7 +5,7 @@
       "id": "SWBonusBuffetMorsel",
       "name": "RelicEffectAddStatusEffectOnFirstSpawn",
       "target_mode": "room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_subtype": "SubtypesData_Snack",
       "param_status_effects": [
         {

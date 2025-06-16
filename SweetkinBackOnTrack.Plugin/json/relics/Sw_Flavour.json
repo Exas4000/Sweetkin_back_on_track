@@ -6,7 +6,7 @@
       "name": "RelicEffectModifyCardAttack",
       "param_subtype": "@Sub_Sour",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_int": 10
     },
     {
@@ -14,7 +14,7 @@
       "name": "RelicEffectModifyCharacterAttackDamage",
       "param_subtype": "@Sub_Sour",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_int": 10
     }
   ],

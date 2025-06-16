@@ -4,8 +4,6 @@
     {
       "id": "SWShopDiscount",
       "name": "RelicEffectModifyMerchantRerollCosts",
-      "target_mode": "front_in_room",
-      "card_type": "monster",
       "param_float": -1
     }
   ],

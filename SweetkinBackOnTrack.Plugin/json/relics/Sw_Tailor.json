@@ -6,7 +6,7 @@
       "name": "RelicEffectAddTempUpgrade",
       "param_subtype": "@Sub_Sour",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_upgrade": "@TailorRelic_Upg",
       "param_trigger": "on_spawn"
     }

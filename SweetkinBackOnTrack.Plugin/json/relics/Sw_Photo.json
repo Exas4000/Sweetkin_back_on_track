@@ -5,7 +5,7 @@
       "id": "SWSapUpgrade",
       "name": "RelicEffectModifyStatusMagnitude",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_int": 1,
       "param_status_effects": [
         {

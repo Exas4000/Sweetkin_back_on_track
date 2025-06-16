@@ -6,7 +6,7 @@
       "name": "RelicEffectCardDrawOnCardPlay",
       "param_subtype": "@Sub_Minty",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_int": 1
     }
   ],

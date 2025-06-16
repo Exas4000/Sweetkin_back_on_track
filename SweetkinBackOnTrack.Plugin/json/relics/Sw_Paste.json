@@ -5,19 +5,17 @@
       "id": "SWBonusHpCardMorsel",
       "name": "RelicEffectModifyCardHealth",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_subtype": "SubtypesData_Snack",
       "param_int": 30
-
     },
     {
       "id": "SWBonusHpMorsel",
       "name": "RelicEffectModifyCharacterMaxHealth",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_subtype": "SubtypesData_Snack",
       "param_int": 30
-
     }
   ],
   "relics": [

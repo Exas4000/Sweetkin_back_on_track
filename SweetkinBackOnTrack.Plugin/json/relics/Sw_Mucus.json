@@ -5,7 +5,7 @@
       "id": "SWBonusEaten",
       "name": "RelicEffectModifyTriggerCount",
       "target_mode": "front_in_room",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_int": 1,
       "param_trigger": "on_eaten"
     }

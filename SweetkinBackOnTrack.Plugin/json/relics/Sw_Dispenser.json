@@ -6,7 +6,7 @@
       "name": "RelicEffectModifyMonsterCost",
       "param_subtype": "SubtypesData_Snack",
       "target_mode": "hand",
-      "card_type": "monster",
+      "param_card_type": "monster",
       "param_int": -3
     }
   ],
