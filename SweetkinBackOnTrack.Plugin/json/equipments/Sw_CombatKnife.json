@@ -7,12 +7,9 @@
         "english": "Combat Knife",
         "chinese": "战斗小刀"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "'Remember what I said about symbolism? Well at least this one could be a weapon.'-Rosette, still confused about utencils warfare."
+          "english": "'Remember what I said about symbolism? Well at least this one could be a weapon.'-Rosette, still confused about utencils warfare."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 1,
       "effects": [
-        { 
+        {
           "id": "@Equip_CombatKnife"
         }
       ]
@@ -47,12 +44,11 @@
   ],
   "effects": [
     {
-        "id": "Equip_CombatKnife",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_CombatKnife"
+      "id": "Equip_CombatKnife",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_CombatKnife"
     }
   ],
   "sprites": [

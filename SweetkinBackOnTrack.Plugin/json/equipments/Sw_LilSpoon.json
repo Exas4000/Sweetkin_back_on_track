@@ -8,11 +8,11 @@
         "chinese": "小勺子"
       },
       "descriptions": {
-        "english": " -1 [capacity]"
+        "english": " [effect0.upgrade.bonussize][capacity]"
       },
       "lore_tooltips": [
         {
-            "english": "An experimental solution for when you need to nestle between your allies."
+          "english": "An experimental solution for when you need to nestle between your allies."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +27,7 @@
       ],
       "cost": 2,
       "effects": [
-        { 
+        {
           "id": "@Equip_LilSpoon"
         }
       ]
@@ -41,12 +41,11 @@
   ],
   "effects": [
     {
-        "id": "Equip_LilSpoon",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_LilSpoon"
+      "id": "Equip_LilSpoon",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_LilSpoon"
     }
   ],
   "sprites": [

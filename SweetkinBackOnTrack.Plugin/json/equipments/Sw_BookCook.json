@@ -7,12 +7,9 @@
         "english": "Sweetkin Staff List",
         "chinese": "甜裔员工名单"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "A Book containing the essence of various Spicy Sweetkins. Created in bulk for the Buffet at the Library of Ruin, with few copies confiscated from visiting librarians by Sally."
+          "english": "A Book containing the essence of various Spicy Sweetkins. Created in bulk for the Buffet at the Library of Ruin, with few copies confiscated from visiting librarians by Sally."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 2,
       "effects": [
-        { 
+        {
           "id": "@Equip_Cook"
         }
       ]
@@ -39,18 +36,18 @@
       "bonus_damage": 30,
       "trigger_upgrades": [
         {
-            "id": "@trigger_Cook"
+          "id": "@trigger_Cook"
         }
       ]
     }
   ],
   "character_triggers": [
     {
-        "id": "trigger_Cook",
+      "id": "trigger_Cook",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] rage",
-        "chinese": "获得<b>狂怒</b> [effect0.status0.power]。"
+        "english": "Gain [rage] [effect0.status0.power].",
+        "chinese": "获得[rage] [effect0.status0.power]。"
       },
       "effects": [
         {
@@ -61,20 +58,18 @@
   ],
   "effects": [
     {
-        "id": "Equip_Cook",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_Cook"
+      "id": "Equip_Cook",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_Cook"
     },
     {
-        "id": "Slay_cookbook",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "self",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_status_effects": [
+      "id": "Slay_cookbook",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
         {
           "status": "buff",
           "count": 8

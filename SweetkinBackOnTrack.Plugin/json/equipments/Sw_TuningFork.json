@@ -7,14 +7,6 @@
         "english": "Tuning Fork",
         "chinese": "音叉"
       },
-      "descriptions": {
-        "english": " "
-      },
-      "lore_tooltips": [
-        {
-            "english": ""
-        }
-      ],
       "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
@@ -27,32 +19,31 @@
       ],
       "cost": 2,
       "effects": [
-        { 
+        {
           "id": "@Equip_TuningFork"
         }
       ]
     },
     {
-        "id": "AbilityTuningFork",
-        "names": {
-          "english": "Tuned out"
-        },
-        "descriptions": {
-          "english": "Deal 50 damage.",
-          "chinese": "造成 50 点伤害。"
-        },
-        "is_an_ability": true,
-        "cooldown": 2,
-        "initial_cooldown": 0,
-        "targetless": false,
-        "targets_room": true,
-        "card_type": "spell",
-        "effects": [
-          {
-            "id": "@Damage_TuningFork"
-          }
-        ]
-      }
+      "id": "AbilityTuningFork",
+      "names": {
+        "english": "Tuned out"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage.",
+        "chinese": "造成 [effect0.power] 点伤害。"
+      },
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
+      "card_type": "spell",
+      "effects": [
+        {
+          "id": "@Damage_TuningFork"
+        }
+      ]
+    }
   ],
   "upgrades": [
     {
@@ -68,20 +59,18 @@
   ],
   "effects": [
     {
-        "id": "Equip_TuningFork",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_TuningFork"
+      "id": "Equip_TuningFork",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_TuningFork"
     },
     {
-        "id": "Damage_TuningFork",
-        "name": "CardEffectDamage",
-        "target_mode": "drop_target_character",
-        "target_team": "both",
-        "target_subtype": "SubtypesData_None",
-        "param_int": 50
+      "id": "Damage_TuningFork",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_int": 50
     }
   ],
   "sprites": [

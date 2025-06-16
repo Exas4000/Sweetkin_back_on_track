@@ -7,12 +7,9 @@
         "english": "Maid Uniform",
         "chinese": "女仆制服"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "Made to keep moisture in. Perfect for an emergency bandage."
+          "english": "Made to keep moisture in. Perfect for an emergency bandage."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 1,
       "effects": [
-        { 
+        {
           "id": "@Equip_MaidSuit"
         }
       ]
@@ -47,12 +44,11 @@
   ],
   "effects": [
     {
-        "id": "Equip_MaidSuit",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_maidSuit"
+      "id": "Equip_MaidSuit",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_maidSuit"
     }
   ],
   "sprites": [

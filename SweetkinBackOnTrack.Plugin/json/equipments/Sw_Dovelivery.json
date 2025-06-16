@@ -7,12 +7,9 @@
         "english": "White Chocolate Dove",
         "chinese": "白巧鸽子"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "'Our doves are more akin to a living tool than actual animals. They certainly do the job when it comes time of quickly moving small objects around.' -Rosette"
+          "english": "'Our doves are more akin to a living tool than actual animals. They certainly do the job when it comes time of quickly moving small objects around.' -Rosette"
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 1,
       "effects": [
-        { 
+        {
           "id": "@Equip_Dove"
         }
       ]
@@ -46,18 +43,18 @@
       ],
       "trigger_upgrades": [
         {
-            "id": "@trigger_dove"
+          "id": "@trigger_dove"
         }
       ]
     }
   ],
   "character_triggers": [
     {
-        "id": "trigger_dove",
+      "id": "trigger_dove",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "+1 draw next turn",
-        "chinese": "下个回合抽 +1 张牌。"
+        "english": "Draw +[effect0.power] next turn.",
+        "chinese": "下个回合抽 +[effect0.power] 张牌。"
       },
       "effects": [
         {
@@ -68,19 +65,17 @@
   ],
   "effects": [
     {
-        "id": "Equip_Dove",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_dove"
+      "id": "Equip_Dove",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_dove"
     },
     {
-        "id": "Eaten_dove",
-        "name": "CardEffectDrawAdditionalNextTurn",
-        "target_mode": "room",
-        "param_int": 1,
-        "target_subtype": "SubtypesData_None"
+      "id": "Eaten_dove",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "target_mode": "room",
+      "param_int": 1
     }
   ],
   "sprites": [

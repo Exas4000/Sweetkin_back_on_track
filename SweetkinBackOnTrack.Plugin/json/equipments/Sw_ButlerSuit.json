@@ -7,12 +7,9 @@
         "english": "S.E. Menu",
         "chinese": "S.E. 目录"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "A book containing the essence of a handful of minty sweetkins. Retrieved from passing librarians in their dimension."
+          "english": "A book containing the essence of a handful of minty sweetkins. Retrieved from passing librarians in their dimension."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 1,
       "effects": [
-        { 
+        {
           "id": "@Equip_butler"
         }
       ]
@@ -39,18 +36,18 @@
       "bonus_hp": 10,
       "trigger_upgrades": [
         {
-            "id": "@trigger_butler"
+          "id": "@trigger_butler"
         }
       ]
     }
   ],
   "character_triggers": [
     {
-        "id": "trigger_butler",
+      "id": "trigger_butler",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "apply <b>frostbite</b> [effect0.status0.power] to enemy units.",
-        "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+        "chinese": "对所有敌方单位施加[frostbite] [effect0.status0.power]。"
       },
       "effects": [
         {
@@ -61,20 +58,18 @@
   ],
   "effects": [
     {
-        "id": "Equip_butler",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_butler"
+      "id": "Equip_butler",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_butler"
     },
     {
-        "id": "postCombat_Butler",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "room",
-        "target_team": "heroes",
-        "target_subtype": "SubtypesData_None",
-        "param_status_effects": [
+      "id": "postCombat_Butler",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
           "status": "poison",
           "count": 6

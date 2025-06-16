@@ -7,12 +7,9 @@
         "english": "Book Of Mint",
         "chinese": "薄荷之书"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "A Book stained with minty blood. The catalyst for the curse bestowed upon Sally within the Library of Ruin."
+          "english": "A Book stained with minty blood. The catalyst for the curse bestowed upon Sally within the Library of Ruin."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 2,
       "effects": [
-        { 
+        {
           "id": "@Equip_mint"
         }
       ]
@@ -39,7 +36,7 @@
       "bonus_hp": 50,
       "trigger_upgrades": [
         {
-            "id": "@trigger_mint"
+          "id": "@trigger_mint"
         }
       ],
       "status_effect_upgrades": [
@@ -52,11 +49,11 @@
   ],
   "character_triggers": [
     {
-        "id": "trigger_mint",
+      "id": "trigger_mint",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "apply <b>frostbite</b> [effect0.status0.power] to enemy units.",
-        "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+        "chinese": "对所有敌方单位施加[frostbite] [effect0.status0.power]。"
       },
       "effects": [
         {
@@ -67,20 +64,18 @@
   ],
   "effects": [
     {
-        "id": "Equip_mint",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_mint"
+      "id": "Equip_mint",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_mint"
     },
     {
-        "id": "Revenge_Mint",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "room",
-        "target_team": "heroes",
-        "target_subtype": "SubtypesData_None",
-        "param_status_effects": [
+      "id": "Revenge_Mint",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
           "status": "poison",
           "count": 5

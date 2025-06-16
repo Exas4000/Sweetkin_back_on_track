@@ -7,12 +7,9 @@
         "english": "Spare Limb",
         "chinese": "备用残肢"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "'Don't mind the crab roaming the halls with an arm. Their name is handzy' -Lime"
+          "english": "'Don't mind the crab roaming the halls with an arm. Their name is handzy' -Lime"
         }
       ],
       "card_type": "equipment",
@@ -32,7 +29,7 @@
         }
       ],
       "effects": [
-        { 
+        {
           "id": "@Equip_SpareLimb"
         }
       ]
@@ -52,12 +49,11 @@
   ],
   "effects": [
     {
-        "id": "Equip_SpareLimb",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_sparelimb"
+      "id": "Equip_SpareLimb",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_sparelimb"
     }
   ],
   "sprites": [

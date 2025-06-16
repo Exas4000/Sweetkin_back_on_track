@@ -7,12 +7,9 @@
         "english": "I <3 MORSELS",
         "chinese": "影裔之爱"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "I Love Morsels...Me too buddy. Me Too."
+          "english": "I Love Morsels...Me too buddy. Me Too."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 2,
       "effects": [
-        { 
+        {
           "id": "@Equip_CrabBib"
         }
       ]
@@ -38,17 +35,17 @@
       "id": "upg_CrabBib",
       "trigger_upgrades": [
         {
-            "id": "@trigger_CrabBib"
+          "id": "@trigger_CrabBib"
         }
       ]
     }
   ],
   "character_triggers": [
     {
-        "id": "trigger_CrabBib",
+      "id": "trigger_CrabBib",
       "trigger": "on_feed",
       "descriptions": {
-        "english": "Gain [effect0.status0.power] Armor",
+        "english": "Gain [armor] [effect0.status0.power]",
         "chinese": "获得[armor] [effect0.status0.power]。"
       },
       "effects": [
@@ -60,20 +57,18 @@
   ],
   "effects": [
     {
-        "id": "Equip_CrabBib",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_CrabBib"
+      "id": "Equip_CrabBib",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_CrabBib"
     },
     {
-        "id": "Gorge_CrabBib",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "self",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_status_effects": [
+      "id": "Gorge_CrabBib",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
         {
           "status": "armor",
           "count": 10

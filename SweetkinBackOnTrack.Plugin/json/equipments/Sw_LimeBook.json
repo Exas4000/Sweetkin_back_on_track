@@ -7,12 +7,9 @@
         "english": "Sourling Recipe Book",
         "chinese": "酸之食谱"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-            "english": "A Book containing the essence of various Sour Sweetkins. Lime Was the first to enter the Library of the Pale Librarian at Rosette's request."
+          "english": "A Book containing the essence of various Sour Sweetkins. Lime Was the first to enter the Library of the Pale Librarian at Rosette's request."
         }
       ],
       "card_type": "equipment",
@@ -27,7 +24,7 @@
       ],
       "cost": 0,
       "effects": [
-        { 
+        {
           "id": "@Equip_Lime"
         }
       ]
@@ -48,12 +45,11 @@
   ],
   "effects": [
     {
-        "id": "Equip_Lime",
-        "name": "CardEffectAttachEquipment",
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_upgrade": "@upg_Lime"
+      "id": "Equip_Lime",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_Lime"
     }
   ],
   "sprites": [
