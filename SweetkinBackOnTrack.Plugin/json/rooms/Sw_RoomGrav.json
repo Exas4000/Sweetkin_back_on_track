@@ -2,77 +2,70 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-        "id": "Sw_Gravitorium",
-        "names": {
-          "english": "Gravitorium"
-        },
-        "descriptions": {
-          "english": "Add 15 [capacity] to the room"
-        },
-        "lore_tooltips": [
-          {
-            "english": "The Sweetkins pride themselves on a large, zero gravity room able to emulate space within their home dimension. This version is smaller, fit for the train."
-          }
-        ],
-        "card_art": "@CardArt_room_1",
-        "cost": 3,
-        "card_type": "room",
-        "cost_type": "default",
-        "rarity": "uncommon",
-        "class": "@ClassSweetkin",
-        "unlock_level": 0,
-        "targets_room": true,
-        "effects": [
-          {
-            "id": "@GravitoriumeRoomSize"
-          }
-        ],
-        "pools": [
-          "MegaPool",
-          "RoomAndEquipmentMerchant_RoomPool"
-        ]
-      }
+      "id": "Sw_Gravitorium",
+      "names": {
+        "english": "Gravitorium"
+      },
+      "descriptions": {
+        "english": "Add [effect0.power] [capacity] to the room"
+      },
+      "lore_tooltips": [
+        {
+          "english": "The Sweetkins pride themselves on a large, zero gravity room able to emulate space within their home dimension. This version is smaller, fit for the train."
+        }
+      ],
+      "card_art": "@CardArt_room_1",
+      "cost": 3,
+      "card_type": "room",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        {
+          "id": "@GravitoriumeRoomSize"
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool"
+      ]
+    }
   ],
   "upgrades": [
     {
-        "id": "GravUpgrade",
-          "titles": {
-                "english": "Gravitorium"
-            },
-            "descriptions": {
-                "english": "Add 15 [capacity] to the room",
-                "chinese": "+15[capacity]。"
-            },
-            "allow_secondary_tooltip_placement": true,
-            "hide_icon_on_card": true,
-            "icon": "@CardArt_room_1",
-            "room_modifier_upgrades": [
-              {
-                "id": "@gravModif"
-              },
-              {
-                "id": "@SwBlankEffect"
-              }
-            ]
+      "id": "GravUpgrade",
+      "titles": {
+        "english": "Gravitorium"
+      },
+      "descriptions": {
+        "english": "+[effect0.power][capacity].",
+        "chinese": "+[effect0.power][capacity]。"
+      },
+      "icon": "@CardArt_room_1",
+      "room_modifier_upgrades": [
+        {
+          "id": "@gravModif"
+        }
+      ]
     }
   ],
   "room_modifiers": [
     {
       "id": "gravModif",
       "name": "RoomStateCapacityModifierGrav",
-      "param_int" : 15,
+      "param_int": 15,
       "descriptions": {
-        "english": "Add 15 [capacity] to the room"
+        "english": "+[paramint][capacity]"
       }
     }
   ],
   "localization_terms": [
-      {
-        "key": "RoomStateCapacityModifierGrav",
-        "texts": {
-          "english": "Gravitorium"
-        }
+    {
+      "key": "RoomStateCapacityModifierGrav",
+      "texts": {
+        "english": "Gravitorium"
       }
+    }
   ],
   "effects": [
     {
@@ -84,22 +77,12 @@
       "param_bool": false,
       "param_bool_2": false,
       "target_team": "monsters"
-    },
-    {
-      "id": "SwBlankEffect",
-      "name": "CardEffectBuffDamage",
-      "param_int": 0,
-      "target_mode": "front_in_room",
-      "target_ignore_bosses": true,
-      "param_bool": false,
-      "param_bool_2": false,
-      "target_team": "none"
     }
   ],
   "sprites": [
     {
-        "id": "CardArt_room_1",
-        "path": "textures/CardAssets/MT_Gravitorium.png"
+      "id": "CardArt_room_1",
+      "path": "textures/CardAssets/MT_Gravitorium.png"
     }
   ],
   "game_objects": [

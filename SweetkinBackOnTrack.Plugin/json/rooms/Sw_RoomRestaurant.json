@@ -2,74 +2,73 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-        "id": "Sw_Restaurant",
-        "names": {
-          "english": "Restaurant Cart",
-          "chinese": "餐厅手推车"
-        },
-        "descriptions": {
-          "english": "Units have 'Gorge: gain 2[attack] and 4[health]",
-          "chinese": "所有友方单位获得“<b>暴食</b>: +2[attack]，+4[health]。”"
-        },
-        "lore_tooltips": [
-          {
-            "english": "One would think a war of attrition would benefit the defenders of Haven's siege. The Sweetkin thinks otherwise, providing ample supplies directly to the front."
-          }
-        ],
-        "card_art": "@CardArt_room_3",
-        "cost": 1,
-        "card_type": "room",
-        "cost_type": "default",
-        "rarity": "common",
-        "class": "@ClassSweetkin",
-        "unlock_level": 3,
-        "targets_room": true,
-        "effects": [
-          {
-            "id": "@RestaurantRoomEffect"
-          }
-        ],
-        "pools": [
-          "MegaPool",
-          "RoomAndEquipmentMerchant_RoomPool"
-        ]
-      }
+      "id": "Sw_Restaurant",
+      "names": {
+        "english": "Restaurant Cart",
+        "chinese": "餐厅手推车"
+      },
+      "descriptions": {
+        "english": "Units gain '<b>Gorge</b>: Gain +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]",
+        "chinese": "所有友方单位获得“<b>暴食</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。”"
+      },
+      "lore_tooltips": [
+        {
+          "english": "One would think a war of attrition would benefit the defenders of Haven's siege. The Sweetkin thinks otherwise, providing ample supplies directly to the front."
+        }
+      ],
+      "card_art": "@CardArt_room_3",
+      "cost": 1,
+      "card_type": "room",
+      "rarity": "common",
+      "class": "@ClassSweetkin",
+      "unlock_level": 3,
+      "targets_room": true,
+      "effects": [
+        {
+          "id": "@RestaurantRoomEffect"
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool"
+      ]
+    }
   ],
   "character_triggers": [
     {
-      
+
       "id": "restaurantGorge",
       "trigger": "on_feed",
       "descriptions": {
-        "english": "gain 2[attack] and 4[health]",
-        "chinese": "+2[attack]，+4[health]。"
+        "english": "Gain +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-         {
-            "id": "@ApplyStat_Restaurant"
-         }
+        {
+          "id": "@ApplyStat_Restaurant"
+        }
       ]
-      
+
     }
   ],
   "upgrades": [
     {
-        "id": "RestaurantEffect",
-          "titles": {
-                "english": "Restaurant cart"
-            },
-            "descriptions": {
-                "english": "Units have 'Gorge: gain 2[attack] and 4[health]",
-                "chinese": "所有友方单位获得“<b>暴食</b>: +2[attack]，+4[health]。”"
-            },
-            "allow_secondary_tooltip_placement": true,
-            "hide_icon_on_card": true,
-            "icon": "@CardArt_room_3",
-            "trigger_upgrades": [
-              {
-                "id": "@restaurantGorge"
-              }
-            ]
+      "id": "RestaurantEffect",
+      "titles": {
+        "english": "Restaurant cart"
+      },
+      "descriptions": {
+        "english": "Units have 'Gorge: gain +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health]",
+        "chinese": "所有友方单位获得“<b>暴食</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。”"
+      },
+      "allow_secondary_tooltip_placement": true,
+      "hide_icon_on_card": true,
+      "icon": "@CardArt_room_3",
+      "trigger_upgrades": [
+        {
+          "id": "@restaurantGorge"
+        }
+      ]
     },
     {
       "id": "RestaurantBuff",
@@ -97,8 +96,8 @@
   ],
   "sprites": [
     {
-        "id": "CardArt_room_3",
-        "path": "textures/CardAssets/Mt_restaurant.png"
+      "id": "CardArt_room_3",
+      "path": "textures/CardAssets/Mt_restaurant.png"
     }
   ],
   "game_objects": [

@@ -2,57 +2,53 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-        "id": "Sw_Spa",
-        "names": {
-          "english": "Cocoa Spa",
-          "chinese": "可可水疗中心"
-        },
-        "descriptions": {
-          "english": "At the end of the turn, give 3 regen to all units in the room.",
-          "chinese": "回合结束时，所有友方单位获得<b>再生</b> 3。"
-        },
-        "lore_tooltips": [
-          {
-            "english": "A delightfully relaxing time awaits the Sweetkin's patrons. A quick dip in a pool with restaurative properties brings vigor to weary warriors."
-          }
-        ],
-        "card_art": "@CardArt_room_4",
-        "cost": 1,
-        "card_type": "room",
-        "cost_type": "default",
-        "rarity": "common",
-        "class": "@ClassSweetkin",
-        "unlock_level": 0,
-        "targets_room": true,
-        "effects": [
-          {
-            "id": "@SpaEffect"
-          }
-        ],
-        "pools": [
-          "MegaPool",
-          "RoomAndEquipmentMerchant_RoomPool"
-        ]
-      }
+      "id": "Sw_Spa",
+      "names": {
+        "english": "Cocoa Spa",
+        "chinese": "可可水疗中心"
+      },
+      "descriptions": {
+        "english": "At the end of the turn, give [regen] [effect0.upgrade.roommodifier0.power] to all units in the room.",
+        "chinese": "回合结束时，所有友方单位获得[regen] [effect0.upgrade.roommodifier0.power]。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A delightfully relaxing time awaits the Sweetkin's patrons. A quick dip in a pool with restaurative properties brings vigor to weary warriors."
+        }
+      ],
+      "card_art": "@CardArt_room_4",
+      "cost": 1,
+      "card_type": "room",
+      "rarity": "common",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        {
+          "id": "@SpaEffect"
+        }
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool"
+      ]
+    }
   ],
   "upgrades": [
     {
-        "id": "SpaRoomEffect",
-          "titles": {
-                "english": "Cocoa Spa"
-            },
-            "descriptions": {
-                "english": "At the end of the turn, give <b>Regen</b> 3 to all units in the room.",
-                "chinese": "回合结束时，所有友方单位获得<b>再生</b> 3。"
-            },
-            "allow_secondary_tooltip_placement": true,
-            "hide_icon_on_card": true,
-            "icon": "@CardArt_room_4",
-            "room_modifier_upgrades": [
-              {
-                "id": "@SpaModif"
-              }
-            ]
+      "id": "SpaRoomEffect",
+      "titles": {
+        "english": "Cocoa Spa"
+      },
+      "descriptions": {
+        "english": "At the end of the turn, give [regen] [roommodifier0.power] to all units in the room.",
+        "chinese": "回合结束时，所有友方单位获得[regen] [roommodifier0.power]。"
+      },
+      "icon": "@CardArt_room_4",
+      "room_modifier_upgrades": [
+        {
+          "id": "@SpaModif"
+        }
+      ]
     }
   ],
   "room_modifiers": [
@@ -60,23 +56,23 @@
       "id": "SpaModif",
       "name": "RoomStateAddEffectPostCombatSpa",
       "descriptions": {
-        "english": "At the end of the turn, give <b>Regen</b> 3 to all units in the room.",
-        "chinese": "回合结束时，所有友方单位获得<b>再生</b> 3。"
+        "english": "At the end of the turn, give [regen] [paramint] to all units in the room.",
+        "chinese": "回合结束时，所有友方单位获得[regen] [paramint]。"
       },
       "effects": [
         {
-            "id": "@ApplyStatus_SpaRegen"
+          "id": "@ApplyStatus_SpaRegen"
         }
       ]
     }
   ],
   "localization_terms": [
-      {
-        "key": "RoomStateAddEffectPostCombatSpa",
-        "texts": {
-          "english": "Cocoa Spa"
-        }
+    {
+      "key": "RoomStateAddEffectPostCombatSpa",
+      "texts": {
+        "english": "Cocoa Spa"
       }
+    }
   ],
   "effects": [
     {
@@ -90,23 +86,23 @@
       "target_team": "monsters"
     },
     {
-        "id": "ApplyStatus_SpaRegen",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "room",
-        "target_team": "both",
-        "target_subtype": "SubtypesData_None",
-        "param_status_effects": [
-            {
-                "status": "regen",
-                "count": 3
-            }
-        ]
+      "id": "ApplyStatus_SpaRegen",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "both",
+
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 3
+        }
+      ]
     }
   ],
   "sprites": [
     {
-        "id": "CardArt_room_4",
-        "path": "textures/CardAssets/Mt_cocoaspa.png"
+      "id": "CardArt_room_4",
+      "path": "textures/CardAssets/Mt_cocoaspa.png"
     }
   ],
   "game_objects": [
