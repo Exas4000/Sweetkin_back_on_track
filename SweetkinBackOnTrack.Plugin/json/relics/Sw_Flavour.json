@@ -1,69 +1,65 @@
-{ 
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "FlavourRaiseAtkSour",
+      "name": "RelicEffectModifyCardAttack",
+      "param_subtype": "@Sub_Sour",
+      "target_mode": "front_in_room",
+      "card_type": "monster",
+      "param_int": 10
+    },
+    {
+      "id": "FlavourAjustCardValue",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_subtype": "@Sub_Sour",
+      "target_mode": "front_in_room",
+      "card_type": "monster",
+      "param_int": 10
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_Flavour",
+      "type": "collectable",
+      "names": {
+        "english": "Limenade Flavour Packet"
+      },
+      "descriptions": {
+        "english": "Sour units gain +[effect0.power] [attack]"
+      },
+      "lore_tooltips": [
         {
-        "id": "FlavourRaiseAtkSour",
-        "name": "RelicEffectModifyCardAttack",
-        "param_subtype": "@Sub_Sour",
-        "target_mode": "front_in_room",
-        "card_type": "monster",
-        "param_int": 10
-        },
-        {
-        "id": "FlavourAjustCardValue",
-        "name": "RelicEffectModifyCharacterAttackDamage",
-        "param_subtype": "@Sub_Sour",
-        "target_mode": "front_in_room",
-        "card_type": "monster",
-        "param_int": 10
+          "english": "The Secondary ingredient in the creation of Sourling and the like. Adding too much of it can lead to brutal consequences."
         }
-    ],
-    "relics": [{
-        "id": "Sw_Flavour",
-        "type": "collectable",
-        "names": {
-            "english": "Limenade Flavour Packet"
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@FlavourRaiseAtkSour"
         },
-        "descriptions": {
-            "english": "Sour get +10 [attack]"
-        },
-        "relic_activated": {
-            "english": " "
-        },
-        "lore_tooltips": [{
-            "english": "The Secondary ingredient in the creation of Sourling and the like. Adding too much of it can lead to brutal consequences."
-        }],
-        "disallow_in_deployment": false,
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@FlavourRaiseAtkSour"
-            },
-            {
-            "id": "@FlavourAjustCardValue"
-            }
-        ],
-        "icon": "@FlavorIcon",
-        "icon_small": "@FlavorIcon",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSweetkin",
-                "pools": ["megapool"],
-                "rarity": "common",
-                "unlock_level": 0,
-                "from_story_event": false,
-                "is_boss_given": false,
-                "is_dragons_hoard": false,
-                "ignore_for_no_relic_achievement": false,
-                "required_dlc": "none",
-                "deprioritize_in_ftue_drafts": true,
-                "force_update_count_label": false
-            }
-        }]
-    }],
-    "sprites": [
-      {
-        "id": "FlavorIcon",
-        "path": "textures/Relic/flavourPack.png"
-      }
-    ]
+        {
+          "id": "@FlavourAjustCardValue"
+        }
+      ],
+      "icon": "@FlavorIcon",
+      "icon_small": "@FlavorIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FlavorIcon",
+      "path": "textures/Relic/flavourPack.png"
+    }
+  ]
 }

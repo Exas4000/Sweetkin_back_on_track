@@ -1,60 +1,61 @@
-{ 
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [{
-        "id": "SWBonusBuffetMorsel",
-        "name": "RelicEffectAddStatusEffectOnFirstSpawn",
-        "target_mode": "room",
-        "card_type": "monster",
-        "param_subtype": "SubtypesData_Snack",
-        "param_status_effects": [{
-            "status": "eatmany",
-            "count": 2
-        }]
-    }],
-    "relics": [{
-        "id": "Sw_SilverPlater",
-        "type": "collectable",
-        "names": {
-            "english": "Silver Plate",
-            "chinese": "银色盘子"
-        },
-        "descriptions": {
-            "english": "Apply Buffet 2 to morsels",
-            "chinese": "影裔单位获得<b>自助餐</b> 2。"
-        },
-        "relic_activated": {
-            "english": "+2 Buffet!"
-        },
-        "lore_tooltips": [{
-            "english": "'It's much easier to modify preexisting artefacts than making a completely new one. This is why the symbolism of an object is so important when using everyday objects as a base.' -Rosette"
-        }],
-        "disallow_in_deployment": false,
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@SWBonusBuffetMorsel"
-        }],
-        "icon": "@PlaterIcon",
-        "icon_small": "@PlaterIcon",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSweetkin",
-                "pools": ["megapool"],
-                "rarity": "common",
-                "unlock_level": 0,
-                "from_story_event": false,
-                "is_boss_given": false,
-                "is_dragons_hoard": false,
-                "ignore_for_no_relic_achievement": false,
-                "required_dlc": "none",
-                "deprioritize_in_ftue_drafts": true,
-                "force_update_count_label": false
-            }
-        }]
-    }],
-    "sprites": [
-      {
-        "id": "PlaterIcon",
-        "path": "textures/Relic/SilverPlate.png"
-      }
-    ]
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "SWBonusBuffetMorsel",
+      "name": "RelicEffectAddStatusEffectOnFirstSpawn",
+      "target_mode": "room",
+      "card_type": "monster",
+      "param_subtype": "SubtypesData_Snack",
+      "param_status_effects": [
+        {
+          "status": "eatmany",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_SilverPlater",
+      "type": "collectable",
+      "names": {
+        "english": "Silver Plate",
+        "chinese": "银色盘子"
+      },
+      "descriptions": {
+        "english": "Apply <b>Buffet</b> [effect0.status0.power] to the first morsel spawned per turn.",
+        "chinese": "影裔单位获得<b>自助餐</b> [effect0.status0.power]。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "'It's much easier to modify preexisting artefacts than making a completely new one. This is why the symbolism of an object is so important when using everyday objects as a base.' -Rosette"
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        {
+          "id": "@SWBonusBuffetMorsel"
+        }
+      ],
+      "icon": "@PlaterIcon",
+      "icon_small": "@PlaterIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PlaterIcon",
+      "path": "textures/Relic/SilverPlate.png"
+    }
+  ]
 }

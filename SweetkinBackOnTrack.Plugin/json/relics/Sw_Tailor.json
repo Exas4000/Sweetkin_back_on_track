@@ -1,67 +1,64 @@
-{ 
-    "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
-    "relic_effects": [
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "TailorBuffVIP",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_subtype": "@Sub_Sour",
+      "target_mode": "front_in_room",
+      "card_type": "monster",
+      "param_upgrade": "@TailorRelic_Upg",
+      "param_trigger": "on_spawn"
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_Tailor",
+      "type": "collectable",
+      "names": {
+        "english": "Tailoring Services"
+      },
+      "descriptions": {
+        "english": "<b>Vip</b> units gain +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] and +[effect0.upgrade.bonussize][capacity] "
+      },
+      "lore_tooltips": [
         {
-        "id": "TailorBuffVIP",
-        "name": "RelicEffectAddTempUpgrade",
-        "param_subtype": "@Sub_Sour",
-        "target_mode": "front_in_room",
-        "card_type": "monster",
-        "param_upgrade": "@TailorRelic_Upg",
-        "param_trigger": "on_spawn"
+          "english": "Big or Small, no guest shall be left with an unfit attire during their trip throught Haven."
         }
-    ],
-    "relics": [{
-        "id": "Sw_Tailor",
-        "type": "collectable",
-        "names": {
-            "english": "Tailoring Services"
-        },
-        "descriptions": {
-            "english": "Vip get +10[attack], +20[health] and +1[capacity] "
-        },
-        "relic_activated": {
-            "english": "+10[attack]/+20[health]/+1[capacity]"
-        },
-        "lore_tooltips": [{
-            "english": "Big or Small, no guest shall be left with an unfit attire during their trip throught Haven."
-        }],
-        "disallow_in_deployment": false,
-        "lore_style": "herzal",
-        "relic_effects": [{
-            "id": "@TailorBuffVIP"
-            }
-        ],
-        "icon": "@TailorIcon",
-        "icon_small": "@TailorIcon",
-        "extensions": [{
-            "collectable": {
-                "class": "@ClassSweetkin",
-                "pools": ["megapool"],
-                "rarity": "uncommon",
-                "unlock_level": 0,
-                "from_story_event": false,
-                "is_boss_given": false,
-                "is_dragons_hoard": false,
-                "ignore_for_no_relic_achievement": false,
-                "required_dlc": "none",
-                "deprioritize_in_ftue_drafts": true,
-                "force_update_count_label": false
-            }
-        }]
-    }],
-    "sprites": [
-      {
-        "id": "TailorIcon",
-        "path": "textures/Relic/Mt_tailor.png"
-      }
-    ],
-    "upgrades": [
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
         {
-            "id": "TailorRelic_Upg",
-            "bonus_damage": 10,
-            "bonus_hp": 20,
-            "bonus_size": 1
+          "id": "@TailorBuffVIP"
         }
-    ]
+      ],
+      "icon": "@TailorIcon",
+      "icon_small": "@TailorIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TailorIcon",
+      "path": "textures/Relic/Mt_tailor.png"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TailorRelic_Upg",
+      "bonus_damage": 10,
+      "bonus_hp": 20,
+      "bonus_size": 1,
+      "is_unique": true
+    }
+  ]
 }
