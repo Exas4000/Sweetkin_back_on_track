@@ -2,58 +2,54 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
-        "id": "Sw_Delivery",
-        "names": {
-          "english": "Delivery Boy",
-          "chinese": "送货小哥"
-        },
-        "card_art": "@CardArt_unit_3",
-        "cost": 0,
-        "card_type": "monster",
-        "cost_type": "default",
-        "rarity": "common",
-        "class": "@ClassSweetkin",
-        "unlock_level": 0,
-        "targets_room": true,
-        "effects": [
-          {
-            "id": "@SpawnDelivery"
-          }
-        ],
-        "lore_tooltips": [
-          {
-            "english": "'Delivery service at your command! What can i do for you today? (Dove Cooing) '-Sweetkin's Delivery Service"
-          }
-        ],
-        "pools": [
-          "MegaPool"
-        ]
-      }
+      "id": "Sw_Delivery",
+      "names": {
+        "english": "Delivery Boy",
+        "chinese": "送货小哥"
+      },
+      "card_art": "@CardArt_unit_3",
+      "cost": 0,
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        {
+          "id": "@SpawnDelivery"
+        }
+      ],
+      "lore_tooltips": [
+        {
+          "english": "'Delivery service at your command! What can i do for you today? (Dove Cooing) '-Sweetkin's Delivery Service"
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
   ],
   "characters": [
     {
-        "id": "Delivery",
-        "size": 1,
-        "attack_damage": 1,
-        "health": 1,
-        "names": {
-          "english": "Delivery Boy",
-          "chinese": "送货小哥"
-        },
-        "can_attack": true,
-        "can_be_healed": true,
-        "character_art": "@DeliveryArt",
-        "chatter":"@CTR_delivery",
-        "subtypes": [
-          "@Sub_Spicy",
-          "@Sub_Staff"
-        ],
-        "triggers": [
-          {
-            "id": "@Delivery_Draw"
-          }
-        ]
-      }
+      "id": "Delivery",
+      "size": 1,
+      "attack_damage": 1,
+      "health": 1,
+      "names": {
+        "english": "Delivery Boy",
+        "chinese": "送货小哥"
+      },
+      "character_art": "@DeliveryArt",
+      "chatter": "@CTR_delivery",
+      "subtypes": [
+        "@Sub_Spicy",
+        "@Sub_Staff"
+      ],
+      "triggers": [
+        {
+          "id": "@Delivery_Draw"
+        }
+      ]
+    }
   ],
   "character_triggers": [
     {
@@ -79,18 +75,17 @@
       "param_character": "@Delivery"
     },
     {
-        "id": "Delivery_DrawEffect",
-        "name": "CardEffectDrawType",
-        "param_int": 1,
-        "target_mode": "draw_pile",
-        "target_card_type": "equipment"
-
+      "id": "Delivery_DrawEffect",
+      "name": "CardEffectDrawType",
+      "param_int": 1,
+      "target_mode": "draw_pile",
+      "target_card_type": "equipment"
     }
   ],
   "sprites": [
     {
-        "id": "CardArt_unit_3",
-        "path": "textures/CardAssets/Unit_3.png"
+      "id": "CardArt_unit_3",
+      "path": "textures/CardAssets/Unit_3.png"
     },
     {
       "id": "DeliveryArt",
@@ -111,36 +106,36 @@
       "id": "DeliveryArt",
       "type": "character_art",
       "extensions": {
-          "character_art": {
-              "sprite": "@DeliveryArt",
-              "transform": {
-                  "position": {
-                      "x": 0,
-                      "y": 1.3,
-                      "z": 0
-                  },
-                  "scale": {
-                      "x": 1.5,
-                      "y": 1.5,
-                      "z": 1.5
-                  }
-              }
+        "character_art": {
+          "sprite": "@DeliveryArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
           }
+        }
       }
-  }
+    }
   ],
   "chatter": [
     {
-      "id":"CTR_delivery",
+      "id": "CTR_delivery",
       "gender": "male",
-      "added_expressions":[
+      "added_expressions": [
         {
-          "english":"Dovelievery at your service!"
+          "english": "Dovelievery at your service!"
         }
       ],
-      "idle_expressions":[
+      "idle_expressions": [
         {
-          "english":"*Dove cooing*"
+          "english": "*Dove cooing*"
         }
       ]
     }

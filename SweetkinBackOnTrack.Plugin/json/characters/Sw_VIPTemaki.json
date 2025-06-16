@@ -10,7 +10,6 @@
       "card_art": "@CardArt_unit_19",
       "cost": 1,
       "card_type": "monster",
-      "cost_type": "default",
       "rarity": "rare",
       "class": "@ClassSweetkin",
       "unlock_level": 2,
@@ -37,10 +36,8 @@
         "english": "Beyonder's Temaki",
         "chinese": "超越寿司"
       },
-      "can_attack": true,
-      "can_be_healed": true,
       "character_art": "@VIPtemakiArt",
-      "chatter":"@CTR_temaki",
+      "chatter": "@CTR_temaki",
       "subtypes": [
         "SubtypesData_Snack",
         "@Sub_Vip"
@@ -59,7 +56,7 @@
     }
   ],
   "upgrades": [
-  {
+    {
       "id": "eatStatTemaki",
       "bonus_hp": 11,
       "bonus_damage": 11
@@ -70,15 +67,15 @@
       "id": "eatTemaki",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 11[attack] and 11[health] and <b>Retreat</b> them",
-        "chinese": "吞食者获得 +11[attack]，+11[health]，并[retreat]。"
+        "english": "Eater gains +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] and [retreat] them",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，并[retreat]。"
       },
       "effects": [
         {
-            "id": "@ApplyStat_temaki"
+          "id": "@ApplyStat_temaki"
         },
         {
-            "id": "@FEARTHETEMAKI"
+          "id": "@FEARTHETEMAKI"
         }
       ]
     }
@@ -98,12 +95,11 @@
       "param_upgrade": "@eatStatTemaki"
     },
     {
-        "id": "FEARTHETEMAKI",
+      "id": "FEARTHETEMAKI",
       "name": "CardEffectFloorRearrange",
       "param_int": 1,
       "target_mode": "last_feeder_character",
-      "target_team": "monsters",
-      "target_subtype": "SubtypesData_None"
+      "target_team": "monsters"
     }
   ],
   "sprites": [
@@ -130,39 +126,39 @@
       "id": "VIPtemakiArt",
       "type": "character_art",
       "extensions": {
-          "character_art": {
-              "sprite": "@VIPtemakiArt",
-              "transform": {
-                  "position": {
-                      "x": 0,
-                      "y": 1.3,
-                      "z": 0
-                  },
-                  "scale": {
-                      "x": 1.5,
-                      "y": 1.5,
-                      "z": 1.5
-                  }
-              }
+        "character_art": {
+          "sprite": "@VIPtemakiArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
           }
+        }
       }
-  }
+    }
   ],
   "chatter": [
     {
-      "id":"CTR_temaki",
+      "id": "CTR_temaki",
       "gender": "neutral",
-      "added_expressions":[
+      "added_expressions": [
         {
-          "english":"Look! I'm a three-eyed sushi!"
+          "english": "Look! I'm a three-eyed sushi!"
         }
       ],
-      "idle_expressions":[
+      "idle_expressions": [
         {
-          "english":"Will you be my new host?"
+          "english": "Will you be my new host?"
         },
         {
-          "english":"Terrifyingly delicious!"
+          "english": "Terrifyingly delicious!"
         }
       ]
     }

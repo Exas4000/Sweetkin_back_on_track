@@ -2,74 +2,70 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "cards": [
     {
-        "id": "Sw_Lime",
-        "names": {
-          "english": "Lime",
-          "chinese": "青柠"
-        },
-        "card_art": "@CardArt_unit_10",
-        "cost": 2,
-        "card_type": "monster",
-        "cost_type": "default",
-        "rarity": "rare",
-        "class": "@ClassSweetkin",
-        "unlock_level": 0,
-        "targets_room": true,
-        "effects": [
-          {
-            "id": "@SpawnLime"
-          }
-        ],
-        "lore_tooltips": [
-          {
-            "english": "This gargantuan creature is in charge of recycling the few fallen who cannot be saved. Granting them a second wind that might ultimately shift the balance in our favor."
-          }
-        ],
-        "pools": [
-          "UnitsAllBanner"
-        ]
-      }
+      "id": "Sw_Lime",
+      "names": {
+        "english": "Lime",
+        "chinese": "青柠"
+      },
+      "card_art": "@CardArt_unit_10",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        {
+          "id": "@SpawnLime"
+        }
+      ],
+      "lore_tooltips": [
+        {
+          "english": "This gargantuan creature is in charge of recycling the few fallen who cannot be saved. Granting them a second wind that might ultimately shift the balance in our favor."
+        }
+      ],
+      "pools": [
+        "UnitsAllBanner"
+      ]
+    }
   ],
   "characters": [
     {
-        "id": "Lime",
-        "size": 3,
-        "attack_damage": 15,
-        "health": 30,
-        "names": {
-          "english": "Lime",
-          "chinese": "青柠"
-        },
-        "can_attack": true,
-        "can_be_healed": true,
-        "character_art": "@LimeArt",
-        "chatter":"@CTR_lime",
-        "subtypes": [
-          "@Sub_Sour",
-          "@Sub_Staff",
-          "SubtypesData_BannerUnit"
-        ],
-        "triggers": [
-          {
-            "id": "@HarvestLime"
-          }
-        ]
-      }
+      "id": "Lime",
+      "size": 3,
+      "attack_damage": 15,
+      "health": 30,
+      "names": {
+        "english": "Lime",
+        "chinese": "青柠"
+      },
+      "character_art": "@LimeArt",
+      "chatter": "@CTR_lime",
+      "subtypes": [
+        "@Sub_Sour",
+        "@Sub_Staff",
+        "SubtypesData_BannerUnit"
+      ],
+      "triggers": [
+        {
+          "id": "@HarvestLime"
+        }
+      ]
+    }
   ],
   "character_triggers": [
     {
       "id": "HarvestLime",
       "trigger": "on_any_monster_death_on_floor",
       "descriptions": {
-        "english": "Summon a Sour guard and Retreat the front friendly unit.",
+        "english": "Summon a <b>Sour</b> guard and [retreat] the front friendly unit.",
         "chinese": "召唤 1 个<b>酸卫士</b>。使前排友方单位[retreat]。"
       },
       "effects": [
         {
-            "id": "@SpawnSourHarvest"
+          "id": "@SpawnSourHarvest"
         },
         {
-            "id": "@PushLime"
+          "id": "@PushLime"
         }
       ]
     }
@@ -83,24 +79,23 @@
       "param_character": "@Lime"
     },
     {
-        "id": "SpawnSourHarvest",
-        "name": "CardEffectSpawnMonster",
-        "target_mode": "room",
-        "param_character": "@SourGuard"
+      "id": "SpawnSourHarvest",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@SourGuard"
     },
     {
-        "id": "PushLime",
-        "name": "CardEffectFloorRearrange",
-        "param_int": 1,
-        "target_mode": "front_in_room",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None"
+      "id": "PushLime",
+      "name": "CardEffectFloorRearrange",
+      "param_int": 1,
+      "target_mode": "front_in_room",
+      "target_team": "monsters"
     }
   ],
   "sprites": [
     {
-        "id": "CardArt_unit_10",
-        "path": "textures/CardAssets/Unit_10.png"
+      "id": "CardArt_unit_10",
+      "path": "textures/CardAssets/Unit_10.png"
     },
     {
       "id": "LimeArt",
@@ -121,48 +116,48 @@
       "id": "LimeArt",
       "type": "character_art",
       "extensions": {
-          "character_art": {
-              "sprite": "@LimeArt",
-              "transform": {
-                  "position": {
-                      "x": 0,
-                      "y": 1.3,
-                      "z": 0
-                  },
-                  "scale": {
-                      "x": 1.5,
-                      "y": 1.5,
-                      "z": 1.5
-                  }
-              }
+        "character_art": {
+          "sprite": "@LimeArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
           }
+        }
       }
-  }
+    }
   ],
   "chatter": [
     {
-      "id":"CTR_lime",
+      "id": "CTR_lime",
       "gender": "female",
-      "added_expressions":[
+      "added_expressions": [
         {
-          "english":"Cleanup as arrived. Keep the permanent casualties low!"
+          "english": "Cleanup as arrived. Keep the permanent casualties low!"
         },
         {
-          "english":"On it! Recycling in progress!"
+          "english": "On it! Recycling in progress!"
         }
       ],
-      "idle_expressions":[
+      "idle_expressions": [
         {
-          "english":"Time to clean em out."
+          "english": "Time to clean em out."
         },
         {
-          "english":"Ally down, moving in to supress."
+          "english": "Ally down, moving in to supress."
         },
         {
-          "english":"Easier than the Library."
+          "english": "Easier than the Library."
         },
         {
-          "english":"Sally's orders: detain Librarians on sight."
+          "english": "Sally's orders: detain Librarians on sight."
         }
       ]
     }

@@ -10,10 +10,8 @@
       "card_art": "@CardArt_unit_1",
       "cost": 1,
       "card_type": "monster",
-      "cost_type": "default",
       "rarity": "common",
       "class": "@ClassSweetkin",
-      "unlock_level": 0,
       "targets_room": true,
       "effects": [
         {
@@ -40,10 +38,8 @@
         "english": "Sweetling",
         "chinese": "甜蜜蜜"
       },
-      "can_attack": true,
-      "can_be_healed": true,
       "character_art": "@SweetlingArt",
-      "chatter":"@CTR_sweetling",
+      "chatter": "@CTR_sweetling",
       "subtypes": [
         "@Sub_Sweet",
         "SubtypesData_Snack"
@@ -62,7 +58,7 @@
     }
   ],
   "upgrades": [
-  {
+    {
       "id": "SweetlingHp",
       "bonus_hp": 10
     }
@@ -72,12 +68,12 @@
       "id": "Eat_sweetling",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains 10[health]",
-        "chinese": "吞食者获得 +10[health]。"
+        "english": "Eater gains +[effect0.upgrade.bonushp][health]",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {
-            "id": "@ApplyStat_sweetling"
+          "id": "@ApplyStat_sweetling"
         }
       ]
     }
@@ -121,39 +117,39 @@
       "id": "SweetlingArt",
       "type": "character_art",
       "extensions": {
-          "character_art": {
-              "sprite": "@SweetlingArt",
-              "transform": {
-                  "position": {
-                      "x": 0,
-                      "y": 1.3,
-                      "z": 0
-                  },
-                  "scale": {
-                      "x": 1.5,
-                      "y": 1.5,
-                      "z": 1.5
-                  }
-              }
+        "character_art": {
+          "sprite": "@SweetlingArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
           }
+        }
       }
-  }
+    }
   ],
   "chatter": [
     {
-      "id":"CTR_sweetling",
+      "id": "CTR_sweetling",
       "gender": "female",
-      "added_expressions":[
+      "added_expressions": [
         {
-          "english":"How may we serve you dear guest?"
+          "english": "How may we serve you dear guest?"
         }
       ],
-      "idle_expressions":[
+      "idle_expressions": [
         {
-          "english":"I'l do better next time..."
+          "english": "I'l do better next time..."
         },
         {
-          "english":"May I offer you all some Gelato?"
+          "english": "May I offer you all some Gelato?"
         }
       ]
     }

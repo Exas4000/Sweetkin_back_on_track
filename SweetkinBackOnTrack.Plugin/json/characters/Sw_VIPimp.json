@@ -2,65 +2,61 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
-        "id": "Sw_VIPimp",
-        "names": {
-          "english": "V.I.Imp",
-          "chinese": "贵宾小鬼"
-        },
-        "card_art": "@CardArt_unit_6",
-        "cost": 1,
-        "card_type": "monster",
-        "cost_type": "default",
-        "rarity": "uncommon",
-        "class": "@ClassSweetkin",
-        "unlock_level": 0,
-        "targets_room": true,
-        "effects": [
-          {
-            "id": "@SpawnVIPimp"
-          }
-        ],
-        "lore_tooltips": [
-          {
-            "english": "Some wealthy imps have taken a liking to the pampering provided by the Sweetkin. Their donations seem to be enough to stir the Sweetkin into providing little extras for any Hellborn nearby."
-          }
-        ],
-        "pools": [
-          "MegaPool"
-        ]
-      }
+      "id": "Sw_VIPimp",
+      "names": {
+        "english": "V.I.Imp",
+        "chinese": "贵宾小鬼"
+      },
+      "card_art": "@CardArt_unit_6",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        {
+          "id": "@SpawnVIPimp"
+        }
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Some wealthy imps have taken a liking to the pampering provided by the Sweetkin. Their donations seem to be enough to stir the Sweetkin into providing little extras for any Hellborn nearby."
+        }
+      ],
+      "pools": [
+        "MegaPool"
+      ]
+    }
   ],
   "characters": [
     {
-        "id": "VIPimp",
-        "size": 1,
-        "attack_damage": 1,
-        "health": 1,
-        "names": {
-          "english": "V.I.Imp",
-          "chinese": "贵宾小鬼"
-        },
-        "can_attack": true,
-        "can_be_healed": true,
-        "character_art": "@VIPimpArt",
-        "chatter":"@CTR_VipImp",
-        "subtypes": [
-          "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
-          "@Sub_Vip"
-        ],
-        "triggers": [
-          {
-            "id": "@VIP_GOLD"
-          }
-        ]
-      }
+      "id": "VIPimp",
+      "size": 1,
+      "attack_damage": 1,
+      "health": 1,
+      "names": {
+        "english": "V.I.Imp",
+        "chinese": "贵宾小鬼"
+      },
+      "character_art": "@VIPimpArt",
+      "chatter": "@CTR_VipImp",
+      "subtypes": [
+        "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c",
+        "@Sub_Vip"
+      ],
+      "triggers": [
+        {
+          "id": "@VIP_GOLD"
+        }
+      ]
+    }
   ],
   "character_triggers": [
     {
       "id": "VIP_GOLD",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Gain [effect0.power] [gold].",
+        "english": "Gain [effect0.power][coin].",
         "chinese": "获得 [effect0.power][coin]。"
       },
       "effects": [
@@ -79,17 +75,16 @@
       "param_character": "@VIPimp"
     },
     {
-        "id": "VIP_GOLDeffect",
-        "name": "CardEffectRewardGold",
-        "param_int": 50,
-        "target_mode": "room"
-
+      "id": "VIP_GOLDeffect",
+      "name": "CardEffectRewardGold",
+      "param_int": 50,
+      "target_mode": "room"
     }
   ],
   "sprites": [
     {
-        "id": "CardArt_unit_6",
-        "path": "textures/CardAssets/Unit_6.png"
+      "id": "CardArt_unit_6",
+      "path": "textures/CardAssets/Unit_6.png"
     },
     {
       "id": "VIPimpArt",
@@ -110,45 +105,45 @@
       "id": "VIPimpArt",
       "type": "character_art",
       "extensions": {
-          "character_art": {
-              "sprite": "@VIPimpArt",
-              "transform": {
-                  "position": {
-                      "x": 0,
-                      "y": 1.3,
-                      "z": 0
-                  },
-                  "scale": {
-                      "x": 1.5,
-                      "y": 1.5,
-                      "z": 1.5
-                  }
-              }
+        "character_art": {
+          "sprite": "@VIPimpArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
           }
+        }
       }
-  }
+    }
   ],
   "chatter": [
     {
-      "id":"CTR_VipImp",
+      "id": "CTR_VipImp",
       "gender": "male",
-      "added_expressions":[
+      "added_expressions": [
         {
-          "english":"Money talks."
+          "english": "Money talks."
         },
         {
-          "english":"Is it a Diner Spectacle?"
+          "english": "Is it a Diner Spectacle?"
         }
       ],
-      "idle_expressions":[
+      "idle_expressions": [
         {
-          "english":"Here's a tip."
+          "english": "Here's a tip."
         },
         {
-          "english":"I paid good money to visit Haven."
+          "english": "I paid good money to visit Haven."
         },
         {
-          "english":"I only expect the best from the staff."
+          "english": "I only expect the best from the staff."
         }
       ]
     }

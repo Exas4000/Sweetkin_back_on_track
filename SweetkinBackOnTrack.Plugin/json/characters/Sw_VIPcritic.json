@@ -2,67 +2,63 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
   "cards": [
     {
-        "id": "Sw_VIPcritic",
-        "names": {
-          "english": "Critic's Effigy",
-          "chinese": "批评家的肖像"
-        },
-        "card_art": "@CardArt_unit_18",
-        "cost": 2,
-        "card_type": "monster",
-        "cost_type": "default",
-        "rarity": "rare",
-        "class": "@ClassSweetkin",
-        "unlock_level": 0,
-        "targets_room": true,
-        "effects": [
-          {
-            "id": "@SpawnCritic"
-          }
-        ],
-        "lore_tooltips": [
-          {
-            "english": "An animated effigy to another creator. One who sought balance and brought it to the sweetkins as well."
-          }
-        ]
-      }
+      "id": "Sw_VIPcritic",
+      "names": {
+        "english": "Critic's Effigy",
+        "chinese": "批评家的肖像"
+      },
+      "card_art": "@CardArt_unit_18",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        {
+          "id": "@SpawnCritic"
+        }
+      ],
+      "lore_tooltips": [
+        {
+          "english": "An animated effigy to another creator. One who sought balance and brought it to the sweetkins as well."
+        }
+      ]
+    }
   ],
   "characters": [
     {
-        "id": "VIPcritic",
-        "size": 2,
-        "attack_damage": 30,
-        "health": 15,
-        "names": {
-          "english": "Critic's Effigy",
-          "chinese": "批评家的肖像"
-        },
-        "can_attack": true,
-        "can_be_healed": true,
-        "character_art": "@VIPcriticArt",
-        "chatter":"@CTR_critic",
-        "subtypes": [
-          "@Sub_Spicy",
-          "@Sub_Vip"
-        ],
-        "triggers": [
-          {
-            "id": "@CriticApplyBuffet"
-          }
-        ]
-      }
+      "id": "VIPcritic",
+      "size": 2,
+      "attack_damage": 30,
+      "health": 15,
+      "names": {
+        "english": "Critic's Effigy",
+        "chinese": "批评家的肖像"
+      },
+      "character_art": "@VIPcriticArt",
+      "chatter": "@CTR_critic",
+      "subtypes": [
+        "@Sub_Spicy",
+        "@Sub_Vip"
+      ],
+      "triggers": [
+        {
+          "id": "@CriticApplyBuffet"
+        }
+      ]
+    }
   ],
   "character_triggers": [
     {
       "id": "CriticApplyBuffet",
       "trigger": "on_team_turn_begin",
       "descriptions": {
-        "english": "Apply Buffet [effect0.status0.power] to all allies on the floor",
+        "english": "Apply <b>Buffet</b> [effect0.status0.power] to all allies on the floor",
         "chinese": "所有友方单位获得<b>自助餐</b> [effect0.status0.power]。"
       },
       "effects": [
         {
-            "id": "@CriticBuffet"
+          "id": "@CriticBuffet"
         }
       ]
     }
@@ -76,23 +72,22 @@
       "param_character": "@VIPcritic"
     },
     {
-        "id": "CriticBuffet",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "room",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_status_effects": [
-            {
-                "status": "eatmany",
-                "count": 1
-            }
-        ]
+      "id": "CriticBuffet",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "eatmany",
+          "count": 1
+        }
+      ]
     }
   ],
   "sprites": [
     {
-        "id": "CardArt_unit_18",
-        "path": "textures/CardAssets/Unit_18.png"
+      "id": "CardArt_unit_18",
+      "path": "textures/CardAssets/Unit_18.png"
     },
     {
       "id": "VIPcriticArt",
@@ -113,45 +108,45 @@
       "id": "VIPcriticArt",
       "type": "character_art",
       "extensions": {
-          "character_art": {
-              "sprite": "@VIPcriticArt",
-              "transform": {
-                  "position": {
-                      "x": 0,
-                      "y": 1.3,
-                      "z": 0
-                  },
-                  "scale": {
-                      "x": 1.5,
-                      "y": 1.5,
-                      "z": 1.5
-                  }
-              }
+        "character_art": {
+          "sprite": "@VIPcriticArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
           }
+        }
       }
-  }
+    }
   ],
   "chatter": [
     {
-      "id":"CTR_critic",
+      "id": "CTR_critic",
       "gender": "male",
-      "added_expressions":[
+      "added_expressions": [
         {
-          "english":"Sweetkin, this for me to do the critic's bidding."
+          "english": "Sweetkin, this for me to do the critic's bidding."
         },
         {
-          "english":"Prepare to be judged and balanced!"
+          "english": "Prepare to be judged and balanced!"
         }
       ],
-      "idle_expressions":[
+      "idle_expressions": [
         {
-          "english":"What is it about not being allowed to talk about balance?"
+          "english": "What is it about not being allowed to talk about balance?"
         },
         {
-          "english":"Made by Rosette, to serve in the critic's image..."
+          "english": "Made by Rosette, to serve in the critic's image..."
         },
         {
-          "english":"May we be balanced by the Rising Dusk."
+          "english": "May we be balanced by the Rising Dusk."
         }
       ]
     }

@@ -10,10 +10,8 @@
       "card_art": "@CardArt_unit_15",
       "cost": 1,
       "card_type": "monster",
-      "cost_type": "default",
       "rarity": "common",
       "class": "@ClassSweetkin",
-      "unlock_level": 0,
       "targets_room": true,
       "effects": [
         {
@@ -40,10 +38,8 @@
         "english": "Crab Cake",
         "chinese": "蟹肉饼"
       },
-      "can_attack": true,
-      "can_be_healed": true,
       "character_art": "@CrabArt",
-      "chatter" : "@CTR_morsels",
+      "chatter": "@CTR_morsels",
       "subtypes": [
         "@Sub_Minty",
         "SubtypesData_Snack"
@@ -66,7 +62,7 @@
       "id": "Eat_crab",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Eater gains [effect0.status0.power] Armor",
+        "english": "Eater gains [armor] [effect0.status0.power]",
         "chinese": "吞食者获得[armor] [effect0.status0.power]。"
       },
       "effects": [
@@ -85,17 +81,16 @@
       "param_character": "@CrabCake"
     },
     {
-        "id": "ApplyStatus_CrabCake",
-        "name": "CardEffectAddStatusEffect",
-        "target_mode": "last_feeder_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None",
-        "param_status_effects": [
-            {
-                "status": "armor",
-                "count": 20
-            }
-        ]
+      "id": "ApplyStatus_CrabCake",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_feeder_character",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 20
+        }
+      ]
     }
   ],
   "sprites": [
@@ -122,42 +117,42 @@
       "id": "CrabArt",
       "type": "character_art",
       "extensions": {
-          "character_art": {
-              "sprite": "@CrabArt",
-              "transform": {
-                  "position": {
-                      "x": 0,
-                      "y": 1.3,
-                      "z": 0
-                  },
-                  "scale": {
-                      "x": 1.5,
-                      "y": 1.5,
-                      "z": 1.5
-                  }
-              }
+        "character_art": {
+          "sprite": "@CrabArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
           }
+        }
       }
-  }
+    }
   ],
   "chatter": [
     {
-      "id":"CTR_morsels",
+      "id": "CTR_morsels",
       "gender": "male",
-      "added_expressions":[
+      "added_expressions": [
         {
-          "english":"*Flop*"
+          "english": "*Flop*"
         },
         {
-          "english":"*squish*"
+          "english": "*squish*"
         }
       ],
-      "idle_expressions":[
+      "idle_expressions": [
         {
-          "english":"*Does puppy eyes*"
+          "english": "*Does puppy eyes*"
         },
         {
-          "english":"*Runs around*"
+          "english": "*Runs around*"
         }
       ]
     }
