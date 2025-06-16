@@ -13,7 +13,7 @@
       },
       "lore_tooltips": [
         {
-          "english":"'A cruel parasitory concept learned from another world by Father. He wasn't sure if I should even able to do as such. It seems like i have a certain 'Floofty' to thank that for.'-Rosette"
+          "english": "'A cruel parasitory concept learned from another world by Father. He wasn't sure if I should even able to do as such. It seems like i have a certain 'Floofty' to thank that for.'-Rosette"
         }
       ],
       "rarity": "uncommon",
@@ -26,10 +26,10 @@
       ],
       "cost": 1,
       "effects": [
-        { 
+        {
           "id": "@Snakrificed"
         },
-        { 
+        {
           "id": "@ApplyStatus_Snakrificed"
         }
       ],
@@ -42,32 +42,29 @@
   ],
   "effects": [
     {
-        "id": "Snakrificed",
-        "name": "CardEffectKill",
-        "target_mode": "drop_target_character",
-        "target_team": "heroes",
-        "target_subtype": "SubtypesData_None",
-        "target_ignore_bosses": true
+      "id": "Snakrificed",
+      "name": "CardEffectKill",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "target_ignore_bosses": true
     },
     {
       "id": "ApplyStatus_Snakrificed",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-                {
-                    "status": "armor",
-                    "count": 30
-                }
-            ]
+        {
+          "status": "armor",
+          "count": 30
+        }
+      ]
     }
   ],
   "traits": [
     {
       "id": "Consume_Snackrifice",
-      "name": "CardTraitExhaustState",
-      "trait_is_removable":true
+      "name": "CardTraitExhaustState"
     }
   ],
   "sprites": [

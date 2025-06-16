@@ -13,7 +13,7 @@
       },
       "lore_tooltips": [
         {
-          "english":"'Come in! There is enough for everybody!' -Rosette during one of the many Winged invasion"
+          "english": "'Come in! There is enough for everybody!' -Rosette during one of the many Winged invasion"
         }
       ],
       "rarity": "uncommon",
@@ -29,7 +29,7 @@
         {
           "id": "@ApplyStatus_seconds"
         },
-        { 
+        {
           "id": "@RaiseHp_seconds"
         }
       ]
@@ -41,21 +41,19 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-                {
-                    "status": "debuff",
-                    "count": 2
-                }
-            ]
+        {
+          "status": "debuff",
+          "count": 2
+        }
+      ]
     },
     {
       "id": "RaiseHp_seconds",
-        "name": "CardEffectBuffMaxHealth",
-        "param_int": 10,
-        "target_mode": "room",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None"
+      "name": "CardEffectBuffMaxHealth",
+      "param_int": 10,
+      "target_mode": "room",
+      "target_team": "monsters"
     }
   ],
   "sprites": [

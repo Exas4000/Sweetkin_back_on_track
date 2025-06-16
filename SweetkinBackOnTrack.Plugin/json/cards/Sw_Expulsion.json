@@ -13,7 +13,7 @@
       },
       "lore_tooltips": [
         {
-          "english":"'Rowdy clients takes the door. That's the rule...'-Rosette"
+          "english": "'Rowdy clients takes the door. That's the rule...'-Rosette"
         }
       ],
       "rarity": "rare",
@@ -29,10 +29,10 @@
         {
           "id": "@expulsionBig"
         },
-        { 
+        {
           "id": "@expulsionSmall"
         },
-        { 
+        {
           "id": "@expulsionPush"
         }
       ]
@@ -41,28 +41,25 @@
   "effects": [
     {
       "id": "expulsionBig",
-        "name": "CardEffectDamage",
-        "param_int": 150,
-        "target_mode": "front_in_room",
-        "target_team": "heroes",
-        "target_subtype": "SubtypesData_None"
+      "name": "CardEffectDamage",
+      "param_int": 150,
+      "target_mode": "front_in_room",
+      "target_team": "heroes"
     },
     {
       "id": "expulsionSmall",
-        "name": "CardEffectDamage",
-        "param_int": 50,
-        "target_mode": "room",
-        "target_team": "heroes",
-        "target_subtype": "SubtypesData_None"
+      "name": "CardEffectDamage",
+      "param_int": 50,
+      "target_mode": "room",
+      "target_team": "heroes"
     },
     {
       "id": "expulsionPush",
       "name": "CardEffectFloorRearrange",
       "param_int": 1,
       "target_mode": "front_in_room",
-      "target_team": "heroes",
-      "target_subtype": "SubtypesData_None"
-     }
+      "target_team": "heroes"
+    }
   ],
   "sprites": [
     {

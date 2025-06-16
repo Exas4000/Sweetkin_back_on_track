@@ -38,8 +38,7 @@
       "name": "CardEffectBump",
       "param_int": -3,
       "target_mode": "drop_target_character",
-      "target_team": "both",
-      "target_subtype": "SubtypesData_None"
+      "target_team": "both"
     }
   ],
   "sprites": [

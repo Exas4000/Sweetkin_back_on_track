@@ -13,7 +13,7 @@
       },
       "lore_tooltips": [
         {
-          "english":"A wide array of meals seems always at the ready. Exotic food seems the like the norm until they figure out every clan's preference."
+          "english": "A wide array of meals seems always at the ready. Exotic food seems the like the norm until they figure out every clan's preference."
         }
       ],
       "rarity": "rare",
@@ -29,10 +29,10 @@
         {
           "id": "@courseArmor"
         },
-        { 
+        {
           "id": "@courseRage"
         },
-        { 
+        {
           "id": "@courseQuick"
         }
       ]
@@ -44,39 +44,36 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-              {
-                "status": "armor",
-                "count": 20
-              }
-            ]
+        {
+          "status": "armor",
+          "count": 20
+        }
+      ]
     },
     {
       "id": "courseRage",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "last_targeted_characters",
       "target_team": "monsters",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-              {
-                "status": "buff",
-                "count": 10
-              }
-            ]
+        {
+          "status": "buff",
+          "count": 10
+        }
+      ]
     },
     {
       "id": "courseQuick",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "last_targeted_characters",
       "target_team": "monsters",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-              {
-                "status": "ambush",
-                "count": 1
-              }
-            ]
+        {
+          "status": "ambush",
+          "count": 1
+        }
+      ]
     }
   ],
   "sprites": [

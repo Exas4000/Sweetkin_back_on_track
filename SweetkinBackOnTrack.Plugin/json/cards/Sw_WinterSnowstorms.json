@@ -7,12 +7,9 @@
         "english": "Winter Snowstorms",
         "chinese": "冬日暴雪"
       },
-      "descriptions": {
-        "english": " "
-      },
       "lore_tooltips": [
         {
-          "english":"The frostbite and numbness is the reminder of your failures..."
+          "english": "The frostbite and numbness is the reminder of your failures..."
         }
       ],
       "rarity": "uncommon",
@@ -23,12 +20,12 @@
       "card_type": "blight",
       "cost": 1,
       "effects": [
-        { 
+        {
           "id": "@WinterReserve"
         }
       ],
       "triggers": [
-        { 
+        {
           "id": "@WinterReserve"
         }
       ]
@@ -36,18 +33,16 @@
   ],
   "card_triggers": [
     {
-        
-        "id": "WinterReserve",
-        "trigger": "on_unplayed_positive",
-        "effects": [
-          {
-              "id": "@WinterFrostbite"
-          }
-        ],
-        "descriptions": {
-            "english": "Apply [frostbite] [effect0.status0.power] to the weakest character in the train."
+      "id": "WinterReserve",
+      "trigger": "on_unplayed_positive",
+      "effects": [
+        {
+          "id": "@WinterFrostbite"
         }
-          
+      ],
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power] to the weakest character in the train."
+      }
     }
   ],
   "effects": [
@@ -56,7 +51,6 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "weakest_all_rooms",
       "target_team": "both",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
         {
           "status": "poison",

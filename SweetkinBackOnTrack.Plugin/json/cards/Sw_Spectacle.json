@@ -13,7 +13,7 @@
       },
       "lore_tooltips": [
         {
-          "english":"The various clans aboard the Boneshaker got the chance to watch the various talent shows hosted by the Sweetkin. The process leads to some gruesome events that lead to entertaining shows for the passengers."
+          "english": "The various clans aboard the Boneshaker got the chance to watch the various talent shows hosted by the Sweetkin. The process leads to some gruesome events that lead to entertaining shows for the passengers."
         }
       ],
       "rarity": "rare",
@@ -26,13 +26,13 @@
       ],
       "cost": 2,
       "effects": [
-        { 
+        {
           "id": "@ApplyStatus_Spectacle1"
         },
-        { 
+        {
           "id": "@ApplyStatus_Spectacle2"
         },
-        { 
+        {
           "id": "@ApplyStatus_Spectacle3"
         }
       ]
@@ -44,39 +44,36 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-              {
-                "status": "lifesteal",
-                "count": 1
-              }
-            ]
+        {
+          "status": "lifesteal",
+          "count": 1
+        }
+      ]
     },
     {
       "id": "ApplyStatus_Spectacle2",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-              {
-                "status": "armor",
-                "count": 10
-              }
-            ]
+        {
+          "status": "armor",
+          "count": 10
+        }
+      ]
     },
     {
       "id": "ApplyStatus_Spectacle3",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-              {
-                "status": "buff",
-                "count": 3
-              }
-            ]
+        {
+          "status": "buff",
+          "count": 3
+        }
+      ]
     }
   ],
   "sprites": [

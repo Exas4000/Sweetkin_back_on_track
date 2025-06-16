@@ -13,7 +13,7 @@
       },
       "lore_tooltips": [
         {
-          "english":"'It's important to differentiate between cold rooms with leftovers and replacement limbs. This saves time and keeps circulation flowing during rushes.'-Rosette"
+          "english": "'It's important to differentiate between cold rooms with leftovers and replacement limbs. This saves time and keeps circulation flowing during rushes.'-Rosette"
         }
       ],
       "rarity": "common",
@@ -29,7 +29,7 @@
         {
           "id": "@HealLeftvover"
         },
-        { 
+        {
           "id": "@ApplyStatus_leftover"
         }
       ],
@@ -43,24 +43,22 @@
   "effects": [
     {
       "id": "HealLeftvover",
-        "name": "CardEffectHeal",
-        "param_int": 10,
-        "target_mode": "drop_target_character",
-        "target_team": "monsters",
-        "target_subtype": "SubtypesData_None"
+      "name": "CardEffectHeal",
+      "param_int": 10,
+      "target_mode": "drop_target_character",
+      "target_team": "monsters"
     },
     {
       "id": "ApplyStatus_leftover",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "target_subtype": "SubtypesData_None",
       "param_status_effects": [
-                {
-                    "status": "eatmany",
-                    "count": 2
-                }
-            ]
+        {
+          "status": "eatmany",
+          "count": 2
+        }
+      ]
     }
   ],
   "traits": [

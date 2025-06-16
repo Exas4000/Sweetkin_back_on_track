@@ -11,7 +11,7 @@
       },
       "lore_tooltips": [
         {
-          "english":"The smell of charred wood and ashes are a reminder of your Successes"
+          "english": "The smell of charred wood and ashes are a reminder of your Successes"
         }
       ],
       "rarity": "uncommon",
@@ -22,10 +22,10 @@
       "card_type": "blight",
       "cost": 0,
       "effects": [
-        { 
+        {
           "id": "@SummerHeat"
         },
-        { 
+        {
           "id": "@SummerDraw"
         }
       ]
@@ -33,25 +33,24 @@
   ],
   "effects": [
     {
-        "id": "SummerHeat",
-          "name": "CardEffectAddStatusEffect",
-          "target_mode": "strongest_all_rooms",
-          "target_team": "both",
-          "param_status_effects": [
-            {
-                "id":"pyregel",
-                "count": 3
-            }
-          ]
-      },
-      {
-        "id": "SummerDraw",
-          "name": "CardEffectDraw",
-          "param_int": 2,
-          "target_mode": "room",
-          "target_team": "none",
-          "target_subtype": "SubtypesData_None"
-      }
+      "id": "SummerHeat",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "strongest_all_rooms",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "id": "pyregel",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "SummerDraw",
+      "name": "CardEffectDraw",
+      "param_int": 2,
+      "target_mode": "room",
+      "target_team": "none"
+    }
   ],
   "sprites": [
     {
