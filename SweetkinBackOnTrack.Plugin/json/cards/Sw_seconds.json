@@ -8,8 +8,8 @@
         "chinese": "片刻之后"
       },
       "descriptions": {
-        "english": "Apply [Sap] [effect0.status0.power] to all enemies. Apply +[effect1.power][health] to all allies",
-        "chinese": "对所有敌方单位施加[Sap] [effect0.status0.power]。使所有友方单位获得 +[effect1.power][health]。"
+        "english": "Apply [sap] [effect0.status0.power] to all enemies. Apply +[effect1.power][health] to all allies",
+        "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。使所有友方单位获得 +[effect1.power][health]。"
       },
       "lore_tooltips": [
         {

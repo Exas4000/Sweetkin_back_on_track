@@ -7,7 +7,7 @@
         "english": "Gravitorium"
       },
       "descriptions": {
-        "english": "Add [effect0.power] [capacity] to the room"
+        "english": "Add [effect0.upgrade.roommodifier0.power] [capacity] to the room"
       },
       "lore_tooltips": [
         {
@@ -38,8 +38,8 @@
         "english": "Gravitorium"
       },
       "descriptions": {
-        "english": "+[effect0.power][capacity].",
-        "chinese": "+[effect0.power][capacity]。"
+        "english": "+[roommodifier0.power][capacity].",
+        "chinese": "+[roommodifier0.power][capacity]。"
       },
       "icon": "@CardArt_room_1",
       "room_modifier_upgrades": [

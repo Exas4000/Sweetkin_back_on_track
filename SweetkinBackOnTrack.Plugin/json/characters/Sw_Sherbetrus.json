@@ -63,8 +63,8 @@
       "id": "Eat_sherbet",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply Root [effect0.status0.power] to all enemies.",
-        "chinese": "对所有敌方单位施加<b>缠绕</b> [effect0.status0.power]。"
+        "english": "Apply [rooted] [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加[rooted] [effect0.status0.power]。"
       },
       "effects": [
         {

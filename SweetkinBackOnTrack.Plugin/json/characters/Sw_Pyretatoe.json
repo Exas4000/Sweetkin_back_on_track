@@ -63,8 +63,8 @@
       "id": "Eat_Potato",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Apply Pyregel [effect0.status0.power] to all enemies.",
-        "chinese": "对所有敌方单位施加<b>薪火熔胶</b> [effect0.status0.power]。"
+        "english": "Apply [pyregel] [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加[pyregel] [effect0.status0.power]。"
       },
       "effects": [
         {

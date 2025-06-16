@@ -8,8 +8,8 @@
         "chinese": "可可水疗中心"
       },
       "descriptions": {
-        "english": "At the end of the turn, give [regen] [effect0.upgrade.roommodifier0.power] to all units in the room.",
-        "chinese": "回合结束时，所有友方单位获得[regen] [effect0.upgrade.roommodifier0.power]。"
+        "english": "At the end of the turn, give [regen] [effect0.upgrade.roommodifier0.effect0.status0.power] to all units in the room.",
+        "chinese": "回合结束时，所有友方单位获得[regen] [effect0.upgrade.roommodifier0.effect0.status0.power]。"
       },
       "lore_tooltips": [
         {
@@ -40,8 +40,8 @@
         "english": "Cocoa Spa"
       },
       "descriptions": {
-        "english": "At the end of the turn, give [regen] [roommodifier0.power] to all units in the room.",
-        "chinese": "回合结束时，所有友方单位获得[regen] [roommodifier0.power]。"
+        "english": "At the end of the turn, give [regen] [roommodifier0.effect0.status0.power] to all units in the room.",
+        "chinese": "回合结束时，所有友方单位获得[regen] [roommodifier0.effect0.status0.power]。"
       },
       "icon": "@CardArt_room_4",
       "room_modifier_upgrades": [
@@ -56,10 +56,10 @@
       "id": "SpaModif",
       "name": "RoomStateAddEffectPostCombatSpa",
       "descriptions": {
-        "english": "At the end of the turn, give [regen] [paramint] to all units in the room.",
-        "chinese": "回合结束时，所有友方单位获得[regen] [paramint]。"
+        "english": "At the end of the turn, give [regen] [effect0.status0.power] to all units in the room.",
+        "chinese": "回合结束时，所有友方单位获得[regen] [effect0.status0.power]。"
       },
-      "effects": [
+      "param_effects": [
         {
           "id": "@ApplyStatus_SpaRegen"
         }
@@ -90,7 +90,6 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "both",
-
       "param_status_effects": [
         {
           "status": "regen",

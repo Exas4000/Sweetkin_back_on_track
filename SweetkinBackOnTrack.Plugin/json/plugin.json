@@ -76,8 +76,7 @@
           ],
           "icon": "@icon_sally",
           "locked_icon": "@icon_locked",
-          "portrait": "@icon_sally",
-          "selected_cue": ""
+          "portrait": "@icon_sally"
         },
         {
           "id": "EvergreenSweetkinChampion",
@@ -107,8 +106,7 @@
           ],
           "icon": "@icon_sally",
           "locked_icon": "@icon_locked",
-          "portrait": "@icon_sally",
-          "selected_cue": ""
+          "portrait": "@icon_sally"
         }
       ],
       "is_crew": false
@@ -129,7 +127,7 @@
         "english": "Hire a Sweetkin Unit",
         "chinese": "获得一个甜裔单位。"
       },
-      "map_pools": [
+      "pools": [
         "RandomChosenMainClassUnit",
         "RandomChosenSubClassUnit"
       ],
@@ -137,7 +135,7 @@
       "extensions": [
         {
           "reward": {
-            "required_class": "@ClassSweetkin",
+            "class": "@ClassSweetkin",
             "rewards": [
               {
                 "id": "@SweetkinBannerReward"
@@ -155,11 +153,11 @@
     },
     {
       "id": "EssenceCardPool",
-      "cards": [ "@Sw_Cookbook", "@Sw_BookMint", "@Sw_limeBook", "@Sw_ButlerSuit"]
+      "cards": [ "@Sw_Cookbook", "@Sw_BookMint", "@Sw_limeBook", "@Sw_ButlerSuit" ]
     },
     {
       "id": "VIPCardPool",
-      "cards": [ "@Sw_VIPcookie", "@Sw_VIPcritic", "@Sw_VIPimp","@Sw_VIPlatebloomer","@Sw_VIPnugget","@Sw_VIProsette", "@Sw_VIPsocialite", "@Sw_VIPvirologist", "@Sw_VipTemaki" ]
+      "cards": [ "@Sw_VIPcookie", "@Sw_VIPcritic", "@Sw_VIPimp", "@Sw_VIPlatebloomer", "@Sw_VIPnugget", "@Sw_VIProsette", "@Sw_VIPsocialite", "@Sw_VIPvirologist", "@Sw_VipTemaki" ]
     },
     {
       "id": "SummerBlight",
@@ -178,16 +176,17 @@
     {
       "id": "SweetkinBannerReward",
       "type": "draft",
-        "costs": [100],
-        "extensions": [{
-            "draft": {
-                "draft_pool": "@SweetkinBannerCardPool",
-                "class_type": "main|subclass|nonclass",
-                "draft_options_count": 2,
-                "rarity_floor": "uncommon",
-                "ignore_relic_rarity_override": true,
-                "is_service_merchant_reward": true
-            }
+      "costs": [ 100 ],
+      "extensions": [
+        {
+          "draft": {
+            "draft_pool": "@SweetkinBannerCardPool",
+            "class_type": "main|subclass|nonclass",
+            "draft_options_count": 2,
+            "rarity_floor": "uncommon",
+            "ignore_relic_rarity_override": true,
+            "is_service_merchant_reward": true
+          }
         }
       ]
     }
@@ -250,15 +249,15 @@
       "id": "Sweetkin_Disabled",
       "path": "textures/ClanAssets/Sweetkin_Disabled.png"
     },
-	{
+    {
       "id": "Sweetkin_Enabled",
       "path": "textures/ClanAssets/Sweetkin_Enabled.png"
     },
-	{
+    {
       "id": "Sweetkin_Frozen",
       "path": "textures/ClanAssets/Sweetkin_Frozen.png"
     },
-	{
+    {
       "id": "Sweetkin_VisitedDisabled",
       "path": "textures/ClanAssets/Sweetkin_VisitedDisabled.png"
     },

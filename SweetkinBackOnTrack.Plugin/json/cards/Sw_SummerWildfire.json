@@ -7,7 +7,7 @@
         "english": "Summer's wildfires"
       },
       "descriptions": {
-        "english": "Apply 3 pyregel to the strongest character in all rooms, then draw 2 cards"
+        "english": "Apply [pyregel] [effect0.status0.power] to the strongest character in all rooms, then Draw [effect1.power] cards"
       },
       "lore_tooltips": [
         {
@@ -39,7 +39,7 @@
       "target_team": "both",
       "param_status_effects": [
         {
-          "id": "pyregel",
+          "status": "pyregel",
           "count": 3
         }
       ]
