@@ -7,9 +7,9 @@
         "english": "Danger Noodles",
         "chinese": "蛇秘的面条"
       },
-      "card_art_reference": "@CardArt_unit_13",
+      "card_art": "@CardArt_unit_13",
       "cost": 2,
-      "type": "monster",
+      "card_type": "monster",
       "cost_type": "default",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
@@ -82,7 +82,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@SpicyNoodle"
+      "param_character": "@SpicyNoodle"
     },
     {
         "id": "ApplyStatus_Noodle",

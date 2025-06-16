@@ -18,7 +18,7 @@
       ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_XVIII",
+      "card_art": "@CardArt_XVIII",
       "targets_room": true,
       "targetless": false,
       "pools": [

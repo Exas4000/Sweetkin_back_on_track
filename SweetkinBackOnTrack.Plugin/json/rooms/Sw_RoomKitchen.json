@@ -16,9 +16,9 @@
             "english": "The closest thing to a primordial soup for the Sweetkins, big or small. It is unable to produce complex Sweetkins without Rosette."
           }
         ],
-        "card_art_reference": "@CardArt_room_5",
+        "card_art": "@CardArt_room_5",
         "cost": 2,
-        "type": "room",
+        "card_type": "room",
         "cost_type": "default",
         "rarity": "uncommon",
         "class": "@ClassSweetkin",
@@ -94,8 +94,8 @@
         "name": "CardEffectSpawnMonster",
         "target_mode": "back_in_room",
         "target_team": "monsters",
-        "param_character_data": "@crabcake",
-       "param_character_data_pool": [
+        "param_character": "@crabcake",
+       "param_character_pool": [
         "@crabcake",
         "@SpicyNoodle"
         ]

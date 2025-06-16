@@ -15,10 +15,10 @@
             "english": "I Love Morsels...Me too buddy. Me Too."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_CrabBib",
+      "card_art": "@CardArt_CrabBib",
       "targets_room": true,
       "targetless": false,
       "pools": [

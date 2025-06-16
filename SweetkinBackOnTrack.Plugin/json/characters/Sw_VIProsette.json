@@ -7,9 +7,9 @@
           "english": "Rosette",
           "chinese": "玫瑰花结"
         },
-        "card_art_reference": "@CardArt_unit_11",
+        "card_art": "@CardArt_unit_11",
         "cost": 0,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "rare",
         "class": "@ClassSweetkin",
@@ -80,7 +80,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Rosette"
+      "param_character": "@Rosette"
     },
     {
         "id": "rosetteNurtureBuff",

@@ -7,9 +7,9 @@
           "english": "Front Clerk",
           "chinese": "前台"
         },
-        "card_art_reference": "@CardArt_unit_25",
+        "card_art": "@CardArt_unit_25",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "uncommon",
         "class": "@ClassSweetkin",
@@ -39,13 +39,12 @@
             "english": "Summon a random VIP Unit. Delay 1",
             "chinese": "随机召唤 1 个 VIP 单位。"
         },
-        "card_art_reference": "@CardArt_unit_25",
-        "ability": true,
+        "is_an_ability": true,
         "cooldown": 2,
         "initial_cooldown": 1,
         "targetless": true,
         "targets_room": false,
-        "type": "spell",
+        "card_type": "spell",
         "effects": [
         {
           "id": "@ClerkCheckIn"
@@ -98,15 +97,15 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@FrontClerk"
+      "param_character": "@FrontClerk"
     },
     {
         "id": "ClerkCheckIn",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
         "target_team": "monsters",
-        "param_character_data": "@templateVIP",
-       "param_character_data_pool": [
+        "param_character": "@templateVIP",
+       "param_character_pool": [
         "@VIPimp",
         "@VIPlatebloomer",
         "@VIPsocialite",

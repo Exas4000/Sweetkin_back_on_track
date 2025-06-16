@@ -15,10 +15,10 @@
             "english": "'Don't mind the crab roaming the halls with an arm. Their name is handzy' -Lime"
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "common",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_spareLimb",
+      "card_art": "@CardArt_spareLimb",
       "targets_room": true,
       "targetless": false,
       "pools": [

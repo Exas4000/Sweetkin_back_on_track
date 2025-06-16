@@ -3,7 +3,7 @@
     "relic_effects": [{
         "id": "DispenserReduceMorselCost",
         "name": "RelicEffectModifyMonsterCost",
-        "character_subtype": "SubtypesData_Snack",
+        "param_subtype": "SubtypesData_Snack",
         "target_mode": "hand",
         "card_type": "monster",
         "param_int": -3

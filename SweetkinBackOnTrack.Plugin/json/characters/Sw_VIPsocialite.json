@@ -7,9 +7,9 @@
           "english": "Wicker Socialite",
           "chinese": "柳条名媛"
         },
-        "card_art_reference": "@CardArt_unit_23",
+        "card_art": "@CardArt_unit_23",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "rare",
         "class": "@ClassSweetkin",
@@ -103,7 +103,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@VIPsocialite"
+      "param_character": "@VIPsocialite"
     },
     {
       "id": "SocialiteReform",
@@ -112,7 +112,7 @@
       "target_card_type": "monster",
       "target_card_selection_mode": "random_to_hand_with_upgrades",
       "should_test": true,
-      "fail_to_cast_on_failure": true,
+      "should_fail_to_cast_if_test_fails": true,
       "param_int": 1,
       "param_int_2": 1,
       "param_upgrade": "@VIPReformUpgrade"

@@ -15,10 +15,10 @@
             "english": "'Remember what I said about symbolism? Well at least this one could be a weapon.'-Rosette, still confused about utencils warfare."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_CombatKnife",
+      "card_art": "@CardArt_CombatKnife",
       "targets_room": true,
       "targetless": false,
       "pools": [

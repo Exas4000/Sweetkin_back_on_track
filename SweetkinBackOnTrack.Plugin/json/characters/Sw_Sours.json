@@ -7,9 +7,9 @@
         "english": "Sourling",
         "chinese": "酸溜溜"
       },
-      "card_art_reference": "@CardArt_unit_2",
+      "card_art": "@CardArt_unit_2",
       "cost": 1,
-      "type": "monster",
+      "card_type": "monster",
       "cost_type": "default",
       "rarity": "common",
       "class": "@ClassSweetkin",
@@ -35,9 +35,9 @@
           "english": "Sour Guard",
           "chinese": "酸卫士"
         },
-        "card_art_reference": "@CardArt_unit_4",
+        "card_art": "@CardArt_unit_4",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "uncommon",
         "class": "@ClassSweetkin",
@@ -140,14 +140,14 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Sourling"
+      "param_character": "@Sourling"
     },
     {
         "id": "SpawnSourGuard",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
         "target_card_type": "spell",
-        "param_character_data": "@SourGuard"
+        "param_character": "@SourGuard"
       },
     {
         "id": "ApplyStatus_Sour",

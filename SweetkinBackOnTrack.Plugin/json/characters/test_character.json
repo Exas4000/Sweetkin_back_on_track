@@ -6,9 +6,9 @@
       "names": {
         "english": "Steward Amalgam"
       },
-      "card_art_reference": "@BiggerSteward",
+      "card_art": "@BiggerSteward",
       "cost": 1,
-      "type": "monster",
+      "card_type": "monster",
       "cost_type": "default",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
@@ -59,7 +59,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@BiggerSteward"
+      "param_character": "@BiggerSteward"
     }
   ],
   "sprites": [

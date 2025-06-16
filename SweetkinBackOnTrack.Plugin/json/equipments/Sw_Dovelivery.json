@@ -15,10 +15,10 @@
             "english": "'Our doves are more akin to a living tool than actual animals. They certainly do the job when it comes time of quickly moving small objects around.' -Rosette"
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "common",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_Dovelivery",
+      "card_art": "@CardArt_Dovelivery",
       "targets_room": true,
       "targetless": false,
       "pools": [

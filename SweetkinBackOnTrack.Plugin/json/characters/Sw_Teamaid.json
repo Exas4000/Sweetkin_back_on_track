@@ -7,9 +7,9 @@
           "english": "Tea Maid",
           "chinese": "茶女仆"
         },
-        "card_art_reference": "@CardArt_unit_9",
+        "card_art": "@CardArt_unit_9",
         "cost": 1,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "uncommon",
         "class": "@ClassSweetkin",
@@ -38,13 +38,13 @@
         "descriptions": {
             "english": "Restore [effect1.power] health to and remove all <b>Debuff</b> effects from friendly units."
         },
-        "card_art_reference": "@CardArt_unit_9",
-        "ability": true,
+        "card_art": "@CardArt_unit_9",
+        "is_an_ability": true,
         "cooldown": 3,
         "initial_cooldown": 0,
         "targetless": true,
         "targets_room": false,
-        "type": "spell",
+        "card_type": "spell",
         "effects": [
         {
           "id": "@TeamaidCure"
@@ -83,7 +83,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Teamaid"
+      "param_character": "@Teamaid"
     },
     {
         "id": "TeamaidCure",

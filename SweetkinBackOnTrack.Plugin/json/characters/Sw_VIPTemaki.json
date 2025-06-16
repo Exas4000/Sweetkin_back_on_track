@@ -7,9 +7,9 @@
         "english": "Beyonder's Temaki",
         "chinese": "超越寿司"
       },
-      "card_art_reference": "@CardArt_unit_19",
+      "card_art": "@CardArt_unit_19",
       "cost": 1,
-      "type": "monster",
+      "card_type": "monster",
       "cost_type": "default",
       "rarity": "rare",
       "class": "@ClassSweetkin",
@@ -89,7 +89,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Vip_temaki"
+      "param_character": "@Vip_temaki"
     },
     {
       "id": "ApplyStat_temaki",

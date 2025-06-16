@@ -111,16 +111,7 @@
           "selected_cue": ""
         }
       ],
-      "sfx_cue": "",
-      "is_crew": false,
-      "unlock_data": {
-        "descriptions": {
-          "english": "Nothing"
-        },
-        "track_value": "none",
-        "param_int": 0
-      },
-      "class_preview_texts": []
+      "is_crew": false
     }
   ],
   "map_nodes": [
@@ -142,7 +133,7 @@
         "RandomChosenMainClassUnit",
         "RandomChosenSubClassUnit"
       ],
-      "is_banner": true,
+      "is_banner_node": true,
       "extensions": [
         {
           "reward": {

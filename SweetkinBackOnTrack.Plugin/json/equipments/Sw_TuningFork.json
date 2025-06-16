@@ -15,10 +15,10 @@
             "english": ""
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_TuningFork",
+      "card_art": "@CardArt_TuningFork",
       "targets_room": true,
       "targetless": false,
       "pools": [
@@ -41,13 +41,12 @@
           "english": "Deal 50 damage.",
           "chinese": "造成 50 点伤害。"
         },
-        "card_art_reference": "@CardArt_TuningFork",
-        "ability": true,
+        "is_an_ability": true,
         "cooldown": 2,
         "initial_cooldown": 0,
         "targetless": false,
         "targets_room": true,
-        "type": "spell",
+        "card_type": "spell",
         "effects": [
           {
             "id": "@Damage_TuningFork"

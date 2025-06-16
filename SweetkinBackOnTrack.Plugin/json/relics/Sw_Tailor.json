@@ -4,7 +4,7 @@
         {
         "id": "TailorBuffVIP",
         "name": "RelicEffectAddTempUpgrade",
-        "character_subtype": "@Sub_Sour",
+        "param_subtype": "@Sub_Sour",
         "target_mode": "front_in_room",
         "card_type": "monster",
         "param_upgrade": "@TailorRelic_Upg",

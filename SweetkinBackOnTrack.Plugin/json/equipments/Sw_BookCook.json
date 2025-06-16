@@ -15,10 +15,10 @@
             "english": "A Book containing the essence of various Spicy Sweetkins. Created in bulk for the Buffet at the Library of Ruin, with few copies confiscated from visiting librarians by Sally."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "rare",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_BookCook",
+      "card_art": "@CardArt_BookCook",
       "targets_room": true,
       "targetless": false,
       "pools": [

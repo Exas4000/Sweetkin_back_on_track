@@ -15,10 +15,10 @@
             "english": "A Book containing the essence of various Sour Sweetkins. Lime Was the first to enter the Library of the Pale Librarian at Rosette's request."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "rare",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_LimeBook",
+      "card_art": "@CardArt_LimeBook",
       "targets_room": true,
       "targetless": false,
       "pools": [

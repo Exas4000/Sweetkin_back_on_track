@@ -7,9 +7,9 @@
         "english": "FastFood",
         "chinese": "快餐"
       },
-      "card_art_reference": "@CardArt_unit_5",
+      "card_art": "@CardArt_unit_5",
       "cost": 2,
-      "type": "monster",
+      "card_type": "monster",
       "cost_type": "default",
       "rarity": "rare",
       "class": "@ClassSweetkin",
@@ -85,7 +85,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@FastFood"
+      "param_character": "@FastFood"
     },
     {
         "id": "ApplyStatus_fastfood1",

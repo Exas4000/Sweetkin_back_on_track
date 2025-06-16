@@ -15,10 +15,10 @@
             "english": "A book containing the essence of a handful of minty sweetkins. Retrieved from passing librarians in their dimension."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_ButlerSuit",
+      "card_art": "@CardArt_ButlerSuit",
       "targets_room": true,
       "targetless": false,
       "pools": [

@@ -15,10 +15,10 @@
             "english": "Made to keep moisture in. Perfect for an emergency bandage."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_MaidSuit",
+      "card_art": "@CardArt_MaidSuit",
       "targets_room": true,
       "targetless": false,
       "pools": [

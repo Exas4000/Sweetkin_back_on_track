@@ -7,9 +7,9 @@
           "english": "Critic's Effigy",
           "chinese": "批评家的肖像"
         },
-        "card_art_reference": "@CardArt_unit_18",
+        "card_art": "@CardArt_unit_18",
         "cost": 2,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "rare",
         "class": "@ClassSweetkin",
@@ -73,7 +73,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@VIPcritic"
+      "param_character": "@VIPcritic"
     },
     {
         "id": "CriticBuffet",

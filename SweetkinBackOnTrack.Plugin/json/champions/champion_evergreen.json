@@ -12,9 +12,9 @@
         "group": "CardData_Evergreen",
         "english": " "
       },
-      "card_art_reference": "@cardArt_sally",
+      "card_art": "@cardArt_sally",
       "cost": 0,
-      "type": "monster",
+      "card_type": "monster",
       "cost_type": "default",
       "rarity": "champion",
       "class": "@ClassSweetkin",
@@ -68,12 +68,7 @@
       ],
       "subtypes": [
         "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-      ],
-      "equip_limit": 1,
-      "endless_stats": {
-        "health": 50,
-        "attack": 10
-      }
+      ]
     }
   ],
   "upgrades": [
@@ -394,13 +389,13 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Evergreen"
+      "param_character": "@Evergreen"
     },
     {
       "id": "SpawnLoneSprout",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
-      "param_character_data": "@EvergreenSprout"
+      "param_character": "@EvergreenSprout"
     },
     {
       "id": "SlayQueenBuff",

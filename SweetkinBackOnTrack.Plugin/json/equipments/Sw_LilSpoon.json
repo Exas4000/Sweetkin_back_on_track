@@ -15,10 +15,10 @@
             "english": "An experimental solution for when you need to nestle between your allies."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_LilSpoon",
+      "card_art": "@CardArt_LilSpoon",
       "targets_room": true,
       "targetless": false,
       "pools": [

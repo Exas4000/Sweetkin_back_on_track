@@ -7,9 +7,9 @@
           "english": "Lime",
           "chinese": "青柠"
         },
-        "card_art_reference": "@CardArt_unit_10",
+        "card_art": "@CardArt_unit_10",
         "cost": 2,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "rare",
         "class": "@ClassSweetkin",
@@ -80,13 +80,13 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Lime"
+      "param_character": "@Lime"
     },
     {
         "id": "SpawnSourHarvest",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
-        "param_character_data": "@SourGuard"
+        "param_character": "@SourGuard"
     },
     {
         "id": "PushLime",

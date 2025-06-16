@@ -16,9 +16,9 @@
             "english": "A delightfully relaxing time awaits the Sweetkin's patrons. A quick dip in a pool with restaurative properties brings vigor to weary warriors."
           }
         ],
-        "card_art_reference": "@CardArt_room_4",
+        "card_art": "@CardArt_room_4",
         "cost": 1,
-        "type": "room",
+        "card_type": "room",
         "cost_type": "default",
         "rarity": "common",
         "class": "@ClassSweetkin",

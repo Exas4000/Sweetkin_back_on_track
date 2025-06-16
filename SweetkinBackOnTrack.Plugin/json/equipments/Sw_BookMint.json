@@ -15,10 +15,10 @@
             "english": "A Book stained with minty blood. The catalyst for the curse bestowed upon Sally within the Library of Ruin."
         }
       ],
-      "type": "equipment",
+      "card_type": "equipment",
       "rarity": "rare",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_BookMint",
+      "card_art": "@CardArt_BookMint",
       "targets_room": true,
       "targetless": false,
       "pools": [

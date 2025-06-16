@@ -17,10 +17,10 @@
       ],
       "rarity": "uncommon",
       "class": "@ClassSweetkin",
-      "card_art_reference": "@CardArt_sw2",
+      "card_art": "@CardArt_sw2",
       "targets_room": true,
       "targetless": true,
-      "type": "blight",
+      "card_type": "blight",
       "cost": 1,
       "effects": [
         { 

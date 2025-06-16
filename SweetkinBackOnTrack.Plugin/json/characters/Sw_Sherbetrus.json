@@ -7,9 +7,9 @@
           "english": "Sherbetrus",
           "chinese": "果子露"
         },
-        "card_art_reference": "@CardArt_unit_16",
+        "card_art": "@CardArt_unit_16",
         "cost": 3,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "uncommon",
         "class": "@ClassSweetkin",
@@ -83,7 +83,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Sherbetrus"
+      "param_character": "@Sherbetrus"
     },
     {
         "id": "ApplyStatus_sherbet",

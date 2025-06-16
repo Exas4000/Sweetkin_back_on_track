@@ -7,9 +7,9 @@
           "english": "Spice Cook",
           "chinese": "香料之厨"
         },
-        "card_art_reference": "@CardArt_unit_7",
+        "card_art": "@CardArt_unit_7",
         "cost": 2,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "rare",
         "class": "@ClassSweetkin",
@@ -77,13 +77,13 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@SpiceCook"
+      "param_character": "@SpiceCook"
     },
     {
         "id": "SpawnNoodleSlay",
         "name": "CardEffectSpawnMonster",
         "target_mode": "room",
-        "param_character_data": "@SpicyNoodle"
+        "param_character": "@SpicyNoodle"
       }
   ],
   "sprites": [

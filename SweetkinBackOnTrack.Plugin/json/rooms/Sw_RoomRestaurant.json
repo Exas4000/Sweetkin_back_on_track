@@ -16,9 +16,9 @@
             "english": "One would think a war of attrition would benefit the defenders of Haven's siege. The Sweetkin thinks otherwise, providing ample supplies directly to the front."
           }
         ],
-        "card_art_reference": "@CardArt_room_3",
+        "card_art": "@CardArt_room_3",
         "cost": 1,
-        "type": "room",
+        "card_type": "room",
         "cost_type": "default",
         "rarity": "common",
         "class": "@ClassSweetkin",

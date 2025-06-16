@@ -7,9 +7,9 @@
         "english": "Sweetling",
         "chinese": "甜蜜蜜"
       },
-      "card_art_reference": "@CardArt_unit_1",
+      "card_art": "@CardArt_unit_1",
       "cost": 1,
-      "type": "monster",
+      "card_type": "monster",
       "cost_type": "default",
       "rarity": "common",
       "class": "@ClassSweetkin",
@@ -88,7 +88,7 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@Sweetling"
+      "param_character": "@Sweetling"
     },
     {
       "id": "ApplyStat_sweetling",

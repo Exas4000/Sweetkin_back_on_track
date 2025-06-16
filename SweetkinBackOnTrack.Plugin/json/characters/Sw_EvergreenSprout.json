@@ -6,9 +6,9 @@
         "names": {
           "english": "Lone Sprout"
         },
-        "card_art_reference": "@CardArt_unit_23",
+        "card_art": "@CardArt_unit_23",
         "cost": 4,
-        "type": "monster",
+        "card_type": "monster",
         "cost_type": "default",
         "rarity": "rare",
         "class": "@ClassSweetkin",
@@ -121,28 +121,28 @@
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_card_type": "spell",
-      "param_character_data": "@EvergreenSprout"
+      "param_character": "@EvergreenSprout"
     },
     {
       "id": "LoneSproutClearcut",
       "name": "CardEffectKill",
       "target_mode": "weakest_all_rooms",
       "target_team": "both",
-      "fail_to_cast_on_failure": true
+      "should_fail_to_cast_if_test_fails": true
     },
     {
         "id": "LoneSproutLocust",
         "name": "CardEffectDamage",
         "target_mode": "room",
         "target_team": "heroes",
-        "fail_to_cast_on_failure": true,
+        "should_fail_to_cast_if_test_fails": true,
         "param_int": 1
     },
     {
       "id": "LoneSproutAddSummer",
       "name": "CardEffectAddRunCard",
       "target_mode": "room",
-      "target_selection_mode": "random_to_deck",
+      "target_card_selection_mode": "random_to_deck",
       "param_int_2": 1,
       "param_card_pool": "@SummerBlight"
     },
@@ -150,7 +150,7 @@
       "id": "LoneSproutAddWinter",
       "name": "CardEffectAddRunCard",
       "target_mode": "room",
-      "target_selection_mode": "random_to_hand",
+      "target_card_selection_mode": "random_to_hand",
       "param_int_2": 1,
       "param_card_pool": "@WinterBlight"
     }
