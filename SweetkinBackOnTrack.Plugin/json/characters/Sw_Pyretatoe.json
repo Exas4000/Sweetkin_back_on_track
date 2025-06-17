@@ -1,0 +1,152 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "cards": [
+    {
+      "id": "Sw_Pyretatoe",
+      "names": {
+        "english": "Pyretatoe",
+        "chinese": "薪火土豆"
+      },
+      "card_art": "@CardArt_unit_12",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        "@SpawnPotatoe"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "'EUREKA! Just add hot sauce! That should fix this mess!'-Red"
+        }
+      ],
+      "pools": [
+        "UnitsAllBanner"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "Pyretatoe",
+      "size": 2,
+      "attack_damage": 15,
+      "health": 45,
+      "names": {
+        "english": "Pyretatoe",
+        "chinese": "薪火土豆"
+      },
+      "character_art": "@PotatoArt",
+      "chatter": "@CTR_potato",
+      "subtypes": [
+        "@Sub_Spicy",
+        "SubtypesData_Snack",
+        "SubtypesData_BannerUnit"
+      ],
+      "starting_status_effects": [
+        {
+          "status": "eatmany",
+          "count": 5
+        }
+      ],
+      "triggers": [
+        "@Eat_Potato"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Eat_Potato",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Apply [pyregel] [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加[pyregel] [effect0.status0.power]。"
+      },
+      "effects": [
+        "@ApplyStatus_potato"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnPotatoe",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character": "@Pyretatoe"
+    },
+    {
+      "id": "ApplyStatus_potato",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pyregel",
+          "count": 5
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_unit_12",
+      "path": "textures/CardAssets/Unit_12.png"
+    },
+    {
+      "id": "PotatoArt",
+      "path": "textures/UnitAssets/patate.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_unit_12",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_unit_12"
+        }
+      }
+    },
+    {
+      "id": "PotatoArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@PotatoArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chatter": [
+    {
+      "id": "CTR_potato",
+      "gender": "neutral",
+      "added_expressions": [
+        {
+          "english": "RAAAAaaaaAAAG!"
+        }
+      ],
+      "idle_expressions": [
+        {
+          "english": "RAAAAaaaaAAAG!"
+        },
+        {
+          "english": "*Hot sauce turns to steam*"
+        }
+      ]
+    }
+  ]
+}

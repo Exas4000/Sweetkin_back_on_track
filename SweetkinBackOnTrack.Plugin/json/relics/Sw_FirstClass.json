@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "SWRelicAddVIP",
+      "name": "RelicEffectAddBattleCardToHand",
+      "target_mode": "hand",
+      "source_team": "monsters",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_card_pool": "@VIPCardPool"
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_FirstClass",
+      "type": "collectable",
+      "names": {
+        "english": "First Class Ticket"
+      },
+      "descriptions": {
+        "english": "Add a Random VIP to your hand at the start of the battle."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Someone's lost train ticket. Pretty sure one can find the owner, as they most likely arent sweetkin nor their allies's race."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@SWRelicAddVIP"
+      ],
+      "icon": "@TicketIcon",
+      "icon_small": "@TicketIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TicketIcon",
+      "path": "textures/Relic/Mt_firstClass.png"
+    }
+  ]
+}

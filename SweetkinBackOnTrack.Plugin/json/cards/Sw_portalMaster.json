@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "cards": [
+    {
+      "id": "Sw_PortalMaster",
+      "names": {
+        "english": "Portal Master",
+        "chinese": "传送门大师"
+      },
+      "descriptions": {
+        "english": "[descend] a unit to the bottom floor",
+        "chinese": "使一个单位[descend]到最底层。"
+      },
+      "lore_tooltips": [
+        {
+          "english":"'And how do you think we came to your world?'-Rosette"
+        }
+      ],
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_II",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 1,
+      "effects": [
+        "@Descend_portalMaster"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Descend_portalMaster",
+      "name": "CardEffectBump",
+      "param_int": -3,
+      "target_mode": "drop_target_character",
+      "target_team": "both"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_II",
+      "path": "textures/CardAssets/Card_II.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_II",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_II"
+        }
+      }
+    }
+  ]
+}

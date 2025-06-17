@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "PlayMintDraw",
+      "name": "RelicEffectCardDrawOnCardPlay",
+      "param_subtype": "@Sub_Minty",
+      "target_mode": "front_in_room",
+      "param_card_type": "monster",
+      "param_int": 1
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_MintDough",
+      "type": "collectable",
+      "names": {
+        "english": "Sweetkin Nuptial Vows"
+      },
+      "descriptions": {
+        "english": "When you play a <b>Minty</b> unit, draw a card."
+      },
+      "lore_tooltips": [
+        {
+          "english": "When came time for the first Sweetkin marriage, Mint established a new tradition. As to declare one's love with a recipe of their own."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@PlayMintDraw"
+      ],
+      "icon": "@DoughIcon",
+      "icon_small": "@DoughIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "DoughIcon",
+      "path": "textures/Relic/mintCookies.png"
+    }
+  ]
+}

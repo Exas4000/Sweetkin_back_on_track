@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_Sparelimb",
+      "names": {
+        "english": "Spare Limb",
+        "chinese": "备用残肢"
+      },
+      "lore_tooltips": [
+        {
+          "english": "'Don't mind the crab roaming the halls with an arm. Their name is handzy' -Lime"
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "common",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_spareLimb",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 1,
+      "traits": [
+        "@frostLeftover"
+      ],
+      "effects": [
+        "@Equip_SpareLimb"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_sparelimb",
+      "bonus_hp": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_SpareLimb",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_sparelimb"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_spareLimb",
+      "path": "textures/CardAssets/MT_equip_1.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_spareLimb",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_spareLimb"
+        }
+      }
+    }
+  ]
+}

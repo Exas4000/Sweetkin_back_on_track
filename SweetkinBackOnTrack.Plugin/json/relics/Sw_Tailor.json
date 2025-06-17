@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "TailorBuffVIP",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_subtype": "@Sub_Sour",
+      "target_mode": "front_in_room",
+      "param_card_type": "monster",
+      "param_upgrade": "@TailorRelic_Upg",
+      "param_trigger": "on_spawn"
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_Tailor",
+      "type": "collectable",
+      "names": {
+        "english": "Tailoring Services"
+      },
+      "descriptions": {
+        "english": "<b>Vip</b> units gain +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] and +[effect0.upgrade.bonussize][capacity] "
+      },
+      "lore_tooltips": [
+        {
+          "english": "Big or Small, no guest shall be left with an unfit attire during their trip throught Haven."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@TailorBuffVIP"
+      ],
+      "icon": "@TailorIcon",
+      "icon_small": "@TailorIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TailorIcon",
+      "path": "textures/Relic/Mt_tailor.png"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TailorRelic_Upg",
+      "bonus_damage": 10,
+      "bonus_hp": 20,
+      "bonus_size": 1,
+      "is_unique": true
+    }
+  ]
+}

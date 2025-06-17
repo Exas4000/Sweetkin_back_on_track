@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "SWBonusHpCardMorsel",
+      "name": "RelicEffectModifyCardHealth",
+      "target_mode": "front_in_room",
+      "param_card_type": "monster",
+      "param_subtype": "SubtypesData_Snack",
+      "param_int": 30
+    },
+    {
+      "id": "SWBonusHpMorsel",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "target_mode": "front_in_room",
+      "param_card_type": "monster",
+      "param_subtype": "SubtypesData_Snack",
+      "param_int": 30
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_Paste",
+      "type": "collectable",
+      "names": {
+        "english": "Master's Paste",
+        "chinese": "大师的膏药"
+      },
+      "descriptions": {
+        "english": "Morsels gain +[effect0.power][health]",
+        "chinese": "影裔单位获得 +[effect0.power][health]。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "Mucus Refined into a protective paste. It stays fresh even after being left outside or near the boilers."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@SWBonusHpCardMorsel"
+      ],
+      "icon": "@PasteIcon",
+      "icon_small": "@PasteIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PasteIcon",
+      "path": "textures/Relic/Frosting.png"
+    }
+  ]
+}

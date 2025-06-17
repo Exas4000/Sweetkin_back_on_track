@@ -1,0 +1,171 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/characters.json",
+  "cards": [
+    {
+      "id": "Sw_VIPvirologist",
+      "names": {
+        "english": "Virodaemonologist",
+        "chinese": "病魔学家"
+      },
+      "card_art": "@CardArt_unit_24",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "unlock_level": 3,
+      "targets_room": true,
+      "effects": [
+        "@SpawnVIPvirologist"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "New places to go to. New diseases to catalog and experiment with."
+        }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "VIPViroBuff",
+      "bonus_damage": 5
+    },
+    {
+      "id": "VIPViroBuffRally",
+      "bonus_damage": 10
+    }
+  ],
+  "characters": [
+    {
+      "id": "VIPvirologist",
+      "size": 2,
+      "attack_damage": 5,
+      "health": 15,
+      "names": {
+        "english": "Virodaemonologist",
+        "chinese": "病魔学家"
+      },
+      "character_art": "@VIPviroArt",
+      "chatter": "@CTR_viro",
+      "subtypes": [
+        "@Sub_Vip"
+      ],
+      "triggers": [
+        "@ViroRally"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ViroRally",
+      "trigger": "card_monster_played",
+      "descriptions": {
+        "english": "Gain +[effect0.upgrade.bonusdamage][attack] and Apply [armor] [effect1.status0.power].",
+        "chinese": "获得 +[effect0.upgrade.bonusdamage][attack] 和[armor] [effect1.status0.power]。"
+      },
+      "effects": [
+        "@ApplyVIPViroBuff",
+        "@ApplyVIPViroArmor"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnVIPvirologist",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character": "@VIPvirologist"
+    },
+    {
+      "id": "ApplyVIPViroBuff",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@VIPViroBuffRally"
+    },
+    {
+      "id": "ApplyVIPViroArmor",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_unit_24",
+      "path": "textures/CardAssets/Unit_24.png"
+    },
+    {
+      "id": "VIPviroArt",
+      "path": "textures/UnitAssets/MT_Viro.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_unit_24",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_unit_24"
+        }
+      }
+    },
+    {
+      "id": "VIPviroArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@VIPviroArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chatter": [
+    {
+      "id": "CTR_viro",
+      "gender": "male",
+      "added_expressions": [
+        {
+          "english": "Time to do some field work!"
+        },
+        {
+          "english": "A set of live infected!"
+        }
+      ],
+      "idle_expressions": [
+        {
+          "english": "The Dominion pathogen seems to create chimeric infections."
+        },
+        {
+          "english": "The Savagery strain is to be kept away from instinctual individuals as it incubate faster."
+        },
+        {
+          "english": "Such a chaotic genome! Entropy specimens will be difficult."
+        },
+        {
+          "english": "Savagery specimens show similar infection rates as the Hellhorned."
+        },
+        {
+          "english": "With so many eyes, perhaps an ocular infection."
+        }
+      ]
+    }
+  ]
+}

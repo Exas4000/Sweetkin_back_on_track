@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_Kitchen",
+      "names": {
+        "english": "Kitchen",
+        "chinese": "厨房"
+      },
+      "descriptions": {
+        "english": "Summon a <b>Crab Cake</b> or <b>Danger Noodle</b> at the end of the turn.",
+        "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "The closest thing to a primordial soup for the Sweetkins, big or small. It is unable to produce complex Sweetkins without Rosette."
+        }
+      ],
+      "card_art": "@CardArt_room_5",
+      "cost": 2,
+      "card_type": "room",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        "@KitchenRoomEffect"
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "KitchenRoomUpg",
+      "titles": {
+        "english": "Kitchen"
+      },
+      "descriptions": {
+        "english": "Summon a <b>Crab Cake</b> or <b>Danger Noodle</b> at the end of the turn.",
+        "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
+      },
+      "icon": "@CardArt_room_5",
+      "room_modifier_upgrades": [
+        "@KitchenModif"
+      ]
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "KitchenModif",
+      "name": "RoomStateAddEffectPostCombatKitchen",
+      "descriptions": {
+        "english": "Summon a <b>Crab Cake</b> or <b>Danger Noodle</b> at the end of the turn.",
+        "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
+      },
+      "param_effects": [
+        "@CookKitchenMorsel"
+      ]
+    }
+  ],
+  "localization_terms": [
+    {
+      "key": "RoomStateAddEffectPostCombatKitchen",
+      "texts": {
+        "english": "Kitchen"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "KitchenRoomEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+      "param_upgrade": "@KitchenRoomUpg",
+      "param_bool": false,
+      "param_bool_2": false,
+      "target_team": "monsters"
+    },
+    {
+      "id": "CookKitchenMorsel",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "back_in_room",
+      "target_team": "monsters",
+      "param_character": "@crabcake",
+      "param_character_pool": [
+        "@crabcake",
+        "@SpicyNoodle"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_room_5",
+      "path": "textures/CardAssets/Mt_Kitchen.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_room_5",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_room_5"
+        }
+      }
+    }
+  ]
+}

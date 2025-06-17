@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "SWSapUpgrade",
+      "name": "RelicEffectModifyStatusMagnitude",
+      "target_mode": "front_in_room",
+      "param_card_type": "monster",
+      "param_int": 1,
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_Photo",
+      "type": "collectable",
+      "names": {
+        "english": "Old Drawing",
+        "chinese": "旧画像"
+      },
+      "descriptions": {
+        "english": "[sap] removes an extra [effect0.power][attack] per stack.",
+        "chinese": "每层[sap]额外 -[effect0.power][attack]。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A dusty framed drawing. Nine creature are drawn with no features akin to HellBorn or Angels."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@SWSapUpgrade"
+      ],
+      "icon": "@PhotoIcon",
+      "icon_small": "@PhotoIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PhotoIcon",
+      "path": "textures/Relic/Frame.png"
+    }
+  ]
+}

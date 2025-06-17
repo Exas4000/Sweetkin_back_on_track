@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_CrabBib",
+      "names": {
+        "english": "I <3 MORSELS",
+        "chinese": "影裔之爱"
+      },
+      "lore_tooltips": [
+        {
+          "english": "I Love Morsels...Me too buddy. Me Too."
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_CrabBib",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 2,
+      "effects": [
+        "@Equip_CrabBib"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_CrabBib",
+      "trigger_upgrades": [
+        "@trigger_CrabBib"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "trigger_CrabBib",
+      "trigger": "on_feed",
+      "descriptions": {
+        "english": "Gain [armor] [effect0.status0.power]",
+        "chinese": "获得[armor] [effect0.status0.power]。"
+      },
+      "effects": [
+        "@Gorge_CrabBib"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_CrabBib",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_CrabBib"
+    },
+    {
+      "id": "Gorge_CrabBib",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 10
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_CrabBib",
+      "path": "textures/CardAssets/MT_equip_4.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_CrabBib",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_CrabBib"
+        }
+      }
+    }
+  ]
+}

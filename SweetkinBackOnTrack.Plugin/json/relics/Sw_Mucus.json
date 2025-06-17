@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "SWBonusEaten",
+      "name": "RelicEffectModifyTriggerCount",
+      "target_mode": "front_in_room",
+      "param_card_type": "monster",
+      "param_int": 1,
+      "param_trigger": "on_eaten"
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_Mucus",
+      "type": "collectable",
+      "names": {
+        "english": "Preserved Mucus",
+        "chinese": "密封黏液"
+      },
+      "descriptions": {
+        "english": "[effect0.power] extra eaten trigger.",
+        "chinese": "<b>被吞食</b>能力可以额外触发一次。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A Jar of Mucus produced by Rosette. It contains enzymes that replicates various flavours and medecines mixed with it. An ingredient of the Sweetkins."
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@SWBonusEaten"
+      ],
+      "icon": "@MucusIcon",
+      "icon_small": "@MucusIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MucusIcon",
+      "path": "textures/Relic/Jam.png"
+    }
+  ]
+}

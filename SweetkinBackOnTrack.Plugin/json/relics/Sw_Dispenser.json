@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relic_effects": [
+    {
+      "id": "DispenserReduceMorselCost",
+      "name": "RelicEffectModifyMonsterCost",
+      "param_subtype": "SubtypesData_Snack",
+      "target_mode": "hand",
+      "param_card_type": "monster",
+      "param_int": -3
+    }
+  ],
+  "relics": [
+    {
+      "id": "Sw_dispenser",
+      "type": "collectable",
+      "names": {
+        "english": "Railyard's Dispenser",
+        "chinese": "铁道分配器"
+      },
+      "descriptions": {
+        "english": "Morsels cost [effect0.power] [ember]",
+        "chinese": "影裔单位费用 [effect0.power] [ember]。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "That one Relic made from scrap and broken descriptions. Works like a charm at least!"
+        }
+      ],
+      "disallow_in_deployment": false,
+      "lore_style": "herzal",
+      "relic_effects": [
+        "@DispenserReduceMorselCost"
+      ],
+      "icon": "@DispenserIcon",
+      "icon_small": "@DispenserIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassSweetkin",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "DispenserIcon",
+      "path": "textures/Relic/Vendor.png"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_MaidSuit",
+      "names": {
+        "english": "Maid Uniform",
+        "chinese": "女仆制服"
+      },
+      "lore_tooltips": [
+        {
+          "english": "Made to keep moisture in. Perfect for an emergency bandage."
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_MaidSuit",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 1,
+      "effects": [
+        "@Equip_MaidSuit"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_maidSuit",
+      "bonus_hp": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "regen",
+          "count": 10
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_MaidSuit",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_maidSuit"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_MaidSuit",
+      "path": "textures/CardAssets/MT_equip_5.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_MaidSuit",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_MaidSuit"
+        }
+      }
+    }
+  ]
+}

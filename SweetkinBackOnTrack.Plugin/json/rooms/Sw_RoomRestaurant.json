@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_Restaurant",
+      "names": {
+        "english": "Restaurant Cart",
+        "chinese": "餐厅手推车"
+      },
+      "descriptions": {
+        "english": "Units gain '<b>Gorge</b>: Gain +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]'",
+        "chinese": "所有友方单位获得“<b>暴食</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。”"
+      },
+      "lore_tooltips": [
+        {
+          "english": "One would think a war of attrition would benefit the defenders of Haven's siege. The Sweetkin thinks otherwise, providing ample supplies directly to the front."
+        }
+      ],
+      "card_art": "@CardArt_room_3",
+      "cost": 1,
+      "card_type": "room",
+      "rarity": "common",
+      "class": "@ClassSweetkin",
+      "unlock_level": 3,
+      "targets_room": true,
+      "effects": [
+        "@RestaurantRoomEffect"
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+
+      "id": "restaurantGorge",
+      "trigger": "on_feed",
+      "descriptions": {
+        "english": "Gain +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        "@ApplyStat_Restaurant"
+      ]
+
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RestaurantEffect",
+      "titles": {
+        "english": "Restaurant cart"
+      },
+      "descriptions": {
+        "english": "Units have 'Gorge: gain +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health]'",
+        "chinese": "所有友方单位获得“<b>暴食</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。”"
+      },
+      "icon": "@CardArt_room_3",
+      "trigger_upgrades": [
+        "@restaurantGorge"
+      ]
+    },
+    {
+      "id": "RestaurantBuff",
+      "bonus_damage": 2,
+      "bonus_hp": 4
+    }
+  ],
+  "effects": [
+    {
+      "id": "RestaurantRoomEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+      "param_upgrade": "@RestaurantEffect",
+      "param_bool": false,
+      "param_bool_2": false,
+      "target_team": "monsters"
+    },
+    {
+      "id": "ApplyStat_Restaurant",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@RestaurantBuff"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_room_3",
+      "path": "textures/CardAssets/Mt_restaurant.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_room_3",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_room_3"
+        }
+      }
+    }
+  ]
+}

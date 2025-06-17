@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_limeBook",
+      "names": {
+        "english": "Sourling Recipe Book",
+        "chinese": "酸之食谱"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A Book containing the essence of various Sour Sweetkins. Lime Was the first to enter the Library of the Pale Librarian at Rosette's request."
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_LimeBook",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 0,
+      "effects": [
+        "@Equip_Lime"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_Lime",
+      "bonus_hp": 30,
+      "bonus_damage": 15,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_Lime",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_Lime"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_LimeBook",
+      "path": "textures/CardAssets/MT_equip_7.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_LimeBook",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_LimeBook"
+        }
+      }
+    }
+  ]
+}

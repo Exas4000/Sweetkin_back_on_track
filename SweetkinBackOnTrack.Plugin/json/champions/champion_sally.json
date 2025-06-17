@@ -1,0 +1,573 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "cards": [
+    {
+      "id": "SallyParadox",
+      "names": {
+        "english": "Sweet Cherry Sally",
+        "chinese": "“甜蜜樱桃”莎莉"
+      },
+      "card_art": "@cardArt_sally",
+      "cost": 0,
+      "card_type": "monster",
+      "rarity": "champion",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [
+        "@SpawnMonster"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "Many loops, many paradoxes. This version of Sally exist outside of time, soon to disapear. Guide the Sweetkins to victory before they seize to be."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "SallyParadox",
+      "names": {
+        "english": "Sweet Cherry Sally",
+        "chinese": "“甜蜜樱桃”莎莉"
+      },
+      "character_art": "@SallyParadoxArt",
+      "chatter": "@CTR_sally",
+      "size": 3,
+      "health": 50,
+      "death_type": "large",
+      "attack_damage": 10,
+      "starting_status_effects": [
+        {
+          "status": "eatmany",
+          "count": 6
+        }
+      ],
+      "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_hostess1",
+      "titles": {
+        "english": "Hostess I",
+        "chinese": "女主人"
+      },
+      "descriptions": {
+        "english": "Add a random VIP to your hand"
+      },
+      "bonus_damage": -10,
+      "bonus_hp": -10,
+      "trigger_upgrades": [
+        "@Hostess1"
+      ]
+    },
+    {
+      "id": "upg_hostess2",
+      "titles": {
+        "english": "Hostess II",
+        "chinese": "女主人 II"
+      },
+      "descriptions": {
+        "english": "Add a random VIP to your hand"
+      },
+      "bonus_damage": -10,
+      "bonus_hp": 20,
+      "trigger_upgrades": [
+        "@Hostess2"
+      ]
+    },
+    {
+      "id": "upg_hostess3",
+      "titles": {
+        "english": "Hostess III",
+        "chinese": "女主人 III"
+      },
+      "descriptions": {
+        "english": "Add two random VIPs to your hand"
+      },
+      "bonus_damage": -10,
+      "bonus_hp": 50,
+      "trigger_upgrades": [
+        "@Hostess3"
+      ]
+    },
+    {
+      "id": "upg_security1",
+      "titles": {
+        "english": "Security I",
+        "chinese": "安保"
+      },
+      "descriptions": {
+        "english": "Apply [sap] [trigger0.effect0.status0.power] to all enemies."
+      },
+      "bonus_damage": 20,
+      "bonus_hp": 0,
+      "trigger_upgrades": [
+        "@Security1"
+      ]
+    },
+    {
+      "id": "upg_security2",
+      "titles": {
+        "english": "Security II",
+        "chinese": "安保 II"
+      },
+      "descriptions": {
+        "english": "Apply [sap] [trigger0.effect0.status0.power] to all enemies."
+      },
+      "bonus_damage": 30,
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        "@Security2"
+      ]
+    },
+    {
+      "id": "upg_security3",
+      "titles": {
+        "english": "Security III",
+        "chinese": "安保 III"
+      },
+      "descriptions": {
+        "english": "Apply [sap] [trigger0.effect0.status0.power] to all enemies."
+      },
+      "bonus_damage": 40,
+      "bonus_hp": 20,
+      "trigger_upgrades": [
+        "@Security3"
+      ]
+    },
+    {
+      "id": "upg_paradox1",
+      "titles": {
+        "english": "Paradox I",
+        "chinese": "悖论"
+      },
+      "descriptions": {
+        "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
+      },
+      "bonus_size": -1,
+      "trigger_upgrades": [
+        "@Paradox1"
+      ]
+    },
+    {
+      "id": "upg_paradox2",
+      "titles": {
+        "english": "Paradox II",
+        "chinese": "悖论 II"
+      },
+      "descriptions": {
+        "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
+      },
+      "bonus_size": -1,
+      "trigger_upgrades": [
+        "@Paradox2"
+      ]
+    },
+    {
+      "id": "upg_paradox3",
+      "titles": {
+        "english": "Paradox III",
+        "chinese": "悖论 III"
+      },
+      "descriptions": {
+        "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
+      },
+      "bonus_size": -2,
+      "trigger_upgrades": [
+        "@Paradox3"
+      ]
+    },
+    {
+      "id": "upg_catering1",
+      "titles": {
+        "english": "Catering I",
+        "chinese": "餐饮服务"
+      },
+      "descriptions": {
+        "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
+      },
+      "bonus_hp": 20,
+      "trigger_upgrades": [
+        "@Catering1"
+      ]
+    },
+    {
+      "id": "upg_catering2",
+      "titles": {
+        "english": "Catering II",
+        "chinese": "餐饮服务 II"
+      },
+      "descriptions": {
+        "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
+      },
+      "bonus_hp": 40,
+      "trigger_upgrades": [
+        "@Catering2"
+      ]
+    },
+    {
+      "id": "upg_catering3",
+      "titles": {
+        "english": "Catering III",
+        "chinese": "餐饮服务 III"
+      },
+      "descriptions": {
+        "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
+      },
+      "bonus_hp": 60,
+      "trigger_upgrades": [
+        "@Catering3"
+      ]
+    },
+    {
+      "id": "SallyBuffValue1",
+      "bonus_damage": 10,
+      "bonus_hp": 15
+    },
+    {
+      "id": "SallyBuffValue2",
+      "bonus_damage": 15,
+      "bonus_hp": 30
+    },
+    {
+      "id": "SallyBuffValue3",
+      "bonus_damage": 20,
+      "bonus_hp": 45
+    },
+    {
+      "id": "SallyEatValue1",
+      "bonus_damage": 15,
+      "bonus_hp": 10
+    },
+    {
+      "id": "SallyEatValue2",
+      "bonus_damage": 30,
+      "bonus_hp": 15
+    },
+    {
+      "id": "SallyEatValue3",
+      "bonus_damage": 45,
+      "bonus_hp": 20
+    }
+
+  ],
+  "character_triggers": [
+    {
+      "id": "Hostess1",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Add a random VIP to your hand",
+        "chinese": "随机将 1 个 VIP 单位加入你的手牌。"
+      },
+      "effects": [
+        "@SW_Add_VIP"
+      ]
+    },
+    {
+      "id": "Hostess2",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Add two random VIPs to your hand",
+        "chinese": "随机将 2 个 VIP 单位加入你的手牌。"
+      },
+      "effects": [
+        "@SW_Add_VIP2"
+      ]
+    },
+    {
+      "id": "Hostess3",
+      "trigger": "on_spawn",
+      "descriptions": {
+        "english": "Add three random VIPs to your hand",
+        "chinese": "随机将 3 个 VIP 单位加入你的手牌。"
+      },
+      "effects": [
+        "@SW_Add_VIP3"
+      ]
+    },
+    {
+      "id": "Security1",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Apply [sap] [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
+      },
+      "effects": [
+        "@SallyApplySap"
+      ]
+    },
+    {
+      "id": "Security2",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Apply [sap] [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
+      },
+      "effects": [
+        "@SallyApplySap2"
+      ]
+    },
+    {
+      "id": "Security3",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Apply [sap] [effect0.status0.power] to all enemies.",
+        "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
+      },
+      "effects": [
+        "@SallyApplySap3"
+      ]
+    },
+    {
+      "id": "Paradox1",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Sally gains +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]",
+        "chinese": "莎莉获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        "@SallySelfBuffATK1"
+      ]
+    },
+    {
+      "id": "Paradox2",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Sally gains +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]",
+        "chinese": "莎莉获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        "@SallySelfBuffATK2"
+      ]
+    },
+    {
+      "id": "Paradox3",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Sally gains +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]",
+        "chinese": "莎莉获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        "@SallySelfBuffATK3"
+      ]
+    },
+    {
+      "id": "Catering1",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Eater gains [effect0.upgrade.bonusdamage][attack] and [effect0.upgrade.bonushp][health]",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        "@E_SallyEatValue1"
+      ]
+    },
+    {
+      "id": "Catering2",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Eater gains [effect0.upgrade.bonusdamage][attack] and [effect0.upgrade.bonushp][health]",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        "@E_SallyEatValue2"
+      ]
+    },
+    {
+      "id": "Catering3",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Eater gains [effect0.upgrade.bonusdamage][attack] and [effect0.upgrade.bonushp][health]",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        "@E_SallyEatValue3"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnMonster",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character": "@SallyParadox"
+    },
+    {
+      "id": "SW_Add_VIP",
+      "name": "CardEffectAddBattleCard",
+      "target_mode": "room",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_card_pool": "@VIPCardPool"
+    },
+    {
+      "id": "SW_Add_VIP2",
+      "name": "CardEffectAddBattleCard",
+      "target_mode": "room",
+      "param_int": 3,
+      "param_int_2": 2,
+      "param_card_pool": "@VIPCardPool"
+    },
+    {
+      "id": "SW_Add_VIP3",
+      "name": "CardEffectAddBattleCard",
+      "target_mode": "room",
+      "param_int": 3,
+      "param_int_2": 3,
+      "param_card_pool": "@VIPCardPool"
+    },
+    {
+      "id": "SallyApplySap",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "SallyApplySap2",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "SallyApplySap3",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "SallySelfBuffATK1",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@SallyBuffValue1"
+    },
+    {
+      "id": "SallySelfBuffATK2",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@SallyBuffValue2"
+    },
+    {
+      "id": "SallySelfBuffATK3",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@SallyBuffValue3"
+    },
+    {
+      "id": "E_SallyEatValue1",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "param_upgrade": "@SallyEatValue1"
+    },
+    {
+      "id": "E_SallyEatValue2",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "param_upgrade": "@SallyEatValue2"
+    },
+    {
+      "id": "E_SallyEatValue3",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "param_upgrade": "@SallyEatValue3"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "cardArt_sally",
+      "path": "textures/CardAssets/Unit_17.png"
+    },
+    {
+      "id": "SallyParadoxArt",
+      "path": "textures/UnitAssets/sally_cherry.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "cardArt_sally",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@cardArt_sally"
+        }
+      }
+    },
+    {
+      "id": "SallyParadoxArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@SallyParadoxArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chatter": [
+    {
+      "id": "CTR_sally",
+      "gender": "female",
+      "added_expressions": [
+        {
+          "english": "Welcome to our train!"
+        },
+        {
+          "english": "I am Sally, your hostess for today."
+        },
+        {
+          "english": "I shall make Rosette proud!"
+        }
+      ],
+      "idle_expressions": [
+        {
+          "english": "The way to a Pony's heart is throught their stomach!"
+        },
+        {
+          "english": "*Echoes of the past cannot remain for long*"
+        },
+        {
+          "english": "I shall make Rosette proud!"
+        },
+        {
+          "english": "Did the train always have these Rooms?"
+        },
+        {
+          "english": "Hello! *Time loop* Hello!"
+        }
+      ]
+    }
+  ]
+}

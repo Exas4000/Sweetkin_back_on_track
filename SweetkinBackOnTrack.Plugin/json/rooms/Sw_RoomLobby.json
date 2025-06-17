@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_Lobby",
+      "names": {
+        "english": "Lobby",
+        "chinese": "前厅"
+      },
+      "descriptions": {
+        "english": "Summon a random <b>VIP</b> unit at the end of the turn.",
+        "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "An imitation of the Sweetkin's portal room. A great place to bring visitor from Hell, Haven and realms between."
+        }
+      ],
+      "card_art": "@CardArt_room_2",
+      "cost": 4,
+      "card_type": "room",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "unlock_level": 3,
+      "targets_room": true,
+      "effects": [
+        "@LobbyRoomEffect"
+      ],
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_RoomPool"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "LobbyRoomUpg",
+      "titles": {
+        "english": "Lobby"
+      },
+      "descriptions": {
+        "english": "Summon a random <b>VIP</b> unit at the end of the turn.",
+        "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
+      },
+      "allow_secondary_tooltip_placement": true,
+      "hide_icon_on_card": true,
+      "icon": "@CardArt_room_2",
+      "room_modifier_upgrades": [
+        "@LobbyModif"
+      ]
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "LobbyModif",
+      "name": "RoomStateAddEffectPostCombatLobby",
+      "descriptions": {
+        "english": "Summon a random <b>VIP</b> unit at the end of the turn.",
+        "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
+      },
+      "param_effects": [
+        "@ClerkCheckIn"
+      ]
+    }
+  ],
+  "localization_terms": [
+    {
+      "key": "RoomStateAddEffectPostCombatLobby",
+      "texts": {
+        "english": "Lobby"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "LobbyRoomEffect",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_mode": "room",
+      "target_ignore_bosses": true,
+      "param_upgrade": "@LobbyRoomUpg",
+      "param_bool": false,
+      "param_bool_2": false,
+      "target_team": "monsters"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_room_2",
+      "path": "textures/CardAssets/MT_Lobby.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_room_2",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_room_2"
+        }
+      }
+    }
+  ]
+}

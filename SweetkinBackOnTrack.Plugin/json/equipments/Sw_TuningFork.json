@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_TuningFork",
+      "names": {
+        "english": "Tuning Fork",
+        "chinese": "音叉"
+      },
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_TuningFork",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 2,
+      "effects": [
+        "@Equip_TuningFork"
+      ]
+    },
+    {
+      "id": "AbilityTuningFork",
+      "names": {
+        "english": "Tuned out"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage.",
+        "chinese": "造成 [effect0.power] 点伤害。"
+      },
+      "is_an_ability": true,
+      "cooldown": 2,
+      "targetless": false,
+      "targets_room": true,
+      "card_type": "spell",
+      "effects": [
+        "@Damage_TuningFork"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_TuningFork",
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 10
+        }
+      ],
+      "ability_upgrade": "@AbilityTuningFork"
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_TuningFork",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_TuningFork"
+    },
+    {
+      "id": "Damage_TuningFork",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_int": 50
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_TuningFork",
+      "path": "textures/CardAssets/Card_XVI.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_TuningFork",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_TuningFork"
+        }
+      }
+    }
+  ]
+}

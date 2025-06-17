@@ -1,30 +1,9 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using I2.Loc;
-using Microsoft.Extensions.Configuration;
-using ShinyShoe.Logging;
-using SimpleInjector;
-using TrainworksReloaded.Base;
-using TrainworksReloaded.Base.Card;
-using TrainworksReloaded.Base.CardUpgrade;
-using TrainworksReloaded.Base.Character;
-using TrainworksReloaded.Base.Class;
-using TrainworksReloaded.Base.Effect;
-using TrainworksReloaded.Base.Localization;
-using TrainworksReloaded.Base.Prefab;
-using TrainworksReloaded.Base.Trait;
-using TrainworksReloaded.Base.Trigger;
+using System.Collections;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
-using TrainworksReloaded.Core.Impl;
-using TrainworksReloaded.Core.Interfaces;
-using UnityEngine;
-using UnityEngine.AddressableAssets;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 
 namespace SweetkinBackOnTrack.Plugin
 {
@@ -42,7 +21,87 @@ namespace SweetkinBackOnTrack.Plugin
                 MyPluginInfo.PLUGIN_GUID,
                 c =>
                 {
-                    c.AddJsonFile("plugin.json");
+                    c.AddMergedJsonFile(
+                        // Clan definition, subtypes, and banners
+                        "json/plugin.json",
+                        // Champions
+                        "json/champions/champion_sally.json",
+                        "json/champions/champion_evergreen.json",
+                        // Spells
+                        "json/cards/Sw_allYouCan.json",
+                        "json/cards/Sw_care.json",
+                        "json/cards/Sw_dineDash.json",
+                        "json/cards/Sw_Expulsion.json",
+                        "json/cards/Sw_Fullcourse.json",
+                        "json/cards/Sw_GrumpyPatron.json",
+                        "json/cards/Sw_Hospitality.json",
+                        "json/cards/Sw_Leftovers.json",
+                        "json/cards/Sw_portalMaster.json",
+                        "json/cards/Sw_punish.json",
+                        "json/cards/Sw_seconds.json",
+                        "json/cards/Sw_Snakification.json",
+                        "json/cards/Sw_Spectacle.json",
+                        "json/cards/Sw_SummerWildfire.json",
+                        "json/cards/Sw_tillLastDrop.json",
+                        "json/cards/Sw_Veil.json",
+                        "json/cards/Sw_WinterSnowstorms.json",
+                        "json/cards/Sw_Workshift.json",
+                        // Monsters
+                        "json/characters/Sw_Butler.json",
+                        "json/characters/Sw_crab.json",
+                        "json/characters/Sw_Delivery.json",
+                        "json/characters/Sw_EvergreenSprout.json",
+                        "json/characters/Sw_FastFood.json",
+                        "json/characters/Sw_FrontClerk.json",
+                        "json/characters/Sw_Lime.json",
+                        "json/characters/Sw_Mint.json",
+                        "json/characters/Sw_noodles.json",
+                        "json/characters/Sw_Pyretatoe.json",
+                        "json/characters/Sw_Sherbetrus.json",
+                        "json/characters/Sw_Sours.json",
+                        "json/characters/Sw_SpiceCook.json",
+                        "json/characters/Sw_Sweetling.json",
+                        "json/characters/Sw_Teamaid.json",
+                        "json/characters/Sw_VIPcookie.json",
+                        "json/characters/Sw_VIPcritic.json",
+                        "json/characters/Sw_VIPimp.json",
+                        "json/characters/Sw_VIPlatebloomer.json",
+                        "json/characters/Sw_VIPnugget.json",
+                        "json/characters/Sw_VIProsette.json",
+                        "json/characters/Sw_VIPsocialite.json",
+                        "json/characters/Sw_VIPTemaki.json",
+                        "json/characters/Sw_VIPvirologist.json",
+                        // Equipment
+                        "json/equipments/Sw_BookCook.json",
+                        "json/equipments/Sw_BookMint.json",
+                        "json/equipments/Sw_ButlerSuit.json",
+                        "json/equipments/Sw_CombatKnife.json",
+                        "json/equipments/Sw_CrabBib.json",
+                        "json/equipments/Sw_Dovelivery.json",
+                        "json/equipments/Sw_LilSpoon.json",
+                        "json/equipments/Sw_LimeBook.json",
+                        "json/equipments/Sw_MaidSuit.json",
+                        "json/equipments/Sw_Sparelimb.json",
+                        "json/equipments/Sw_TuningFork.json",
+                        // Rooms
+                        "json/rooms/Sw_RoomGrav.json",
+                        "json/rooms/Sw_RoomKitchen.json",
+                        "json/rooms/Sw_RoomLobby.json",
+                        "json/rooms/Sw_RoomRestaurant.json",
+                        "json/rooms/Sw_RoomSpa.json",
+                        // Artifacts
+                        "json/relics/Sw_Dispenser.json",
+                        "json/relics/Sw_FirstClass.json",
+                        "json/relics/Sw_Flavour.json",
+                        "json/relics/Sw_GoldenKernel.json",
+                        "json/relics/Sw_MintDough.json",
+                        "json/relics/Sw_Mucus.json",
+                        "json/relics/Sw_Pamphlet.json",
+                        "json/relics/Sw_Paste.json",
+                        "json/relics/Sw_Photo.json",
+                        "json/relics/Sw_SilverPlater.json",
+                        "json/relics/Sw_Tailor.json"
+                    );
                 }
             );
 
@@ -52,26 +111,20 @@ namespace SweetkinBackOnTrack.Plugin
 
     public sealed class RoomStateCapacityModifierGrav : RoomStateModifierBase, IRoomStateCapacityModifier
     {
-        // Token: 0x0600284F RID: 10319 RVA: 0x0009829B File Offset: 0x0009649B
         public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
         {
             base.Initialize(roomModifierData, coreGameManagers);
             this.capacityDelta = roomModifierData.GetParamInt();
         }
-
-        // Token: 0x06002850 RID: 10320 RVA: 0x000982B1 File Offset: 0x000964B1
         public int GetModifiedCapacity()
         {
             return this.capacityDelta;
         }
-
-        // Token: 0x040011F3 RID: 4595
         private int capacityDelta;
     }
 
     public sealed class RoomStateAddEffectPostCombatLobby : RoomStateModifierBase, IRoomStatePostCombatModifier, IRoomStateModifier, ILocalizationParamInt, ILocalizationParameterContext
     {
-        // Token: 0x0600283F RID: 10303 RVA: 0x00097FB8 File Offset: 0x000961B8
         public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
         {
             base.Initialize(roomModifierData, coreGameManagers);
@@ -83,8 +136,6 @@ namespace SweetkinBackOnTrack.Plugin
             }
         }
 
-        // Token: 0x170002DA RID: 730
-        // (get) Token: 0x06002840 RID: 10304 RVA: 0x00098028 File Offset: 0x00096228
         public bool CanApplyInPreviewMode
         {
             get
@@ -93,7 +144,6 @@ namespace SweetkinBackOnTrack.Plugin
             }
         }
 
-        // Token: 0x06002841 RID: 10305 RVA: 0x0009802B File Offset: 0x0009622B
         public IEnumerator PostCombat(RoomState room, ICoreGameManagers coreGameManagers)
         {
             CombatManager combatManager = coreGameManagers.GetCombatManager();
@@ -102,13 +152,11 @@ namespace SweetkinBackOnTrack.Plugin
             yield break;
         }
 
-        // Token: 0x040011EB RID: 4587
-        private List<CardEffectState> _effects = new List<CardEffectState>();
+        private List<CardEffectState> _effects = [];
     }
 
     public sealed class RoomStateAddEffectPostCombatKitchen : RoomStateModifierBase, IRoomStatePostCombatModifier, IRoomStateModifier, ILocalizationParamInt, ILocalizationParameterContext
     {
-        // Token: 0x0600283F RID: 10303 RVA: 0x00097FB8 File Offset: 0x000961B8
         public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
         {
             base.Initialize(roomModifierData, coreGameManagers);
@@ -120,8 +168,6 @@ namespace SweetkinBackOnTrack.Plugin
             }
         }
 
-        // Token: 0x170002DA RID: 730
-        // (get) Token: 0x06002840 RID: 10304 RVA: 0x00098028 File Offset: 0x00096228
         public bool CanApplyInPreviewMode
         {
             get
@@ -130,7 +176,6 @@ namespace SweetkinBackOnTrack.Plugin
             }
         }
 
-        // Token: 0x06002841 RID: 10305 RVA: 0x0009802B File Offset: 0x0009622B
         public IEnumerator PostCombat(RoomState room, ICoreGameManagers coreGameManagers)
         {
             CombatManager combatManager = coreGameManagers.GetCombatManager();
@@ -139,13 +184,11 @@ namespace SweetkinBackOnTrack.Plugin
             yield break;
         }
 
-        // Token: 0x040011EB RID: 4587
-        private List<CardEffectState> _effects = new List<CardEffectState>();
+        private List<CardEffectState> _effects = [];
     }
 
     public sealed class RoomStateAddEffectPostCombatSpa : RoomStateModifierBase, IRoomStatePostCombatModifier, IRoomStateModifier, ILocalizationParamInt, ILocalizationParameterContext
     {
-        // Token: 0x0600283F RID: 10303 RVA: 0x00097FB8 File Offset: 0x000961B8
         public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
         {
             base.Initialize(roomModifierData, coreGameManagers);
@@ -157,8 +200,6 @@ namespace SweetkinBackOnTrack.Plugin
             }
         }
 
-        // Token: 0x170002DA RID: 730
-        // (get) Token: 0x06002840 RID: 10304 RVA: 0x00098028 File Offset: 0x00096228
         public bool CanApplyInPreviewMode
         {
             get
@@ -167,7 +208,6 @@ namespace SweetkinBackOnTrack.Plugin
             }
         }
 
-        // Token: 0x06002841 RID: 10305 RVA: 0x0009802B File Offset: 0x0009622B
         public IEnumerator PostCombat(RoomState room, ICoreGameManagers coreGameManagers)
         {
             CombatManager combatManager = coreGameManagers.GetCombatManager();
@@ -176,7 +216,6 @@ namespace SweetkinBackOnTrack.Plugin
             yield break;
         }
 
-        // Token: 0x040011EB RID: 4587
-        private List<CardEffectState> _effects = new List<CardEffectState>();
+        private List<CardEffectState> _effects = [];
     }
 }

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_ButlerSuit",
+      "names": {
+        "english": "S.E. Menu",
+        "chinese": "S.E. 目录"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A book containing the essence of a handful of minty sweetkins. Retrieved from passing librarians in their dimension."
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_ButlerSuit",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 1,
+      "effects": [
+        "@Equip_butler"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_butler",
+      "bonus_hp": 10,
+      "trigger_upgrades": [
+        "@trigger_butler"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "trigger_butler",
+      "trigger": "post_combat",
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+        "chinese": "对所有敌方单位施加[frostbite] [effect0.status0.power]。"
+      },
+      "effects": [
+        "@postCombat_Butler"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_butler",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_butler"
+    },
+    {
+      "id": "postCombat_Butler",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 6
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_ButlerSuit",
+      "path": "textures/CardAssets/MT_equip_9.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_ButlerSuit",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_ButlerSuit"
+        }
+      }
+    }
+  ]
+}

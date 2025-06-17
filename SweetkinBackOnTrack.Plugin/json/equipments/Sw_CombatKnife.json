@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_CombatKnife",
+      "names": {
+        "english": "Combat Knife",
+        "chinese": "战斗小刀"
+      },
+      "lore_tooltips": [
+        {
+          "english": "'Remember what I said about symbolism? Well at least this one could be a weapon.'-Rosette, still confused about utencils warfare."
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_CombatKnife",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 1,
+      "effects": [
+        "@Equip_CombatKnife"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_CombatKnife",
+      "bonus_damage": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "buff",
+          "count": 5
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_CombatKnife",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_CombatKnife"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_CombatKnife",
+      "path": "textures/CardAssets/MT_equip_8.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_CombatKnife",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_CombatKnife"
+        }
+      }
+    }
+  ]
+}

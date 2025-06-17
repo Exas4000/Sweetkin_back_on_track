@@ -1,0 +1,149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/schemas/cards.json",
+  "cards": [
+    {
+      "id": "Sw_SpiceCook",
+      "names": {
+        "english": "Spice Cook",
+        "chinese": "香料之厨"
+      },
+      "card_art": "@CardArt_unit_7",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "targets_room": true,
+      "effects": [
+        "@SpawnSpiceCook"
+      ],
+      "lore_tooltips": [
+        {
+          "english": "'Time to cook up a storm! Cover me while I prepare us something!'-Sweetkin Cook"
+        }
+      ],
+      "pools": [
+        "UnitsAllBanner"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "SpiceCook",
+      "size": 2,
+      "attack_damage": 30,
+      "health": 10,
+      "names": {
+        "english": "Spice Cook",
+        "chinese": "香料之厨"
+      },
+      "character_art": "@SpicecookArt",
+      "chatter": "@CTR_cook",
+      "subtypes": [
+        "@Sub_Spicy",
+        "@Sub_Staff",
+        "SubtypesData_BannerUnit"
+      ],
+      "triggers": [
+        "@SpiceSlay"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SpiceSlay",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Summon a <b>Danger noodle</b>",
+        "chinese": "召唤 1 个<b>蛇秘的面条</b>。"
+      },
+      "effects": [
+        "@SpawnNoodleSlay"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnSpiceCook",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "target_card_type": "spell",
+      "param_character": "@SpiceCook"
+    },
+    {
+      "id": "SpawnNoodleSlay",
+      "name": "CardEffectSpawnMonster",
+      "target_mode": "room",
+      "param_character": "@SpicyNoodle"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_unit_7",
+      "path": "textures/CardAssets/Unit_7.png"
+    },
+    {
+      "id": "SpicecookArt",
+      "path": "textures/UnitAssets/sweetkin_tall_orange.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_unit_7",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_unit_7"
+        }
+      }
+    },
+    {
+      "id": "SpicecookArt",
+      "type": "character_art",
+      "extensions": {
+        "character_art": {
+          "sprite": "@SpicecookArt",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 1.3,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chatter": [
+    {
+      "id": "CTR_cook",
+      "gender": "male",
+      "added_expressions": [
+        {
+          "english": "My apologies for having you on the chopping block."
+        },
+        {
+          "english": "And That is why I am called the best!"
+        }
+      ],
+      "idle_expressions": [
+        {
+          "english": "No worries, I can cook a replacement."
+        },
+        {
+          "english": "I cultivated in the LIBRARY OF RUIN! I don't think you guys match me!"
+        },
+        {
+          "english": "You are made of meat, yet meat ends up on your plate."
+        },
+        {
+          "english": "In a world where food is both flesh and meals, were do we cross the line?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_Dovelivery",
+      "names": {
+        "english": "White Chocolate Dove",
+        "chinese": "白巧鸽子"
+      },
+      "lore_tooltips": [
+        {
+          "english": "'Our doves are more akin to a living tool than actual animals. They certainly do the job when it comes time of quickly moving small objects around.' -Rosette"
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "common",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_Dovelivery",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 1,
+      "effects": [
+        "@Equip_Dove"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_dove",
+      "bonus_hp": 1,
+      "bonus_damage": 1,
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@trigger_dove"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "trigger_dove",
+      "trigger": "on_eaten",
+      "descriptions": {
+        "english": "Draw +[effect0.power] next turn.",
+        "chinese": "下个回合抽 +[effect0.power] 张牌。"
+      },
+      "effects": [
+        "@Eaten_dove"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_Dove",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_dove"
+    },
+    {
+      "id": "Eaten_dove",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "target_mode": "room",
+      "param_int": 1
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_Dovelivery",
+      "path": "textures/CardAssets/Card_I.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_Dovelivery",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_Dovelivery"
+        }
+      }
+    }
+  ]
+}

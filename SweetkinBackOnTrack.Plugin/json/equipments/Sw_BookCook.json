@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_Cookbook",
+      "names": {
+        "english": "Sweetkin Staff List",
+        "chinese": "甜裔员工名单"
+      },
+      "lore_tooltips": [
+        {
+          "english": "A Book containing the essence of various Spicy Sweetkins. Created in bulk for the Buffet at the Library of Ruin, with few copies confiscated from visiting librarians by Sally."
+        }
+      ],
+      "card_type": "equipment",
+      "rarity": "rare",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_BookCook",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool",
+        "RoomAndEquipmentMerchant_EquipmentPool"
+      ],
+      "cost": 2,
+      "effects": [
+        "@Equip_Cook"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "upg_Cook",
+      "bonus_damage": 30,
+      "trigger_upgrades": [
+        "@trigger_Cook"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "trigger_Cook",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Gain [rage] [effect0.status0.power].",
+        "chinese": "获得[rage] [effect0.status0.power]。"
+      },
+      "effects": [
+        "@Slay_cookbook"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Equip_Cook",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@upg_Cook"
+    },
+    {
+      "id": "Slay_cookbook",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 8
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_BookCook",
+      "path": "textures/CardAssets/MT_equip_3.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_BookCook",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_BookCook"
+        }
+      }
+    }
+  ]
+}

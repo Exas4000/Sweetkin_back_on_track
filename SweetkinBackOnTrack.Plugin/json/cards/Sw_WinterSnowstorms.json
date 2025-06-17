@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "cards": [
+    {
+      "id": "Sw_WinterSnowstorms",
+      "names": {
+        "english": "Winter Snowstorms",
+        "chinese": "冬日暴雪"
+      },
+      "lore_tooltips": [
+        {
+          "english": "The frostbite and numbness is the reminder of your failures..."
+        }
+      ],
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_sw2",
+      "targets_room": true,
+      "targetless": true,
+      "card_type": "blight",
+      "cost": 1,
+      "effects": [
+        "@WinterFrostbite"
+      ],
+      "triggers": [
+        "@WinterReserve"
+      ]
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "WinterReserve",
+      "trigger": "on_unplayed_positive",
+      "effects": [
+        {
+          "id": "@WinterFrostbite"
+        }
+      ],
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power] to the weakest character in the train."
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "WinterFrostbite",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "weakest_all_rooms",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_sw2",
+      "path": "textures/CardAssets/SproutWinter.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_sw2",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_sw2"
+        }
+      }
+    }
+  ]
+}

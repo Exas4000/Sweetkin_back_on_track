@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "cards": [
+    {
+      "id": "Sw_Seconds",
+      "names": {
+        "english": "Seconds",
+        "chinese": "片刻之后"
+      },
+      "descriptions": {
+        "english": "Apply [sap] [effect0.status0.power] to all enemies. Apply +[effect1.power][health] to all allies",
+        "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。使所有友方单位获得 +[effect1.power][health]。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "'Come in! There is enough for everybody!' -Rosette during one of the many Winged invasion"
+        }
+      ],
+      "rarity": "uncommon",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_VII",
+      "targets_room": true,
+      "targetless": true,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 2,
+      "effects": [
+        "@ApplyStatus_seconds",
+        "@RaiseHp_seconds"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ApplyStatus_seconds",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "RaiseHp_seconds",
+      "name": "CardEffectBuffMaxHealth",
+      "param_int": 10,
+      "target_mode": "room",
+      "target_team": "monsters"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_VII",
+      "path": "textures/CardAssets/Card_VII.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_VII",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_VII"
+        }
+      }
+    }
+  ]
+}

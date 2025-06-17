@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/json-schema.json",
+  "cards": [
+    {
+      "id": "Sw_Punish",
+      "names": {
+        "english": "Punish",
+        "chinese": "惩罚"
+      },
+      "descriptions": {
+        "english": "Deal [effect0.power] damage.",
+        "chinese": "造成 [effect0.power] 点伤害。"
+      },
+      "lore_tooltips": [
+        {
+          "english": "The Sweetkin's boss seems to always keep his cool but this creature from out-of-hell certainly does not hold back when provoked."
+        }
+      ],
+      "rarity": "common",
+      "class": "@ClassSweetkin",
+      "card_art": "@CardArt_III",
+      "targets_room": true,
+      "targetless": false,
+      "pools": [
+        "MegaPool"
+      ],
+      "cost": 1,
+      "traits": [
+        "@Piercing_punish"
+      ],
+      "effects": [
+        "@Dealdamage_punish"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Dealdamage_punish",
+      "name": "CardEffectDamage",
+      "param_int": 30,
+      "target_mode": "drop_target_character",
+      "target_team": "both"
+    }
+  ],
+  "traits": [
+    {
+      "id": "Piercing_punish",
+      "name": "CardTraitIgnoreArmor"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CardArt_III",
+      "path": "textures/CardAssets/Card_III.png"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_III",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@CardArt_III"
+        }
+      }
+    }
+  ]
+}
