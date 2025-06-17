@@ -7,7 +7,7 @@
         "english": "Gravitorium"
       },
       "descriptions": {
-        "english": "Add [effect0.upgrade.roommodifier0.power] [capacity] to the room"
+        "english": "Add [effect0.upgrade.roommodifier0.power][capacity] to the room"
       },
       "lore_tooltips": [
         {

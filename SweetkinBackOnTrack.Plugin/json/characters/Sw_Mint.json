@@ -53,8 +53,8 @@
       "id": "RevengeMint",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "Apply <b>Frostbite</b> [effect0.status0.power] to enemy units.",
-        "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+        "chinese": "对所有敌方单位施加[frostbite] [effect0.status0.power]。"
       },
       "effects": [
         "@MintApplyPoison"

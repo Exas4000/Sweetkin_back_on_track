@@ -56,8 +56,8 @@
       "id": "CookieIncant",
       "trigger": "card_spell_played",
       "descriptions": {
-        "english": "Gain +[effect0.upgrade.bonusdamage] [attack]",
-        "chinese": "获得 +[effect0.upgrade.bonusdamage] [attack]。"
+        "english": "Gain +[effect0.upgrade.bonusdamage][attack]",
+        "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]。"
       },
       "effects": [
         "@ApplyStat_cookie"
@@ -67,8 +67,8 @@
       "id": "CookieGorge",
       "trigger": "on_feed",
       "descriptions": {
-        "english": "Gain +[effect0.upgrade.bonusdamage] [attack]",
-        "chinese": "获得 +[effect0.upgrade.bonusdamage] [attack]。"
+        "english": "Gain +[effect0.upgrade.bonusdamage][attack]",
+        "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]。"
       },
       "effects": [
         "@ApplyStat_cookie"

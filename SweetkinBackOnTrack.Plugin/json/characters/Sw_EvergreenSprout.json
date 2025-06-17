@@ -75,7 +75,7 @@
       "id": "EvergreenFall",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "Deal 1 damage to all enemies"
+        "english": "Deal [effect0.power] damage to all enemies"
       },
       "effects": [
         "@LoneSproutLocust"

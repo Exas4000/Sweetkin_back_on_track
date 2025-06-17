@@ -28,7 +28,7 @@
       },
       "descriptions": {
         "english": "Morsels gain +[effect0.power][health]",
-        "chinese": "影裔单位获得 ++[effect0.power][health]。"
+        "chinese": "影裔单位获得 +[effect0.power][health]。"
       },
       "lore_tooltips": [
         {

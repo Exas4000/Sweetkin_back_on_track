@@ -154,7 +154,7 @@
         "chinese": "消防员"
       },
       "descriptions": {
-        "english": "Enchant : apply Titanskin 2"
+        "english": "<b>Enchant</b>: Apply [titanskin] [charactertrigger0.effect0.status0.power]"
       },
       "bonus_damage": 5,
       "bonus_hp": 20,
@@ -175,7 +175,7 @@
         "chinese": "消防员 II"
       },
       "descriptions": {
-        "english": "Enchant : apply Titanskin 2"
+        "english": "<b>Enchant</b>: Apply [titanskin] [charactertrigger0.effect0.status0.power]"
       },
       "bonus_damage": 5,
       "bonus_hp": 30,
@@ -186,9 +186,7 @@
         }
       ],
       "trigger_upgrades": [
-        
         "@EvergreenEnchantTrigger"
-        
       ]
     },
     {
@@ -198,7 +196,7 @@
         "chinese": "消防员 III"
       },
       "descriptions": {
-        "english": "Enchant : apply Titanskin 2"
+        "english": "<b>Enchant</b>: Apply [titanskin] [charactertrigger0.effect0.status0.power]"
       },
       "bonus_damage": 5,
       "bonus_hp": 30,
