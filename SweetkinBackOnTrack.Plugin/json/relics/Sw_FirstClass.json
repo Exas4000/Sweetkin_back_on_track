@@ -29,9 +29,7 @@
       "disallow_in_deployment": false,
       "lore_style": "herzal",
       "relic_effects": [
-        {
-          "id": "@SWRelicAddVIP"
-        }
+        "@SWRelicAddVIP"
       ],
       "icon": "@TicketIcon",
       "icon_small": "@TicketIcon",

@@ -14,9 +14,7 @@
       "targets_room": true,
       "hide_in_logbook": true,
       "effects": [
-        {
-          "id": "@SpawnEvergreenSprout"
-        }
+        "@SpawnEvergreenSprout"
       ],
       "lore_tooltips": [
         {
@@ -45,18 +43,10 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@EvergreenSpring"
-        },
-        {
-          "id": "@EvergreenSummer"
-        },
-        {
-          "id": "@EvergreenFall"
-        },
-        {
-          "id": "@EvergreenWinter"
-        }
+        "@EvergreenSpring",
+        "@EvergreenSummer",
+        "@EvergreenFall",
+        "@EvergreenWinter"
       ]
     }
   ],
@@ -68,9 +58,7 @@
         "english": "Kill the unit with the lowest HP on the train"
       },
       "effects": [
-        {
-          "id": "@LoneSproutClearcut"
-        }
+        "@LoneSproutClearcut"
       ]
     },
     {
@@ -80,9 +68,7 @@
         "english": "Add Summer's wildfires to your deck"
       },
       "effects": [
-        {
-          "id": "@LoneSproutAddSummer"
-        }
+        "@LoneSproutAddSummer"
       ]
     },
     {
@@ -92,9 +78,7 @@
         "english": "Deal 1 damage to all enemies"
       },
       "effects": [
-        {
-          "id": "@LoneSproutLocust"
-        }
+        "@LoneSproutLocust"
       ]
     },
     {
@@ -104,9 +88,7 @@
         "english": "Add a Winter's snowstorms to your deck"
       },
       "effects": [
-        {
-          "id": "@LoneSproutAddWinter"
-        }
+        "@LoneSproutAddWinter"
       ]
     }
 

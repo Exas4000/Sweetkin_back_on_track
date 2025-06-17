@@ -26,9 +26,7 @@
       ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@Descend_portalMaster"
-        }
+        "@Descend_portalMaster"
       ]
     }
   ],

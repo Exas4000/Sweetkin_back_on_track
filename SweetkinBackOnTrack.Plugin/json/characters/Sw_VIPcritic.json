@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnCritic"
-        }
+        "@SpawnCritic"
       ],
       "lore_tooltips": [
         {
@@ -42,9 +40,7 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@CriticApplyBuffet"
-        }
+        "@CriticApplyBuffet"
       ]
     }
   ],
@@ -57,9 +53,7 @@
         "chinese": "所有友方单位获得<b>自助餐</b> [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@CriticBuffet"
-        }
+        "@CriticBuffet"
       ]
     }
   ],

@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnSourling"
-        }
+        "@SpawnSourling"
       ],
       "lore_tooltips": [
         {
@@ -40,9 +38,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnSourGuard"
-        }
+        "@SpawnSourGuard"
       ],
       "lore_tooltips": [
         {
@@ -77,9 +73,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_Sour"
-        }
+        "@Eat_Sour"
       ]
     },
     {
@@ -91,8 +85,6 @@
         "english": "Sour Guard",
         "chinese": "酸卫士"
       },
-      "can_attack": true,
-      "can_be_healed": true,
       "character_art": "@TallSourArt",
       "chatter": "@CTR_sour",
       "subtypes": [
@@ -107,9 +99,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_Sour"
-        }
+        "@Eat_Sour"
       ]
     }
   ],
@@ -122,9 +112,7 @@
         "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStatus_Sour"
-        }
+        "@ApplyStatus_Sour"
       ]
     }
   ],
@@ -148,7 +136,6 @@
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
-
       "param_status_effects": [
         {
           "status": "debuff",

@@ -1,5 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using HarmonyLib;
 using System.Collections;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
@@ -105,6 +106,8 @@ namespace SweetkinBackOnTrack.Plugin
             );
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+            var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
+            harmony.PatchAll();
         }
     }
 
@@ -216,5 +219,45 @@ namespace SweetkinBackOnTrack.Plugin
         }
 
         private List<CardEffectState> _effects = [];
+    }
+
+    [HarmonyPatch(typeof(MetagameSaveData), nameof(MetagameSaveData.HasDiscoveredCard), [typeof(CardData)])]
+    class ShowAllLogbookCardsPatch
+    {
+        static bool Prefix(ref bool __result)
+        {
+            __result = true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(MetagameSaveData), nameof(MetagameSaveData.HasDiscoveredCard), [typeof(string)])]
+    class ShowAllLogbookCardsPatch2
+    {
+        static bool Prefix(ref bool __result)
+        {
+            __result = true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(MetagameSaveData), nameof(MetagameSaveData.HasDiscoveredRelic), [typeof(RelicData)])]
+    class ShowAllLogbookRelicsPatch
+    {
+        static bool Prefix(ref bool __result)
+        {
+            __result = true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(MetagameSaveData), nameof(MetagameSaveData.HasDiscoveredChampionUpgrade), [typeof(CardUpgradeData)])]
+    class ShowAllLogbookUpgradePatch
+    {
+        static bool Prefix(ref bool __result)
+        {
+            __result = true;
+            return false;
+        }
     }
 }

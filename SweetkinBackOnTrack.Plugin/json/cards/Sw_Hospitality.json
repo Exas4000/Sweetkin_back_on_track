@@ -23,9 +23,7 @@
       "targetless": false,
       "cost": 1,
       "effects": [
-        {
-          "id": "@RaiseHp_hospy"
-        }
+        "@RaiseHp_hospy"
       ]
     }
   ],

@@ -23,9 +23,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@KitchenRoomEffect"
-        }
+        "@KitchenRoomEffect"
       ],
       "pools": [
         "MegaPool",
@@ -45,9 +43,7 @@
       },
       "icon": "@CardArt_room_5",
       "room_modifier_upgrades": [
-        {
-          "id": "@KitchenModif"
-        }
+        "@KitchenModif"
       ]
     }
   ],
@@ -60,9 +56,7 @@
         "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
       },
       "param_effects": [
-        {
-          "id": "@CookKitchenMorsel"
-        }
+        "@CookKitchenMorsel"
       ]
     }
   ],

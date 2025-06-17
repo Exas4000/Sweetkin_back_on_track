@@ -26,12 +26,8 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@Veil_discard"
-        },
-        {
-          "id": "@Veil_draw"
-        }
+        "@Veil_discard",
+        "@Veil_draw"
       ]
     }
   ],

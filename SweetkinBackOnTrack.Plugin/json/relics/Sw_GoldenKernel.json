@@ -29,9 +29,7 @@
       "disallow_in_deployment": false,
       "lore_style": "herzal",
       "relic_effects": [
-        {
-          "id": "@GainGoldOnEaten"
-        }
+        "@GainGoldOnEaten"
       ],
       "icon": "@KernelIcon",
       "icon_small": "@KernelIcon",

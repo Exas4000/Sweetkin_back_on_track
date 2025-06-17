@@ -27,9 +27,7 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@Equip_LilSpoon"
-        }
+        "@Equip_LilSpoon"
       ]
     }
   ],

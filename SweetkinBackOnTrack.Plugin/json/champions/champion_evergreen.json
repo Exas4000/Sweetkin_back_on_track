@@ -15,9 +15,7 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        {
-          "id": "@SpawnEvergreen"
-        }
+        "@SpawnEvergreen"
       ],
       "lore_tooltips": [
         {
@@ -70,9 +68,7 @@
         }
       ],
       "trigger_upgrades": [
-        {
-          "id": "@TraumaSprout"
-        }
+        "@TraumaSprout"
       ]
     },
     {
@@ -88,9 +84,7 @@
         }
       ],
       "trigger_upgrades": [
-        {
-          "id": "@TraumaSprout"
-        }
+        "@TraumaSprout"
       ]
     },
     {
@@ -103,9 +97,7 @@
         "english": "Gain [effect0.upgrade.bonusdamage][attack] permanently"
       },
       "trigger_upgrades": [
-        {
-          "id": "@TraumaQueen"
-        }
+        "@TraumaQueen"
       ]
     },
     {
@@ -118,12 +110,8 @@
         "english": "Gain [effect0.upgrade.bonusdamage][attack] permanently"
       },
       "trigger_upgrades": [
-        {
-          "id": "@TraumaQueen"
-        },
-        {
-          "id": "@EverGreenSelfDefense"
-        }
+        "@TraumaQueen",
+        "@EverGreenSelfDefense"
       ]
     },
     {
@@ -155,12 +143,8 @@
         }
       ],
       "trigger_upgrades": [
-        {
-          "id": "@AscendRaidBoss"
-        },
-        {
-          "id": "@DescendRaidBoss"
-        }
+        "@AscendRaidBoss",
+        "@DescendRaidBoss"
       ]
     },
     {
@@ -181,9 +165,7 @@
         }
       ],
       "trigger_upgrades": [
-        {
-          "id": "@EvergreenEnchantTrigger"
-        }
+        "@EvergreenEnchantTrigger"
       ]
     },
     {
@@ -204,9 +186,9 @@
         }
       ],
       "trigger_upgrades": [
-        {
-          "id": "@EvergreenEnchantTrigger"
-        }
+        
+        "@EvergreenEnchantTrigger"
+        
       ]
     },
     {
@@ -227,9 +209,7 @@
         }
       ],
       "trigger_upgrades": [
-        {
-          "id": "@EvergreenEnchantTrigger"
-        }
+        "@EvergreenEnchantTrigger"
       ]
     },
     {
@@ -250,9 +230,7 @@
         "english": "Retaliate against the eater"
       },
       "effects": [
-        {
-          "id": "@EatenRetaliate"
-        }
+        "@EatenRetaliate"
       ]
     },
     {
@@ -263,9 +241,7 @@
         "chinese": "永久获得 [effect0.upgrade.bonusdamage][attack]，[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@GriefLoneSprout"
-        }
+        "@GriefLoneSprout"
       ]
     },
     {
@@ -276,9 +252,7 @@
         "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。"
       },
       "effects": [
-        {
-          "id": "@SlayQueenBuff"
-        }
+        "@SlayQueenBuff"
       ]
     },
     {
@@ -289,9 +263,7 @@
         "chinese": "获得[titanskin] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@EvergreenEnchant"
-        }
+        "@EvergreenEnchant"
       ]
     },
     {
@@ -301,9 +273,7 @@
         "english": "[descend]"
       },
       "effects": [
-        {
-          "id": "@RaidGoDown"
-        }
+        "@RaidGoDown"
       ]
     },
     {
@@ -314,9 +284,7 @@
         "chinese": "[ascend]到薪火室下方楼层"
       },
       "effects": [
-        {
-          "id": "@RaidGoUp"
-        }
+        "@RaidGoUp"
       ]
     }
   ],

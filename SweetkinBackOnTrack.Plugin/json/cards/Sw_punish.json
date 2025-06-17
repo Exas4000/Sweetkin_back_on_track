@@ -8,12 +8,12 @@
         "chinese": "惩罚"
       },
       "descriptions": {
-        "english": "[Piercing] Deal [effect0.power] damage.",
-        "chinese": "[Piercing]造成 [effect0.power] 点伤害。"
+        "english": "Deal [effect0.power] damage.",
+        "chinese": "造成 [effect0.power] 点伤害。"
       },
       "lore_tooltips": [
         {
-          "english":"The Sweetkin's boss seems to always keep his cool but this creature from out-of-hell certainly does not hold back when provoked."
+          "english": "The Sweetkin's boss seems to always keep his cool but this creature from out-of-hell certainly does not hold back when provoked."
         }
       ],
       "rarity": "common",
@@ -26,14 +26,10 @@
       ],
       "cost": 1,
       "traits": [
-        {
-          "id": "@Piercing_punish"
-        }
+        "@Piercing_punish"
       ],
       "effects": [
-        {
-          "id": "@Dealdamage_punish"
-        }
+        "@Dealdamage_punish"
       ]
     }
   ],

@@ -26,14 +26,10 @@
       ],
       "cost": 2,
       "traits": [
-        {
-          "id": "@Magnet_dine"
-        }
+        "@Magnet_dine"
       ],
       "effects": [
-        {
-          "id": "@Dealdamage_dine"
-        }
+        "@Dealdamage_dine"
       ]
     }
   ],

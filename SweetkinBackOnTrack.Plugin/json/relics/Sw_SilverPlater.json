@@ -35,9 +35,7 @@
       "disallow_in_deployment": false,
       "lore_style": "herzal",
       "relic_effects": [
-        {
-          "id": "@SWBonusBuffetMorsel"
-        }
+        "@SWBonusBuffetMorsel"
       ],
       "icon": "@PlaterIcon",
       "icon_small": "@PlaterIcon",

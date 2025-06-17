@@ -15,9 +15,7 @@
       "targets_room": true,
       "targetless": false,
       "effects": [
-        {
-          "id": "@SpawnMonster"
-        }
+        "@SpawnMonster"
       ],
       "lore_tooltips": [
         {
@@ -63,9 +61,7 @@
       "bonus_damage": -10,
       "bonus_hp": -10,
       "trigger_upgrades": [
-        {
-          "id": "@Hostess1"
-        }
+        "@Hostess1"
       ]
     },
     {
@@ -80,9 +76,7 @@
       "bonus_damage": -10,
       "bonus_hp": 20,
       "trigger_upgrades": [
-        {
-          "id": "@Hostess2"
-        }
+        "@Hostess2"
       ]
     },
     {
@@ -97,9 +91,7 @@
       "bonus_damage": -10,
       "bonus_hp": 50,
       "trigger_upgrades": [
-        {
-          "id": "@Hostess3"
-        }
+        "@Hostess3"
       ]
     },
     {
@@ -114,9 +106,7 @@
       "bonus_damage": 20,
       "bonus_hp": 0,
       "trigger_upgrades": [
-        {
-          "id": "@Security1"
-        }
+        "@Security1"
       ]
     },
     {
@@ -131,9 +121,7 @@
       "bonus_damage": 30,
       "bonus_hp": 10,
       "trigger_upgrades": [
-        {
-          "id": "@Security2"
-        }
+        "@Security2"
       ]
     },
     {
@@ -148,9 +136,7 @@
       "bonus_damage": 40,
       "bonus_hp": 20,
       "trigger_upgrades": [
-        {
-          "id": "@Security3"
-        }
+        "@Security3"
       ]
     },
     {
@@ -164,9 +150,7 @@
       },
       "bonus_size": -1,
       "trigger_upgrades": [
-        {
-          "id": "@Paradox1"
-        }
+        "@Paradox1"
       ]
     },
     {
@@ -180,9 +164,7 @@
       },
       "bonus_size": -1,
       "trigger_upgrades": [
-        {
-          "id": "@Paradox2"
-        }
+        "@Paradox2"
       ]
     },
     {
@@ -196,9 +178,7 @@
       },
       "bonus_size": -2,
       "trigger_upgrades": [
-        {
-          "id": "@Paradox3"
-        }
+        "@Paradox3"
       ]
     },
     {
@@ -212,9 +192,7 @@
       },
       "bonus_hp": 20,
       "trigger_upgrades": [
-        {
-          "id": "@Catering1"
-        }
+        "@Catering1"
       ]
     },
     {
@@ -228,9 +206,7 @@
       },
       "bonus_hp": 40,
       "trigger_upgrades": [
-        {
-          "id": "@Catering2"
-        }
+        "@Catering2"
       ]
     },
     {
@@ -244,9 +220,7 @@
       },
       "bonus_hp": 60,
       "trigger_upgrades": [
-        {
-          "id": "@Catering3"
-        }
+        "@Catering3"
       ]
     },
     {
@@ -290,9 +264,7 @@
         "chinese": "随机将 1 个 VIP 单位加入你的手牌。"
       },
       "effects": [
-        {
-          "id": "@SW_Add_VIP"
-        }
+        "@SW_Add_VIP"
       ]
     },
     {
@@ -303,9 +275,7 @@
         "chinese": "随机将 2 个 VIP 单位加入你的手牌。"
       },
       "effects": [
-        {
-          "id": "@SW_Add_VIP2"
-        }
+        "@SW_Add_VIP2"
       ]
     },
     {
@@ -316,9 +286,7 @@
         "chinese": "随机将 3 个 VIP 单位加入你的手牌。"
       },
       "effects": [
-        {
-          "id": "@SW_Add_VIP3"
-        }
+        "@SW_Add_VIP3"
       ]
     },
     {
@@ -329,9 +297,7 @@
         "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@SallyApplySap"
-        }
+        "@SallyApplySap"
       ]
     },
     {
@@ -342,9 +308,7 @@
         "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@SallyApplySap2"
-        }
+        "@SallyApplySap2"
       ]
     },
     {
@@ -355,9 +319,7 @@
         "chinese": "对所有敌方单位施加[sap] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@SallyApplySap3"
-        }
+        "@SallyApplySap3"
       ]
     },
     {
@@ -368,9 +330,7 @@
         "chinese": "莎莉获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@SallySelfBuffATK1"
-        }
+        "@SallySelfBuffATK1"
       ]
     },
     {
@@ -381,9 +341,7 @@
         "chinese": "莎莉获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@SallySelfBuffATK2"
-        }
+        "@SallySelfBuffATK2"
       ]
     },
     {
@@ -394,9 +352,7 @@
         "chinese": "莎莉获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@SallySelfBuffATK3"
-        }
+        "@SallySelfBuffATK3"
       ]
     },
     {
@@ -407,9 +363,7 @@
         "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@E_SallyEatValue1"
-        }
+        "@E_SallyEatValue1"
       ]
     },
     {
@@ -420,9 +374,7 @@
         "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@E_SallyEatValue2"
-        }
+        "@E_SallyEatValue2"
       ]
     },
     {
@@ -433,9 +385,7 @@
         "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@E_SallyEatValue3"
-        }
+        "@E_SallyEatValue3"
       ]
     }
   ],

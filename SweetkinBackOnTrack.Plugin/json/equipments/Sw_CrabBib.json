@@ -24,9 +24,7 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@Equip_CrabBib"
-        }
+        "@Equip_CrabBib"
       ]
     }
   ],
@@ -34,9 +32,7 @@
     {
       "id": "upg_CrabBib",
       "trigger_upgrades": [
-        {
-          "id": "@trigger_CrabBib"
-        }
+        "@trigger_CrabBib"
       ]
     }
   ],
@@ -49,9 +45,7 @@
         "chinese": "获得[armor] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@Gorge_CrabBib"
-        }
+        "@Gorge_CrabBib"
       ]
     }
   ],

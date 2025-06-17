@@ -26,12 +26,8 @@
       ],
       "cost": 0,
       "effects": [
-        {
-          "id": "@workHeal"
-        },
-        {
-          "id": "@workbreak"
-        }
+        "@workHeal",
+        "@workbreak"
       ]
     }
   ],

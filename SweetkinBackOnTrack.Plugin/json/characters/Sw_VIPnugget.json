@@ -15,9 +15,7 @@
       "unlock_level": 3,
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnVIPnugget"
-        }
+        "@SpawnVIPnugget"
       ],
       "lore_tooltips": [
         {
@@ -43,9 +41,7 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@NuggetDeath"
-        }
+        "@NuggetDeath"
       ]
     }
   ],
@@ -58,9 +54,7 @@
         "chinese": "将 1 本甜裔的书卷加入你的手牌。"
       },
       "effects": [
-        {
-          "id": "@NuggetGiveBook"
-        }
+        "@NuggetGiveBook"
       ]
     }
   ],

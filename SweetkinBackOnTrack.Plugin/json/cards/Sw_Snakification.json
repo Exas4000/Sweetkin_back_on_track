@@ -26,17 +26,11 @@
       ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@Snakrificed"
-        },
-        {
-          "id": "@ApplyStatus_Snakrificed"
-        }
+          "@Snakrificed",
+          "@ApplyStatus_Snakrificed"
       ],
       "traits": [
-        {
-          "id": "@Consume_Snackrifice"
-        }
+        "@Consume_Snackrifice"
       ]
     }
   ],

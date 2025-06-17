@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnTeamaid"
-        }
+        "@SpawnTeamaid"
       ],
       "lore_tooltips": [
         {
@@ -43,12 +41,8 @@
       "targets_room": false,
       "card_type": "spell",
       "effects": [
-        {
-          "id": "@TeamaidCure"
-        },
-        {
-          "id": "@TeamaidHeal"
-        }
+        "@TeamaidCure",
+        "@TeamaidHeal"
       ]
     }
   ],

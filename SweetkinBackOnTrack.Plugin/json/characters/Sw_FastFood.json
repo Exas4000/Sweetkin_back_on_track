@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnFastfood"
-        }
+        "@SpawnFastfood"
       ],
       "lore_tooltips": [
         {
@@ -51,9 +49,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_fastfood"
-        }
+        "@Eat_fastfood"
       ]
     }
   ],
@@ -66,12 +62,8 @@
         "chinese": "吞食者获得 [quick] [multistrike] [effect1.status0.power] 。"
       },
       "effects": [
-        {
-          "id": "@ApplyStatus_fastfood1"
-        },
-        {
-          "id": "@ApplyStatus_fastfood2"
-        }
+        "@ApplyStatus_fastfood1",
+        "@ApplyStatus_fastfood2"
       ]
     }
   ],

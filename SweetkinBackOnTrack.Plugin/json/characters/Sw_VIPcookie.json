@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnCookie"
-        }
+        "@SpawnCookie"
       ],
       "lore_tooltips": [
         {
@@ -42,12 +40,8 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@CookieIncant"
-        },
-        {
-          "id": "@CookieGorge"
-        }
+        "@CookieIncant",
+        "@CookieGorge"
       ]
     }
   ],
@@ -66,9 +60,7 @@
         "chinese": "获得 +[effect0.upgrade.bonusdamage] [attack]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStat_cookie"
-        }
+        "@ApplyStat_cookie"
       ]
     },
     {
@@ -79,9 +71,7 @@
         "chinese": "获得 +[effect0.upgrade.bonusdamage] [attack]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStat_cookie"
-        }
+        "@ApplyStat_cookie"
       ]
     }
   ],

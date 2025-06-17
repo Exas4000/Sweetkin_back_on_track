@@ -23,9 +23,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpaEffect"
-        }
+        "@SpaEffect"
       ],
       "pools": [
         "MegaPool",
@@ -45,9 +43,7 @@
       },
       "icon": "@CardArt_room_4",
       "room_modifier_upgrades": [
-        {
-          "id": "@SpaModif"
-        }
+        "@SpaModif"
       ]
     }
   ],
@@ -60,9 +56,7 @@
         "chinese": "回合结束时，所有友方单位获得[regen] [effect0.status0.power]。"
       },
       "param_effects": [
-        {
-          "id": "@ApplyStatus_SpaRegen"
-        }
+        "@ApplyStatus_SpaRegen"
       ]
     }
   ],

@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnLime"
-        }
+        "@SpawnLime"
       ],
       "lore_tooltips": [
         {
@@ -46,9 +44,7 @@
         "SubtypesData_BannerUnit"
       ],
       "triggers": [
-        {
-          "id": "@HarvestLime"
-        }
+        "@HarvestLime"
       ]
     }
   ],
@@ -61,12 +57,8 @@
         "chinese": "召唤 1 个<b>酸卫士</b>。使前排友方单位[retreat]。"
       },
       "effects": [
-        {
-          "id": "@SpawnSourHarvest"
-        },
-        {
-          "id": "@PushLime"
-        }
+        "@SpawnSourHarvest",
+        "@PushLime"
       ]
     }
   ],

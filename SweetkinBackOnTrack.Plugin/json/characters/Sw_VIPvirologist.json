@@ -15,9 +15,7 @@
       "unlock_level": 3,
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnVIPvirologist"
-        }
+        "@SpawnVIPvirologist"
       ],
       "lore_tooltips": [
         {
@@ -52,9 +50,7 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@ViroRally"
-        }
+        "@ViroRally"
       ]
     }
   ],
@@ -67,12 +63,8 @@
         "chinese": "获得 +[effect0.upgrade.bonusdamage][attack] 和[armor] [effect1.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@ApplyVIPViroBuff"
-        },
-        {
-          "id": "@ApplyVIPViroArmor"
-        }
+        "@ApplyVIPViroBuff",
+        "@ApplyVIPViroArmor"
       ]
     }
   ],

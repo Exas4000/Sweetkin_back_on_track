@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnVIPLateBloomer"
-        }
+        "@SpawnVIPLateBloomer"
       ],
       "lore_tooltips": [
         {
@@ -42,12 +40,8 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@LateBloomRejuvinate"
-        },
-        {
-          "id": "@LateBloomGorge"
-        }
+        "@LateBloomRejuvinate",
+        "@LateBloomGorge"
       ]
     }
   ],
@@ -67,9 +61,7 @@
         "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStat_latebloomer"
-        }
+        "@ApplyStat_latebloomer"
       ]
     },
     {
@@ -80,9 +72,7 @@
         "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStat_latebloomer"
-        }
+        "@ApplyStat_latebloomer"
       ]
     }
   ],

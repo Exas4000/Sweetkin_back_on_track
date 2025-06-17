@@ -15,9 +15,7 @@
       "unlock_level": 3,
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnRosette"
-        }
+        "@SpawnRosette"
       ],
       "lore_tooltips": [
         {
@@ -43,9 +41,7 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@rosetteNurture"
-        }
+        "@rosetteNurture"
       ]
     }
   ],
@@ -65,9 +61,7 @@
         "chinese": "友方单位获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@rosetteNurtureBuff"
-        }
+        "@rosetteNurtureBuff"
       ]
     }
   ],

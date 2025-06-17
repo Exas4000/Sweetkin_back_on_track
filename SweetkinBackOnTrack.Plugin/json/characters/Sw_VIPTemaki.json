@@ -15,9 +15,7 @@
       "unlock_level": 2,
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnTemaki"
-        }
+        "@SpawnTemaki"
       ],
       "lore_tooltips": [
         {
@@ -49,9 +47,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@eatTemaki"
-        }
+        "@eatTemaki"
       ]
     }
   ],
@@ -71,12 +67,8 @@
         "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，并[retreat]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStat_temaki"
-        },
-        {
-          "id": "@FEARTHETEMAKI"
-        }
+        "@ApplyStat_temaki",
+        "@FEARTHETEMAKI"
       ]
     }
   ],

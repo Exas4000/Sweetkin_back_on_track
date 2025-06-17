@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnNoodle"
-        }
+        "@SpawnNoodle"
       ],
       "lore_tooltips": [
         {
@@ -51,9 +49,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_noodles"
-        }
+        "@Eat_noodles"
       ]
     }
   ],
@@ -66,9 +62,7 @@
         "chinese": "吞食者获得[rage] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStatus_Noodle"
-        }
+        "@ApplyStatus_Noodle"
       ]
     }
   ],

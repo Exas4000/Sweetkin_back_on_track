@@ -15,9 +15,7 @@
       "unlock_level": 1,
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnFrontClerk"
-        }
+        "@SpawnFrontClerk"
       ],
       "lore_tooltips": [
         {
@@ -45,9 +43,7 @@
       "targets_room": false,
       "card_type": "spell",
       "effects": [
-        {
-          "id": "@ClerkCheckIn"
-        }
+        "@ClerkCheckIn"
       ]
     }
   ],
@@ -69,7 +65,6 @@
         "SubtypesData_BannerUnit"
       ],
       "ability": "@AbilityFrontClerk"
-
     },
     {
       "id": "templateVIP",

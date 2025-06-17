@@ -30,9 +30,7 @@
       "disallow_in_deployment": false,
       "lore_style": "herzal",
       "relic_effects": [
-        {
-          "id": "@SWBonusEaten"
-        }
+        "@SWBonusEaten"
       ],
       "icon": "@MucusIcon",
       "icon_small": "@MucusIcon",

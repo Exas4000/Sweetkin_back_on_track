@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnMint"
-        }
+        "@SpawnMint"
       ],
       "lore_tooltips": [
         {
@@ -46,9 +44,7 @@
         "SubtypesData_BannerUnit"
       ],
       "triggers": [
-        {
-          "id": "@RevengeMint"
-        }
+        "@RevengeMint"
       ]
     }
   ],
@@ -61,9 +57,7 @@
         "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@MintApplyPoison"
-        }
+        "@MintApplyPoison"
       ]
     }
   ],

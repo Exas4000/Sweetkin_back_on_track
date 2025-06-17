@@ -52,9 +52,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_sherbet"
-        }
+        "@Eat_sherbet"
       ]
     }
   ],
@@ -67,9 +65,7 @@
         "chinese": "对所有敌方单位施加[rooted] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStatus_sherbet"
-        }
+        "@ApplyStatus_sherbet"
       ]
     }
   ],

@@ -26,15 +26,9 @@
       ],
       "cost": 3,
       "effects": [
-        {
-          "id": "@courseArmor"
-        },
-        {
-          "id": "@courseRage"
-        },
-        {
-          "id": "@courseQuick"
-        }
+          "@courseArmor",
+          "@courseRage",
+          "@courseQuick"
       ]
     }
   ],

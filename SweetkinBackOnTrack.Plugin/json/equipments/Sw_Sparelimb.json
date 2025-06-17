@@ -24,14 +24,10 @@
       ],
       "cost": 1,
       "traits": [
-        {
-          "id": "@frostLeftover"
-        }
+        "@frostLeftover"
       ],
       "effects": [
-        {
-          "id": "@Equip_SpareLimb"
-        }
+        "@Equip_SpareLimb"
       ]
     }
   ],

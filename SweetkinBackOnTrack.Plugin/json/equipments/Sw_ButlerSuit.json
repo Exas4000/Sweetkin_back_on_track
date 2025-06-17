@@ -24,9 +24,7 @@
       ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@Equip_butler"
-        }
+        "@Equip_butler"
       ]
     }
   ],
@@ -35,9 +33,7 @@
       "id": "upg_butler",
       "bonus_hp": 10,
       "trigger_upgrades": [
-        {
-          "id": "@trigger_butler"
-        }
+        "@trigger_butler"
       ]
     }
   ],
@@ -50,9 +46,7 @@
         "chinese": "对所有敌方单位施加[frostbite] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@postCombat_Butler"
-        }
+        "@postCombat_Butler"
       ]
     }
   ],

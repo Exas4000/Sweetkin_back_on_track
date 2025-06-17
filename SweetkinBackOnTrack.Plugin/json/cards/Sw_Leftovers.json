@@ -26,17 +26,11 @@
       ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@HealLeftvover"
-        },
-        {
-          "id": "@ApplyStatus_leftover"
-        }
+        "@HealLeftvover",
+        "@ApplyStatus_leftover"
       ],
       "traits": [
-        {
-          "id": "@frostLeftover"
-        }
+        "@frostLeftover"
       ]
     }
   ],

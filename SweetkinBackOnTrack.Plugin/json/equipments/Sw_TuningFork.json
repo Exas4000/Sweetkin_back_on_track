@@ -19,9 +19,7 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@Equip_TuningFork"
-        }
+        "@Equip_TuningFork"
       ]
     },
     {
@@ -39,9 +37,7 @@
       "targets_room": true,
       "card_type": "spell",
       "effects": [
-        {
-          "id": "@Damage_TuningFork"
-        }
+        "@Damage_TuningFork"
       ]
     }
   ],

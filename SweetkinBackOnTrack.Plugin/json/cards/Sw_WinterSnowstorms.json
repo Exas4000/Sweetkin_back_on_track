@@ -20,14 +20,10 @@
       "card_type": "blight",
       "cost": 1,
       "effects": [
-        {
-          "id": "@WinterReserve"
-        }
+        "@WinterFrostbite"
       ],
       "triggers": [
-        {
-          "id": "@WinterReserve"
-        }
+        "@WinterReserve"
       ]
     }
   ],

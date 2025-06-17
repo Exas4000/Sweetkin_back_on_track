@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnSweetling"
-        }
+        "@SpawnSweetling"
       ],
       "lore_tooltips": [
         {
@@ -51,9 +49,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_sweetling"
-        }
+        "@Eat_sweetling"
       ]
     }
   ],
@@ -72,9 +68,7 @@
         "chinese": "吞食者获得 +[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStat_sweetling"
-        }
+        "@ApplyStat_sweetling"
       ]
     }
   ],

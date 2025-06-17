@@ -21,9 +21,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@GravitoriumeRoomSize"
-        }
+        "@GravitoriumeRoomSize"
       ],
       "pools": [
         "MegaPool",
@@ -43,9 +41,7 @@
       },
       "icon": "@CardArt_room_1",
       "room_modifier_upgrades": [
-        {
-          "id": "@gravModif"
-        }
+        "@gravModif"
       ]
     }
   ],

@@ -75,7 +75,6 @@
             ]
           ],
           "icon": "@icon_sally",
-          "locked_icon": "@icon_locked",
           "portrait": "@icon_sally"
         },
         {
@@ -105,7 +104,6 @@
             ]
           ],
           "icon": "@icon_sally",
-          "locked_icon": "@icon_locked",
           "portrait": "@icon_sally"
         }
       ],
@@ -280,10 +278,6 @@
     {
       "id": "icon_sally",
       "path": "textures/ClanAssets/icon_sally.png"
-    },
-    {
-      "id": "icon_locked",
-      "path": "textures/icon_locked.png"
     }
   ]
 }

@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnVIPimp"
-        }
+        "@SpawnVIPimp"
       ],
       "lore_tooltips": [
         {
@@ -45,9 +43,7 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@VIP_GOLD"
-        }
+        "@VIP_GOLD"
       ]
     }
   ],
@@ -60,9 +56,7 @@
         "chinese": "获得 [effect0.power][coin]。"
       },
       "effects": [
-        {
-          "id": "@VIP_GOLDeffect"
-        }
+        "@VIP_GOLDeffect"
       ]
     }
   ],

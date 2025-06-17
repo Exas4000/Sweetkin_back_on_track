@@ -24,9 +24,7 @@
       "unlock_level": 3,
       "targets_room": true,
       "effects": [
-        {
-          "id": "@LobbyRoomEffect"
-        }
+        "@LobbyRoomEffect"
       ],
       "pools": [
         "MegaPool",
@@ -48,9 +46,7 @@
       "hide_icon_on_card": true,
       "icon": "@CardArt_room_2",
       "room_modifier_upgrades": [
-        {
-          "id": "@LobbyModif"
-        }
+        "@LobbyModif"
       ]
     }
   ],
@@ -63,9 +59,7 @@
         "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
       },
       "param_effects": [
-        {
-          "id": "@ClerkCheckIn"
-        }
+        "@ClerkCheckIn"
       ]
     }
   ],

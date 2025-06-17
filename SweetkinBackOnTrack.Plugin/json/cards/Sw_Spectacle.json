@@ -26,15 +26,9 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@ApplyStatus_Spectacle1"
-        },
-        {
-          "id": "@ApplyStatus_Spectacle2"
-        },
-        {
-          "id": "@ApplyStatus_Spectacle3"
-        }
+        "@ApplyStatus_Spectacle1",
+        "@ApplyStatus_Spectacle2",
+        "@ApplyStatus_Spectacle3"
       ]
     }
   ],

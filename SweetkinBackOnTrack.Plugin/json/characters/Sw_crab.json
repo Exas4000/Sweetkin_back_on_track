@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnCrabCake"
-        }
+        "@SpawnCrabCake"
       ],
       "lore_tooltips": [
         {
@@ -51,9 +49,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_crab"
-        }
+        "@Eat_crab"
       ]
     }
   ],
@@ -66,9 +62,7 @@
         "chinese": "吞食者获得[armor] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStatus_CrabCake"
-        }
+        "@ApplyStatus_CrabCake"
       ]
     }
   ],

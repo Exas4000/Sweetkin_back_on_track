@@ -24,9 +24,7 @@
       ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@Equip_Dove"
-        }
+        "@Equip_Dove"
       ]
     }
   ],
@@ -42,9 +40,7 @@
         }
       ],
       "trigger_upgrades": [
-        {
-          "id": "@trigger_dove"
-        }
+        "@trigger_dove"
       ]
     }
   ],
@@ -57,9 +53,7 @@
         "chinese": "下个回合抽 +[effect0.power] 张牌。"
       },
       "effects": [
-        {
-          "id": "@Eaten_dove"
-        }
+        "@Eaten_dove"
       ]
     }
   ],

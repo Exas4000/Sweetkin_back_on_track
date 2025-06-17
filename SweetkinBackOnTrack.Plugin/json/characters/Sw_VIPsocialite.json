@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnVIPsocialite"
-        }
+        "@SpawnVIPsocialite"
       ],
       "lore_tooltips": [
         {
@@ -42,12 +40,8 @@
         "@Sub_Vip"
       ],
       "triggers": [
-        {
-          "id": "@SocialiteEntry"
-        },
-        {
-          "id": "@SocialiteExit"
-        }
+        "@SocialiteEntry",
+        "@SocialiteExit"
       ]
     }
   ],
@@ -60,9 +54,7 @@
         "chinese": "随机<b>改造</b> 1 个单位。"
       },
       "effects": [
-        {
-          "id": "@SocialiteReform"
-        }
+        "@SocialiteReform"
       ]
     },
     {
@@ -73,9 +65,7 @@
         "chinese": "随机<b>改造</b> 1 个单位。"
       },
       "effects": [
-        {
-          "id": "@SocialiteReform"
-        }
+        "@SocialiteReform"
       ]
     }
   ],

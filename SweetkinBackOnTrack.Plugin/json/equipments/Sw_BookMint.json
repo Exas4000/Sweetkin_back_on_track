@@ -24,9 +24,7 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@Equip_mint"
-        }
+        "@Equip_mint"
       ]
     }
   ],
@@ -35,9 +33,7 @@
       "id": "upg_mint",
       "bonus_hp": 50,
       "trigger_upgrades": [
-        {
-          "id": "@trigger_mint"
-        }
+        "@trigger_mint"
       ],
       "status_effect_upgrades": [
         {
@@ -56,9 +52,7 @@
         "chinese": "对所有敌方单位施加[frostbite] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@Revenge_Mint"
-        }
+        "@Revenge_Mint"
       ]
     }
   ],

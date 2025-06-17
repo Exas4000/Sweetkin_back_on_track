@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnSpiceCook"
-        }
+        "@SpawnSpiceCook"
       ],
       "lore_tooltips": [
         {
@@ -46,9 +44,7 @@
         "SubtypesData_BannerUnit"
       ],
       "triggers": [
-        {
-          "id": "@SpiceSlay"
-        }
+        "@SpiceSlay"
       ]
     }
   ],
@@ -61,9 +57,7 @@
         "chinese": "召唤 1 个<b>蛇秘的面条</b>。"
       },
       "effects": [
-        {
-          "id": "@SpawnNoodleSlay"
-        }
+        "@SpawnNoodleSlay"
       ]
     }
   ],

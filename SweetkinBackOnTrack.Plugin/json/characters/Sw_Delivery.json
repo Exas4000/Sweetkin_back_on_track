@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnDelivery"
-        }
+        "@SpawnDelivery"
       ],
       "lore_tooltips": [
         {
@@ -45,9 +43,7 @@
         "@Sub_Staff"
       ],
       "triggers": [
-        {
-          "id": "@Delivery_Draw"
-        }
+        "@Delivery_Draw"
       ]
     }
   ],
@@ -60,9 +56,7 @@
         "chinese": "从你的卡组中抽一张装备卡。"
       },
       "effects": [
-        {
-          "id": "@Delivery_DrawEffect"
-        }
+        "@Delivery_DrawEffect"
       ]
     }
   ],

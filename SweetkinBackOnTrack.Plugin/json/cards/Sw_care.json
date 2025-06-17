@@ -26,12 +26,8 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@Heal_care"
-        },
-        {
-          "id": "@RaiseHp_care"
-        }
+        "@Heal_care",
+        "@RaiseHp_care"
       ]
     }
   ],

@@ -26,12 +26,8 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@ApplyStatus_seconds"
-        },
-        {
-          "id": "@RaiseHp_seconds"
-        }
+        "@ApplyStatus_seconds",
+        "@RaiseHp_seconds"
       ]
     }
   ],

@@ -22,12 +22,8 @@
       "card_type": "blight",
       "cost": 0,
       "effects": [
-        {
-          "id": "@SummerHeat"
-        },
-        {
-          "id": "@SummerDraw"
-        }
+        "@SummerHeat",
+        "@SummerDraw"
       ]
     }
   ],

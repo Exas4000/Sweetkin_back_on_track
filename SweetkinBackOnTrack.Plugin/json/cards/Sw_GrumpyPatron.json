@@ -26,14 +26,10 @@
       ],
       "cost": 2,
       "effects": [
-        {
-          "id": "@ApplyStatus_Grumpy"
-        }
+        "@ApplyStatus_Grumpy"
       ],
       "traits": [
-        {
-          "id": "@Consume_Grumpy"
-        }
+        "@Consume_Grumpy"
       ]
     }
   ],

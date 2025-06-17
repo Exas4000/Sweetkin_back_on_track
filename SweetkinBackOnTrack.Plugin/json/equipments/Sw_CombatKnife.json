@@ -24,9 +24,7 @@
       ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@Equip_CombatKnife"
-        }
+        "@Equip_CombatKnife"
       ]
     }
   ],

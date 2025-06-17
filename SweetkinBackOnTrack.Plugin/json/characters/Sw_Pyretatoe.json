@@ -14,9 +14,7 @@
       "class": "@ClassSweetkin",
       "targets_room": true,
       "effects": [
-        {
-          "id": "@SpawnPotatoe"
-        }
+        "@SpawnPotatoe"
       ],
       "lore_tooltips": [
         {
@@ -52,9 +50,7 @@
         }
       ],
       "triggers": [
-        {
-          "id": "@Eat_Potato"
-        }
+        "@Eat_Potato"
       ]
     }
   ],
@@ -67,9 +63,7 @@
         "chinese": "对所有敌方单位施加[pyregel] [effect0.status0.power]。"
       },
       "effects": [
-        {
-          "id": "@ApplyStatus_potato"
-        }
+        "@ApplyStatus_potato"
       ]
     }
   ],

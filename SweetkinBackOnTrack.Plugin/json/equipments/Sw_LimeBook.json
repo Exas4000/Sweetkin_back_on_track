@@ -24,9 +24,7 @@
       ],
       "cost": 0,
       "effects": [
-        {
-          "id": "@Equip_Lime"
-        }
+        "@Equip_Lime"
       ]
     }
   ],

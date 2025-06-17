@@ -9,7 +9,7 @@
       },
       "descriptions": {
         "english": "Apply <b>Buffet</b> [effect0.status0.power]",
-        "chinese": "获得[Buffet] [effect0.status0.power]。"
+        "chinese": "获得<b>Buffet</b> [effect0.status0.power]。"
       },
       "lore_tooltips": [
         {
@@ -26,9 +26,7 @@
       ],
       "cost": 1,
       "effects": [
-        {
-          "id": "@ApplyStatus_AllyouCan"
-        }
+        "@ApplyStatus_AllyouCan"
       ]
     }
   ],
