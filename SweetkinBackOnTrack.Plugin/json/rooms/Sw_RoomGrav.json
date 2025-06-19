@@ -48,7 +48,7 @@
   "room_modifiers": [
     {
       "id": "gravModif",
-      "name": "RoomStateCapacityModifierGrav",
+      "name": "@RoomStateCapacityModifierGrav",
       "param_int": 15,
       "descriptions": {
         "english": "+[paramint][capacity]"

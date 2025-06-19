@@ -53,7 +53,7 @@
   "room_modifiers": [
     {
       "id": "LobbyModif",
-      "name": "RoomStateAddEffectPostCombatLobby",
+      "name": "@RoomStateAddEffectPostCombatLobby",
       "descriptions": {
         "english": "Summon a random <b>VIP</b> unit at the end of the turn.",
         "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"

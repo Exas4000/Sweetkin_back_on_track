@@ -50,7 +50,7 @@
   "room_modifiers": [
     {
       "id": "KitchenModif",
-      "name": "RoomStateAddEffectPostCombatKitchen",
+      "name": "@RoomStateAddEffectPostCombatKitchen",
       "descriptions": {
         "english": "Summon a <b>Crab Cake</b> or <b>Danger Noodle</b> at the end of the turn.",
         "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
