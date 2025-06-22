@@ -3,7 +3,7 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "ExasPaintPot"
-name = "SweetkinBackOnTrack"
+name = "Sweetkin Back On Tracks"
 versionNumber = "1.0.2"
 description = "The sweetkins are back on track, this time in heaven! Mod remake"
 websiteUrl = "https://github.com/Exas4000/Sweetkin_back_on_track"
