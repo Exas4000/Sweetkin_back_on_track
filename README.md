@@ -19,4 +19,4 @@ Known bugs
 
 Credits!
 Thank you brandonandzeus and CrazyJackel for making Trainwork and helping along the way!
-Thank you lostone-zc for doing the traditionnal chinese translation of the mod!
+Thank you lostone-zc for doing the traditionnal chinese translation of the mod! 
