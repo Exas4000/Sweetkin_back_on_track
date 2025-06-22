@@ -25,7 +25,5 @@ target = ""
 [publish]
 repository = "https://thunderstore.io"
 communities = [ "monster-train-2" ]
-[publish.categories]
-monstertrain2 = [ "items", "skills", ]
 
 
