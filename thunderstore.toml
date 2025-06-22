@@ -1,10 +1,10 @@
 [config]
-schemaVersion = "0.0.1"
+schemaVersion = "1.0.2"
 
 [package]
 namespace = "ExasPaintPot"
 name = "Sweetkin, back on tracks"
-versionNumber = "0.0.1"
+versionNumber = "1.0.2"
 description = "The sweetkins are back on track, this time in heaven! Mod remake"
 websiteUrl = "https://github.com/Exas4000/Sweetkin_back_on_track"
 containsNsfwContent = false
