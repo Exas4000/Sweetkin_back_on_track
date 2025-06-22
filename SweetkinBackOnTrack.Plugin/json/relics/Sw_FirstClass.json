@@ -8,7 +8,12 @@
       "source_team": "monsters",
       "param_int": 3,
       "param_int_2": 1,
-      "param_card_pool": "@VIPCardPool"
+      "param_card_pool": "@VIPCardPool",
+      "conditions": [
+        {
+          "id": "@vipLimit"
+        }
+      ]
     }
   ],
   "relics": [
@@ -42,6 +47,18 @@
           }
         }
       ]
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "vipLimit",
+      "param_tracked_value": "turn_count",
+      "param_comparator": [
+        "less_than"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false,
+      "param_entry_duration": "this_battle"
     }
   ],
   "sprites": [
