@@ -54,7 +54,7 @@
         "english": "Restaurant cart"
       },
       "descriptions": {
-        "english": "Units have '[feed]: gain +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health]'",
+        "english":  "Units have '[feed]: gain +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health]'",
         "chinese": "所有友方单位获得'[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@CardArt_room_3",
