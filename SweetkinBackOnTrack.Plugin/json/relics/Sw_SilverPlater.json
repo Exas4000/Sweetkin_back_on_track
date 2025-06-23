@@ -25,7 +25,7 @@
       },
       "descriptions": {
         "english": "Apply <b>Buffet</b> [effect0.status0.power] to the first morsel spawned per turn.",
-        "chinese": "影裔单位获得<b>自助餐</b> [effect0.status0.power]。"
+        "chinese": "每回合召唤的第一个影裔单位获得<b>自助餐</b> [effect0.status0.power]。"
       },
       "lore_tooltips": [
         {

@@ -21,10 +21,12 @@
       "id": "Sw_FirstClass",
       "type": "collectable",
       "names": {
-        "english": "First Class Ticket"
+        "english": "First Class Ticket",
+        "chinese": "一等票"
       },
       "descriptions": {
-        "english": "Add a Random VIP to your hand at the start of the battle."
+        "english": "Add a random <b>VIP</b> to your hand at the start of the battle.",
+        "chinese": "在[deployphase]时，随机将 1 个<b>贵宾</b>单位加入你的手牌。"
       },
       "lore_tooltips": [
         {

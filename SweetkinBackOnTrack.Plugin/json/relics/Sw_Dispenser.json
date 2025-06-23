@@ -20,7 +20,7 @@
       },
       "descriptions": {
         "english": "Morsels cost [effect0.power] [ember]",
-        "chinese": "影裔单位费用 [effect0.power] [ember]。"
+        "chinese": "影裔单位费用 [effect0.power][ember]。"
       },
       "lore_tooltips": [
         {

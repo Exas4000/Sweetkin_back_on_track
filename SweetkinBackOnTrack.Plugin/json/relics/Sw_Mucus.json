@@ -19,8 +19,8 @@
         "chinese": "密封黏液"
       },
       "descriptions": {
-        "english": "[effect0.power] extra eaten trigger.",
-        "chinese": "<b>被吞食</b>能力可以额外触发一次。"
+        "english": "[effect0.power] extra [eaten] trigger.",
+        "chinese": "[eaten]能力可以额外触发 [effect0.power] 次。"
       },
       "lore_tooltips": [
         {

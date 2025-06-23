@@ -25,7 +25,8 @@
     {
       "id": "AbilityTuningFork",
       "names": {
-        "english": "Tuned out"
+        "english": "Tuned out",
+        "chinese": "失谐"
       },
       "descriptions": {
         "english": "Deal [effect0.power] damage.",

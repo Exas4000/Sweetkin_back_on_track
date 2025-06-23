@@ -4,10 +4,12 @@
     {
       "id": "Sw_Gravitorium",
       "names": {
-        "english": "Gravitorium"
+        "english": "Gravitorium",
+        "chinese": "零重力房间"
       },
       "descriptions": {
-        "english": "Add [effect0.upgrade.roommodifier0.power][capacity] to the room"
+        "english": "Add [effect0.upgrade.roommodifier0.power][capacity] to the room",
+        "chinese": "+[effect0.upgrade.roommodifier0.power][capacity]。"
       },
       "lore_tooltips": [
         {
@@ -51,7 +53,8 @@
       "name": "@RoomStateCapacityModifierGrav",
       "param_int": 15,
       "descriptions": {
-        "english": "+[paramint][capacity]"
+        "english": "+[paramint][capacity]",
+        "chinese": "+[paramint][capacity]。"
       }
     }
   ],

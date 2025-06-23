@@ -33,8 +33,8 @@
         "chinese": "登记"
       },
       "descriptions": {
-        "english": "Summon a random VIP Unit. Delay 1",
-        "chinese": "随机召唤 1 个 VIP 单位。"
+        "english": "Summon a random <b>VIP</b> unit. Delay 1",
+        "chinese": "随机召唤 1 个<b>贵宾</b>单位。"
       },
       "is_an_ability": true,
       "cooldown": 2,

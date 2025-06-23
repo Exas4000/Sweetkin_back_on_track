@@ -32,7 +32,8 @@
         "chinese": "急救"
       },
       "descriptions": {
-        "english": "Restore [effect1.power] health to and remove all [debuff] effects from friendly units."
+        "english": "Restore [effect1.power] health to and remove all [debuff] effects from friendly units.",
+        "chinese": "移除友方单位身上的[debuff]效果，并恢复 [effect1.power] 点生命值。"
       },
       "card_art": "@CardArt_unit_9",
       "is_an_ability": true,
