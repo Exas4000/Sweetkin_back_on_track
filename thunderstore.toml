@@ -3,8 +3,8 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "ExasPaintPot"
-name = "Sweetkin, back on tracks"
-versionNumber = "0.0.1"
+name = "SweetkinBackOnTracks"
+versionNumber = "1.0.2"
 description = "The sweetkins are back on track, this time in heaven! Mod remake"
 websiteUrl = "https://github.com/Exas4000/Sweetkin_back_on_track"
 containsNsfwContent = false
@@ -24,8 +24,6 @@ target = ""
 
 [publish]
 repository = "https://thunderstore.io"
-communities = [ "monstertrain2", ]
-[publish.categories]
-monstertrain2 = [ "items", "skills", ]
+communities = [ "monster-train-2" ]
 
 

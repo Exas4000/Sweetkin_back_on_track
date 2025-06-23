@@ -190,7 +190,7 @@
       "descriptions": {
         "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
       },
-      "bonus_hp": 20,
+      "bonus_hp": -30,
       "trigger_upgrades": [
         "@Catering1"
       ]
@@ -204,7 +204,7 @@
       "descriptions": {
         "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
       },
-      "bonus_hp": 40,
+      "bonus_hp": -25,
       "trigger_upgrades": [
         "@Catering2"
       ]
@@ -218,7 +218,7 @@
       "descriptions": {
         "english": "Sally gains [trigger0.effect0.upgrade.bonusdamage][attack] and [trigger0.effect0.upgrade.bonushp][health]"
       },
-      "bonus_hp": 60,
+      "bonus_hp": -20,
       "trigger_upgrades": [
         "@Catering3"
       ]

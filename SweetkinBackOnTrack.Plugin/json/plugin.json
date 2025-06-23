@@ -59,11 +59,6 @@
               "@upg_security3"
             ],
             [
-              "@upg_paradox1",
-              "@upg_paradox2",
-              "@upg_paradox3"
-            ],
-            [
               "@upg_catering1",
               "@upg_catering2",
               "@upg_catering3"
@@ -96,11 +91,6 @@
               "@upg_Trauma2",
               "@upg_Trauma4",
               "@upg_royalty"
-            ],
-            [
-              "@upg_hostess1",
-              "@upg_hostess2",
-              "@upg_hostess3"
             ]
           ],
           "icon": "@icon_sally",
