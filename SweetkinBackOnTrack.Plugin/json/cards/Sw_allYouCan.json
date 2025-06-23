@@ -9,7 +9,7 @@
       },
       "descriptions": {
         "english": "Apply <b>Buffet</b> [effect0.status0.power]",
-        "chinese": "获得<b>Buffet</b> [effect0.status0.power]。"
+        "chinese": "获得<b>自助餐</b> [effect0.status0.power]。"
       },
       "lore_tooltips": [
         {

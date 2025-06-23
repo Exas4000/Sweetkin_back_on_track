@@ -37,7 +37,8 @@
         }
       ],
       "descriptions": {
-        "english": "Apply [frostbite] [effect0.status0.power] to the weakest character in the train."
+        "english": "Apply [frostbite] [effect0.status0.power] to the weakest character in the train.",
+        "chinese": "对火车上生命值最少的敌方单位施加[frostbite] [effect0.status0.power]。"
       }
     }
   ],

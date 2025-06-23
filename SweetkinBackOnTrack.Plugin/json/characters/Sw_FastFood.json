@@ -59,7 +59,7 @@
       "trigger": "on_eaten",
       "descriptions": {
         "english": "Eater gains [quick] and [multistrike] [effect1.status0.power]",
-        "chinese": "吞食者获得 [quick] [multistrike] [effect1.status0.power] 。"
+        "chinese": "吞食者获得[multistrike] [effect1.status0.power] 和[quick]。"
       },
       "effects": [
         "@ApplyStatus_fastfood1",

@@ -8,8 +8,8 @@
         "chinese": "退到线后！"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to the front enemy. <b>Retreat</b> the front enemy. Deal [effect1.power] damage to all enemies",
-        "chinese": "对前排敌方单位造成 [effect0.power] 点伤害，并将其推到后排。并对所有敌方单位造成 [effect1.power] 点伤害。"
+        "english": "Deal [effect0.power] damage to the front enemy. [retreat] the front enemy. Deal [effect1.power] damage to all enemies",
+        "chinese": "对前排敌方单位造成 [effect0.power] 点伤害，并使其[retreat]。对所有敌方单位造成 [effect1.power] 点伤害。"
       },
       "lore_tooltips": [
         {

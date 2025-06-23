@@ -9,7 +9,7 @@
       },
       "descriptions": {
         "english": "Heal [effect0.power] and Apply <b>Buffet</b> [effect1.status0.power] to an ally",
-        "chinese": "使一个友方单位恢复 [effect0.power] 点生命值，并获得[Buffet] [effect1.status0.power]。"
+        "chinese": "使一个友方单位恢复 [effect0.power] 点生命值，并获得<b>自助餐</b> [effect1.status0.power]。"
       },
       "lore_tooltips": [
         {

@@ -260,8 +260,8 @@
       "id": "Hostess1",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Add a random VIP to your hand",
-        "chinese": "随机将 1 个 VIP 单位加入你的手牌。"
+        "english": "Add a random <b>VIP</b> unit to your hand",
+        "chinese": "随机将 1 个<b>贵宾</b>单位加入你的手牌。"
       },
       "effects": [
         "@SW_Add_VIP"
@@ -271,8 +271,8 @@
       "id": "Hostess2",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Add two random VIPs to your hand",
-        "chinese": "随机将 2 个 VIP 单位加入你的手牌。"
+        "english": "Add two random <b>VIP</b> units to your hand",
+        "chinese": "随机将 2 个<b>贵宾</b>单位加入你的手牌。"
       },
       "effects": [
         "@SW_Add_VIP2"
@@ -282,8 +282,8 @@
       "id": "Hostess3",
       "trigger": "on_spawn",
       "descriptions": {
-        "english": "Add three random VIPs to your hand",
-        "chinese": "随机将 3 个 VIP 单位加入你的手牌。"
+        "english": "Add three random <b>VIP</b> units to your hand",
+        "chinese": "随机将 3 个<b>贵宾</b>单位加入你的手牌。"
       },
       "effects": [
         "@SW_Add_VIP3"

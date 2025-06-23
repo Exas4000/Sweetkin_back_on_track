@@ -53,7 +53,7 @@
       "id": "HarvestLime",
       "trigger": "on_any_monster_death_on_floor",
       "descriptions": {
-        "english": "Summon a <b>Sour</b> guard and [retreat] the front friendly unit.",
+        "english": "Summon a <b>Sour Guard</b> and [retreat] the front friendly unit.",
         "chinese": "召唤 1 个<b>酸卫士</b>。使前排友方单位[retreat]。"
       },
       "effects": [

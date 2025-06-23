@@ -8,8 +8,8 @@
         "chinese": "餐厅手推车"
       },
       "descriptions": {
-        "english": "Units gain '<b>Gorge</b>: Gain +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]'",
-        "chinese": "所有友方单位获得“<b>暴食</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。”"
+        "english": "Units gain '[feed]: Gain +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]'",
+        "chinese": "所有友方单位获得“[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。”"
       },
       "lore_tooltips": [
         {
@@ -54,8 +54,8 @@
         "english": "Restaurant cart"
       },
       "descriptions": {
-        "english": "Units have 'Gorge: gain +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health]'",
-        "chinese": "所有友方单位获得“<b>暴食</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。”"
+        "english": "Units have '[feed]: gain +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health]'",
+        "chinese": "所有友方单位获得“[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。”"
       },
       "icon": "@CardArt_room_3",
       "trigger_upgrades": [

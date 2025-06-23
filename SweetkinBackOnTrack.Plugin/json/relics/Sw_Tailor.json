@@ -16,10 +16,12 @@
       "id": "Sw_Tailor",
       "type": "collectable",
       "names": {
-        "english": "Tailoring Services"
+        "english": "Tailoring Services",
+        "chinese": "裁缝服务"
       },
       "descriptions": {
-        "english": "<b>Vip</b> units gain +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] and +[effect0.upgrade.bonussize][capacity] "
+        "english": "<b>VIP</b> units gain +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] and +[effect0.upgrade.bonussize][capacity] ",
+        "chinese": "<b>贵宾</b>单位获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，+[effect0.upgrade.bonussize][capacity]。"
       },
       "lore_tooltips": [
         {

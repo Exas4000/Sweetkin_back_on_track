@@ -4,10 +4,12 @@
     {
       "id": "Sw_SummerWildfire",
       "names": {
-        "english": "Summer's wildfires"
+        "english": "Summer's Wildfires",
+        "chinese": "夏日野火"
       },
       "descriptions": {
-        "english": "Apply [pyregel] [effect0.status0.power] to the strongest character in all rooms, then Draw [effect1.power] cards"
+        "english": "Apply [pyregel] [effect0.status0.power] to the strongest character in all rooms, then Draw [effect1.power] cards",
+        "chinese": "对火车上生命值最多的敌方单位施加[pyregel] [effect0.status0.power]。抽 [effect1.power] 张牌。"
       },
       "lore_tooltips": [
         {

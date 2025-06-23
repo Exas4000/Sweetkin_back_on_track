@@ -9,7 +9,7 @@
       },
       "descriptions": {
         "english": "Summon a random <b>VIP</b> unit at the end of the turn.",
-        "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
+        "chinese": "回合结束时，随机召唤 1 个<b>贵宾</b>单位。"
       },
       "lore_tooltips": [
         {
@@ -40,7 +40,7 @@
       },
       "descriptions": {
         "english": "Summon a random <b>VIP</b> unit at the end of the turn.",
-        "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
+        "chinese": "回合结束时，随机召唤 1 个<b>贵宾</b>单位。"
       },
       "allow_secondary_tooltip_placement": true,
       "hide_icon_on_card": true,
@@ -56,7 +56,7 @@
       "name": "@RoomStateAddEffectPostCombatLobby",
       "descriptions": {
         "english": "Summon a random <b>VIP</b> unit at the end of the turn.",
-        "chinese": "回合结束时，随机召唤 1 个 VIP 单位。"
+        "chinese": "回合结束时，随机召唤 1 个<b>贵宾</b>单位。"
       },
       "param_effects": [
         "@ClerkCheckIn"

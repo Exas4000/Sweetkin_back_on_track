@@ -193,37 +193,43 @@
     {
       "id": "Sub_Sour",
       "names": {
-        "english": "Sour"
+        "english": "Sour",
+        "chinese": "酸味"
       }
     },
     {
       "id": "Sub_Spicy",
       "names": {
-        "english": "Spicy"
+        "english": "Spicy",
+        "chinese": "辣味"
       }
     },
     {
       "id": "Sub_Minty",
       "names": {
-        "english": "Minty"
+        "english": "Minty",
+        "chinese": "薄荷味"
       }
     },
     {
       "id": "Sub_Sweet",
       "names": {
-        "english": "Sweet"
+        "english": "Sweet",
+        "chinese": "甜味"
       }
     },
     {
       "id": "Sub_Vip",
       "names": {
-        "english": "Vip"
+        "english": "VIP",
+        "chinese": "贵宾"
       }
     },
     {
       "id": "Sub_Staff",
       "names": {
-        "english": "Staff"
+        "english": "Staff",
+        "chinese": "员工"
       }
     }
   ],

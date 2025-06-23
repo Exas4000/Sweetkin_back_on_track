@@ -53,7 +53,7 @@
       "id": "SpiceSlay",
       "trigger": "on_kill",
       "descriptions": {
-        "english": "Summon a <b>Danger noodle</b>",
+        "english": "Summon a <b>Danger Noodle</b>",
         "chinese": "召唤 1 个<b>蛇秘的面条</b>。"
       },
       "effects": [

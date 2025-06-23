@@ -23,10 +23,12 @@
       "id": "Sw_Flavour",
       "type": "collectable",
       "names": {
-        "english": "Limenade Flavour Packet"
+        "english": "Limenade Flavour Packet",
+        "chinese": "青柠水调味包"
       },
       "descriptions": {
-        "english": "Sour units gain +[effect0.power] [attack]"
+        "english": "<b>Sour</b> units gain +[effect0.power] [attack]",
+        "chinese": "<b>酸味</b>单位获得 +[effect0.power][attack]。"
       },
       "lore_tooltips": [
         {

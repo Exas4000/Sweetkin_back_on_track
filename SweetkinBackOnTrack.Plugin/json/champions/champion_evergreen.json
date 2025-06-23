@@ -225,7 +225,8 @@
       "id": "EverGreenSelfDefense",
       "trigger": "on_eaten",
       "descriptions": {
-        "english": "Retaliate against the eater"
+        "english": "Retaliate against the eater",
+        "chinese": "吞食者受到等同于莎莉[attack]的伤害。"
       },
       "effects": [
         "@EatenRetaliate"
@@ -268,7 +269,8 @@
       "id": "DescendRaidBoss",
       "trigger": "post_combat",
       "descriptions": {
-        "english": "[descend]"
+        "english": "[descend]",
+        "chinese": "[descend]。"
       },
       "effects": [
         "@RaidGoDown"
@@ -279,7 +281,7 @@
       "trigger": "end_turn_pre_hand_discard",
       "descriptions": {
         "english": "[ascend] to the top floor",
-        "chinese": "[ascend]到薪火室下方楼层"
+        "chinese": "[ascend]到薪火室下方楼层。"
       },
       "effects": [
         "@RaidGoUp"
