@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "ExasPaintPot"
 name = "SweetkinBackOnTracks"
-versionNumber = "1.0.2"
+versionNumber = "1.0.3"
 description = "The sweetkins are back on track, this time in heaven! Mod remake"
 websiteUrl = "https://github.com/Exas4000/Sweetkin_back_on_track"
 containsNsfwContent = false
