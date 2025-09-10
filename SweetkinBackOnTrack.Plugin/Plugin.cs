@@ -131,7 +131,7 @@ namespace SweetkinBackOnTrack.Plugin
             foreach (CardEffectData cardEffectData in roomModifierData.GetParamCardEffectData())
             {
                 CardEffectState cardEffectState = Activator.CreateInstance<CardEffectState>();
-                cardEffectState.Setup(cardEffectData, null, null);
+                cardEffectState.Setup(cardEffectData, null, coreGameManagers.GetSaveManager());
                 _effects.Add(cardEffectState);
             }
         }
@@ -148,8 +148,7 @@ namespace SweetkinBackOnTrack.Plugin
         {
             CombatManager combatManager = coreGameManagers.GetCombatManager();
             yield return base.ShowTriggeredVFX(room, coreGameManagers);
-            yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex(), null, false, null, null, null, true, null, null, false, null, null, 1, null, false, CardTriggerType.OnDiscard, null, false);
-            yield break;
+            yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex());
         }
 
         private List<CardEffectState> _effects = [];
@@ -163,7 +162,7 @@ namespace SweetkinBackOnTrack.Plugin
             foreach (CardEffectData cardEffectData in roomModifierData.GetParamCardEffectData())
             {
                 CardEffectState cardEffectState = Activator.CreateInstance<CardEffectState>();
-                cardEffectState.Setup(cardEffectData, null, null);
+                cardEffectState.Setup(cardEffectData, null, coreGameManagers.GetSaveManager());
                 _effects.Add(cardEffectState);
             }
         }
@@ -180,8 +179,7 @@ namespace SweetkinBackOnTrack.Plugin
         {
             CombatManager combatManager = coreGameManagers.GetCombatManager();
             yield return base.ShowTriggeredVFX(room, coreGameManagers);
-            yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex(), null, false, null, null, null, true, null, null, false, null, null, 1, null, false, CardTriggerType.OnDiscard, null, false);
-            yield break;
+            yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex());
         }
 
         private List<CardEffectState> _effects = [];
@@ -195,7 +193,7 @@ namespace SweetkinBackOnTrack.Plugin
             foreach (CardEffectData cardEffectData in roomModifierData.GetParamCardEffectData())
             {
                 CardEffectState cardEffectState = Activator.CreateInstance<CardEffectState>();
-                cardEffectState.Setup(cardEffectData, null, null);
+                cardEffectState.Setup(cardEffectData, null, coreGameManagers.GetSaveManager());
                 _effects.Add(cardEffectState);
             }
         }
@@ -212,8 +210,7 @@ namespace SweetkinBackOnTrack.Plugin
         {
             CombatManager combatManager = coreGameManagers.GetCombatManager();
             yield return base.ShowTriggeredVFX(room, coreGameManagers);
-            yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex(), null, false, null, null, null, true, null, null, false, null, null, 1, null, false, CardTriggerType.OnDiscard, null, false);
-            yield break;
+            yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex());
         }
 
         private List<CardEffectState> _effects = [];
