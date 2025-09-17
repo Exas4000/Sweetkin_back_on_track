@@ -34,7 +34,7 @@
       },
       "descriptions": {
         "english": "Summon a random <b>VIP</b> unit. Delay 1",
-        "chinese": "随机召唤 1 个<b>贵宾</b>单位。"
+        "chinese": "随机召唤 1 个<b>贵宾</b>单位。战斗开始时有 1 回合冷却。"
       },
       "is_an_ability": true,
       "cooldown": 2,
