@@ -19,9 +19,6 @@
       "targetless": true,
       "card_type": "blight",
       "cost": 1,
-      "effects": [
-        "@WinterFrostbite"
-      ],
       "triggers": [
         "@WinterReserve"
       ]
@@ -73,4 +70,5 @@
       }
     }
   ]
+
 }
