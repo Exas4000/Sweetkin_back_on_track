@@ -20,7 +20,10 @@
       "targetless": false,
       "pools": [
         "MegaPool",
-        "RoomAndEquipmentMerchant_EquipmentPool"
+        "RoomAndEquipmentMerchant_EquipmentPool",
+        "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+        "RoomAndEquipmentDraftPool",
+        "EquipmentPoolNonEnemy"
       ],
       "cost": 0,
       "effects": [

@@ -19,6 +19,7 @@
       "targetless": true,
       "card_type": "blight",
       "cost": 1,
+      "pools": ["StarterCardsOnly"],
       "triggers": [
         "@WinterReserve"
       ]

@@ -22,6 +22,7 @@
       "targets_room": true,
       "targetless": false,
       "cost": 1,
+      "pools": [ "StarterCardsOnly" ],
       "effects": [
         "@RaiseHp_hospy"
       ]
