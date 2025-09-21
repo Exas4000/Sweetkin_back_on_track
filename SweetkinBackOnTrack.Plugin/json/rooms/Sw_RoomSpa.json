@@ -27,7 +27,8 @@
       ],
       "pools": [
         "MegaPool",
-        "RoomAndEquipmentMerchant_RoomPool"
+        "RoomAndEquipmentMerchant_RoomPool",
+        "RoomAndEquipmentDraftPool"
       ]
     }
   ],
