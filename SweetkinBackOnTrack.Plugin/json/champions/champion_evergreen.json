@@ -59,7 +59,7 @@
       "id": "upg_Trauma1",
       "titles": {
         "english": "Trauma : Lone Sprout I",
-        "chinese": "创伤: 孤单芽"
+        "chinese": "创伤：孤单芽"
       },
       "status_effect_upgrades": [
         {
@@ -75,7 +75,7 @@
       "id": "upg_Trauma3",
       "titles": {
         "english": "Trauma : Lone Sprout II",
-        "chinese": "创伤: 孤单芽 II"
+        "chinese": "创伤：孤单芽 II"
       },
       "status_effect_upgrades": [
         {
@@ -91,7 +91,7 @@
       "id": "upg_Trauma2",
       "titles": {
         "english": "Trauma : Red Queen I",
-        "chinese": "创伤: 红皇后"
+        "chinese": "创伤：红皇后"
       },
       "descriptions": {
         "english": "Gain [effect0.upgrade.bonusdamage][attack] permanently"
@@ -104,7 +104,7 @@
       "id": "upg_Trauma4",
       "titles": {
         "english": "Trauma : Red Queen II",
-        "chinese": "创伤: 红皇后 II"
+        "chinese": "创伤：红皇后 II"
       },
       "descriptions": {
         "english": "Gain [effect0.upgrade.bonusdamage][attack] permanently"
