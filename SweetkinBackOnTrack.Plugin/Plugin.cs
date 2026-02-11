@@ -111,9 +111,9 @@ namespace SweetkinBackOnTrack.Plugin
 
     public sealed class RoomStateCapacityModifierGrav : RoomStateModifierBase, IRoomStateCapacityModifier
     {
-        public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
+        public override void Initialize(RoomModifierData roomModifierData, SaveManager saveManager)
         {
-            base.Initialize(roomModifierData, coreGameManagers);
+            base.Initialize(roomModifierData, saveManager);
             this.capacityDelta = roomModifierData.GetParamInt();
         }
         public int GetModifiedCapacity()
@@ -125,13 +125,13 @@ namespace SweetkinBackOnTrack.Plugin
 
     public sealed class RoomStateAddEffectPostCombatLobby : RoomStateModifierBase, IRoomStatePostCombatModifier, IRoomStateModifier, ILocalizationParamInt, ILocalizationParameterContext
     {
-        public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
+        public override void Initialize(RoomModifierData roomModifierData, SaveManager saveManager)
         {
-            base.Initialize(roomModifierData, coreGameManagers);
+            base.Initialize(roomModifierData, saveManager);
             foreach (CardEffectData cardEffectData in roomModifierData.GetParamCardEffectData())
             {
                 CardEffectState cardEffectState = Activator.CreateInstance<CardEffectState>();
-                cardEffectState.Setup(cardEffectData, null, coreGameManagers.GetSaveManager());
+                cardEffectState.Setup(cardEffectData, null, saveManager);
                 _effects.Add(cardEffectState);
             }
         }
@@ -156,13 +156,13 @@ namespace SweetkinBackOnTrack.Plugin
 
     public sealed class RoomStateAddEffectPostCombatKitchen : RoomStateModifierBase, IRoomStatePostCombatModifier, IRoomStateModifier, ILocalizationParamInt, ILocalizationParameterContext
     {
-        public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
+        public override void Initialize(RoomModifierData roomModifierData, SaveManager saveManager)
         {
-            base.Initialize(roomModifierData, coreGameManagers);
+            base.Initialize(roomModifierData, saveManager);
             foreach (CardEffectData cardEffectData in roomModifierData.GetParamCardEffectData())
             {
                 CardEffectState cardEffectState = Activator.CreateInstance<CardEffectState>();
-                cardEffectState.Setup(cardEffectData, null, coreGameManagers.GetSaveManager());
+                cardEffectState.Setup(cardEffectData, null, saveManager);
                 _effects.Add(cardEffectState);
             }
         }
@@ -187,13 +187,13 @@ namespace SweetkinBackOnTrack.Plugin
 
     public sealed class RoomStateAddEffectPostCombatSpa : RoomStateModifierBase, IRoomStatePostCombatModifier, IRoomStateModifier, ILocalizationParamInt, ILocalizationParameterContext
     {
-        public override void Initialize(RoomModifierData roomModifierData, ICoreGameManagers coreGameManagers)
+        public override void Initialize(RoomModifierData roomModifierData, SaveManager saveManager)
         {
-            base.Initialize(roomModifierData, coreGameManagers);
+            base.Initialize(roomModifierData, saveManager);
             foreach (CardEffectData cardEffectData in roomModifierData.GetParamCardEffectData())
             {
                 CardEffectState cardEffectState = Activator.CreateInstance<CardEffectState>();
-                cardEffectState.Setup(cardEffectData, null, coreGameManagers.GetSaveManager());
+                cardEffectState.Setup(cardEffectData, null, saveManager);
                 _effects.Add(cardEffectState);
             }
         }
