@@ -57,6 +57,7 @@
         "chinese": "回合结束时，召唤 1 个<b>蟹肉饼</b>或者 1 个<b>蛇秘的面条</b>。"
       },
       "param_effects": [
+        "@CleckCheckFull",
         "@CookKitchenMorsel"
       ]
     }

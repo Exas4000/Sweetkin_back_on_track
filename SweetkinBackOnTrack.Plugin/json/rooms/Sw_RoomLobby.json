@@ -61,6 +61,7 @@
         "chinese": "回合结束时，随机召唤 1 个<b>贵宾</b>单位。"
       },
       "param_effects": [
+        "@CleckCheckFull",
         "@ClerkCheckIn"
       ]
     }

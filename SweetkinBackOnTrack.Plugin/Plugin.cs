@@ -109,6 +109,29 @@ namespace SweetkinBackOnTrack.Plugin
         }
     }
 
+    public sealed class CardEffectBlockOnFullRoom : CardEffectBase
+    {
+        public override bool TestEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers)
+        {
+            var room = cardEffectParams.GetSelectedRoom(coreGameManagers.GetRoomManager());
+            if (room == null)
+            {
+                return false;
+            }
+            return !room.IsAtMaxSpawnPointsInUse(Team.Type.Monsters);
+        }
+
+        public override IEnumerator ApplyEffect(CardEffectState cardEffectState, CardEffectParams cardEffectParams, ICoreGameManagers coreGameManagers, ISystemManagers sysManagers)
+        {
+            yield break;
+        }
+
+        public override PropDescriptions CreateEditorInspectorDescriptions()
+        {
+            return [];
+        }
+    }
+
     public sealed class RoomStateCapacityModifierGrav : RoomStateModifierBase, IRoomStateCapacityModifier
     {
         public override void Initialize(RoomModifierData roomModifierData, SaveManager saveManager)
@@ -146,6 +169,9 @@ namespace SweetkinBackOnTrack.Plugin
 
         public IEnumerator PostCombat(RoomState room, ICoreGameManagers coreGameManagers)
         {
+            if (!room.IsRoomEnabled())
+                yield break;
+
             CombatManager combatManager = coreGameManagers.GetCombatManager();
             yield return base.ShowTriggeredVFX(room, coreGameManagers);
             yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex());
@@ -177,6 +203,8 @@ namespace SweetkinBackOnTrack.Plugin
 
         public IEnumerator PostCombat(RoomState room, ICoreGameManagers coreGameManagers)
         {
+            if (!room.IsRoomEnabled())
+                yield break;
             CombatManager combatManager = coreGameManagers.GetCombatManager();
             yield return base.ShowTriggeredVFX(room, coreGameManagers);
             yield return combatManager.ApplyEffects(_effects, room.GetRoomIndex());

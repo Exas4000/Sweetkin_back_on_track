@@ -43,6 +43,7 @@
       "targets_room": false,
       "card_type": "spell",
       "effects": [
+        "@CleckCheckFull",
         "@ClerkCheckIn"
       ]
     }
@@ -86,11 +87,17 @@
       "param_character": "@FrontClerk"
     },
     {
+      "id": "CleckCheckFull",
+      "name": "@CardEffectBlockOnFullRoom",
+      "should_fail_to_cast_if_test_fails": true
+    },
+    {
       "id": "ClerkCheckIn",
       "name": "CardEffectSpawnMonster",
       "target_mode": "room",
       "target_team": "monsters",
       "param_character": "@templateVIP",
+      "should_fail_to_cast_if_test_fails": true,
       "param_character_pool": [
         "@VIPimp",
         "@VIPlatebloomer",
